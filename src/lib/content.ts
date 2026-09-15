@@ -309,13 +309,19 @@ function checkReferences(data: DataSet): void {
 }
 
 /* --------------------------------------------------------------------------
-   Public entry point (memoised - the files are read once per process)
+   Public entry point
+
+   In production the files are read once per process. In development they are
+   re-read on every request, so editing a file in data/ and reloading the page
+   is enough - you never have to restart the dev server.
    -------------------------------------------------------------------------- */
+
+const CACHE_ENABLED = process.env.NODE_ENV === "production";
 
 let cached: DataSet | null = null;
 
 export function loadDataSet(): DataSet {
-  if (cached) return cached;
+  if (cached && CACHE_ENABLED) return cached;
 
   const errors: DataSetError[] = [];
   const spatialTypes = readYaml("spatial-types.yml", SpatialTypeSchema, errors);

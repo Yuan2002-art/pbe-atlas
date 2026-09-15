@@ -39,10 +39,14 @@ const FALLBACK_TYPE = {
   pinShape: "circle" as PinShape,
 };
 
+/* Cached in production, rebuilt on every request in development - see the
+   note at the foot of lib/content.ts. */
+const CACHE_ENABLED = process.env.NODE_ENV === "production";
+
 let atlas: Atlas | null = null;
 
 export function getAtlas(): Atlas {
-  if (atlas) return atlas;
+  if (atlas && CACHE_ENABLED) return atlas;
 
   const data = requireDataSet();
   const brandBySlug = new Map(data.brands.map((b) => [b.slug, b]));

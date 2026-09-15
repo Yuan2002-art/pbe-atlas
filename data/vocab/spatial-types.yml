@@ -1,0 +1,68 @@
+# ===========================================================================
+# SPATIAL TYPES — the six kinds of physical/experiential presence the Atlas
+# distinguishes. A case has exactly ONE spatial type (its primary form).
+#
+# `id` is used in case files and in URLs — do not rename one without updating
+# every case file that uses it. `pinShape` is how it is drawn on the map.
+# Valid pinShape values: square · circle · triangle · cross · diamond · chevron
+# ===========================================================================
+
+- id: permanent-retail
+  label: Permanent Retail
+  short: Retail
+  pinShape: square
+  accent: "#16161a"
+  definition: >-
+    A fixed, long-lived store or showroom operated by the brand. Judged as an
+    ongoing argument about the brand rather than a single moment: assortment,
+    services, staff expertise and neighbourhood all form part of the claim.
+
+- id: pop-up
+  label: Pop-up
+  short: Pop-up
+  pinShape: circle
+  accent: "#1e4fd8"
+  definition: >-
+    A temporary retail or brand space with a defined open and close date,
+    usually placed to borrow the energy of a moment, a district, or an event
+    rather than to serve a catchment area.
+
+- id: event
+  label: Event
+  short: Event
+  pinShape: triangle
+  accent: "#16161a"
+  definition: >-
+    A brand-hosted gathering — academy, clinic, film night, group run, summit —
+    where the product is secondary to the shared experience and to the
+    transmission of technique or culture.
+
+- id: activation
+  label: Activation
+  short: Activation
+  pinShape: cross
+  accent: "#1e4fd8"
+  definition: >-
+    A temporary brand presence built inside someone else's event or public
+    space: expo booths, basecamps, service tents, city takeovers. Defined by
+    being a guest in a context the brand does not own.
+
+- id: product-launch
+  label: Product Launch
+  short: Launch
+  pinShape: diamond
+  accent: "#c8371f"
+  definition: >-
+    A spatial or experiential moment organised primarily around introducing a
+    specific product or collaboration, where the space exists to make a
+    product claim legible.
+
+- id: sports-event
+  label: Sports Event / Race
+  short: Race
+  pinShape: chevron
+  accent: "#c8371f"
+  definition: >-
+    A competitive event the brand owns, titles, or co-produces — races, series
+    finals, record attempts. The strongest form of performance proof because
+    the outcome is not controlled by the brand.

@@ -1,0 +1,31 @@
+{
+  "_readme": [
+    "Colours for the world map. Edit a hex value, then run:  npm run map-style",
+    "That regenerates public/map/atlas-style.json, which the map reads.",
+    "upstreamStyle is the free basemap this is built on (no API key, no account).",
+    "If OpenFreeMap is ever unavailable, replace upstreamStyle with another",
+    "MapLibre style URL and run npm run map-style again."
+  ],
+  "upstreamStyle": "https://tiles.openfreemap.org/styles/positron",
+  "colors": {
+    "background": "#f1ede3",
+    "land": "#f1ede3",
+    "landcover": "#e9e4d6",
+    "park": "#e5e3d0",
+    "water": "#dfe3e6",
+    "waterway": "#d6dbe0",
+    "building": "#e5dfd1",
+    "buildingOutline": "#d8d1c0",
+    "roadMinor": "#e8e2d5",
+    "roadMajor": "#e2dbcb",
+    "roadCasing": "#d9d2c1",
+    "railway": "#ddd6c6",
+    "boundary": "#b4ab9a",
+    "boundaryCountry": "#9c9382",
+    "label": "#5c5c63",
+    "labelPlace": "#16161a",
+    "labelHalo": "#f5f2ea",
+    "labelWater": "#8f9aa3"
+  },
+  "hideLayerPatterns": ["poi", "airport", "aerodrome", "housenumber", "ferry", "shield", "motorway_junction"]
+}

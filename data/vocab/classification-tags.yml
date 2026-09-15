@@ -1,0 +1,67 @@
+# ===========================================================================
+# CLASSIFICATION TAGS — the research vocabulary. A case carries one or more.
+# These are the analytical lens; spatial type is only the physical form.
+#
+# Add a tag by adding a block here — filters, the legend and the /about page
+# all read this file, so nothing in the code needs to change.
+# ===========================================================================
+
+- id: performance-archive
+  label: Performance Archive
+  definition: >-
+    The space stores and displays evidence of athletic performance — race-worn
+    kit, prototypes, split times, expedition records, athlete artefacts. It
+    argues from history: this has already been proven.
+
+- id: cultural-archive
+  label: Emotional / Cultural Archive
+  definition: >-
+    The space stores and displays cultural material rather than performance
+    data — photography, film, music, subcultural references, local history. It
+    argues for belonging rather than capability.
+
+- id: product-trial
+  label: Product Trial
+  definition: >-
+    Visitors can test product under conditions approximating real use: demo
+    fleets, test loops, treadmills, fit sessions, loan schemes. Credibility is
+    transferred through the body rather than through claims.
+
+- id: community
+  label: Community
+  definition: >-
+    The space functions as infrastructure for a recurring group — run clubs,
+    climbing nights, repair evenings, cafés. Value accrues through repeat
+    visits rather than transactions.
+
+- id: collaboration
+  label: Collaboration
+  definition: >-
+    The case is co-authored with another brand, designer, artist, athlete or
+    institution, borrowing credibility or cultural access across a boundary.
+
+- id: limited-drop
+  label: Limited Product Drop
+  definition: >-
+    Scarcity is a deliberate mechanism: location-exclusive, time-limited or
+    numbered product that makes physical attendance a condition of access.
+
+- id: retail
+  label: Retail
+  definition: >-
+    Commercial transaction is a primary function of the space, not an
+    afterthought. Used alongside other tags to record whether the experience
+    is also expected to sell.
+
+- id: event-activation
+  label: Event Activation
+  definition: >-
+    The case exists because of, and inside, a third-party event, and would not
+    exist without it. Records dependence on borrowed audiences.
+
+- id: performance-testing
+  label: Performance Testing
+  definition: >-
+    Actual research or product development happens on site — labs, motion
+    capture, field testing, athlete feedback loops. The brand is generating
+    performance knowledge, not only displaying it.

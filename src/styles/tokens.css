@@ -1,0 +1,32 @@
+/* ===========================================================================
+   DESIGN TOKENS — the whole visual language of the Atlas lives in this file.
+   Change a hex value here and it changes everywhere. Nothing else to edit.
+   =========================================================================== */
+
+:root {
+  /* --- Paper & ink ------------------------------------------------------- */
+  --paper:        #f5f2ea;  /* warm off-white page ground                    */
+  --paper-sunk:   #eee9dd;  /* recessed panels, table stripes                */
+  --paper-raised: #fbf9f4;  /* cards sitting above the page                  */
+  --ink:          #16161a;  /* primary text                                  */
+  --graphite:     #5c5c63;  /* secondary text, captions, metadata values     */
+  --pencil:       #8b8b92;  /* tertiary text, disabled, placeholders         */
+
+  /* --- Rules & grid ----------------------------------------------------- */
+  --rule:         #d6cfc2;  /* hairline rules, table borders                 */
+  --rule-strong:  #b4ab9a;  /* section dividers                              */
+  --grid:         #e5dfd2;  /* background grid / graticule                   */
+
+  /* --- Technical accents ------------------------------------------------ */
+  --blue:         #1e4fd8;  /* links, active state, primary accent           */
+  --blue-sunk:    #e7ebfb;  /* blue tint fills                               */
+  --red:          #c8371f;  /* signal red: placeholder marks, warnings        */
+  --red-sunk:     #faeae6;  /* red tint fills                                */
+
+  /* --- Metrics ----------------------------------------------------------- */
+  --hairline: 1px;
+  --radius: 2px;            /* deliberately almost square                    */
+  --measure: 68ch;          /* prose line length                             */
+  --rail: 288px;            /* filter rail width                             */
+  --header: 57px;           /* site header height                            */
+}

@@ -1,6 +1,8 @@
 ---
 name: Golden Trail World Series Final
-type: trail
+eventType: trail
+year: 2024
+sport: Trail running
 location:
   venue: Madeira trail network
   city: Funchal
@@ -8,9 +10,8 @@ location:
   country: Portugal
   countryCode: PT
   coordinates: [-16.9241, 32.6669]
-recurring: true
-editions: [2023, 2024]
-month: 10
+startDate: 2024-10-24
+endDate: 2024-10-27
 status: partially-verified
 sources: []
 ---

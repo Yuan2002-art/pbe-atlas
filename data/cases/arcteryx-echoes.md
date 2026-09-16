@@ -27,7 +27,7 @@ date:
   end: 2026-08-30
   precision: unknown
 spatialType: activation
-relatedEvent: utmb
+relatedEvent: utmb-mont-blanc-2026
 product: ""
 tags:
   - cultural-archive

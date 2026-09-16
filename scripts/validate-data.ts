@@ -73,6 +73,29 @@ for (const c of data.cases) {
   }
 }
 
+/* Strategy Matrix coverage. The field is reserved for a future cross-case
+   chart; this line says how far off that chart still is. A case with a
+   coordinate but no rationale is the dangerous case — a number nobody can
+   defend will plot exactly like a researched one. */
+const researched = data.cases.filter((c) => c.status !== "placeholder");
+const plotted = researched.filter(
+  (c) =>
+    c.strategyMatrix.performanceToCulture !== null &&
+    c.strategyMatrix.productToExperience !== null,
+);
+const unjustified = plotted.filter((c) => !c.strategyMatrix.rationale);
+
+console.log(`
+${DIM}Strategy Matrix coverage${OFF}`);
+console.log(`  plottable        ${plotted.length} of ${researched.length} researched cases`);
+if (unjustified.length > 0) {
+  console.log(
+    `  ${YELLOW}${unjustified.length} plotted without a rationale${OFF} — ${unjustified
+      .map((c) => c.slug)
+      .join(", ")}`,
+  );
+}
+
 if (logicCounts.size > 0) {
   console.log(`\n${DIM}Activation logic in use${OFF} ${DIM}(check for near-duplicates)${OFF}`);
   for (const [logic, n] of [...logicCounts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))) {

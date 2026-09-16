@@ -1,6 +1,8 @@
 ---
 name: Boston Marathon
-type: marathon
+eventType: marathon
+year: 2025
+sport: Road running / marathon
 location:
   venue: Copley Square finish area
   city: Boston
@@ -8,9 +10,8 @@ location:
   country: United States
   countryCode: US
   coordinates: [-71.0776, 42.3496]
-recurring: true
-editions: [2024, 2025]
-month: 4
+startDate: 2025-04-21
+endDate: 2025-04-21
 status: partially-verified
 sources: []
 ---

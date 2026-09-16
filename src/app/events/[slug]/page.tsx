@@ -14,7 +14,7 @@ import {
   StatusMark,
   TagChip,
 } from "@/components/ui/Primitives";
-import { formatCoordinates, plural, stripHtml } from "@/lib/format";
+import { formatCoordinates, formatDateRange, plural, stripHtml } from "@/lib/format";
 import { cardsForEvent, getAtlas, getEvent } from "@/lib/queries";
 
 export function generateStaticParams() {
@@ -72,11 +72,19 @@ export default async function EventPage({
       <PlaceholderBand status={event.status} />
 
       <PageHeader
-        eyebrow={`Event · ${event.type}`}
+        eyebrow={`Event · ${event.eventType} · ${event.year}`}
         title={event.name}
         lede={`${event.location.city}, ${event.location.country}${
-          event.recurring ? " · recurring" : ""
-        }${event.editions.length ? ` · editions ${event.editions.join(", ")}` : ""}`}
+          event.parentSeries ? ` · ${event.parentSeries}` : ""
+        }${
+          event.startDate
+            ? ` · ${formatDateRange({
+                start: event.startDate,
+                end: event.endDate,
+                precision: "day",
+              })}`
+            : ""
+        }`}
         meta={
           <>
             <MetaItem label="Brands present" value={brandCount} />
@@ -85,6 +93,22 @@ export default async function EventPage({
               label="Coordinates"
               value={formatCoordinates(event.location.coordinates)}
             />
+            {event.officialUrl && (
+              <MetaItem
+                label="Official"
+                value={
+                  <a
+                    href={event.officialUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline"
+                    style={{ color: "var(--blue)" }}
+                  >
+                    organiser site
+                  </a>
+                }
+              />
+            )}
             <MetaItem label="Evidence" value={<StatusMark status={event.status} />} />
           </>
         }
@@ -223,6 +247,37 @@ export default async function EventPage({
               Event note
             </SectionHeading>
             <Prose html={event.body} className="text-[14px]" />
+
+            {event.keyRaces.length > 0 && (
+              <div className="mt-6">
+                <p className="label border-b border-rule pb-1.5">
+                  Races in this edition
+                </p>
+                <ul>
+                  {event.keyRaces.map((race) => (
+                    <li
+                      key={race.name}
+                      className="flex flex-wrap items-baseline justify-between gap-x-4 border-b border-rule py-2"
+                    >
+                      <span className="label-lg" style={{ color: "var(--ink)" }}>
+                        {race.name}
+                      </span>
+                      <span className="data text-[11px] text-graphite">
+                        {[
+                          race.startLocation,
+                          race.date,
+                          race.distanceKm ? `${race.distanceKm} km` : null,
+                          race.elevationGainM ? `${race.elevationGainM} m D+` : null,
+                        ]
+                          .filter(Boolean)
+                          .join(" · ")}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             <p className="label mt-5">
               Source file ·{" "}
               <span className="data" style={{ fontSize: 10 }}>

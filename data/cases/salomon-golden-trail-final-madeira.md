@@ -17,7 +17,7 @@ date:
   end: 2024-10-27
   precision: day
 spatialType: sports-event
-relatedEvent: golden-trail-final
+relatedEvent: golden-trail-final-2024
 product: Series-final race format; athlete equipment shown in competition
 tags:
   - performance-testing

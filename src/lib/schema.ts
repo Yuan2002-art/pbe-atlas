@@ -147,6 +147,26 @@ export const CaseFrontmatterSchema = z.strictObject({
   tags: z.array(z.string()).min(1, "at least one classification tag is required"),
   images: z.array(ImageSchema).default([]),
   sources: z.array(SourceSchema).default([]),
+  /** Reserved for the future cross-case Strategy Matrix. Part of the
+   *  interpretation layer, not the facts layer. Leave every value null
+   *  unless the evidence genuinely supports a position — a guessed
+   *  coordinate is worse than an empty one, because a chart will plot it
+   *  with the same confidence as a researched one. */
+  strategyMatrix: z
+    .strictObject({
+      /** -100 = performance-proof driven · +100 = cultural-meaning driven */
+      performanceToCulture: z.number().min(-100).max(100).nullable().default(null),
+      /** -100 = product-centred · +100 = community / experience-centred */
+      productToExperience: z.number().min(-100).max(100).nullable().default(null),
+      confidence: z.enum(["high", "medium", "low"]).nullable().default(null),
+      rationale: z.string().nullable().default(null),
+    })
+    .default({
+      performanceToCulture: null,
+      productToExperience: null,
+      confidence: null,
+      rationale: null,
+    }),
 });
 
 /** The prose sections parsed out of the Markdown body.
@@ -209,17 +229,43 @@ export type Brand = z.infer<typeof BrandFrontmatterSchema> & {
 
 /* --- event --------------------------------------------------------------- */
 
+/** One race inside an edition. Distance and elevation are optional because
+ *  organiser listings often omit them — an absent number is not a zero. */
+export const KeyRaceSchema = z.strictObject({
+  name: z.string().min(1),
+  date: IsoDate.optional(),
+  startLocation: z.string().default(""),
+  distanceKm: z.number().positive().optional(),
+  elevationGainM: z.number().positive().optional(),
+});
+export type KeyRace = z.infer<typeof KeyRaceSchema>;
+
+/** An event record is **one edition**, not a recurring series.
+ *
+ *  "HOKA UTMB Mont-Blanc 2026" is one record; the 2024 edition is another.
+ *  Editions are what brands actually activate at, they are what carries real
+ *  dates, and comparing one year against another is only possible if each
+ *  year is its own record. Use `parentSeries` to group them. */
 export const EventFrontmatterSchema = z.strictObject({
   name: z.string().min(1, "name is required"),
-  /** ultra · marathon · trail · brand-launch · other */
-  type: z.string().default("other"),
+  /** Short label for tables and chips, e.g. "UTMB 2026". */
+  shortName: z.string().default(""),
+  /** The edition year. One record = one edition. */
+  year: z.number().int().min(1900).max(2100),
+  /** The series this edition belongs to, e.g. "UTMB World Series". */
+  parentSeries: z.string().default(""),
+  /** sports-event · marathon · ultra · trail · brand-launch · other */
+  eventType: z.string().default("other"),
+  /** e.g. "Trail running / ultra running" */
+  sport: z.string().default(""),
   location: LocationSchema,
-  /** Does it run every year? */
-  recurring: z.boolean().default(true),
-  /** Years covered by the Atlas, e.g. [2023, 2024, 2025] */
-  editions: z.array(z.number()).default([]),
-  /** Approximate month it takes place, 1-12. */
-  month: z.number().min(1).max(12).optional(),
+  /** Wider area the edition occupies, beyond the single pin. */
+  venueArea: z.string().default(""),
+  startDate: IsoDate.optional(),
+  endDate: IsoDate.optional(),
+  officialUrl: z.string().default(""),
+  keyRaces: z.array(KeyRaceSchema).default([]),
+  notes: z.string().default(""),
   status: StatusSchema,
   sources: z.array(SourceSchema).default([]),
 });

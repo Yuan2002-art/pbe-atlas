@@ -79,6 +79,14 @@ images: []
 #    caption: ""
 #    credit: ""
 #    sourceUrl: ""
+# Reserved for the future cross-case Strategy Matrix. Leave these null unless
+# the evidence genuinely supports a position — a guessed number plots with the
+# same confidence as a researched one.
+strategyMatrix:
+  performanceToCulture: null   # -100 performance proof  <->  +100 cultural meaning
+  productToExperience: null    # -100 product-centred    <->  +100 community / experience
+  confidence: null             # high | medium | low
+  rationale: null
 sources: []
 #  - title: ""
 #    publisher: ""

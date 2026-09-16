@@ -1,6 +1,8 @@
 ---
 name: Western States 100
-type: ultra
+eventType: ultra
+year: 2025
+sport: Trail running / ultra running
 location:
   venue: Olympic Valley start
   city: Olympic Valley
@@ -8,9 +10,6 @@ location:
   country: United States
   countryCode: US
   coordinates: [-120.2356, 39.1969]
-recurring: true
-editions: [2024, 2025]
-month: 6
 status: partially-verified
 sources: []
 ---

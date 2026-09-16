@@ -27,7 +27,7 @@ date:
   end: 2026-08-30
   precision: day
 spatialType: activation
-relatedEvent: utmb
+relatedEvent: utmb-mont-blanc-2026
 product: HOKA Tecton X 4; exclusive UTMB Mont-Blanc finisher jacket
 tags:
   - event-activation

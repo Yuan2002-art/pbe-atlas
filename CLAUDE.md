@@ -33,19 +33,32 @@ explainable in one sentence.
    saying the second is not evidence. Never move an unsourced claim up into the
    facts layer.
 
-3. **Record what could not be verified.** `## Verification notes` is where
+3. **One event record = one edition.** `data/events/utmb-mont-blanc-2026.md`
+   is a different record from the 2024 one. Editions are what brands actually
+   activate at, they carry real dates, and comparing one year against another
+   is impossible if a single record spans all of them. `parentSeries` groups
+   them. A case points at an edition through `relatedEvent` (the slug) — that
+   field already is the event id; do not rename it for cosmetic reasons.
+
+4. **`strategyMatrix` stays null until the evidence earns a number.** It is
+   reserved for a future cross-case chart, and a guessed coordinate will plot
+   with exactly the same confidence as a researched one. `npm run validate`
+   reports how many cases are plottable and flags any with a coordinate but no
+   rationale. It belongs to the interpretation layer, not the facts layer.
+
+5. **Record what could not be verified.** `## Verification notes` is where
    uncertainty goes — inferred years, street-level-only coordinates,
    single-press-release trade coverage, claims deliberately excluded. A blank
    field is silent; a note is honest. `partially-verified` records must have one.
 
-4. **No LinkedIn scraping, and no scraping of any site whose terms forbid it.**
+6. **No LinkedIn scraping, and no scraping of any site whose terms forbid it.**
    If asked for that, say so and offer a manual alternative.
-5. **Data stays hand-editable.** Markdown with YAML frontmatter, one file per
+7. **Data stays hand-editable.** Markdown with YAML frontmatter, one file per
    record, in `data/`. Do not introduce a CMS or a database without being asked.
-6. **Vocabularies live in data, not code.** Spatial types and classification
+8. **Vocabularies live in data, not code.** Spatial types and classification
    tags come from `data/vocab/*.yml`; the filters, the map key, the case pages
    and the Method page all read from there.
-7. **Show gaps, never hide them.** A brand or event with no cases renders an
+9. **Show gaps, never hide them.** A brand or event with no cases renders an
    honest empty state. Do not pad the dataset to make the interface look full.
 
 ## Stack

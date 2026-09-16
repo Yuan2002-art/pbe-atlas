@@ -19,7 +19,7 @@ date:
   end: 2026-08-29
   precision: day
 spatialType: pop-up
-relatedEvent: utmb
+relatedEvent: utmb-mont-blanc-2026
 product: METAFUJI TRAIL 2
 tags:
   - performance-archive

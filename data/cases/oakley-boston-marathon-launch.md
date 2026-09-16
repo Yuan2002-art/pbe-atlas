@@ -17,7 +17,7 @@ date:
   end: 2025-04-21
   precision: day
 spatialType: product-launch
-relatedEvent: boston-marathon
+relatedEvent: boston-marathon-2025
 product: Low-mass racing eyewear launch; athlete-signature edition
 tags:
   - product-trial

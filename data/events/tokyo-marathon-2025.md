@@ -1,6 +1,8 @@
 ---
 name: Tokyo Marathon
-type: marathon
+eventType: marathon
+year: 2025
+sport: Road running / marathon
 location:
   venue: Tokyo Metropolitan Government Building start
   city: Tokyo
@@ -8,9 +10,6 @@ location:
   country: Japan
   countryCode: JP
   coordinates: [139.6917, 35.6895]
-recurring: true
-editions: [2024, 2025]
-month: 3
 status: partially-verified
 sources: []
 ---

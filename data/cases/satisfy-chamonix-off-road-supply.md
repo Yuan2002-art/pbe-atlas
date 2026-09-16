@@ -26,7 +26,7 @@ date:
   end: 2026-08-29
   precision: day
 spatialType: pop-up
-relatedEvent: utmb
+relatedEvent: utmb-mont-blanc-2026
 product: SATISFY Oakley Suture Jacket; SATISFY COROS APEX 4; Justice Cordura hydration vest; MothTech T-shirts; TheROCKER
 tags:
   - community

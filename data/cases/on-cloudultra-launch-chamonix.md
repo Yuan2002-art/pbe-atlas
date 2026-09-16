@@ -17,7 +17,7 @@ date:
   end: 2024-08-30
   precision: day
 spatialType: product-launch
-relatedEvent: utmb
+relatedEvent: utmb-mont-blanc-2024
 product: Long-distance trail shoe launch; co-developed midsole research
 tags:
   - limited-drop

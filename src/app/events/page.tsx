@@ -54,7 +54,7 @@ export default function EventsPage() {
               >
                 <div className="flex items-baseline justify-between gap-3">
                   <span className="label">
-                    {event.type} · {event.location.city}, {event.location.countryCode}
+                    {event.eventType} · {event.year} · {event.location.city}, {event.location.countryCode}
                   </span>
                   <StatusMark status={event.status} />
                 </div>

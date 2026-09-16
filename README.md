@@ -59,7 +59,11 @@ Other commands:
    - `spatialType` — one id from `data/vocab/spatial-types.yml`
    - `tags` — one or more ids from `data/vocab/classification-tags.yml`
    - `relatedEvent` — a filename from `data/events/` if it happened at an event;
-     delete the line if not
+     delete the line if not. **Events are per edition**, so point at
+     `utmb-mont-blanc-2026`, not at a generic "UTMB"
+   - `strategyMatrix` — leave every value `null` unless the evidence genuinely
+     supports a position on the two axes. This feeds a future comparison chart,
+     and a guessed number is worse than an empty one
    - `status` — `placeholder` → `ai-reconstructed` → `partially-verified` →
      `verified`. Anything above `placeholder` needs at least one source with a
      url, or validation fails.
@@ -95,6 +99,12 @@ Other commands:
 
 To add a brand or an event, copy an existing file in `data/brands/` or
 `data/events/` and edit it. The filename becomes the URL.
+
+**An event file is one edition, not a recurring series.** `utmb-mont-blanc-2026`
+and `utmb-mont-blanc-2024` are separate records, grouped by `parentSeries`. That
+is what makes "which brands were at UTMB 2026" a question the Atlas can answer,
+and what will later allow 2025 to be compared against 2026. Each edition carries
+its own `startDate`, `endDate`, `officialUrl` and optional `keyRaces`.
 
 ---
 

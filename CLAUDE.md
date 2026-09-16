@@ -13,19 +13,39 @@ explainable in one sentence.
 
 ## Standing rules
 
-1. **Never invent case facts.** Any case, brand or event content that has not
-   been checked against a source must carry `status: placeholder` (invented) or
-   `status: draft` (written from general knowledge). Only `verified` may be
-   cited, and only when real sources are listed on the record. All ten cases in
-   this build are `placeholder` demo material.
-2. **No LinkedIn scraping, and no scraping of any site whose terms forbid it.**
+1. **Never invent case facts.** Evidence status is
+   `placeholder` (invented) → `ai-reconstructed` (machine-assembled, unchecked)
+   → `partially-verified` (some claims sourced) → `verified` (every fact in the
+   verified-facts layer traces to a listed source). Anything above
+   `placeholder` must have at least one source with a url — `npm run validate`
+   enforces this and the build fails without it.
+
+   **A placeholder once leaked into a research brief.** An invented demo case
+   called "Salomon UTMB Basecamp" was later handed back as a subject to verify;
+   no such activation exists. Fabricated content does not stay contained just
+   because it is labelled. Prefer deleting a placeholder over keeping it once a
+   real case covers the same brand and event.
+
+2. **Facts and interpretation are separate layers, in the data.** A case body
+   has a `facts` group (Description, Verification notes) and an `analysis`
+   group. `src/lib/sections.ts` defines which is which and the case page renders
+   them as §1 Verified facts and §2 Strategic interpretation, with a notice
+   saying the second is not evidence. Never move an unsourced claim up into the
+   facts layer.
+
+3. **Record what could not be verified.** `## Verification notes` is where
+   uncertainty goes — inferred years, street-level-only coordinates,
+   single-press-release trade coverage, claims deliberately excluded. A blank
+   field is silent; a note is honest. `partially-verified` records must have one.
+
+4. **No LinkedIn scraping, and no scraping of any site whose terms forbid it.**
    If asked for that, say so and offer a manual alternative.
-3. **Data stays hand-editable.** Markdown with YAML frontmatter, one file per
+5. **Data stays hand-editable.** Markdown with YAML frontmatter, one file per
    record, in `data/`. Do not introduce a CMS or a database without being asked.
-4. **Vocabularies live in data, not code.** Spatial types and classification
+6. **Vocabularies live in data, not code.** Spatial types and classification
    tags come from `data/vocab/*.yml`; the filters, the map key, the case pages
    and the Method page all read from there.
-5. **Show gaps, never hide them.** A brand or event with no cases renders an
+7. **Show gaps, never hide them.** A brand or event with no cases renders an
    honest empty state. Do not pad the dataset to make the interface look full.
 
 ## Stack
@@ -96,6 +116,9 @@ npm run build        # production build; also type-checks
 
 AI-assisted case research · image-to-3D spatial reconstruction · floor-plan
 reconstruction · timeline view · similarity search · user submissions ·
-verified / reconstructed / AI-interpreted evidence labels · a database ·
-a full-text search engine · pin clustering · aggregate charts across cases
-(an aggregate is a research finding, and findings need verified data first).
+a database · a full-text search engine · pin clustering · aggregate charts
+across cases (an aggregate is a research finding, and findings need verified
+data first).
+
+Evidence labels are now **built**, not postponed: see the four-value status in
+rule 1 and `SOURCE_TYPES` in `src/lib/schema.ts`.

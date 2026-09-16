@@ -5,7 +5,7 @@ founded: 1975
 category: eyewear
 positioning: Sport optics as equipment; performance stated through technology.
 accent: "#c8371f"
-status: draft
+status: partially-verified
 sources: []
 ---
 

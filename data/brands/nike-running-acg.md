@@ -5,7 +5,7 @@ founded: 1971
 category: road-running
 positioning: Sport as mass culture; ACG as its technical, outdoor-facing edge.
 accent: "#16161a"
-status: draft
+status: partially-verified
 sources: []
 ---
 

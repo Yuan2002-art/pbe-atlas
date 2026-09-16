@@ -11,7 +11,7 @@ location:
 recurring: true
 editions: [2024, 2025]
 month: 4
-status: draft
+status: partially-verified
 sources: []
 ---
 

@@ -5,7 +5,7 @@ founded: 2010
 category: road-running
 positioning: Swiss engineering precision, presented with design-led restraint.
 accent: "#1e4fd8"
-status: draft
+status: partially-verified
 sources: []
 ---
 

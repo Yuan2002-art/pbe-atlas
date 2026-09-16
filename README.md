@@ -8,12 +8,15 @@ credibility and cultural meaning.
 This is the **MVP**: the structure of the research, working end to end, with
 placeholder cases in place of research.
 
-> ### The data in this build is invented
-> All ten cases are marked `status: placeholder`. The brands are real; the
-> spaces described are not. They exist so the map, the filters and the
-> comparison views can be judged before the research starts. Nothing here may
-> be cited. Replace them file by file, and change `status` when you have
-> attached real sources.
+> ### Some of this data is real and some is invented — check the label
+> The five UTMB / Chamonix cases are researched and source-backed. The eight
+> remaining demo cases are marked `status: placeholder`: the brands are real,
+> the spaces described are not, and nothing in them may be cited. Every page
+> shows its status, and unverified records carry a red band.
+>
+> **Placeholders do escape.** One invented demo case came back later as a
+> research subject to verify. If a real case now covers the same brand and
+> event, delete the placeholder rather than keeping it alongside.
 
 ---
 
@@ -57,11 +60,27 @@ Other commands:
    - `tags` — one or more ids from `data/vocab/classification-tags.yml`
    - `relatedEvent` — a filename from `data/events/` if it happened at an event;
      delete the line if not
-   - `status` — leave as `placeholder` until you have real sources
+   - `status` — `placeholder` → `ai-reconstructed` → `partially-verified` →
+     `verified`. Anything above `placeholder` needs at least one source with a
+     url, or validation fails.
+   - `coordinatePrecision` — `exact` if you geocoded a real address,
+     `approximate` for a street or area, `city` if you only know the town
+   - `primaryActivationLogic` — the strategic logic, e.g. `Community`,
+     `Product Drop`. Free text; `npm run validate` lists every value in use so
+     you can spot inconsistent wording
+   - each source takes a `type`: `official-brand`, `event-organiser`,
+     `agency-studio`, `editorial` or `other`
 
-3. **Answer the questions** in the body. Each `## Heading` is one section; write
-   normal prose underneath. Two headings are optional (Why this event, Why this
-   product) and can be deleted if they do not apply.
+3. **Answer the questions** in the body. Each `## Heading` is one section.
+
+   The body has two layers and the page keeps them apart: `## Description` and
+   `## Verification notes` are **verified facts** — only what a source you have
+   listed actually states. Everything below them is **interpretation**, shown
+   under a notice saying it is the author's reading and not evidence.
+
+   Put every uncertainty in `## Verification notes`: an inferred year, a
+   street-level-only coordinate, a claim you decided not to use. A blank field
+   is silent; a note is honest.
 
 4. **Add images** to `public/images/cases/<slug>/` and list them under
    `images:` with a caption, a credit and a source URL.

@@ -305,6 +305,19 @@ function checkReferences(data: DataSet): void {
     if (new Set(c.tags).size !== c.tags.length) {
       data.errors.push({ file, field: "tags", message: "contains a duplicate tag" });
     }
+
+    // A record cannot claim to be verified with nothing to verify it against.
+    // This is an error, not a notice: it must be impossible to publish.
+    if (
+      (c.status === "verified" || c.status === "partially-verified") &&
+      !c.sources.some((s) => s.url.trim())
+    ) {
+      data.errors.push({
+        file,
+        field: "status",
+        message: `"${c.status}" requires at least one source with a url. Either add the source, or set status to "placeholder".`,
+      });
+    }
   }
 }
 

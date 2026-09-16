@@ -8,20 +8,43 @@ location:
   country: France
   countryCode: FR
   coordinates: [6.8694, 45.9237]
+  coordinatePrecision: city
 recurring: true
-editions: [2023, 2024, 2025]
+editions: [2023, 2024, 2025, 2026]
 month: 8
-status: draft
-sources: []
+status: verified
+sources:
+  - title: "HOKA UTMB Mont-Blanc — the event"
+    publisher: UTMB Mont-Blanc
+    url: https://montblanc.utmb.world/discover/the-event/concept
+    type: event-organiser
+    accessed: 2026-09-16
+  - title: "Ultra-Trail Village"
+    publisher: UTMB Mont-Blanc
+    url: https://montblanc.utmb.world/get-involved/join-adventure/ultra-trail-village
+    type: event-organiser
+    accessed: 2026-09-16
+  - title: "Animation programme, 2026 edition"
+    publisher: UTMB Mont-Blanc
+    url: https://montblanc.utmb.world/discover/the-event/animation
+    type: event-organiser
+    accessed: 2026-09-16
+  - title: "HOKA secures Title Partner position through 2028"
+    publisher: UTMB World Series
+    url: https://utmb.world/news/Hoka-title-partner-announcement
+    type: event-organiser
+    accessed: 2026-09-16
 ---
 
-A week of ultra-distance races around the Mont-Blanc massif, ending in Chamonix.
-For this research it functions less as a race than as an annual **trade fair with
-an audience that runs**: the town centre is temporarily reorganised around brand
-structures, and the finish arch sits inside a dense field of competing
-activations.
+A week of ultra-distance races around the Mont-Blanc massif, finishing in
+Chamonix. The 2026 edition ran **24–30 August**, with the official Ultra-Trail
+Village on **Place du Mont-Blanc from 24 to 28 August**. The event is formally
+titled **HOKA UTMB Mont-Blanc**: since April 2024 HOKA has held the Title Partner
+position for the series' flagship events, through 2028.
 
-Because participants are captive in one valley for several days, UTMB is the
-clearest available test of how brands differentiate spatial strategy under
-identical conditions — which is why three of the demo cases in this Atlas are
-deliberately set here.
+For this research the race matters less than the valley around it. For one week
+Chamonix becomes a dense, bounded field where brands differentiate under
+identical conditions — same town, same audience, same seven days. It is also a
+field with a fence: sponsorship buys the official perimeter, and the brands
+without it have to find another way in. Several of the cases recorded here sit
+deliberately on either side of that line.

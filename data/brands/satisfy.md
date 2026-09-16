@@ -5,7 +5,7 @@ founded: 2015
 category: lifestyle
 positioning: Running as counterculture; equipment for a trance state, not a race time.
 accent: "#c8371f"
-status: draft
+status: partially-verified
 sources: []
 ---
 

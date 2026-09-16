@@ -71,7 +71,7 @@ export default async function RegisterPage({
             <MetaItem label="Countries" value={atlas.countries.length} />
             <MetaItem
               label="Evidence"
-              value={`${tally.placeholder} placeholder · ${tally.draft} draft · ${tally.verified} verified`}
+              value={`${tally.verified} verified · ${tally["partially-verified"]} partial · ${tally.placeholder} placeholder`}
             />
           </>
         }

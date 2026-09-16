@@ -5,7 +5,7 @@ founded: 1949
 category: outdoor
 positioning: Mass sportswear reaching for mountain legitimacy through Terrex.
 accent: "#16161a"
-status: draft
+status: partially-verified
 sources: []
 ---
 

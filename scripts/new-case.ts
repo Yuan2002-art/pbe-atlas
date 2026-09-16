@@ -48,8 +48,14 @@ const frontmatter = `---
 # Keep status: placeholder until you have attached real sources.
 title: ${titleArg}
 brand: ${slugify(brandArg)}
-collaborators: []
+# placeholder | ai-reconstructed | partially-verified | verified
+# Anything above "placeholder" needs at least one source with a url.
 status: placeholder
+# The strategic logic, free text. e.g. Community, Product Drop, Collaboration
+primaryActivationLogic: []
+collaborators: []
+#  - name: ""
+#    role: ""              # what they actually did: agency, production, product
 location:
   venue: ""
   city: ""
@@ -57,6 +63,7 @@ location:
   country: ""
   countryCode: XX          # two capital letters, e.g. FR
   coordinates: [0.0000, 0.0000]   # [longitude, latitude] — longitude FIRST
+  coordinatePrecision: city       # exact | approximate | city
 date:
   start: ${today}
   # end: ${today}          # delete if it is a single day
@@ -76,6 +83,7 @@ sources: []
 #  - title: ""
 #    publisher: ""
 #    url: ""
+#    type: official-brand  # official-brand | event-organiser | agency-studio | editorial | other
 #    accessed: ${today}
 ---
 `;

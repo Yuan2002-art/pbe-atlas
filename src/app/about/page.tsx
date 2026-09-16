@@ -22,12 +22,16 @@ const STATUS_NOTES = [
     note: "Invented demonstration content written to test the structure. Not research. Must never be cited.",
   },
   {
-    status: "draft" as const,
-    note: "Written from general knowledge, not yet checked against sources. Treat as a lead, not a finding.",
+    status: "ai-reconstructed" as const,
+    note: "Assembled by a language model from indirect signals and not yet checked against sources. A lead to follow, never a finding.",
+  },
+  {
+    status: "partially-verified" as const,
+    note: "Some claims are supported by the listed sources and some are not. The record's verification notes say exactly which is which.",
   },
   {
     status: "verified" as const,
-    note: "Every claim on the record is supported by the sources listed at the foot of the page.",
+    note: "Every claim in the verified-facts layer traces to a source listed at the foot of the page. The interpretation layer is still the author's reading, not fact.",
   },
 ];
 
@@ -54,7 +58,16 @@ export default function AboutPage() {
       <div className="mx-auto w-full max-w-[1400px] px-4 py-9 sm:px-5">
         {/* Evidence warning first — it is the most important thing on the page */}
         <section className="mb-12">
-          <SectionHeading index="§1">Evidence status</SectionHeading>
+          <SectionHeading index="§1">Evidence and sources</SectionHeading>
+
+          <p className="prose-atlas mb-6">
+            Every case page is split in two. <strong>Verified facts</strong> contains
+            only what a listed source states. <strong>Strategic interpretation</strong>
+            is the author&apos;s reading, marked as analysis and never as evidence. The
+            split is held in the data, not just the layout, so the two can never quietly
+            blend into one another. Where something could not be confirmed, the record
+            says so in its verification notes rather than leaving a silent gap.
+          </p>
 
           <div className="hatch-placeholder mb-6 border px-4 py-3" style={{ borderColor: "var(--red)" }}>
             <p className="label-lg" style={{ color: "var(--red)" }}>
@@ -81,6 +94,36 @@ export default function AboutPage() {
                 </dt>
                 <dd className="max-w-[70ch] text-[13.5px] leading-snug text-graphite">
                   {item.note}
+                </dd>
+              </div>
+            ))}
+          </dl>
+
+          <p className="label mt-8 mb-3" style={{ color: "var(--ink)" }}>
+            Source types
+          </p>
+          <p className="prose-atlas mb-4 text-graphite">
+            Two sources are not equal evidence. Sources are grouped on the page by who
+            is speaking, strongest first, so a claim resting only on trade press is
+            visibly different from one the event organiser confirms.
+          </p>
+          <dl className="border-t border-rule">
+            {[
+              ["Official brand source", "The brand describing its own space. Authoritative on what was there, unreliable on significance."],
+              ["Event organiser", "Independent of the brand and usually the best confirmation that something actually happened."],
+              ["Agency / design studio", "The people who built it. Richest on construction detail, but portfolio pages are self-promotional."],
+              ["Editorial / secondary", "Press and trade coverage. Watch for several outlets deriving from one press release — that is one source, not four."],
+              ["Other", "Everything else, including geocoding and reference data."],
+            ].map(([label, note]) => (
+              <div
+                key={label}
+                className="grid gap-x-8 gap-y-1 border-b border-rule py-3 md:grid-cols-[minmax(0,14rem)_minmax(0,1fr)]"
+              >
+                <dt className="label-lg" style={{ color: "var(--ink)" }}>
+                  {label}
+                </dt>
+                <dd className="max-w-[70ch] text-[13.5px] leading-snug text-graphite">
+                  {note}
                 </dd>
               </div>
             ))}

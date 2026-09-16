@@ -14,6 +14,7 @@ import type {
   Event,
   PinShape,
   SpatialType,
+  Status,
 } from "./schema";
 
 export interface CountryFacet {
@@ -167,10 +168,21 @@ export function tagMix(cards: CaseCard[]): Mix[] {
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 
-/** How many placeholder / draft / verified cases exist — shown in the header
- *  so the status of the dataset is never hidden. */
-export function statusTally(): { placeholder: number; draft: number; verified: number } {
-  const tally = { placeholder: 0, draft: 0, verified: 0 };
+/** How many cases sit at each evidence status — shown in the header so the
+ *  state of the dataset is never hidden. */
+export function statusTally(): Record<Status, number> {
+  const tally: Record<Status, number> = {
+    placeholder: 0,
+    "ai-reconstructed": 0,
+    "partially-verified": 0,
+    verified: 0,
+  };
   for (const card of getAtlas().cards) tally[card.status] += 1;
   return tally;
+}
+
+/** Cases whose evidence status makes them citable research. */
+export function researchedCount(): number {
+  const tally = statusTally();
+  return tally.verified + tally["partially-verified"];
 }

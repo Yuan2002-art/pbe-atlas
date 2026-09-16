@@ -52,6 +52,34 @@ if (data.errors.length > 0) {
 
 console.log(`\n${GREEN}All data files are valid.${OFF}`);
 
+/* --- research overview --------------------------------------------------- */
+
+const byStatus = new Map<string, number>();
+for (const c of data.cases) byStatus.set(c.status, (byStatus.get(c.status) ?? 0) + 1);
+
+console.log(`\n${DIM}Evidence status${OFF}`);
+for (const status of ["verified", "partially-verified", "ai-reconstructed", "placeholder"]) {
+  const n = byStatus.get(status) ?? 0;
+  if (n > 0) console.log(`  ${status.padEnd(20)} ${n}`);
+}
+
+/* Activation logic is free text on purpose, which means a typo silently
+   creates a new category. Listing every distinct value with its count makes
+   "Community" vs "community" vs "Communtiy" obvious at a glance. */
+const logicCounts = new Map<string, number>();
+for (const c of data.cases) {
+  for (const logic of c.primaryActivationLogic) {
+    logicCounts.set(logic, (logicCounts.get(logic) ?? 0) + 1);
+  }
+}
+
+if (logicCounts.size > 0) {
+  console.log(`\n${DIM}Activation logic in use${OFF} ${DIM}(check for near-duplicates)${OFF}`);
+  for (const [logic, n] of [...logicCounts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))) {
+    console.log(`  ${String(n).padStart(2)} x  ${logic}`);
+  }
+}
+
 /* --- non-blocking notices ----------------------------------------------- */
 
 const notices: string[] = [];
@@ -64,12 +92,23 @@ if (placeholders.length > 0) {
 }
 
 for (const c of data.cases) {
+  // Placeholder cases are demo scaffolding — holding them to research
+  // standards would bury the notices that actually matter in noise.
+  if (c.status === "placeholder") continue;
+
   if (c.images.length === 0) notices.push(`cases/${c.slug}.md has no images.`);
-  const unsourced = c.sources.filter((s) => !s.url).length;
-  if (c.sources.length === 0) {
-    notices.push(`cases/${c.slug}.md has no sources.`);
-  } else if (unsourced === c.sources.length) {
-    notices.push(`cases/${c.slug}.md has sources but none with a URL.`);
+  if (c.sources.length > 0 && c.sources.every((s) => s.type === "other")) {
+    notices.push(
+      `cases/${c.slug}.md: no source is categorised (official-brand / event-organiser / agency-studio / editorial).`,
+    );
+  }
+  if (c.primaryActivationLogic.length === 0) {
+    notices.push(`cases/${c.slug}.md has no primaryActivationLogic.`);
+  }
+  if (c.status === "partially-verified" && !c.sections.verificationNotes) {
+    notices.push(
+      `cases/${c.slug}.md is partially-verified but has no "## Verification notes" saying which parts are not.`,
+    );
   }
   for (const section of CASE_SECTIONS) {
     if (!section.required && !c.sections[section.key as keyof typeof c.sections]) {

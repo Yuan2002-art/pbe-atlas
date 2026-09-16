@@ -78,10 +78,37 @@ export function SectionHeading({
    Evidence status
    -------------------------------------------------------------------------- */
 
-const STATUS_COPY: Record<Status, { label: string; tone: string }> = {
-  placeholder: { label: "Placeholder", tone: "var(--red)" },
-  draft: { label: "Draft", tone: "var(--blue)" },
-  verified: { label: "Verified", tone: "var(--ink)" },
+/** `trusted: false` means the record is not research and the page says so in a
+ *  full-width band. Placeholder and AI-reconstructed share the warning tone
+ *  deliberately — both are "do not cite"; the label says which. */
+const STATUS_COPY: Record<
+  Status,
+  { label: string; tone: string; trusted: boolean; band: string }
+> = {
+  placeholder: {
+    label: "Placeholder",
+    tone: "var(--red)",
+    trusted: false,
+    band: "Placeholder record — invented demo content. Do not cite.",
+  },
+  "ai-reconstructed": {
+    label: "AI-reconstructed",
+    tone: "var(--red)",
+    trusted: false,
+    band: "AI-reconstructed record — assembled by a model, not checked against sources. Do not cite.",
+  },
+  "partially-verified": {
+    label: "Partially verified",
+    tone: "var(--blue)",
+    trusted: true,
+    band: "Partially verified — some claims are sourced and some are not. See the verification notes.",
+  },
+  verified: {
+    label: "Verified",
+    tone: "var(--ink)",
+    trusted: true,
+    band: "",
+  },
 };
 
 export function StatusMark({ status }: { status: Status }) {
@@ -101,26 +128,21 @@ export function StatusMark({ status }: { status: Status }) {
   );
 }
 
-/** The full-width warning band on placeholder and draft records. */
+/** The full-width band at the top of any record that is not fully verified. */
 export function PlaceholderBand({ status }: { status: Status }) {
-  if (status === "verified") return null;
-  const placeholder = status === "placeholder";
+  const { tone, trusted, band } = STATUS_COPY[status];
+  if (!band) return null;
   return (
     <div
-      className={`border-b px-4 py-2.5 sm:px-5 ${placeholder ? "hatch-placeholder" : ""}`}
+      className={`border-b px-4 py-2.5 sm:px-5 ${trusted ? "" : "hatch-placeholder"}`}
       style={{
-        borderColor: placeholder ? "var(--red)" : "var(--blue)",
-        backgroundColor: placeholder ? undefined : "var(--blue-sunk)",
+        borderColor: tone,
+        backgroundColor: trusted ? "var(--blue-sunk)" : undefined,
       }}
       role="note"
     >
-      <p
-        className="label-lg mx-auto max-w-[1400px]"
-        style={{ color: placeholder ? "var(--red)" : "var(--blue)" }}
-      >
-        {placeholder
-          ? "Placeholder record — invented demo content. Do not cite."
-          : "Draft record — written from general knowledge, not yet source-verified."}
+      <p className="label-lg mx-auto max-w-[1400px]" style={{ color: tone }}>
+        {band}
       </p>
     </div>
   );

@@ -19,7 +19,21 @@ const IsoDate = z
     message: 'must be a date written as YYYY-MM-DD, YYYY-MM or YYYY (e.g. 2024-08-26)',
   });
 
-export const StatusSchema = z.enum(["placeholder", "draft", "verified"]);
+/** Evidence status, weakest to strongest. Every record carries one, and it is
+ *  shown on the page — a reader should never have to guess how much a record
+ *  can be trusted.
+ *
+ *  placeholder         invented demo content. Not research. Never cite.
+ *  ai-reconstructed    assembled by a model from indirect signals, unchecked.
+ *  partially-verified  some claims sourced, others not; see Verification notes.
+ *  verified            every claim on the record traces to a listed source.
+ */
+export const StatusSchema = z.enum([
+  "placeholder",
+  "ai-reconstructed",
+  "partially-verified",
+  "verified",
+]);
 export type Status = z.infer<typeof StatusSchema>;
 
 export const LocationSchema = z.strictObject({
@@ -37,6 +51,12 @@ export const LocationSchema = z.strictObject({
     z.number().min(-180).max(180),
     z.number().min(-90).max(90),
   ]),
+  /** How much the pin can be trusted. A case whose street address is unknown
+   *  still needs a pin, but it must not look as precise as a surveyed one.
+   *  exact       geocoded from a documented address
+   *  approximate a described area — a square, a district, a mountain station
+   *  city        no address known; the pin sits on the town centre */
+  coordinatePrecision: z.enum(["exact", "approximate", "city"]).default("exact"),
 });
 export type CaseLocation = z.infer<typeof LocationSchema>;
 
@@ -63,13 +83,42 @@ export const ImageSchema = z.strictObject({
 });
 export type CaseImage = z.infer<typeof ImageSchema>;
 
+/** Who is speaking. Two sources are not equal evidence: a brand describing its
+ *  own space, the event organiser confirming it happened, the studio that built
+ *  it, and a magazine reporting on it carry different weight, and a thesis has
+ *  to be able to see which is which. */
+export const SOURCE_TYPES = [
+  "official-brand",
+  "event-organiser",
+  "agency-studio",
+  "editorial",
+  "other",
+] as const;
+export type SourceType = (typeof SOURCE_TYPES)[number];
+
 export const SourceSchema = z.strictObject({
   title: z.string().min(1, "source title is required"),
   publisher: z.string().default(""),
   url: z.string().default(""),
+  type: z.enum(SOURCE_TYPES).default("other"),
   accessed: IsoDate.optional(),
 });
 export type Source = z.infer<typeof SourceSchema>;
+
+/** A partner, agency, studio or collaborating brand. Write either a plain
+ *  string or, better, a name with the role it actually played. */
+export const CollaboratorSchema = z
+  .union([
+    z.string().min(1),
+    z.strictObject({
+      name: z.string().min(1, "collaborator name is required"),
+      role: z.string().default(""),
+    }),
+  ])
+  .transform((value) =>
+    typeof value === "string" ? { name: value, role: "" } : value,
+  );
+export type Collaborator = { name: string; role: string };
 
 /* --- case ---------------------------------------------------------------- */
 
@@ -78,9 +127,14 @@ export const CaseFrontmatterSchema = z.strictObject({
   title: z.string().min(1, "title is required"),
   /** Brand slug — must match a file in data/brands/. */
   brand: z.string().min(1, "brand is required (a slug from data/brands/)"),
-  /** Other brands, studios or institutions involved. Brand slugs or free text. */
-  collaborators: z.array(z.string()).default([]),
+  /** Partners, agencies, studios and collaborating brands, with their role. */
+  collaborators: z.array(CollaboratorSchema).default([]),
   status: StatusSchema,
+  /** The strategic logic the case runs on, e.g. ["Community", "Product Drop"].
+   *  Free text on purpose: this is a research instrument still being formed,
+   *  so it must not be constrained by code. `npm run validate` lists every
+   *  distinct value in use so inconsistent wording is easy to spot. */
+  primaryActivationLogic: z.array(z.string().min(1)).default([]),
   location: LocationSchema,
   date: DateRangeSchema,
   /** One spatial type — an id from data/vocab/spatial-types.yml */
@@ -101,7 +155,10 @@ export const CaseFrontmatterSchema = z.strictObject({
  *  checked there — so a missing section produces one readable message
  *  ("required section is missing or empty") instead of two. */
 export const CaseSectionsSchema = z.object({
+  // Verified facts layer
   description: z.string().default(""),
+  verificationNotes: z.string().default(""),
+  // Strategic interpretation layer
   strategicPurpose: z.string().default(""),
   archiveUse: z.string().default(""),
   whyLocation: z.string().default(""),
@@ -111,6 +168,8 @@ export const CaseSectionsSchema = z.object({
   performanceClaim: z.string().default(""),
   culturalMeaning: z.string().default(""),
   physicalExperienceRole: z.string().default(""),
+  experienceMechanism: z.string().default(""),
+  keyStrategicInsight: z.string().default(""),
 });
 export type CaseSections = z.infer<typeof CaseSectionsSchema>;
 

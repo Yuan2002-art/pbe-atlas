@@ -5,7 +5,15 @@
    here and everything follows — but you must also update existing case files.
    =========================================================================== */
 
-export type SectionGroup = "description" | "framing" | "analysis";
+/** The two layers a case page is split into, plus the summary strip.
+ *
+ *  facts      externally verifiable — what a source says was there
+ *  framing    the four-field summary at the top of the interpretation
+ *  analysis   the author's reading. Not fact, and labelled as such.
+ *
+ *  Keeping this distinction in the data, not only in the layout, is what lets
+ *  the page state plainly where evidence stops and interpretation begins. */
+export type SectionGroup = "facts" | "framing" | "analysis";
 
 export interface SectionDef {
   /** Key used in code and in the parsed case object. */
@@ -24,8 +32,15 @@ export const CASE_SECTIONS: SectionDef[] = [
     key: "description",
     heading: "Description",
     label: "Short description",
-    group: "description",
+    group: "facts",
     required: true,
+  },
+  {
+    key: "verificationNotes",
+    heading: "Verification notes",
+    label: "Verification notes",
+    group: "facts",
+    required: false,
   },
   {
     key: "strategicPurpose",
@@ -90,8 +105,25 @@ export const CASE_SECTIONS: SectionDef[] = [
     group: "analysis",
     required: true,
   },
+  {
+    key: "experienceMechanism",
+    heading: "Experience mechanism",
+    label: "Experience mechanism",
+    group: "analysis",
+    required: false,
+  },
+  {
+    // Deliberately last: the one-line synthesis of everything above it, and
+    // the field most likely to be read across every case at once.
+    key: "keyStrategicInsight",
+    heading: "Key strategic insight",
+    label: "Key strategic insight",
+    group: "analysis",
+    required: false,
+  },
 ];
 
+export const FACTS_SECTIONS = CASE_SECTIONS.filter((s) => s.group === "facts");
 export const ANALYSIS_SECTIONS = CASE_SECTIONS.filter((s) => s.group === "analysis");
 
 /** Normalised form used to match a heading in a file to a section key,

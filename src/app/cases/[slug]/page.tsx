@@ -7,6 +7,8 @@ import {
   CaseStepper,
   FramingStrip,
   ImagePlates,
+  InterpretationNotice,
+  KeyInsight,
   Prose,
   SourceList,
 } from "@/components/case/CaseParts";
@@ -77,8 +79,11 @@ export default async function CasePage({
               size={18}
             />
             <p className="label-lg">
-              Case {record.ref} · {type?.label ?? record.spatialType} ·{" "}
-              {card.year} · {placeStamp(record.location.city, record.location.countryCode)}
+              Case {record.ref} · {type?.label ?? record.spatialType}
+              {/* A year here would be a claim. Records whose date is unknown
+                  carry a sort value only, so the header stays silent. */}
+              {record.date.precision !== "unknown" && ` · ${card.year}`} ·{" "}
+              {placeStamp(record.location.city, record.location.countryCode)}
             </p>
             <span className="ml-auto">
               <StatusMark status={record.status} />
@@ -116,8 +121,17 @@ export default async function CasePage({
               </Link>
             </FieldRow>
             {record.collaborators.length > 0 && (
-              <FieldRow label="With">
-                {record.collaborators.join(", ")}
+              <FieldRow label="Partners">
+                <ul>
+                  {record.collaborators.map((partner) => (
+                    <li key={partner.name} className="mb-1 last:mb-0">
+                      {partner.name}
+                      {partner.role && (
+                        <span className="label mt-0.5 block">{partner.role}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </FieldRow>
             )}
             {record.location.venue && (
@@ -144,6 +158,13 @@ export default async function CasePage({
             </FieldRow>
             <FieldRow label="Coordinates">
               <span className="data">{formatCoordinates(record.location.coordinates)}</span>
+              {record.location.coordinatePrecision !== "exact" && (
+                <span className="label mt-0.5 block">
+                  {record.location.coordinatePrecision === "city"
+                    ? "town centre — no street address sourced"
+                    : "approximate"}
+                </span>
+              )}
             </FieldRow>
             <FieldRow label="Date">
               <span className="data">{card.dateLabel}</span>
@@ -183,6 +204,20 @@ export default async function CasePage({
                 ))}
               </span>
             </FieldRow>
+            {record.primaryActivationLogic.length > 0 && (
+              <FieldRow label="Activation logic">
+                <span className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
+                  {record.primaryActivationLogic.map((logic, i) => (
+                    <span key={logic} className="flex items-center gap-1.5">
+                      {i > 0 && <span className="text-pencil">+</span>}
+                      <span className="label-lg" style={{ color: "var(--ink)" }}>
+                        {logic}
+                      </span>
+                    </span>
+                  ))}
+                </span>
+              </FieldRow>
+            )}
             <FieldRow label="Evidence">
               <StatusMark status={record.status} />
             </FieldRow>
@@ -196,23 +231,44 @@ export default async function CasePage({
           </p>
         </aside>
 
-        {/* Research */}
-        <div className="flex min-w-0 flex-col gap-10">
+        {/* Research — two layers, kept visibly apart */}
+        <div className="flex min-w-0 flex-col gap-12">
+          {/* ---- Layer A: what the sources say ---- */}
           <section>
-            <SectionHeading index="§1">Description</SectionHeading>
-            <Prose html={record.sections.description} />
-          </section>
-
-          <section>
-            <SectionHeading index="§2" note="summary layer">
-              Framing
+            <SectionHeading index="§1" note="externally verifiable">
+              Verified facts
             </SectionHeading>
-            <FramingStrip sections={record.sections} />
+            <Prose html={record.sections.description} />
+
+            {record.sections.verificationNotes && (
+              <div className="mt-5 border border-dashed border-rule-strong bg-paper-sunk px-4 py-3">
+                <p className="label" style={{ color: "var(--ink)" }}>
+                  Verification notes — what could not be confirmed
+                </p>
+                <Prose
+                  html={record.sections.verificationNotes}
+                  className="mt-1.5 text-[13.5px]"
+                />
+              </div>
+            )}
           </section>
 
-          <AnalysisGrid sections={record.sections} index="§3" />
-          <ImagePlates images={record.images} caseRef={record.ref} index="§4" />
-          <SourceList sources={record.sources} index="§5" />
+          {/* ---- Layer B: what the author makes of them ---- */}
+          <section className="flex flex-col gap-8">
+            <div>
+              <SectionHeading index="§2" note="the author's reading">
+                Strategic interpretation
+              </SectionHeading>
+              <InterpretationNotice />
+            </div>
+
+            <FramingStrip sections={record.sections} />
+            <AnalysisGrid sections={record.sections} index="" />
+            <KeyInsight html={record.sections.keyStrategicInsight} />
+          </section>
+
+          <ImagePlates images={record.images} caseRef={record.ref} index="§3" />
+          <SourceList sources={record.sources} index="§4" />
 
           <nav className="flex flex-wrap gap-x-6 gap-y-2 border-t border-rule pt-5">
             <Link href={`/brands/${record.brand}`} className="label hover:text-ink">

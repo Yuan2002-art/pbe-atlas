@@ -289,6 +289,12 @@ export const EventFrontmatterSchema = z.strictObject({
   officialUrl: z.string().default(""),
   keyRaces: z.array(KeyRaceSchema).default([]),
   notes: z.string().default(""),
+  /** One photograph for the recent-editions strip on the home page. Null means
+   *  there is no photograph, and the strip draws a locator from the edition's
+   *  coordinates instead — it never invents a picture. Carries the same credit
+   *  and sourceUrl discipline as a case image, because an uncredited photo is
+   *  the same problem as an unsourced claim. */
+  hero: ImageSchema.nullable().default(null),
   status: StatusSchema,
   sources: z.array(SourceSchema).default([]),
 });

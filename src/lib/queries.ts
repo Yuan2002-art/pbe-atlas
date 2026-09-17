@@ -128,6 +128,32 @@ export function cardsForTag(tag: string): CaseCard[] {
   return newestFirst(getAtlas().cards.filter((c) => c.tags.includes(tag)));
 }
 
+/** Editions for the home-page strip: most recently finished first.
+ *
+ *  Undated editions are left out rather than guessed into a position. Two
+ *  records currently have no dates at all, and placing them would be inventing
+ *  a recency the record cannot support — the same reason the event timeline
+ *  draws an undated case as a ghost bar instead of picking a day for it.
+ *
+ *  Nothing in the dataset is upcoming, so this is "recent", not "next". */
+export interface RecentEdition {
+  event: Event;
+  caseCount: number;
+}
+
+export function recentEditions(limit = 6): RecentEdition[] {
+  return getAtlas()
+    .events.filter((e) => e.endDate || e.startDate)
+    .sort((a, b) =>
+      (b.endDate ?? b.startDate ?? "").localeCompare(a.endDate ?? a.startDate ?? ""),
+    )
+    .slice(0, limit)
+    .map((event) => ({
+      event,
+      caseCount: getAtlas().cards.filter((c) => c.relatedEvent === event.slug).length,
+    }));
+}
+
 /* --- vocabulary lookups ------------------------------------------------- */
 
 export function spatialTypeLabel(id: string): string {

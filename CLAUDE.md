@@ -162,6 +162,20 @@ uses; there is deliberately no second copy of the rules.
   field labels, the numbered §-sections, the status badge on every record and
   the facts / interpretation split are what stop this reading as an inspiration
   feed. Restyle them; do not remove them.
+- **The recent-editions strip draws a locator rather than borrowing a photo.**
+  The home page opens with one card per *dated* edition, most recently finished
+  first. Each shows the edition's `hero` photograph if it has one, and if it
+  does not, a locator built from the country box in
+  `data/vocab/country-bounds.yml` with the edition's own coordinate marked in
+  it — a diagram, made only of data already in the record. It never
+  substitutes a stand-in image, because a photograph is the most convincing
+  thing on a page and an invented plate is how a placeholder once passed for
+  research. `hero` carries `credit` and `sourceUrl` like a case image does: an
+  uncredited photo is the same problem as an unsourced claim.
+
+  Undated editions are left out of the strip rather than guessed into an order,
+  and nothing in the dataset is upcoming, so it says "recent", not "next".
+
 - **The event page leads with occupancy, not a list.** Cases are spaces with a
   duration, not timed events, so `EventTimeline` draws a bar per case across the
   edition's days. A case whose dates were never published gets a dashed ghost

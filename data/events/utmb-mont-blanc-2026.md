@@ -45,6 +45,189 @@ keyRaces:
     date: 2026-08-25
     startLocation: Courmayeur
 notes: 23rd edition. Distance and elevation are recorded only for the UTMB race; the organiser's race list does not publish them for the other races.
+reportedActivitySource: "marathon-weekend.com, retrieved 17 September 2026"
+reportedActivity:
+  - brand: "Big Mountain"
+    title: "Big Mountain Basecamp at UTMB Mont-Blanc"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-20
+    end: 2026-08-27
+    venue: "Big Mountain Basecamp"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/big-mountain-basecamp-at-utmb-mont-blanc
+  - brand: "HOKA"
+    title: "HOKA Base Camp"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-21
+    end: 2026-08-30
+    venue: "La Folie Douce Hotels Chamonix, Après-Ski terrace"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/hoka-base-camp
+  - brand: "La Marzocco, i-Run"
+    title: "La Marzocco x i-Run Home of Mountains Chalet"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-22
+    end: 2026-08-30
+    venue: "Home of Mountains chalet"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/la-marzocco-x-i-run-home-of-mountains-chalet
+  - brand: "Columbia"
+    title: "Columbia Hike Society Summer Residency"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-23
+    end: 2026-08-29
+    venue: "Columbia chalet"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/columbia-hike-society-summer-residency
+  - brand: "FUGA, Kailas"
+    title: "FUGA at the Ultra-Trail Village"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-23
+    end: 2026-08-28
+    venue: "FUGA, Ultra-Trail Village Booth 87"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/fuga-at-the-ultra-trail-village
+  - brand: "Compressport"
+    title: "Compressport Couloir Coffee Support Station"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-30
+    venue: "Couloir Chamonix"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/compressport-couloir-coffee-support-station
+  - brand: "Compressport"
+    title: "Compressport UTMB Week"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-30
+    venue: "Ultra-Trail Village, Place du Mont-Blanc"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/compressport-utmb-week
+  - brand: "Goldwin"
+    title: "Goldwin Voxeloft Trail Jacket Launch"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    venue: "Ultra-Trail Village"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/goldwin-voxeloft-trail-jacket-launch
+  - brand: "Enduraw"
+    title: "Enduraw at UTMB Mont-Blanc"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-27
+    venue: "Enduraw Performance Center"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/enduraw-at-utmb-mont-blanc
+  - brand: "Merrell"
+    title: "Merrell at the Ultra-Trail Village"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-28
+    venue: "Ultra-Trail Village"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/merrell-at-the-ultra-trail-village
+  - brand: "Science in Sport"
+    title: "Science in Sport at the Ultra-Trail Village"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-28
+    venue: "Ultra-Trail Village"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/science-in-sport-at-the-ultra-trail-village
+  - brand: "Ronhill"
+    title: "Ronhill at the Ultra-Trail Village"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-28
+    venue: "Ultra-Trail Village (Stand 35)"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/ronhill-at-the-ultra-trail-village
+  - brand: "Goldwin, Product Index"
+    title: "Goldwin: Motion Studies Vol. 10 by Product Index"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-29
+    venue: "Japonyard"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/goldwin-motion-studies-vol-10-by-product-index
+  - brand: "Rabbit"
+    title: "rabbit Clubhouse at Hotel Le Faucigny"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-30
+    venue: "rabbit Clubhouse, Hotel Le Faucigny"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/rabbit-clubhouse-at-hotel-le-faucigny
+  - brand: "La Sportiva"
+    title: "La Sportiva at the Ultra-Trail Village"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-30
+    venue: "La Sportiva booth, Ultra-Trail Village"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/la-sportiva-at-the-ultra-trail-village
+  - brand: "(no brand given — event organiser)"
+    title: "Ultra-Trail Village Animations"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-30
+    venue: "Fan Experience, Ultra-Trail Village"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/ultra-trail-village-animations
+  - brand: "Amazfit"
+    title: "Amazfit Hub"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-30
+    venue: "Amazfit Hub"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/amazfit-hub
+  - brand: "Dans la Tête d'un Coureur"
+    title: "DLTDC House"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-31
+    venue: "DLTDC House, Place du Triangle de l'Amitié"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/dltdc-house
+  - brand: "The North Face"
+    title: "The North Face at UTMB Mont-Blanc"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-30
+    venue: "The North Face Store Chamonix"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/the-north-face-at-utmb-mont-blanc
+  - brand: "Asics"
+    title: "ASICS Trail Camp"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-27
+    venue: "L'Index"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/asics-trail-camp
+  - brand: "La Sportiva"
+    title: "La Sportiva Test & Feel"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-28
+    venue: "La Sportiva booth, Ultra-Trail Village"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/la-sportiva-test-feel
+  - brand: "Altra running"
+    title: "Altra Chalet"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-28
+    venue: "Altra Chalet, Ultra-Trail Village"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/altra-chalet
+  - brand: "SATISFY"
+    title: "SATISFY Off-Road Supply & Fuel Station Chamonix"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-29
+    venue: "SATISFY Off-Road Supply & Fuel Station"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/satisfy-off-road-supply-fuel-station-chamonix
+  - brand: "Sidas"
+    title: "Sidas at the Ultra-Trail Village"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-24
+    end: 2026-08-26
+    venue: "Sidas stand, Ultra-Trail Village"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/sidas-at-the-ultra-trail-village
+  - brand: "Arc'teryx, Distance, Strava"
+    title: "Arc'teryx × Distance Aid Station"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-25
+    end: 2026-08-30
+    venue: "Arc'teryx Chamonix store"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/arcteryx-distance-aid-station
+  - brand: "Maurten"
+    title: "Maurten at UTMB Mont-Blanc"
+    activityType: "Pop-up / Expo"
+    start: 2026-08-25
+    end: 2026-08-28
+    venue: "Maurten, Chemin de la Corbette"
+    url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/maurten-at-utmb-mont-blanc
 status: verified
 sources:
   - title: "HOKA UTMB Mont-Blanc — event concept and official title"

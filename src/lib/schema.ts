@@ -254,6 +254,34 @@ export type Brand = z.infer<typeof BrandFrontmatterSchema> & {
 
 /** One race inside an edition. Distance and elevation are optional because
  *  organiser listings often omit them — an absent number is not a zero. */
+/** Brand activity at an edition that someone else has reported and nobody here
+ *  has checked. **This is not a case and must never be read as one.**
+ *
+ *  It exists because the gap between what an edition holds and what this Atlas
+ *  has researched is itself worth showing: UTMB Mont-Blanc 2026 has five
+ *  researched cases and a third-party listing carries twenty-six branded
+ *  spaces. Hiding the other twenty-one would make the research look more
+ *  complete than it is, which is the opposite of rule 10.
+ *
+ *  Every entry must carry the url it was reported at, so a reader can go and
+ *  check it. None of these fields is ever promoted into a case by copying: a
+ *  case is written from the brand, the organiser, the agency or the press, and
+ *  an aggregator is a pointer to those, not a substitute for them. */
+export const ReportedActivitySchema = z.strictObject({
+  /** As the report labels it — not necessarily a brand slug in this Atlas. */
+  brand: z.string().min(1),
+  title: z.string().min(1),
+  /** The reporter's own category, kept in their words. */
+  activityType: z.string().default(""),
+  start: IsoDate.optional(),
+  end: IsoDate.optional(),
+  venue: z.string().default(""),
+  /** Where it was reported. Required: an unverified claim with no pointer to
+   *  its own source is just a rumour in a data file. */
+  url: z.string().min(1, "a reported activity must say where it was reported"),
+});
+export type ReportedActivity = z.infer<typeof ReportedActivitySchema>;
+
 export const KeyRaceSchema = z.strictObject({
   name: z.string().min(1),
   date: IsoDate.optional(),
@@ -295,6 +323,11 @@ export const EventFrontmatterSchema = z.strictObject({
    *  and sourceUrl discipline as a case image, because an uncredited photo is
    *  the same problem as an unsourced claim. */
   hero: ImageSchema.nullable().default(null),
+  /** Third-party reports of brand activity at this edition, unverified. See
+   *  ReportedActivitySchema — these are leads shown as leads, never cases. */
+  reportedActivity: z.array(ReportedActivitySchema).default([]),
+  /** Who reported them, in one phrase, for the section's attribution line. */
+  reportedActivitySource: z.string().default(""),
   status: StatusSchema,
   sources: z.array(SourceSchema).default([]),
 });

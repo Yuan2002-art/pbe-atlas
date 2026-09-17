@@ -76,10 +76,16 @@ export default async function EventPage({
   const hasMap = cards.length > 0;
   let n = 0;
   const num = () => `§${++n}`;
+  const hasReported = event.reportedActivity.length > 0;
   const timelineIndex = hasTimeline ? num() : "";
   const comparisonIndex = num();
   const mapIndex = hasMap ? num() : "";
+  const reportedIndex = hasReported ? num() : "";
   const noteIndex = num();
+
+  /* Brands already researched at this edition, so the reported list can say
+     which of its entries are covered and which are still only reported. */
+  const researchedBrands = new Set(cards.map((card) => card.brandName.toLowerCase()));
 
   return (
     <div>
@@ -319,6 +325,96 @@ export default async function EventPage({
           </section>
         </div>
       </div>
+
+      {/* Reported, unverified activity. Deliberately the last section on the
+          page and deliberately not styled like a case: these are other
+          people's claims, and the gap between five researched cases and
+          twenty-six reported spaces is the point of showing them at all. */}
+      {hasReported && (
+        <div className="border-t border-rule bg-paper-sunk">
+          <div className="mx-auto w-full max-w-[1400px] px-4 py-12 sm:px-6 sm:py-16">
+            <p className="label-lg" style={{ color: "var(--ink)" }}>
+              {reportedIndex} · Also reported at this edition
+            </p>
+
+            <div
+              className="mt-4 max-w-[80ch] border-l-2 pl-4"
+              style={{ borderColor: "var(--red)" }}
+            >
+              <p className="text-[15px] leading-relaxed" style={{ color: "var(--ink)" }}>
+                <strong>None of the {event.reportedActivity.length} entries below is
+                research.</strong>{" "}
+                They are branded spaces listed for this edition by{" "}
+                {event.reportedActivitySource || "a third party"} — and nobody here has
+                checked them. No date, address or claim in this section has been confirmed
+                against the brand, the organiser, the agency or the press, and none of it
+                may be cited.
+              </p>
+              <p className="mt-3 text-[15px] leading-relaxed text-graphite">
+                They are here because the Atlas has {cases.length}{" "}
+                {cases.length === 1 ? "case" : "cases"} at this edition and the listing
+                carries {event.reportedActivity.length} spaces. Showing only the
+                researched ones would make the research look more complete than it is.
+                Each row links to where it was reported, so it can be followed up.
+              </p>
+            </div>
+
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+              {event.reportedActivity.map((item) => {
+                /* A reported brand field can name several parties — "Arc'teryx,
+                   Distance, Strava" — so match on any one of them, or an
+                   already-researched brand reads as unresearched. */
+                const covered = item.brand
+                  .split(",")
+                  .some((part) => researchedBrands.has(part.trim().toLowerCase()));
+                return (
+                  <li
+                    key={item.url}
+                    className="rounded-[var(--radius-card)] border border-dashed border-rule-strong p-4"
+                  >
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="label truncate">{item.brand}</span>
+                      {covered && (
+                        <span className="label shrink-0" style={{ color: "var(--blue)" }}>
+                          Case exists
+                        </span>
+                      )}
+                    </div>
+                    <p className="mt-1 text-[14px] font-medium leading-snug">
+                      {item.title}
+                    </p>
+                    <p className="label mt-2">
+                      {[
+                        item.start
+                          ? formatDateRange({ start: item.start, end: item.end })
+                          : "Date not given",
+                        item.venue,
+                      ]
+                        .filter(Boolean)
+                        .join(" · ")}
+                    </p>
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="label mt-2 inline-block hover:text-ink"
+                      style={{ color: "var(--blue)" }}
+                    >
+                      Where it was reported →
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+
+            <p className="label mt-8 max-w-[80ch]">
+              The full listing, including the runs, talks and parties this section leaves
+              out, is in research/utmb-2026-marathon-weekend-leads.md — which is outside
+              data/ and is never loaded by the site.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

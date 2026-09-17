@@ -201,6 +201,21 @@ uses; there is deliberately no second copy of the rules.
   Undated editions are left out of the strip rather than guessed into an order,
   and nothing in the dataset is upcoming, so it says "recent", not "next".
 
+- **An edition may show reported activity it has not researched, as leads.**
+  `reportedActivity` on an event record holds branded spaces a third party
+  lists for that edition, unverified. UTMB Mont-Blanc 2026 carries 26 of them
+  against 5 researched cases, and that ratio is the reason the section exists:
+  showing only the 5 would make the research look more complete than it is.
+
+  The rules that keep it from becoming a second class of case: every entry must
+  carry the url it was reported at (the schema refuses one without); the
+  section is last on the page, drawn as dashed boxes rather than cards, and
+  opens by saying none of it is research and none of it may be cited; entries
+  have no evidence status, because a status is a claim about verification and
+  nothing here has been verified. **A lead never becomes a case by being
+  copied** — a case is written from the brand, the organiser, the agency or the
+  press, and an aggregator points at those rather than standing in for them.
+
 - **The event page leads with occupancy, not a list.** Cases are spaces with a
   duration, not timed events, so `EventTimeline` draws a bar per case across the
   edition's days. A case whose dates were never published gets a dashed ghost

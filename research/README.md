@@ -11,7 +11,28 @@ Raw research leads. **Nothing in this directory is part of the Atlas.**
 A lead becomes a case only after its facts are confirmed against an official
 brand, event-organiser, agency or editorial source — and then it is written by
 hand into `data/cases/` with its own `sources:` block, following the standing
-rules in `CLAUDE.md`. **Do not bulk-import anything from this directory.**
+rules in `CLAUDE.md`. **A lead never becomes a case by being copied.**
+
+## One exception, and exactly what it is
+
+The 26 `Pop-up / Expo` leads for UTMB 2026 have been copied into
+`data/events/utmb-mont-blanc-2026.md` as `reportedActivity`, and they render at
+the foot of that edition's page under "Also reported at this edition".
+
+They are **still leads**. They are not cases, they carry no evidence status of
+their own, they are drawn as dashed boxes rather than cards, the section says in
+its first sentence that none of it is research and none of it may be cited, and
+every row links to where it was reported. The reason for showing them is that
+the Atlas has five researched cases at that edition and the listing carries
+twenty-six spaces: displaying only the five would make the research look more
+complete than it is, which rule 10 exists to prevent.
+
+The other 123 leads — runs, talks, parties, races — were not copied. They are
+activities rather than spaces with a duration, which is what this Atlas records.
+
+**This directory is still never read by the site.** `content.ts` only reads
+`data/`. The 26 entries were transcribed into a record under `data/` and are
+validated by `schema.ts` like anything else there; nothing here is loaded.
 
 ## Refresh these by hand, in a real browser. Never on a schedule.
 

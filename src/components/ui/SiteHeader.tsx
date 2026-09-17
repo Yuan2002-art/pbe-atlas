@@ -45,15 +45,6 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        {/* The thesis in one line. It used to sit in a strip under the header,
-            which cost a band across the page and pushed the map down; up here
-            it reads as the standing description of the whole Atlas, which is
-            what it always was. Hidden below xl, where the nav needs the room. */}
-        <p className="hidden min-w-0 flex-1 truncate text-[12.5px] leading-snug text-graphite xl:block">
-          How performance brands use permanent retail, races, pop-ups, launches and
-          activations to build performance credibility and cultural meaning.
-        </p>
-
         {/* Desktop nav — quiet pills, filled when active. Primary tier sits
             larger and in ink; secondary stays at label size and graphite. */}
         <nav className="hidden items-center gap-1 sm:flex" aria-label="Main">

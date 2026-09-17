@@ -188,6 +188,17 @@ export function MapExplorer({
           <aside className="glass pointer-events-auto hidden min-h-0 w-[var(--rail)] flex-1 overflow-hidden rounded-[var(--radius-card)] lg:block">
             {rail}
           </aside>
+
+          {/* The Atlas's standing line, at the foot of the left column. It has
+              been a strip under the header and a line inside the header; here
+              it sits where a plate's caption sits, out of the way of the map
+              and still the first thing read at the end of the column. mt-auto
+              keeps it on the floor even on a phone, where the rail above it is
+              a sheet rather than a panel. */}
+          <p className="glass pointer-events-auto mt-auto hidden max-w-[var(--rail)] shrink-0 rounded-[var(--radius-card)] px-3.5 py-2.5 text-[12.5px] leading-snug text-graphite sm:block">
+            How performance brands use permanent retail, races, pop-ups, launches and
+            activations to build performance credibility and cultural meaning.
+          </p>
         </div>
 
         {/* Legend + list toggle */}

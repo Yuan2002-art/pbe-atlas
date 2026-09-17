@@ -8,10 +8,11 @@ export default function HomePage() {
 
   /* The filter rail is built from the data, not hard-coded: add a spatial
      type or a tag to data/vocab/ and it appears here automatically. */
-  /* Rail order, top to bottom: who, then what form, then where — brand, spatial
-     type, event, country, city. Classification sits last: it is the research
-     lens rather than a property of the space, and it is the one you reach for
-     only once you already know what you are looking at. */
+  /* Rail order, top to bottom: brand, spatial type, then place at two scales
+     (country, city), then event. Place comes before event because an event is
+     the most specific thing here — one edition, one week — so it reads as the
+     last narrowing rather than an early one. Classification stays last: it is
+     the research lens laid over a space, not a property of it. */
   const groups: FilterGroupDef[] = [
     {
       group: "brand",
@@ -32,11 +33,6 @@ export default function HomePage() {
       })),
     },
     {
-      group: "event",
-      legend: "Event",
-      options: atlas.events.map((event) => ({ value: event.slug, label: event.name })),
-    },
-    {
       group: "country",
       legend: "Country",
       options: atlas.countries.map((country) => ({
@@ -48,6 +44,11 @@ export default function HomePage() {
       group: "city",
       legend: "City",
       options: atlas.cities.map((city) => ({ value: city, label: city })),
+    },
+    {
+      group: "event",
+      legend: "Event",
+      options: atlas.events.map((event) => ({ value: event.slug, label: event.name })),
     },
     {
       group: "tag",
@@ -78,9 +79,11 @@ export default function HomePage() {
           accent: type.accent,
           pinShape: type.pinShape,
         }))}
+        /* The key takes the short form of each label, so the strip stays
+           narrow. The full labels live on the Method page. */
         legend={atlas.spatialTypes.map((type) => ({
           id: type.id,
-          label: type.label,
+          label: type.short,
           shape: type.pinShape,
           accent: type.accent,
         }))}

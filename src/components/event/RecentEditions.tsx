@@ -121,7 +121,10 @@ export function RecentEditions({
           const bounds =
             countryBounds.find((b) => b.code === event.location.countryCode)?.bounds ?? null;
           return (
-            <li key={event.slug} className="w-[15.5rem] shrink-0">
+            /* Exactly the rail's width, so the first card and the rail beneath
+               it share a left edge and a right edge — one column, not two
+               things that nearly line up. */
+            <li key={event.slug} className="w-[var(--rail)] shrink-0">
               <Link
                 href={`/events/${event.slug}`}
                 className="glass group block overflow-hidden rounded-[var(--radius-card)] transition-shadow hover:shadow-[var(--shadow-lift)]"

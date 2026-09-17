@@ -183,22 +183,20 @@ export function MapExplorer({
             be dragged in the gap beside the panels; each panel takes its own
             events back. */}
         <div className="pointer-events-none absolute inset-3 z-20 flex flex-col items-start gap-3 sm:inset-4">
-          {hero && <div className="pointer-events-auto max-w-full shrink-0">{hero}</div>}
+          {/* Stop short of the key and the list button on the right. Every
+              edition now carries a date, so the row went from three cards to
+              five and ran straight under that column; it scrolls sideways
+              instead of colliding. */}
+          {hero && (
+            <div className="pointer-events-auto shrink-0 max-w-full lg:max-w-[calc(100%-var(--panel-right)-1.5rem)]">
+              {hero}
+            </div>
+          )}
 
           <aside className="glass pointer-events-auto hidden min-h-0 w-[var(--rail)] flex-1 overflow-hidden rounded-[var(--radius-card)] lg:block">
             {rail}
           </aside>
 
-          {/* The Atlas's standing line, at the foot of the left column. It has
-              been a strip under the header and a line inside the header; here
-              it sits where a plate's caption sits, out of the way of the map
-              and still the first thing read at the end of the column. mt-auto
-              keeps it on the floor even on a phone, where the rail above it is
-              a sheet rather than a panel. */}
-          <p className="glass pointer-events-auto mt-auto hidden max-w-[var(--rail)] shrink-0 rounded-[var(--radius-card)] px-3.5 py-2.5 text-[12.5px] leading-snug text-graphite sm:block">
-            How performance brands use permanent retail, races, pop-ups, launches and
-            activations to build performance credibility and cultural meaning.
-          </p>
         </div>
 
         {/* Legend + list toggle */}
@@ -207,7 +205,11 @@ export function MapExplorer({
             type="button"
             onClick={() => setListOpen((v) => !v)}
             aria-expanded={listOpen}
-            className="btn-quiet pointer-events-auto shadow-[var(--shadow-card)]"
+            /* Frosted like every other panel over the map, and exactly the
+               key's width so the two stack as one right-hand column rather
+               than two differently-sized boxes. --panel-right is the shared
+               width; change it in tokens.css and both follow. */
+            className="glass label-lg pointer-events-auto w-[var(--panel-right)] justify-center rounded-[var(--radius-pill)] px-3.5 py-2.5 text-center transition-colors hover:text-ink"
             style={{ color: "var(--ink)" }}
           >
             {listOpen ? "Hide list" : `List (${shown.length})`}

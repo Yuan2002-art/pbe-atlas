@@ -45,6 +45,15 @@ export function SiteHeader() {
           </span>
         </Link>
 
+        {/* The Atlas's standing line, in the header beside the wordmark. It
+            wraps to two lines rather than truncating: a thesis sentence cut off
+            at "…to build" is worse than no sentence, and two lines of 12.5px
+            fit inside the 64px bar. */}
+        <p className="hidden min-w-0 max-w-[36rem] flex-1 text-[12.5px] leading-snug text-graphite lg:block">
+          How performance brands use permanent retail, races, pop-ups, launches and
+          activations to build performance credibility and cultural meaning.
+        </p>
+
         {/* Desktop nav — quiet pills, filled when active. Primary tier sits
             larger and in ink; secondary stays at label size and graphite. */}
         <nav className="hidden items-center gap-1 sm:flex" aria-label="Main">

@@ -20,7 +20,7 @@ export function MapLegend({ entries }: { entries: LegendEntry[] }) {
      strip is about half as wide and reads down rather than across. The full
      labels are still on the Method page, where there is room for them. */
   return (
-    <details className="glass w-[9.5rem] rounded-[var(--radius-card)]" open>
+    <details className="glass w-[var(--panel-right)] rounded-[var(--radius-card)]" open>
       <summary
         className="label-lg cursor-pointer list-none px-3 py-2"
         style={{ color: "var(--ink)" }}

@@ -51,5 +51,6 @@
   --radius-sm: 8px;         /* inputs, small surfaces                        */
   --measure: 68ch;          /* prose line length                             */
   --rail: 300px;            /* filter rail width                             */
+  --panel-right: 136px;     /* map key + list button — one column, one width  */
   --header: 64px;           /* site header height                            */
 }

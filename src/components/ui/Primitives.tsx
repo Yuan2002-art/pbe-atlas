@@ -10,12 +10,16 @@ export function PageHeader({
   eyebrow,
   title,
   lede,
+  ledeMax = "56ch",
   meta,
   children,
 }: {
   eyebrow: string;
   title: string;
   lede?: string;
+  /** Measure for the lede. 56ch is the default editorial column; a page whose
+   *  lede is doing more explaining than introducing can widen it. */
+  ledeMax?: string;
   meta?: React.ReactNode;
   children?: React.ReactNode;
 }) {
@@ -29,7 +33,7 @@ export function PageHeader({
         {lede && (
           <p
             className="mt-5 text-[16.5px] leading-relaxed text-graphite"
-            style={{ maxWidth: "56ch" }}
+            style={{ maxWidth: ledeMax }}
           >
             {lede}
           </p>

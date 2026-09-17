@@ -82,6 +82,18 @@ a {
   color: var(--graphite);
 }
 
+/* Top of the label scale. Used for the primary nav, where Map / Events /
+   Brands sit a tier above Register / Method. Tracking loosens as type gets
+   smaller, so this is tighter than .label-lg, not looser. */
+.label-xl {
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--graphite);
+}
+
 /* Monospaced data: coordinates, dates, counts, IDs. */
 .data {
   font-family: var(--font-mono), monospace;

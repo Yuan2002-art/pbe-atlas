@@ -1,10 +1,9 @@
 import { MapExplorer } from "@/components/map/MapExplorer";
 import type { FilterGroupDef } from "@/components/filters/FilterRail";
-import { getAtlas, statusTally, tagLabels } from "@/lib/queries";
+import { getAtlas, tagLabels } from "@/lib/queries";
 
 export default function HomePage() {
   const atlas = getAtlas();
-  const tally = statusTally();
 
   /* The filter rail is built from the data, not hard-coded: add a spatial
      type or a tag to data/vocab/ and it appears here automatically. */
@@ -55,18 +54,17 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Intro strip — short, because the map is the argument. */}
+      {/* Intro strip — one line, because the map is the argument. The
+          placeholder count used to sit here in red; the per-record status
+          badges carry that instead. */}
       <div className="border-b border-rule">
-        <div className="flex flex-col gap-3 px-4 py-3 sm:flex-row sm:items-baseline sm:justify-between sm:px-5">
-          <p className="max-w-[72ch] text-[13.5px] leading-snug text-graphite">
+        <div className="px-4 py-3 sm:px-5">
+          <p className="text-[13.5px] leading-snug text-graphite">
             <span className="label-lg" style={{ color: "var(--ink)" }}>
               Global map ·{" "}
             </span>
             How performance brands use permanent retail, races, pop-ups, launches and
             activations to build performance credibility and cultural meaning.
-          </p>
-          <p className="label shrink-0" style={{ color: "var(--red)" }}>
-            {tally.placeholder} of {atlas.cards.length} cases are placeholder demo data
           </p>
         </div>
       </div>

@@ -5,7 +5,7 @@ founded: 1947
 category: trail
 positioning: Mountain sport engineering, legitimised through competition.
 accent: "#1e4fd8"
-status: partially-verified
+status: unsourced
 sources: []
 ---
 

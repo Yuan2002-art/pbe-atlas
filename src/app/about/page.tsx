@@ -26,6 +26,10 @@ const STATUS_NOTES = [
     note: "Assembled by a language model from indirect signals and not yet checked against sources. A lead to follow, never a finding.",
   },
   {
+    status: "unsourced" as const,
+    note: "A real subject, described by hand, with nothing cited yet. Not a fabrication and not yet evidence — the gap is in the research, not in the record. No source is required of it, and it cannot be cited.",
+  },
+  {
     status: "partially-verified" as const,
     note: "Some claims are supported by the listed sources and some are not. The record's verification notes say exactly which is which.",
   },

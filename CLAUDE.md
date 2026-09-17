@@ -19,10 +19,21 @@ explainable in one sentence.
 
 1. **Never invent case facts.** Evidence status is
    `placeholder` (invented) → `ai-reconstructed` (machine-assembled, unchecked)
-   → `partially-verified` (some claims sourced) → `verified` (every fact in the
-   verified-facts layer traces to a listed source). Anything above
-   `placeholder` must have at least one source with a url — `npm run validate`
-   enforces this and the build fails without it.
+   → `unsourced` (real subject, nothing cited yet) → `partially-verified`
+   (some claims sourced) → `verified` (every fact in the verified-facts layer
+   traces to a listed source). Anything above `unsourced` must have at least
+   one source with a url — `npm run validate` enforces this on cases, events
+   and brands alike, and the build fails without it.
+
+   **`unsourced` is the floor for a real record, and `placeholder` is not.**
+   The two are not interchangeable and the difference is not cosmetic:
+   `placeholder` means the record was made up, and the page says so — "invented
+   demo content. Do not cite." Brand and event records were once pushed down to
+   `placeholder` to satisfy this rule, which made the Boston Marathon page
+   announce that the Boston Marathon was invented. Declaring a true record
+   fabricated is the mirror image of the error this rule exists to prevent, and
+   it is worse, because it discredits the real thing. When validate catches an
+   uncited record, the answer is `unsourced` or a source — never `placeholder`.
 
    **A placeholder once leaked into a research brief.** An invented demo case
    called "Salomon UTMB Basecamp" was later handed back as a subject to verify;

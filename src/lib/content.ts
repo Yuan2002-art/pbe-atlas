@@ -365,20 +365,30 @@ function checkReferences(data: DataSet): void {
     }
   }
 
-  /* The same rule, on events. It was enforced on cases only for a while, and
-     an event slipped through marked "partially-verified" with sources: [] -
-     which is the one thing the status field is supposed to make impossible.
-     An event carries dates a case then inherits through relatedEvent, so an
-     unsourced edition quietly lends its authority to every case on it. */
-  for (const e of data.events) {
+  /* The same rule, on events and brands. Rule 1 is about records, not about
+     cases, so every record type carrying a status is checked.
+
+     An event matters because it carries dates a case inherits through
+     relatedEvent, so an unsourced edition lends its authority to every case
+     filed on it. A brand matters because the status on a brand page is a claim
+     about the brand record itself - its founding year, its country, its
+     positioning - and not about the cases beneath it.
+
+     The fix for a record caught here is "unsourced", never "placeholder".
+     Sending a real record down to "placeholder" is what made the Boston
+     Marathon page announce the race was invented. */
+  for (const { file, record } of [
+    ...data.events.map((e) => ({ file: `events/${e.slug}.md`, record: e })),
+    ...data.brands.map((b) => ({ file: `brands/${b.slug}.md`, record: b })),
+  ]) {
     if (
-      (e.status === "verified" || e.status === "partially-verified") &&
-      !e.sources.some((s) => s.url.trim())
+      (record.status === "verified" || record.status === "partially-verified") &&
+      !record.sources.some((s) => s.url.trim())
     ) {
       data.errors.push({
-        file: `events/${e.slug}.md`,
+        file,
         field: "status",
-        message: `"${e.status}" requires at least one source with a url. Either add the source, or set status to "placeholder".`,
+        message: `"${record.status}" requires at least one source with a url. Either add the source, or set status to "unsourced" - not "placeholder", which means the record was invented.`,
       });
     }
   }

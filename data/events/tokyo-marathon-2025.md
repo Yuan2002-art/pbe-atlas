@@ -10,7 +10,7 @@ location:
   country: Japan
   countryCode: JP
   coordinates: [139.6917, 35.6895]
-status: placeholder
+status: unsourced
 sources: []
 ---
 

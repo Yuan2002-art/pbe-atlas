@@ -25,12 +25,26 @@ const IsoDate = z
  *
  *  placeholder         invented demo content. Not research. Never cite.
  *  ai-reconstructed    assembled by a model from indirect signals, unchecked.
+ *  unsourced           real subject, written by hand, nothing cited yet.
  *  partially-verified  some claims sourced, others not; see Verification notes.
  *  verified            every claim on the record traces to a listed source.
- */
+ *
+ *  "unsourced" exists because the first four had no room for a record that is
+ *  real but uncited, and the gap did real damage. Brand and event records
+ *  carrying no sources were pushed down to "placeholder" to satisfy rule 1,
+ *  which made the Boston Marathon page announce that the Boston Marathon was
+ *  invented. Claiming a true record is fabricated is the mirror image of the
+ *  error rule 1 exists to prevent, and it is worse, because it discredits the
+ *  real thing.
+ *
+ *  So "unsourced" is the honest floor for a real record: no source is required
+ *  of it, and it is still not citable. It sits above "ai-reconstructed"
+ *  because a person asserted these facts rather than a model, and directly
+ *  below "partially-verified" because it is one citation short of it. */
 export const StatusSchema = z.enum([
   "placeholder",
   "ai-reconstructed",
+  "unsourced",
   "partially-verified",
   "verified",
 ]);

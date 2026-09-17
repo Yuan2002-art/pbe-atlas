@@ -5,7 +5,7 @@ founded: 1989
 category: outdoor
 positioning: Alpine technical authority, sold through expertise rather than image.
 accent: "#16161a"
-status: partially-verified
+status: unsourced
 sources: []
 ---
 

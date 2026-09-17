@@ -5,7 +5,7 @@ founded: 2009
 category: trail
 positioning: Maximal cushioning as a visible, arguable design position.
 accent: "#c8371f"
-status: partially-verified
+status: unsourced
 sources: []
 ---
 

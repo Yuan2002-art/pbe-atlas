@@ -181,6 +181,7 @@ export function statusTally(): Record<Status, number> {
   const tally: Record<Status, number> = {
     placeholder: 0,
     "ai-reconstructed": 0,
+    unsourced: 0,
     "partially-verified": 0,
     verified: 0,
   };

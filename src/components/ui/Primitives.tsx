@@ -104,6 +104,14 @@ const STATUS_COPY: Record<
     trusted: false,
     band: "AI-reconstructed record — assembled by a model, not checked against sources. Do not cite.",
   },
+  /* Graphite, not red. An uncited real record is a gap in the research, not a
+     warning about fabricated content, and it must never read as one. */
+  unsourced: {
+    label: "Unsourced",
+    tone: "var(--graphite)",
+    trusted: false,
+    band: "Unsourced record — the subject is real, but nothing on this page is cited yet. Do not cite.",
+  },
   "partially-verified": {
     label: "Partially verified",
     tone: "var(--blue)",

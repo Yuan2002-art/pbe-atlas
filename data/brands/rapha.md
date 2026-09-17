@@ -5,7 +5,7 @@ founded: 2004
 category: cycling
 positioning: Road cycling as a literary, suffering-centred culture.
 accent: "#c8371f"
-status: partially-verified
+status: unsourced
 sources: []
 ---
 

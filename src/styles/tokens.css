@@ -17,6 +17,16 @@
   --graphite:     #5a5a63;  /* secondary text, captions, metadata values     */
   --pencil:       #90909a;  /* tertiary text, disabled, placeholders         */
 
+  /* --- Glass -------------------------------------------------------------
+     Panels that float over the map. Paper at partial opacity so the basemap
+     reads through them, plus a blur so the type on top stays legible over
+     whatever the map happens to be showing. Raise the alpha if a panel ever
+     sits over dense coastline and the labels start to fight. */
+  --glass:        rgba(247, 246, 243, 0.72);
+  --glass-strong: rgba(247, 246, 243, 0.86);
+  --glass-edge:   rgba(255, 255, 255, 0.55);
+  --glass-blur:   16px;
+
   /* --- Rules, edges & grid ---------------------------------------------- */
   --rule:         #e4e1da;  /* hairline rules, card borders                  */
   --rule-strong:  #c9c5bb;  /* section dividers                              */

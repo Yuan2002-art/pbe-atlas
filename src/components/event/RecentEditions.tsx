@@ -39,8 +39,11 @@ function Locator({
      which is right for a graticule and wrong for a glyph — it would flatten
      the mark into a different shape from the one the map key defines. So the
      mark is a separate, unstretched layer placed with percentages. */
+  /* Nearly opaque, not fully frosted. This panel is itself a small map, and
+     letting the real basemap read through it would put two maps on top of each
+     other at different scales. */
   return (
-    <div className="relative h-full w-full" style={{ background: "var(--paper-sunk)" }}>
+    <div className="relative h-full w-full" style={{ background: "var(--glass-strong)" }}>
       <svg
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
@@ -96,9 +99,14 @@ export function RecentEditions({
   // Nothing dated to show: say so rather than render an empty rail.
   if (editions.length === 0) return null;
 
+  /* Three floating cards, not a band. The strip used to be a full-width bar
+     with its own ground and a rule under it, which cost a horizontal slab
+     across the page and pushed the map down; now each edition is its own
+     rounded panel over the map, and the label is a pill rather than a header
+     row. Nothing here draws a background wider than the thing it contains. */
   return (
-    <section aria-labelledby="recent-editions" className="border-b border-rule">
-      <div className="flex items-baseline justify-between px-4 pb-2 pt-3 sm:px-5">
+    <section aria-labelledby="recent-editions">
+      <div className="glass mb-2.5 inline-flex items-baseline gap-3 rounded-[var(--radius-pill)] px-3.5 py-1.5">
         <h2 id="recent-editions" className="label-lg" style={{ color: "var(--ink)" }}>
           Recent editions
         </h2>
@@ -108,7 +116,7 @@ export function RecentEditions({
       </div>
 
       {/* One row, scrolled sideways on a narrow screen rather than wrapped. */}
-      <ul className="quiet-scroll flex gap-3 overflow-x-auto px-4 pb-4 sm:px-5">
+      <ul className="quiet-scroll flex gap-3 overflow-x-auto pb-1">
         {editions.map(({ event, caseCount }) => {
           const bounds =
             countryBounds.find((b) => b.code === event.location.countryCode)?.bounds ?? null;
@@ -116,7 +124,7 @@ export function RecentEditions({
             <li key={event.slug} className="w-[15.5rem] shrink-0">
               <Link
                 href={`/events/${event.slug}`}
-                className="group block overflow-hidden rounded-[var(--radius-card)] border border-rule bg-paper-raised shadow-[var(--shadow-card)] transition-shadow hover:shadow-[var(--shadow-lift)]"
+                className="glass group block overflow-hidden rounded-[var(--radius-card)] transition-shadow hover:shadow-[var(--shadow-lift)]"
               >
                 <div className="relative h-[5.5rem] w-full border-b border-rule">
                   {event.hero ? (

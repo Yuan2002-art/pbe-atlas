@@ -27,6 +27,7 @@ export function MapExplorer({
   legend,
   tagLabels,
   countryBounds,
+  hero,
 }: {
   cards: CaseCard[];
   groups: FilterGroupDef[];
@@ -35,6 +36,8 @@ export function MapExplorer({
   tagLabels: Record<string, string>;
   /** Framing boxes from data/vocab/country-bounds.yml. */
   countryBounds: { code: string; bounds: [number, number, number, number] }[];
+  /** Rendered on the server and floated over the map — the editions strip. */
+  hero?: React.ReactNode;
 }) {
   const [selected, setSelected] = useState<string | null>(null);
   const [railOpen, setRailOpen] = useState(false);
@@ -118,9 +121,32 @@ export function MapExplorer({
     [shown],
   );
 
+  const rail = (
+    <FilterRail
+      groups={groups}
+      filters={filters}
+      counts={counts}
+      onToggle={onToggle}
+      onSearch={onSearch}
+      onClear={onClear}
+      total={cards.length}
+      shown={shown.length}
+    />
+  );
+
+  /* The map is the ground, and everything else floats on it.
+
+     This used to be a two-column grid: a full-height rail down the left with a
+     rule beside it, and the editions strip as a band above. Both were slabs
+     that took width and height away from the map permanently. Now the map
+     fills the area under the header and the rail and the editions sit over it
+     as frosted panels, so the basemap runs edge to edge and reads underneath
+     them.
+
+     The phone keeps the old arrangement for the rail: a sheet you open, not a
+     panel covering the map on a screen that has no room to spare. */
   return (
-    <div className="grid lg:grid-cols-[var(--rail)_minmax(0,1fr)]">
-      {/* ---- Filter rail: a column on desktop, a sheet on a phone ---- */}
+    <div>
       <div className="border-b border-rule lg:hidden">
         <button
           type="button"
@@ -135,21 +161,8 @@ export function MapExplorer({
         </button>
       </div>
 
-      <aside
-        className={`border-rule lg:sticky lg:top-[var(--header)] lg:block lg:h-[calc(100svh-var(--header))] lg:border-r ${
-          railOpen ? "block border-b" : "hidden"
-        }`}
-      >
-        <FilterRail
-          groups={groups}
-          filters={filters}
-          counts={counts}
-          onToggle={onToggle}
-          onSearch={onSearch}
-          onClear={onClear}
-          total={cards.length}
-          shown={shown.length}
-        />
+      <aside className={`border-b border-rule lg:hidden ${railOpen ? "block" : "hidden"}`}>
+        {rail}
       </aside>
 
       {/* ---- Map ---- */}
@@ -164,6 +177,18 @@ export function MapExplorer({
           frameBounds={frameBounds}
           className="h-[62svh] min-h-[380px] lg:h-[calc(100svh-var(--header))]"
         />
+
+        {/* Floating left column: editions on top, rail beneath it on desktop.
+            The column itself is transparent to the pointer so the map can still
+            be dragged in the gap beside the panels; each panel takes its own
+            events back. */}
+        <div className="pointer-events-none absolute inset-3 z-20 flex flex-col items-start gap-3 sm:inset-4">
+          {hero && <div className="pointer-events-auto max-w-full shrink-0">{hero}</div>}
+
+          <aside className="glass pointer-events-auto hidden min-h-0 w-[var(--rail)] flex-1 overflow-hidden rounded-[var(--radius-card)] lg:block">
+            {rail}
+          </aside>
+        </div>
 
         {/* Legend + list toggle */}
         <div className="pointer-events-none absolute right-3 top-3 z-10 flex max-w-[16rem] flex-col items-end gap-2">

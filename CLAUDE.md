@@ -162,6 +162,31 @@ uses; there is deliberately no second copy of the rules.
   field labels, the numbered §-sections, the status badge on every record and
   the facts / interpretation split are what stop this reading as an inspiration
   feed. Restyle them; do not remove them.
+- **On the home page the map is the ground and everything floats on it.** The
+  filter rail and the editions used to be slabs — a full-height column with a
+  rule beside it, and a band across the top — each taking width or height from
+  the map permanently. Now the map fills the whole area under the header and
+  the rail and the editions sit over it as rounded frosted panels
+  (`.glass` in `globals.css`, `--glass*` in `tokens.css`), so the basemap runs
+  edge to edge and reads underneath them. Nothing draws a background wider
+  than the thing it contains.
+
+  Two things this couples together, and they will break quietly if separated:
+
+  1. **`fitBounds` padding has to know about the panels.** The panels cover the
+     left of the map's own viewport, and MapLibre has no idea, so it will
+     centre a filtered pin underneath the rail. `AtlasMap` pads left by 340 and
+     top by 130 once its container is at least 1024px wide — the same
+     breakpoint at which the panels start floating. Move or resize a panel and
+     that padding moves with it.
+  2. **The phone does not float the rail.** It keeps the sheet you open, since
+     a panel over a 375px-wide map leaves no map. Only the editions float at
+     every width, scrolled sideways.
+
+  The locator thumbnails inside the cards stay nearly opaque
+  (`--glass-strong`) on purpose: they are small maps, and letting the basemap
+  through them would stack two maps at different scales.
+
 - **The recent-editions strip draws a locator rather than borrowing a photo.**
   The home page opens with one card per *dated* edition, most recently finished
   first. Each shows the edition's `hero` photograph if it has one, and if it

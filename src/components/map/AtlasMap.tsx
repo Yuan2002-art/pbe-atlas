@@ -180,7 +180,16 @@ export function AtlasMap({
     if (frameId === lastFrame.current) return;
     lastFrame.current = frameId;
 
-    const padding = { top: 90, right: 90, bottom: 140, left: 90 };
+    /* Keep the frame clear of the panels floating on top of the map. Once the
+       rail and the editions sit over the basemap rather than beside it,
+       fitBounds has no idea that the left of its own viewport is covered, and
+       it will happily centre a filtered pin underneath the rail. The panels
+       only float from the lg breakpoint up, which is also where the map goes
+       full-bleed, so the container's own width is the thing to ask. */
+    const floating = instance.getContainer().clientWidth >= 1024;
+    const padding = floating
+      ? { top: 130, right: 100, bottom: 140, left: 340 }
+      : { top: 90, right: 90, bottom: 140, left: 90 };
 
     /* A country filter asks "where in this country", so it frames the country
        and lets the pins fall where they fall. This has to be a box rather than

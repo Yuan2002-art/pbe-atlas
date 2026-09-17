@@ -57,42 +57,33 @@ export default function HomePage() {
     },
   ];
 
+  /* No intro strip and no editions band any more. The description moved into
+     the header, where it reads as the Atlas's standing line rather than a
+     caption on the map, and the editions float over the map instead of sitting
+     in a slab above it. Both changes give the map the whole area under the
+     header. */
   return (
     <div>
-      {/* Intro strip — one line, because the map is the argument. The
-          placeholder count used to sit here in red; the per-record status
-          badges carry that instead. */}
-      <div className="border-b border-rule">
-        <div className="px-4 py-3 sm:px-5">
-          <p className="text-[13.5px] leading-snug text-graphite">
-            <span className="label-lg" style={{ color: "var(--ink)" }}>
-              Global map ·{" "}
-            </span>
-            How performance brands use permanent retail, races, pop-ups, launches and
-            activations to build performance credibility and cultural meaning.
-          </p>
-        </div>
-      </div>
-
-      <RecentEditions
-        editions={recentEditions()}
-        countryBounds={atlas.countryBounds}
-      />
-
       <MapExplorer
-          cards={atlas.cards}
-          groups={groups}
-          types={atlas.spatialTypes.map((type) => ({
-            id: type.id,
-            accent: type.accent,
-            pinShape: type.pinShape,
-          }))}
-          legend={atlas.spatialTypes.map((type) => ({
-            id: type.id,
-            label: type.label,
-            shape: type.pinShape,
-            accent: type.accent,
-          }))}
+        hero={
+          <RecentEditions
+            editions={recentEditions()}
+            countryBounds={atlas.countryBounds}
+          />
+        }
+        cards={atlas.cards}
+        groups={groups}
+        types={atlas.spatialTypes.map((type) => ({
+          id: type.id,
+          accent: type.accent,
+          pinShape: type.pinShape,
+        }))}
+        legend={atlas.spatialTypes.map((type) => ({
+          id: type.id,
+          label: type.label,
+          shape: type.pinShape,
+          accent: type.accent,
+        }))}
         tagLabels={tagLabels()}
         countryBounds={atlas.countryBounds}
       />

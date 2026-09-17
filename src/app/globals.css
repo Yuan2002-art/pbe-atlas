@@ -238,6 +238,25 @@ a {
 }
 
 /* Scrollbars inside panels stay quiet. */
+/* A panel floating over the map: frosted, so the basemap reads through it
+   without the type on top having to fight the coastline underneath.
+
+   backdrop-filter is the whole effect, and a browser without it would leave
+   type on a 72%-opaque wash — legible, but weaker. @supports raises the panel
+   to nearly solid in that case, so it degrades to the old opaque card rather
+   than to something unreadable. */
+.glass {
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+  backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+  border: var(--hairline) solid var(--glass-edge);
+  box-shadow: var(--shadow-card);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass { background: var(--paper); }
+}
+
 .quiet-scroll { scrollbar-width: thin; scrollbar-color: var(--rule-strong) transparent; }
 .quiet-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
 .quiet-scroll::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }

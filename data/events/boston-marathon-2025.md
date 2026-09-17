@@ -10,10 +10,18 @@ location:
   country: United States
   countryCode: US
   coordinates: [-71.0776, 42.3496]
+  coordinatePrecision: city
 startDate: 2025-04-21
 endDate: 2025-04-21
-status: unsourced
-sources: []
+officialUrl: https://www.baa.org/races/boston-marathon
+notes: Only the date and the edition number are sourced. The finish-area venue and the coordinate are not.
+status: partially-verified
+sources:
+  - title: "Memorable 129th Boston Marathon presented by Bank of America Plays Out from Start to Finish"
+    publisher: Boston Athletic Association
+    url: https://www.baa.org/news/memorable-129th-boston-marathon-presented-bank-america-plays-out-start-finish/
+    type: event-organiser
+    accessed: 2026-09-17
 ---
 
 The oldest annual marathon, with a qualifying standard that makes its field
@@ -23,3 +31,13 @@ which is difficult to occupy.
 
 Useful to the research as a **road** counterpart to UTMB: an audience that reads
 performance in minutes and seconds rather than in terrain.
+
+**What is verified:** the 129th edition ran on 21 April 2025, per the
+organiser's own race-day report, which is datelined "BOSTON (21-April)".
+
+**What is not:** everything about the place. "Copley Square finish area" and the
+coordinate were both in this record before any source was attached, and the
+organiser page retrieved here does not name the finish location, so the pin is
+marked city-level and the venue is unconfirmed. The claim about where brand
+activity concentrates is an unsourced reading, not a finding — no case has been
+researched at this edition.

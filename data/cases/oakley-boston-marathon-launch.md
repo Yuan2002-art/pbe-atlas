@@ -24,15 +24,8 @@ tags:
   - event-activation
   - collaboration
   - limited-drop
-images:
-  - src: /images/cases/oakley-boston-marathon-launch/01.svg
-    caption: "Placeholder plate — replace with a verified shopfront photograph."
-    credit: TBD
-    sourceUrl: ""
-sources:
-  - title: "Placeholder source — no verified reference attached yet"
-    publisher: TBD
-    url: ""
+images: []
+sources: []
 ---
 
 ## Description

@@ -22,15 +22,8 @@ tags:
   - community
   - performance-testing
   - product-trial
-images:
-  - src: /images/cases/arcteryx-academy-north-shore-vancouver/01.svg
-    caption: "Placeholder plate — replace with a verified basecamp photograph."
-    credit: TBD
-    sourceUrl: ""
-sources:
-  - title: "Placeholder source — no verified reference attached yet"
-    publisher: TBD
-    url: ""
+images: []
+sources: []
 ---
 
 ## Description

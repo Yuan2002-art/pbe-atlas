@@ -21,19 +21,8 @@ tags:
   - community
   - retail
   - cultural-archive
-images:
-  - src: /images/cases/rapha-clubhouse-london/01.svg
-    caption: "Placeholder plate — replace with a verified shopfront photograph."
-    credit: TBD
-    sourceUrl: ""
-  - src: /images/cases/rapha-clubhouse-london/02.svg
-    caption: "Placeholder plate — replace with a verified view of the screening area."
-    credit: TBD
-    sourceUrl: ""
-sources:
-  - title: "Placeholder source — no verified reference attached yet"
-    publisher: TBD
-    url: ""
+images: []
+sources: []
 ---
 
 ## Description

@@ -22,15 +22,8 @@ tags:
   - community
   - retail
   - limited-drop
-images:
-  - src: /images/cases/satisfy-paris-flagship/01.svg
-    caption: "Placeholder plate — replace with a verified shopfront photograph."
-    credit: TBD
-    sourceUrl: ""
-sources:
-  - title: "Placeholder source — no verified reference attached yet"
-    publisher: TBD
-    url: ""
+images: []
+sources: []
 ---
 
 ## Description

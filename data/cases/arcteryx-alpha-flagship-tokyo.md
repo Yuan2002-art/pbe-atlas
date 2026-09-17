@@ -21,19 +21,8 @@ tags:
   - performance-archive
   - retail
   - product-trial
-images:
-  - src: /images/cases/arcteryx-alpha-flagship-tokyo/01.svg
-    caption: "Placeholder plate — replace with a verified street-level photograph."
-    credit: TBD
-    sourceUrl: ""
-  - src: /images/cases/arcteryx-alpha-flagship-tokyo/02.svg
-    caption: "Placeholder plate — replace with a verified interior view of the archive wall."
-    credit: TBD
-    sourceUrl: ""
-sources:
-  - title: "Placeholder source — no verified reference attached yet"
-    publisher: TBD
-    url: ""
+images: []
+sources: []
 ---
 
 ## Description

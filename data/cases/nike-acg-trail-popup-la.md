@@ -23,19 +23,8 @@ tags:
   - limited-drop
   - retail
   - product-trial
-images:
-  - src: /images/cases/nike-acg-trail-popup-la/01.svg
-    caption: "Placeholder plate — replace with a verified exterior photograph."
-    credit: TBD
-    sourceUrl: ""
-  - src: /images/cases/nike-acg-trail-popup-la/02.svg
-    caption: "Placeholder plate — replace with a verified interior view of the trail wall."
-    credit: TBD
-    sourceUrl: ""
-sources:
-  - title: "Placeholder source — no verified reference attached yet"
-    publisher: TBD
-    url: ""
+images: []
+sources: []
 ---
 
 ## Description

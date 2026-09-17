@@ -7,7 +7,16 @@ export default function HomePage() {
 
   /* The filter rail is built from the data, not hard-coded: add a spatial
      type or a tag to data/vocab/ and it appears here automatically. */
+  /* Rail order, top to bottom: who, then what form, then where — brand, spatial
+     type, event, country. Classification and city follow because they are the
+     ones you reach for last. */
   const groups: FilterGroupDef[] = [
+    {
+      group: "brand",
+      legend: "Brand",
+      defaultOpen: true,
+      options: atlas.brands.map((brand) => ({ value: brand.slug, label: brand.name })),
+    },
     {
       group: "type",
       legend: "Spatial type",
@@ -21,18 +30,6 @@ export default function HomePage() {
       })),
     },
     {
-      group: "brand",
-      legend: "Brand",
-      defaultOpen: true,
-      options: atlas.brands.map((brand) => ({ value: brand.slug, label: brand.name })),
-    },
-    {
-      group: "tag",
-      legend: "Classification",
-      hint: "The research lens. A case can carry several.",
-      options: atlas.tags.map((tag) => ({ value: tag.id, label: tag.label })),
-    },
-    {
       group: "event",
       legend: "Event",
       options: atlas.events.map((event) => ({ value: event.slug, label: event.name })),
@@ -44,6 +41,12 @@ export default function HomePage() {
         value: country.code,
         label: country.name,
       })),
+    },
+    {
+      group: "tag",
+      legend: "Classification",
+      hint: "The research lens. A case can carry several.",
+      options: atlas.tags.map((tag) => ({ value: tag.id, label: tag.label })),
     },
     {
       group: "city",

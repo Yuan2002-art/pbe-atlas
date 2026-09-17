@@ -134,7 +134,7 @@ export function MapExplorer({
             type="button"
             onClick={() => setListOpen((v) => !v)}
             aria-expanded={listOpen}
-            className="label-lg pointer-events-auto border border-rule bg-paper px-3 py-2 hover:border-ink"
+            className="btn-quiet pointer-events-auto shadow-[var(--shadow-card)]"
             style={{ color: "var(--ink)" }}
           >
             {listOpen ? "Hide list" : `List (${shown.length})`}
@@ -166,13 +166,15 @@ export function MapExplorer({
                 </EmptyState>
               </div>
             ) : (
-              ordered.map((card) => (
-                <CaseListRow
-                  key={card.slug}
-                  card={card}
-                  accent={accentOf(card.spatialType)}
-                />
-              ))
+              <div className="flex flex-col gap-3 p-3">
+                {ordered.map((card) => (
+                  <CaseListRow
+                    key={card.slug}
+                    card={card}
+                    accent={accentOf(card.spatialType)}
+                  />
+                ))}
+              </div>
             )}
           </div>
         )}

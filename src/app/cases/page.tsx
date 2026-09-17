@@ -31,8 +31,12 @@ function SortLink({ column, active }: { column: SortKey; active: SortKey }) {
   return (
     <Link
       href={column === "case" ? "/cases" : `/cases?sort=${column}`}
-      className="label hover:text-ink"
-      style={active === column ? { color: "var(--ink)" } : undefined}
+      className={`label rounded-[var(--radius-pill)] border px-3 py-1.5 transition-colors ${
+        active === column
+          ? "border-ink bg-ink"
+          : "border-rule bg-paper-raised hover:border-ink hover:text-ink"
+      }`}
+      style={active === column ? { color: "var(--paper-raised)" } : undefined}
       aria-current={active === column ? "true" : undefined}
     >
       {SORTS[column].label}
@@ -77,7 +81,7 @@ export default async function RegisterPage({
         }
       />
 
-      <div className="mx-auto w-full max-w-[1400px] px-4 py-8 sm:px-5">
+      <div className="mx-auto w-full max-w-[1400px] px-4 py-10 sm:px-6 sm:py-14">
         {/* Sort controls */}
         <div className="mb-3 flex flex-wrap items-baseline gap-x-4 gap-y-1">
           <span className="label">Sort by</span>
@@ -87,7 +91,7 @@ export default async function RegisterPage({
           <span className="label ml-auto">{plural(rows.length, "case")}</span>
         </div>
 
-        <div className="overflow-x-auto border-t border-rule quiet-scroll">
+        <div className="card quiet-scroll overflow-x-auto p-1 sm:p-2">
           <table className="w-full min-w-[46rem] border-collapse text-left">
             <caption className="sr-only">
               All cases in the Atlas, sorted by {SORTS[active].label.toLowerCase()}
@@ -96,7 +100,7 @@ export default async function RegisterPage({
               <tr className="border-b border-rule-strong">
                 {["Case", "Brand & title", "Spatial type", "Place", "Date", "Classification", "Evidence"].map(
                   (heading) => (
-                    <th key={heading} scope="col" className="label px-2 py-2 align-bottom first:pl-0 last:pr-0">
+                    <th key={heading} scope="col" className="label px-3 py-3 align-bottom">
                       {heading}
                     </th>
                   ),
@@ -105,8 +109,8 @@ export default async function RegisterPage({
             </thead>
             <tbody>
               {rows.map((card) => (
-                <tr key={card.slug} className="border-b border-rule align-top transition-colors hover:bg-paper-sunk">
-                  <td className="px-2 py-3 pl-0">
+                <tr key={card.slug} className="border-b border-rule align-top transition-colors last:border-b-0 hover:bg-paper-sunk">
+                  <td className="px-3 py-4">
                     <span className="data flex items-center gap-2 text-pencil">
                       <PinGlyph
                         shape={card.pinShape}
@@ -117,13 +121,13 @@ export default async function RegisterPage({
                       {card.ref}
                     </span>
                   </td>
-                  <td className="px-2 py-3">
+                  <td className="px-3 py-4">
                     <Link href={`/cases/${card.slug}`} className="block max-w-[26ch] hover:underline">
                       <span className="block text-[14px] font-medium leading-tight">{card.brandName}</span>
                       <span className="block text-[14px] leading-tight text-graphite">{card.title}</span>
                     </Link>
                   </td>
-                  <td className="px-2 py-3">
+                  <td className="px-3 py-4">
                     <span className="label">{card.spatialTypeLabel}</span>
                     {card.relatedEventName && (
                       <Link
@@ -135,21 +139,21 @@ export default async function RegisterPage({
                       </Link>
                     )}
                   </td>
-                  <td className="px-2 py-3">
+                  <td className="px-3 py-4">
                     <span className="text-[13.5px] leading-tight">{card.city}</span>
                     <span className="label mt-0.5 block">{card.country}</span>
                   </td>
-                  <td className="px-2 py-3">
+                  <td className="px-3 py-4">
                     <span className="data whitespace-nowrap">{card.dateLabel}</span>
                   </td>
-                  <td className="px-2 py-3">
+                  <td className="px-3 py-4">
                     <span className="flex max-w-[22ch] flex-wrap gap-1">
                       {card.tags.map((tag) => (
                         <TagChip key={tag} id={tag} label={tagLabelOf(tag)} href={`/?tag=${tag}`} />
                       ))}
                     </span>
                   </td>
-                  <td className="px-2 py-3 pr-0">
+                  <td className="px-3 py-4">
                     <StatusMark status={card.status} />
                   </td>
                 </tr>

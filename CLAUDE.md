@@ -87,7 +87,7 @@ component library.
 Pages under `src/app/`: `/` global map · `/cases` register · `/cases/[slug]` ·
 `/brands` + `/brands/[slug]` · `/events` + `/events/[slug]` · `/about` method.
 
-## Two design decisions worth not undoing
+## Design decisions worth not undoing
 
 - **Performance credibility and cultural meaning are stored once**, as answers
   05 and 06 of the strategic analysis, and displayed twice — in the Framing
@@ -97,6 +97,15 @@ Pages under `src/app/`: `/` global map · `/cases` register · `/cases/[slug]` �
 - **The map is shape-coded, not colour-coded.** Colour is a redundant second
   channel, so the map survives colour-vision deficiency and black-and-white
   printing in a thesis. A dashed outline means a placeholder record.
+- **The visual language is light-editorial (cards, radius, soft shadow, large
+  display type) but the research furniture is not decorative.** The monospaced
+  field labels, the numbered §-sections, the status badge on every record and
+  the facts / interpretation split are what stop this reading as an inspiration
+  feed. Restyle them; do not remove them.
+- **The event page leads with occupancy, not a list.** Cases are spaces with a
+  duration, not timed events, so `EventTimeline` draws a bar per case across the
+  edition's days. A case whose dates were never published gets a dashed ghost
+  bar labelled as such rather than a guessed position.
 
 ## Map notes
 
@@ -128,10 +137,10 @@ npm run build        # production build; also type-checks
 ## Not built yet — do not add unasked
 
 AI-assisted case research · image-to-3D spatial reconstruction · floor-plan
-reconstruction · timeline view · similarity search · user submissions ·
-a database · a full-text search engine · pin clustering · aggregate charts
-across cases (an aggregate is a research finding, and findings need verified
-data first).
+reconstruction · similarity search · user submissions · a database · a
+full-text search engine · pin clustering · the Strategy Matrix chart ·
+aggregate charts across cases (an aggregate is a research finding, and
+findings need verified data first).
 
 Evidence labels are now **built**, not postponed: see the four-value status in
 rule 1 and `SOURCE_TYPES` in `src/lib/schema.ts`.

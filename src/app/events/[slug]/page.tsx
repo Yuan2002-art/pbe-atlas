@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
 import { Prose } from "@/components/case/CaseParts";
+import { EventTimeline } from "@/components/event/EventTimeline";
 import { MiniMap } from "@/components/map/MiniMap";
 import { PinGlyph } from "@/components/ui/PinGlyph";
 import {
@@ -54,6 +55,8 @@ export default async function EventPage({
   }));
   const accentOf = (id: string) =>
     atlas.spatialTypes.find((t) => t.id === id)?.accent ?? "#16161a";
+  const shapeOf = (id: string) =>
+    atlas.spatialTypes.find((t) => t.id === id)?.pinShape ?? "circle";
   const tagLabelOf = (id: string) => atlas.tags.find((t) => t.id === id)?.label ?? id;
 
   /* One row per participating case, ordered by brand so the comparison reads
@@ -66,6 +69,17 @@ export default async function EventPage({
     .sort((a, b) => a.card.brandName.localeCompare(b.card.brandName));
 
   const brandCount = new Set(cards.map((card) => card.brand)).size;
+
+  /* Section numbers, worked out once so adding or removing a block cannot
+     leave the page with two §2s. */
+  const hasTimeline = cases.length > 0 && Boolean(event.startDate);
+  const hasMap = cards.length > 0;
+  let n = 0;
+  const num = () => `§${++n}`;
+  const timelineIndex = hasTimeline ? num() : "";
+  const comparisonIndex = num();
+  const mapIndex = hasMap ? num() : "";
+  const noteIndex = num();
 
   return (
     <div>
@@ -115,10 +129,28 @@ export default async function EventPage({
       />
 
       <div className="mx-auto w-full max-w-[1400px] px-4 py-9 sm:px-5">
+        {/* ---- When each brand held the valley ---- */}
+        {hasTimeline && (
+          <section className="mb-12">
+            <SectionHeading index={timelineIndex} note="bar length = days open">
+              Occupancy
+            </SectionHeading>
+            <EventTimeline
+              event={event}
+              cases={cases}
+              accentOf={accentOf}
+              shapeOf={shapeOf}
+              brandNameOf={(slug) =>
+                atlas.brands.find((b) => b.slug === slug)?.name ?? slug
+              }
+            />
+          </section>
+        )}
+
         {/* ---- The comparison: the point of this page ---- */}
         <section>
           <SectionHeading
-            index="§1"
+            index={comparisonIndex}
             note={
               brandCount > 1
                 ? `${brandCount} brands compared`
@@ -230,7 +262,7 @@ export default async function EventPage({
         <div className="mt-10 grid gap-x-12 gap-y-9 lg:grid-cols-[minmax(0,1fr)_minmax(0,24rem)]">
           {cards.length > 0 && (
             <section className="min-w-0">
-              <SectionHeading index="§2" note={plural(cards.length, "case")}>
+              <SectionHeading index={mapIndex} note={plural(cards.length, "case")}>
                 Where the brands set up
               </SectionHeading>
               <MiniMap cards={cards} types={types} />
@@ -243,7 +275,7 @@ export default async function EventPage({
           )}
 
           <section className="min-w-0">
-            <SectionHeading index={cards.length > 0 ? "§3" : "§2"}>
+            <SectionHeading index={noteIndex}>
               Event note
             </SectionHeading>
             <Prose html={event.body} className="text-[14px]" />

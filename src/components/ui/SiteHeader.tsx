@@ -20,47 +20,43 @@ export function SiteHeader() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-rule bg-paper/95 backdrop-blur-[2px]">
-      <div className="flex items-stretch justify-between">
+    <header className="sticky top-0 z-50 border-b border-rule bg-paper/90 backdrop-blur-md">
+      <div className="mx-auto flex h-[var(--header)] w-full max-w-[1400px] items-center justify-between gap-6 px-4 sm:px-6">
         {/* Wordmark */}
-        <Link
-          href="/"
-          className="flex shrink-0 items-center gap-3 border-rule px-4 py-3 sm:border-r sm:px-5"
-        >
+        <Link href="/" className="flex shrink-0 items-center gap-2.5">
           <span
             aria-hidden
-            className="grid h-6 w-6 shrink-0 place-items-center border border-ink text-[9px] font-medium tracking-[0.04em]"
-            style={{ fontFamily: "var(--font-plex-mono), monospace" }}
+            className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-ink text-[8px] font-medium tracking-[0.04em]"
+            style={{ fontFamily: "var(--font-plex-mono), monospace", color: "var(--paper-raised)" }}
           >
             PBE
           </span>
           <span className="leading-tight">
-            <span className="block text-[13px] font-medium tracking-[-0.01em]">
+            <span className="block text-[13.5px] font-medium tracking-[-0.01em]">
               Performance Brand Experience Atlas
             </span>
-            <span className="label hidden sm:block">
-              Global research prototype · MVP
-            </span>
+            <span className="label hidden sm:block">Global research prototype</span>
           </span>
         </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden items-stretch sm:flex" aria-label="Main">
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              aria-current={isActive(item.href) ? "page" : undefined}
-              className={`label-lg flex items-center border-l border-rule px-5 transition-colors ${
-                isActive(item.href)
-                  ? "bg-ink text-paper"
-                  : "hover:bg-paper-sunk hover:text-ink"
-              }`}
-              style={isActive(item.href) ? { color: "var(--paper)" } : undefined}
-            >
-              {item.label}
-            </Link>
-          ))}
+        {/* Desktop nav — quiet pills, filled when active */}
+        <nav className="hidden items-center gap-1 sm:flex" aria-label="Main">
+          {NAV.map((item) => {
+            const active = isActive(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={active ? "page" : undefined}
+                className={`label-lg rounded-[var(--radius-pill)] px-3.5 py-2 transition-colors ${
+                  active ? "bg-ink" : "hover:bg-paper-sunk hover:text-ink"
+                }`}
+                style={active ? { color: "var(--paper-raised)" } : undefined}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Mobile toggle */}
@@ -69,7 +65,7 @@ export function SiteHeader() {
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-controls="mobile-nav"
-          className="label-lg border-l border-rule px-4 sm:hidden"
+          className="btn-quiet sm:hidden"
         >
           {open ? "Close" : "Menu"}
         </button>
@@ -79,22 +75,25 @@ export function SiteHeader() {
         <nav
           id="mobile-nav"
           aria-label="Main"
-          className="border-t border-rule sm:hidden"
+          className="border-t border-rule bg-paper px-4 py-2 sm:hidden"
         >
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              aria-current={isActive(item.href) ? "page" : undefined}
-              className={`label-lg block border-b border-rule px-4 py-3 ${
-                isActive(item.href) ? "bg-ink" : ""
-              }`}
-              style={isActive(item.href) ? { color: "var(--paper)" } : undefined}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {NAV.map((item) => {
+            const active = isActive(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                aria-current={active ? "page" : undefined}
+                className={`label-lg my-1 block rounded-[var(--radius-pill)] px-4 py-2.5 ${
+                  active ? "bg-ink" : ""
+                }`}
+                style={active ? { color: "var(--paper-raised)" } : undefined}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
       )}
     </header>

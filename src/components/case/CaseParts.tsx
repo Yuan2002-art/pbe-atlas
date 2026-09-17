@@ -29,7 +29,7 @@ export function Prose({ html, className = "" }: { html: string; className?: stri
 export function InterpretationNotice() {
   return (
     <div
-      className="border-l-2 bg-blue-sunk px-4 py-3"
+      className="rounded-[var(--radius-card)] border-l-2 bg-blue-sunk px-5 py-4"
       style={{ borderColor: "var(--blue)" }}
     >
       <p className="label-lg" style={{ color: "var(--blue)" }}>
@@ -53,11 +53,15 @@ export function InterpretationNotice() {
 export function KeyInsight({ html }: { html: string }) {
   if (!html) return null;
   return (
-    <div className="border-y-2 border-ink py-5">
-      <p className="label-lg" style={{ color: "var(--ink)" }}>
+    <div className="card bg-ink px-6 py-6" style={{ color: "var(--paper-raised)" }}>
+      <p className="label-lg" style={{ color: "var(--paper-raised)", opacity: 0.7 }}>
         Key strategic insight
       </p>
-      <Prose html={html} className="mt-2 text-[16.5px]" />
+      <div
+        className="prose-atlas mt-3 text-[17px]"
+        style={{ color: "var(--paper-raised)" }}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </div>
   );
 }
@@ -88,7 +92,7 @@ export function FramingStrip({ sections }: { sections: CaseSections }) {
   ];
 
   return (
-    <div className="grid gap-x-8 gap-y-6 border-y border-rule py-6 sm:grid-cols-2">
+    <div className="card grid gap-x-10 gap-y-7 p-6 sm:grid-cols-2">
       {items.map((item) => (
         <div key={item.label}>
           <p className="label flex items-baseline gap-2">
@@ -169,7 +173,7 @@ export function ImagePlates({
       <div className="grid gap-5 sm:grid-cols-2">
         {images.map((image, position) => (
           <figure key={image.src} className="min-w-0">
-            <div className="border border-rule bg-paper-sunk">
+            <div className="overflow-hidden rounded-[var(--radius-card)] border border-rule bg-paper-sunk">
               {/* Plain <img>: these are placeholder SVGs today and will be
                   researched photographs later. Swap to next/image when the
                   real images arrive and sizes are known. */}

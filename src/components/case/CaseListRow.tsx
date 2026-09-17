@@ -18,7 +18,7 @@ export function CaseListRow({
   return (
     <Link
       href={`/cases/${card.slug}`}
-      className="group grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-1 border-b border-rule px-4 py-3.5 transition-colors hover:bg-paper-sunk sm:grid-cols-[auto_minmax(0,1fr)_auto] sm:px-5"
+      className="card card-hover group grid grid-cols-[auto_minmax(0,1fr)] gap-x-3.5 gap-y-1.5 p-4 sm:grid-cols-[auto_minmax(0,1fr)_auto] sm:p-5"
     >
       <span className="pt-1">
         <PinGlyph shape={card.pinShape} accent={accent} status={card.status} />
@@ -29,7 +29,7 @@ export function CaseListRow({
           Case {card.ref} · {card.spatialTypeLabel}
           {card.relatedEventName && ` · ${card.relatedEventName}`}
         </span>
-        <span className="mt-0.5 block text-[15px] leading-snug group-hover:underline">
+        <span className="mt-1 block text-[15.5px] leading-snug group-hover:underline">
           {showBrand && (
             <span className="font-medium">{card.brandName}&nbsp;&mdash;&nbsp;</span>
           )}

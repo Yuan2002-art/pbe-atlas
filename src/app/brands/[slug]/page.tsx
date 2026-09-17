@@ -98,7 +98,7 @@ export default async function BrandPage({
           ) : (
             <>
               <MiniMap cards={cards} types={types} />
-              <ul className="mt-6 border-t border-rule">
+              <ul className="mt-6 flex flex-col gap-3">
                 {cards.map((card) => (
                   <li key={card.slug}>
                     <CaseListRow

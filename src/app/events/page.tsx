@@ -44,13 +44,13 @@ export default function EventsPage() {
         }
       />
 
-      <div className="mx-auto w-full max-w-[1400px] px-4 py-8 sm:px-5">
-        <ul className="grid gap-px border border-rule bg-rule sm:grid-cols-2">
+      <div className="mx-auto w-full max-w-[1400px] px-4 py-10 sm:px-6 sm:py-14">
+        <ul className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {rows.map(({ event, cards, brands }) => (
-            <li key={event.slug} className="bg-paper">
+            <li key={event.slug} className="card card-hover overflow-hidden">
               <Link
                 href={`/events/${event.slug}`}
-                className="group flex h-full flex-col gap-3 p-4 transition-colors hover:bg-paper-sunk sm:p-5"
+                className="group flex h-full flex-col gap-3 p-6"
               >
                 <div className="flex items-baseline justify-between gap-3">
                   <span className="label">
@@ -59,7 +59,7 @@ export default function EventsPage() {
                   <StatusMark status={event.status} />
                 </div>
 
-                <h2 className="display text-[1.5rem] group-hover:underline">
+                <h2 className="display text-[1.75rem] group-hover:underline">
                   {event.name}
                 </h2>
 

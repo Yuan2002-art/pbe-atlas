@@ -21,7 +21,7 @@ export function PreviewCard({
 }) {
   return (
     <aside
-      className="pointer-events-auto w-full border border-rule bg-paper-raised shadow-[0_2px_0_0_var(--rule)] sm:max-w-[26rem]"
+      className="card pointer-events-auto w-full overflow-hidden shadow-[var(--shadow-lift)] sm:max-w-[27rem]"
       aria-label={`Preview of case ${card.ref}`}
     >
       <div className="flex items-start justify-between gap-3 border-b border-rule px-3.5 py-2.5">
@@ -41,7 +41,7 @@ export function PreviewCard({
 
       <div className="px-3.5 py-3">
         <p className="label">{card.brandName}</p>
-        <h2 className="display mt-0.5 text-[1.25rem]">{card.title}</h2>
+        <h2 className="display mt-1 text-[1.45rem]">{card.title}</h2>
 
         <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2">
           <div>
@@ -90,8 +90,7 @@ export function PreviewCard({
         <StatusMark status={card.status} />
         <Link
           href={`/cases/${card.slug}`}
-          className="label-lg border border-ink bg-ink px-2.5 py-1.5 transition-opacity hover:opacity-80"
-          style={{ color: "var(--paper)" }}
+          className="btn-primary"
         >
           Open case →
         </Link>

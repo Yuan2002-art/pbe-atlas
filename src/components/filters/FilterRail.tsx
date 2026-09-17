@@ -42,7 +42,7 @@ export function FilterRail({
   return (
     <div className="quiet-scroll flex h-full flex-col overflow-y-auto">
       {/* Count + clear */}
-      <div className="flex items-baseline justify-between gap-3 border-b border-rule px-4 py-3">
+      <div className="flex items-baseline justify-between gap-3 border-b border-rule px-5 py-4">
         <p className="label-lg" style={{ color: "var(--ink)" }}>
           {shown} of {total} cases
         </p>
@@ -57,7 +57,7 @@ export function FilterRail({
       </div>
 
       {/* Text search */}
-      <div className="border-b border-rule px-4 py-3">
+      <div className="border-b border-rule px-5 py-4">
         <label className="label block" htmlFor="atlas-search">
           Search
         </label>
@@ -67,7 +67,7 @@ export function FilterRail({
           value={filters.q}
           onChange={(event) => onSearch(event.target.value)}
           placeholder="brand, city, product, keyword"
-          className="mt-1.5 w-full border border-rule bg-paper-raised px-2 py-1.5 text-[13px] placeholder:text-pencil focus:border-blue focus:outline-none"
+          className="mt-2 w-full rounded-[var(--radius-pill)] border border-rule bg-paper-raised px-3.5 py-2 text-[13px] placeholder:text-pencil focus:border-blue focus:outline-none"
         />
       </div>
 
@@ -80,7 +80,7 @@ export function FilterRail({
             open={definition.defaultOpen ?? active.length > 0}
             className="border-b border-rule"
           >
-            <summary className="flex cursor-pointer list-none items-baseline justify-between gap-2 px-4 py-2.5 hover:bg-paper-sunk">
+            <summary className="flex cursor-pointer list-none items-baseline justify-between gap-2 px-5 py-3.5 hover:bg-paper-sunk">
               <span className="label-lg" style={{ color: "var(--ink)" }}>
                 {definition.legend}
               </span>
@@ -89,7 +89,7 @@ export function FilterRail({
               </span>
             </summary>
 
-            <div className="px-4 pb-3">
+            <div className="px-5 pb-4">
               {definition.hint && (
                 <p className="label mb-2 text-pencil">{definition.hint}</p>
               )}
@@ -135,7 +135,7 @@ export function FilterRail({
         );
       })}
 
-      <p className="label px-4 py-4 text-pencil">
+      <p className="label px-5 py-5 text-pencil">
         Filters are written into the address bar — copy the URL to save or cite a
         particular view of the Atlas.
       </p>

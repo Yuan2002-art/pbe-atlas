@@ -21,8 +21,12 @@
   --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", monospace;
 
-  --radius-sm: 2px;
-  --radius-DEFAULT: 2px;
+  --radius-sm: var(--radius-sm);
+  --radius-card: var(--radius-card);
+  --radius-pill: var(--radius-pill);
+
+  --shadow-card: var(--shadow-card);
+  --shadow-lift: var(--shadow-lift);
 }
 
 /* --------------------------------------------------------------------------
@@ -37,7 +41,7 @@ body {
   color: var(--ink);
   font-family: var(--font-sans), sans-serif;
   font-size: 15px;
-  line-height: 1.55;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -89,9 +93,69 @@ a {
 /* Editorial display type for titles. */
 .display {
   font-family: var(--font-sans), sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 1.08;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+/* --------------------------------------------------------------------------
+   Card — the unit the whole layout is now built from. Soft white surface on
+   a light ground, generous radius, shadow instead of a hard rule.
+   -------------------------------------------------------------------------- */
+.card {
+  background: var(--paper-raised);
+  border: var(--hairline) solid var(--rule);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.card-hover {
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+.card-hover:hover {
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-2px);
+}
+
+/* Pill — buttons, chips, filter toggles. */
+.pill {
+  border-radius: var(--radius-pill);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--ink);
+  color: var(--paper-raised);
+  padding: 0.7rem 1.25rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: opacity 160ms ease;
+}
+.btn-primary:hover { opacity: 0.85; }
+
+.btn-quiet {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--paper-raised);
+  border: var(--hairline) solid var(--rule);
+  color: var(--ink);
+  padding: 0.6rem 1.1rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.btn-quiet:hover {
+  border-color: var(--ink);
+  box-shadow: var(--shadow-card);
 }
 
 /* Long-form research prose. */

@@ -69,8 +69,8 @@ export default async function CasePage({
       <PlaceholderBand status={record.status} />
 
       {/* ---- Header ---- */}
-      <header className="grid-paper border-b border-rule">
-        <div className="mx-auto w-full max-w-[1400px] px-4 py-8 sm:px-5 sm:py-10">
+      <header className="border-b border-rule">
+        <div className="mx-auto w-full max-w-[1400px] px-4 pb-10 pt-10 sm:px-6 sm:pb-14 sm:pt-14">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <PinGlyph
               shape={card.pinShape}
@@ -98,7 +98,7 @@ export default async function CasePage({
               {brand?.name ?? record.brand}
             </Link>
           </p>
-          <h1 className="display mt-1 text-[clamp(1.9rem,4.6vw,3.2rem)]">
+          <h1 className="display mt-2 max-w-[18ch] text-[clamp(2.2rem,5.5vw,4rem)]">
             {record.title}
           </h1>
           {record.product && (
@@ -110,11 +110,11 @@ export default async function CasePage({
       </header>
 
       {/* ---- Body: register on the left, research on the right ---- */}
-      <div className="mx-auto grid w-full max-w-[1400px] gap-x-12 gap-y-10 px-4 py-9 sm:px-5 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)]">
+      <div className="mx-auto grid w-full max-w-[1400px] gap-x-14 gap-y-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,21rem)_minmax(0,1fr)]">
         {/* Metadata register */}
         <aside className="lg:sticky lg:top-[calc(var(--header)+1.5rem)] lg:self-start">
           <SectionHeading index="§0">Record</SectionHeading>
-          <dl className="border-t border-rule">
+          <dl className="card px-5 py-1">
             <FieldRow label="Brand">
               <Link href={`/brands/${record.brand}`} className="underline hover:no-underline">
                 {brand?.name ?? record.brand}
@@ -241,7 +241,7 @@ export default async function CasePage({
             <Prose html={record.sections.description} />
 
             {record.sections.verificationNotes && (
-              <div className="mt-5 border border-dashed border-rule-strong bg-paper-sunk px-4 py-3">
+              <div className="mt-6 rounded-[var(--radius-card)] border border-dashed border-rule-strong bg-paper-sunk px-5 py-4">
                 <p className="label" style={{ color: "var(--ink)" }}>
                   Verification notes — what could not be confirmed
                 </p>

@@ -159,11 +159,18 @@ For a new spatial type, `pinShape` must be one of: `square`, `circle`,
 
 ## Design
 
-Warm off-white paper, dark ink, hairline rules, technical blue and signal red,
-uppercase monospaced labels, two typefaces (Archivo and IBM Plex Mono). The map
-is deliberately pale so the case pins carry all the contrast, and pins are
-**shape-coded** so the map still reads printed in black and white. A dashed pin
-means a placeholder record.
+Light editorial. A near-white ground with true-white cards, generous radius and
+soft shadows instead of hairline rules; large light display type; pill buttons,
+chips and status badges. Two typefaces (Archivo and IBM Plex Mono).
+
+The research character is carried by what did **not** change: monospaced
+uppercase labels on every field, the numbered §-sections, evidence status on
+every record, and the facts / interpretation split. The map stays deliberately
+pale so the case pins carry all the contrast, and pins are **shape-coded** so
+the map still reads printed in black and white. A dashed pin means a
+placeholder record.
+
+Every colour, radius and shadow is a variable in `src/styles/tokens.css`.
 
 ---
 

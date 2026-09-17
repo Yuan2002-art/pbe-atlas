@@ -15,7 +15,7 @@ export interface LegendEntry {
 export function MapLegend({ entries }: { entries: LegendEntry[] }) {
   return (
     <details
-      className="border border-rule bg-paper/95 backdrop-blur-[2px]"
+      className="card bg-paper-raised/95 backdrop-blur-md"
       open
     >
       <summary className="label-lg cursor-pointer list-none px-3 py-2" style={{ color: "var(--ink)" }}>

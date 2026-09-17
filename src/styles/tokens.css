@@ -1,32 +1,45 @@
 /* ===========================================================================
    DESIGN TOKENS — the whole visual language of the Atlas lives in this file.
    Change a hex value here and it changes everywhere. Nothing else to edit.
+
+   Light editorial: a near-white ground, true-white cards with soft edges and
+   generous radius, large light display type. The technical blue/red accents
+   and the monospaced labels are kept — they are what still says "research
+   document" rather than "inspiration feed".
    =========================================================================== */
 
 :root {
   /* --- Paper & ink ------------------------------------------------------- */
-  --paper:        #f5f2ea;  /* warm off-white page ground                    */
-  --paper-sunk:   #eee9dd;  /* recessed panels, table stripes                */
-  --paper-raised: #fbf9f4;  /* cards sitting above the page                  */
-  --ink:          #16161a;  /* primary text                                  */
-  --graphite:     #5c5c63;  /* secondary text, captions, metadata values     */
-  --pencil:       #8b8b92;  /* tertiary text, disabled, placeholders         */
+  --paper:        #f7f6f3;  /* page ground — light, barely warm             */
+  --paper-sunk:   #efedE8;  /* recessed panels, table stripes                */
+  --paper-raised: #ffffff;  /* cards sitting above the page                  */
+  --ink:          #14141a;  /* primary text                                  */
+  --graphite:     #5a5a63;  /* secondary text, captions, metadata values     */
+  --pencil:       #90909a;  /* tertiary text, disabled, placeholders         */
 
-  /* --- Rules & grid ----------------------------------------------------- */
-  --rule:         #d6cfc2;  /* hairline rules, table borders                 */
-  --rule-strong:  #b4ab9a;  /* section dividers                              */
-  --grid:         #e5dfd2;  /* background grid / graticule                   */
+  /* --- Rules, edges & grid ---------------------------------------------- */
+  --rule:         #e4e1da;  /* hairline rules, card borders                  */
+  --rule-strong:  #c9c5bb;  /* section dividers                              */
+  --grid:         #eceae4;  /* background grid / graticule                   */
 
   /* --- Technical accents ------------------------------------------------ */
   --blue:         #1e4fd8;  /* links, active state, primary accent           */
-  --blue-sunk:    #e7ebfb;  /* blue tint fills                               */
+  --blue-sunk:    #eaeefc;  /* blue tint fills                               */
   --red:          #c8371f;  /* signal red: placeholder marks, warnings        */
-  --red-sunk:     #faeae6;  /* red tint fills                                */
+  --red-sunk:     #fceeeb;  /* red tint fills                                */
+
+  /* --- Elevation --------------------------------------------------------- */
+  --shadow-card:  0 1px 2px rgba(20, 20, 26, 0.04),
+                  0 8px 24px -12px rgba(20, 20, 26, 0.10);
+  --shadow-lift:  0 2px 4px rgba(20, 20, 26, 0.05),
+                  0 16px 40px -16px rgba(20, 20, 26, 0.16);
 
   /* --- Metrics ----------------------------------------------------------- */
   --hairline: 1px;
-  --radius: 2px;            /* deliberately almost square                    */
+  --radius-card: 16px;      /* cards, panels, media                          */
+  --radius-pill: 999px;     /* buttons, chips                                */
+  --radius-sm: 8px;         /* inputs, small surfaces                        */
   --measure: 68ch;          /* prose line length                             */
-  --rail: 288px;            /* filter rail width                             */
-  --header: 57px;           /* site header height                            */
+  --rail: 300px;            /* filter rail width                             */
+  --header: 64px;           /* site header height                            */
 }

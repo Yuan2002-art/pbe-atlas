@@ -20,16 +20,23 @@ export function PageHeader({
   children?: React.ReactNode;
 }) {
   return (
-    <header className="grid-paper border-b border-rule">
-      <div className="mx-auto w-full max-w-[1400px] px-4 py-8 sm:px-5 sm:py-10">
+    <header className="border-b border-rule">
+      <div className="mx-auto w-full max-w-[1400px] px-4 pb-10 pt-12 sm:px-6 sm:pb-14 sm:pt-16">
         <p className="label-lg">{eyebrow}</p>
-        <h1 className="display mt-3 text-[clamp(1.9rem,4.4vw,3.1rem)]">{title}</h1>
+        <h1 className="display mt-4 max-w-[20ch] text-[clamp(2.3rem,6vw,4.25rem)]">
+          {title}
+        </h1>
         {lede && (
-          <p className="prose-atlas mt-4 text-graphite" style={{ maxWidth: "58ch" }}>
+          <p
+            className="mt-5 text-[16.5px] leading-relaxed text-graphite"
+            style={{ maxWidth: "56ch" }}
+          >
             {lede}
           </p>
         )}
-        {meta && <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2">{meta}</div>}
+        {meta && (
+          <div className="mt-8 flex flex-wrap gap-x-10 gap-y-4">{meta}</div>
+        )}
         {children}
       </div>
     </header>
@@ -115,12 +122,12 @@ export function StatusMark({ status }: { status: Status }) {
   const { label, tone } = STATUS_COPY[status];
   return (
     <span
-      className="label inline-flex items-center gap-1.5 border px-1.5 py-0.5"
+      className="label inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-[var(--radius-pill)] border px-2.5 py-1"
       style={{ color: tone, borderColor: tone }}
     >
       <span
         aria-hidden
-        className="inline-block h-1.5 w-1.5"
+        className="inline-block h-1.5 w-1.5 rounded-full"
         style={{ backgroundColor: tone }}
       />
       {label}
@@ -162,7 +169,7 @@ export function TagChip({
   href?: string;
 }) {
   const className =
-    "label inline-block whitespace-nowrap border border-rule bg-paper-raised px-1.5 py-0.5 transition-colors hover:border-ink hover:text-ink";
+    "label inline-block whitespace-nowrap rounded-[var(--radius-pill)] border border-rule bg-paper-raised px-2.5 py-1 transition-colors hover:border-ink hover:text-ink";
   if (!href) return <span className={className}>{label}</span>;
   return (
     <Link href={href} className={className} title={`Filter the map by ${label}`}>
@@ -203,7 +210,7 @@ export function EmptyState({
   children?: React.ReactNode;
 }) {
   return (
-    <div className="border border-dashed border-rule-strong bg-paper-sunk px-5 py-8 text-center">
+    <div className="rounded-[var(--radius-card)] border border-dashed border-rule-strong bg-paper-sunk px-6 py-12 text-center">
       <p className="label-lg" style={{ color: "var(--ink)" }}>
         {title}
       </p>
@@ -231,7 +238,7 @@ export function MixBar({
   return (
     <div>
       <div
-        className="flex h-2 w-full overflow-hidden border border-rule bg-paper-raised"
+        className="flex h-2.5 w-full overflow-hidden rounded-[var(--radius-pill)] border border-rule bg-paper-raised"
         role="img"
         aria-label={items.map((i) => `${i.count} ${i.label}`).join(", ")}
       >

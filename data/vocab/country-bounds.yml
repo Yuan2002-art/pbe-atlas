@@ -1,0 +1,36 @@
+# Map framing boxes. NOT research data — nothing here is ever shown as a fact.
+#
+# When the only active filter is a country, the map frames the country rather
+# than the cases inside it: the question has become "where in France", not
+# "where in Chamonix". fitBounds needs a box to do that, and a zoom number
+# cannot stand in for one — the same zoom shows twice as much land on a wide
+# screen as on a narrow one, so a fixed zoom frames a country correctly on
+# exactly one monitor.
+#
+# bounds is [west, south, east, north] in degrees, approximate and rounded:
+# they only have to be close enough to frame a country on screen.
+#
+# Mainland only, deliberately. With French Guiana included, "France" spans the
+# Atlantic and the frame is useless; the same goes for Hawaii and Alaska in the
+# United States. A country with no entry here just falls back to framing its
+# own cases, so this file never has to be complete.
+
+- code: FR
+  name: France (metropolitan)
+  bounds: [-5.15, 41.33, 9.56, 51.09]
+
+- code: GB
+  name: United Kingdom
+  bounds: [-8.65, 49.86, 1.77, 60.86]
+
+- code: JP
+  name: Japan (four main islands)
+  bounds: [129.41, 31.03, 145.82, 45.55]
+
+- code: US
+  name: United States (contiguous)
+  bounds: [-124.78, 24.52, -66.95, 49.38]
+
+- code: CA
+  name: Canada
+  bounds: [-141.0, 41.68, -52.62, 83.11]

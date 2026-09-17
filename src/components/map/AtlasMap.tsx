@@ -45,6 +45,9 @@ interface AtlasMapProps {
   types: MapTypeStyle[];
   /** Changes whenever the filter set changes — the map reframes on a new one. */
   frameKey: string;
+  /** A box to frame instead of the pins, [west, south, east, north]. Used when
+   *  the filter is asking "where in this country"; null fits the pins. */
+  frameBounds: [number, number, number, number] | null;
   className?: string;
 }
 
@@ -55,6 +58,7 @@ export function AtlasMap({
   onSelect,
   types,
   frameKey,
+  frameBounds,
   className = "",
 }: AtlasMapProps) {
   const container = useRef<HTMLDivElement | null>(null);
@@ -169,20 +173,46 @@ export function AtlasMap({
   useEffect(() => {
     const instance = map.current;
     if (!instance || !ready) return;
-    if (frameKey === lastFrame.current) return;
-    lastFrame.current = frameKey;
+    /* The frame box is part of the frame's identity, not just the set of pins:
+       adding a brand to a country filter can leave the same cases showing and
+       still has to reframe, because it stops being a country question. */
+    const frameId = `${frameBounds?.join(",") ?? "pins"}::${frameKey}`;
+    if (frameId === lastFrame.current) return;
+    lastFrame.current = frameId;
+
+    const padding = { top: 90, right: 90, bottom: 140, left: 90 };
+
+    /* A country filter asks "where in this country", so it frames the country
+       and lets the pins fall where they fall. This has to be a box rather than
+       a zoom cap: the same zoom shows twice as much land on a wide monitor as
+       on a narrow one, so a fixed number would frame France correctly on one
+       screen and nowhere else. fitBounds works from the viewport it has. */
+    if (frameBounds) {
+      const [west, south, east, north] = frameBounds;
+      instance.fitBounds(
+        new LngLatBounds([west, south], [east, north]),
+        { padding, duration: 700 },
+      );
+      return;
+    }
 
     const shown = cards.filter((card) => visible.has(card.slug));
     if (shown.length === 0) return;
 
     const bounds = new LngLatBounds();
     for (const card of shown) bounds.extend(card.pinCoordinates);
+
+    /* Otherwise fit as close as the pins allow. The cap used to be zoom 7 for
+       any two or more pins, which meant a filter down to one event — five
+       spaces inside one valley — framed a third of Europe and stacked the pins
+       on top of each other. 14 only stops a pair of near-identical coordinates
+       filling the screen; the pins decide the rest. */
     instance.fitBounds(bounds, {
-      padding: { top: 90, right: 90, bottom: 140, left: 90 },
-      maxZoom: shown.length === 1 ? 11 : 7,
+      padding,
+      maxZoom: shown.length === 1 ? 11 : 14,
       duration: 700,
     });
-  }, [frameKey, cards, visible, ready]);
+  }, [frameKey, cards, visible, ready, frameBounds]);
 
   /* --- ease to a case chosen from a list -------------------------------- */
   useEffect(() => {

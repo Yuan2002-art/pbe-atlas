@@ -32,6 +32,9 @@ export function MiniMap({
       }}
       types={types}
       frameKey={frameKey}
+      /* Always the pins: this map is already narrowed to one brand or one
+         edition, so the country it sits in is not the question. */
+      frameBounds={null}
       className={`border border-rule ${className}`}
     />
   );

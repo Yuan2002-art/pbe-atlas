@@ -26,12 +26,15 @@ export function MapExplorer({
   types,
   legend,
   tagLabels,
+  countryBounds,
 }: {
   cards: CaseCard[];
   groups: FilterGroupDef[];
   types: MapTypeStyle[];
   legend: LegendEntry[];
   tagLabels: Record<string, string>;
+  /** Framing boxes from data/vocab/country-bounds.yml. */
+  countryBounds: { code: string; bounds: [number, number, number, number] }[];
 }) {
   const [selected, setSelected] = useState<string | null>(null);
   const [railOpen, setRailOpen] = useState(false);
@@ -73,6 +76,39 @@ export function MapExplorer({
   const counts = useMemo(() => facetCounts(cards, filters), [cards, filters]);
   const visible = useMemo(() => new Set(shown.map((card) => card.slug)), [shown]);
   const frameKey = useMemo(() => shown.map((card) => card.slug).join("|"), [shown]);
+
+  /* Country is the one filter that asks "where in this country", so on its own
+     it frames the whole country rather than the cases inside it. Narrow it with
+     anything else - a brand, an event, a search - and the pins take over again.
+     A country with no box in data/vocab/country-bounds.yml also falls back to
+     the pins, so the file never has to be complete. */
+  const frameBounds = useMemo<[number, number, number, number] | null>(() => {
+    const onlyCountry =
+      filters.country.length > 0 &&
+      !filters.q.trim() &&
+      filters.brand.length === 0 &&
+      filters.city.length === 0 &&
+      filters.type.length === 0 &&
+      filters.event.length === 0 &&
+      filters.tag.length === 0;
+    if (!onlyCountry) return null;
+
+    const boxes = filters.country
+      .map((code) => countryBounds.find((b) => b.code === code)?.bounds)
+      .filter((b): b is [number, number, number, number] => Boolean(b));
+    if (boxes.length !== filters.country.length || boxes.length === 0) return null;
+
+    // Several countries selected: frame all of them.
+    return boxes.reduce<[number, number, number, number]>(
+      (acc, [w, s, e, n]) => [
+        Math.min(acc[0], w),
+        Math.min(acc[1], s),
+        Math.max(acc[2], e),
+        Math.max(acc[3], n),
+      ],
+      [boxes[0][0], boxes[0][1], boxes[0][2], boxes[0][3]],
+    );
+  }, [filters, countryBounds]);
 
   const selectedCard = selected ? cards.find((card) => card.slug === selected) : undefined;
   const accentOf = (id: string) => types.find((t) => t.id === id)?.accent ?? "#16161a";
@@ -125,6 +161,7 @@ export function MapExplorer({
           onSelect={setSelected}
           types={types}
           frameKey={frameKey}
+          frameBounds={frameBounds}
           className="h-[62svh] min-h-[380px] lg:h-[calc(100svh-var(--header))]"
         />
 

@@ -20,6 +20,7 @@ import {
   CaseFrontmatterSchema,
   CaseSectionsSchema,
   ClassificationTagSchema,
+  CountryBoundsSchema,
   EventFrontmatterSchema,
   SpatialTypeSchema,
   type ActivationLogic,
@@ -27,6 +28,7 @@ import {
   type Case,
   type CaseSections,
   type ClassificationTag,
+  type CountryBounds,
   type Event,
   type SpatialType,
 } from "./schema";
@@ -47,6 +49,7 @@ export interface DataSet {
   spatialTypes: SpatialType[];
   tags: ClassificationTag[];
   activationLogics: ActivationLogic[];
+  countryBounds: CountryBounds[];
   errors: DataSetError[];
 }
 
@@ -417,6 +420,7 @@ export function loadDataSet(): DataSet {
     ActivationLogicSchema,
     errors,
   );
+  const countryBounds = readYaml("country-bounds.yml", CountryBoundsSchema, errors);
   const data: DataSet = {
     cases: loadCases(errors),
     brands: loadBrands(errors),
@@ -424,6 +428,7 @@ export function loadDataSet(): DataSet {
     spatialTypes,
     tags,
     activationLogics,
+    countryBounds,
     errors,
   };
   checkReferences(data);

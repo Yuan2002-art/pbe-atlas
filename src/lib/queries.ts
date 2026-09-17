@@ -12,6 +12,7 @@ import type {
   Brand,
   Case,
   ClassificationTag,
+  CountryBounds,
   Event,
   PinShape,
   SpatialType,
@@ -33,6 +34,8 @@ export interface Atlas {
   /** Compact cases, with overlapping pins already spread apart. */
   cards: CaseCard[];
   countries: CountryFacet[];
+  /** Framing boxes for the map, keyed by country code. Not research data. */
+  countryBounds: CountryBounds[];
   cities: string[];
 }
 
@@ -78,6 +81,7 @@ export function getAtlas(): Atlas {
     spatialTypes: data.spatialTypes,
     tags: data.tags,
     activationLogics: data.activationLogics,
+    countryBounds: data.countryBounds,
     cards,
     countries: [...countryMap.entries()]
       .map(([code, name]) => ({ code, name }))

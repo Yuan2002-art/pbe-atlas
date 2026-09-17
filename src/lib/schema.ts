@@ -310,6 +310,16 @@ export const PIN_SHAPES = [
 ] as const;
 export type PinShape = (typeof PIN_SHAPES)[number];
 
+/** A country's framing box on the map — see data/vocab/country-bounds.yml.
+ *  Not research data: it decides what the viewport shows and nothing else. */
+export const CountryBoundsSchema = z.strictObject({
+  code: z.string().length(2),
+  name: z.string().min(1),
+  /** [west, south, east, north] in degrees. */
+  bounds: z.tuple([z.number(), z.number(), z.number(), z.number()]),
+});
+export type CountryBounds = z.infer<typeof CountryBoundsSchema>;
+
 export const SpatialTypeSchema = z.strictObject({
   id: z.string().min(1),
   label: z.string().min(1),

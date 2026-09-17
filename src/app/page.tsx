@@ -87,6 +87,7 @@ export default function HomePage() {
             accent: type.accent,
           }))}
         tagLabels={tagLabels()}
+        countryBounds={atlas.countryBounds}
       />
     </div>
   );

@@ -196,6 +196,19 @@ zero height.
 Filter state is kept in the URL with the history API rather than
 `useSearchParams`, which keeps the map out of a Suspense boundary.
 
+**How the map decides what to frame.** Normally it fits the visible pins, as
+close as they allow. The exception is a country filter *on its own*: then the
+question is "where in this country", so it frames the country from
+`data/vocab/country-bounds.yml` and lets the pins fall where they fall. Add any
+other filter — a brand, an event, a search — and the pins take over again.
+
+That has to be a box rather than a zoom number: the same zoom shows twice as
+much land on a wide monitor as on a narrow one, so a fixed zoom would frame a
+country correctly on exactly one screen. Those boxes are **mainland only and
+approximate** — with French Guiana included, "France" spans the Atlantic. They
+are framing aids, never shown as facts, and a country missing from the file
+just falls back to its pins.
+
 ## Commands
 
 ```bash
@@ -238,5 +251,5 @@ full-text search engine · pin clustering · the Strategy Matrix chart ·
 aggregate charts across cases (an aggregate is a research finding, and
 findings need verified data first).
 
-Evidence labels are now **built**, not postponed: see the four-value status in
+Evidence labels are now **built**, not postponed: see the five-value status in
 rule 1 and `SOURCE_TYPES` in `src/lib/schema.ts`.

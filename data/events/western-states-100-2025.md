@@ -10,7 +10,7 @@ location:
   country: United States
   countryCode: US
   coordinates: [-120.2356, 39.1969]
-status: partially-verified
+status: placeholder
 sources: []
 ---
 

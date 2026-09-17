@@ -364,6 +364,24 @@ function checkReferences(data: DataSet): void {
       });
     }
   }
+
+  /* The same rule, on events. It was enforced on cases only for a while, and
+     an event slipped through marked "partially-verified" with sources: [] -
+     which is the one thing the status field is supposed to make impossible.
+     An event carries dates a case then inherits through relatedEvent, so an
+     unsourced edition quietly lends its authority to every case on it. */
+  for (const e of data.events) {
+    if (
+      (e.status === "verified" || e.status === "partially-verified") &&
+      !e.sources.some((s) => s.url.trim())
+    ) {
+      data.errors.push({
+        file: `events/${e.slug}.md`,
+        field: "status",
+        message: `"${e.status}" requires at least one source with a url. Either add the source, or set status to "placeholder".`,
+      });
+    }
+  }
 }
 
 /* --------------------------------------------------------------------------

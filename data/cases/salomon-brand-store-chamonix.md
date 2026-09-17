@@ -1,11 +1,15 @@
 ---
 title: Brand Store Chamonix
 brand: salomon
+primaryActivationLogic: service
+secondaryActivationLogic: retail
+activationLogicRationale: >-
+  Foot scanning, custom insoles, boot customisation and repair are what the
+  brand's own store page leads with, and they are the reason to walk in
+  without buying. Retail is second and genuine - it is a shop - but a shop
+  alone would not explain why this address earns visits in the fifty-one
+  weeks when no race is happening.
 status: verified
-primaryActivationLogic:
-  - Permanent Presence
-  - Service
-  - Community
 collaborators:
   - name: Green Wolf
     role: Gear repair partner

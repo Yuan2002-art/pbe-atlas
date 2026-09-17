@@ -15,12 +15,14 @@ import { marked } from "marked";
 import { z } from "zod";
 
 import {
+  ActivationLogicSchema,
   BrandFrontmatterSchema,
   CaseFrontmatterSchema,
   CaseSectionsSchema,
   ClassificationTagSchema,
   EventFrontmatterSchema,
   SpatialTypeSchema,
+  type ActivationLogic,
   type Brand,
   type Case,
   type CaseSections,
@@ -44,6 +46,7 @@ export interface DataSet {
   events: Event[];
   spatialTypes: SpatialType[];
   tags: ClassificationTag[];
+  activationLogics: ActivationLogic[];
   errors: DataSetError[];
 }
 
@@ -249,6 +252,7 @@ function checkReferences(data: DataSet): void {
   const eventSlugs = new Set(data.events.map((e) => e.slug));
   const typeIds = new Set(data.spatialTypes.map((t) => t.id));
   const tagIds = new Set(data.tags.map((t) => t.id));
+  const logicIds = new Set(data.activationLogics.map((l) => l.id));
 
   const suggest = (value: string, pool: Set<string>): string => {
     const near = [...pool].find(
@@ -306,6 +310,47 @@ function checkReferences(data: DataSet): void {
       data.errors.push({ file, field: "tags", message: "contains a duplicate tag" });
     }
 
+    /* Activation logic: exactly one primary, at most one secondary, both from
+       the controlled vocabulary, and never the same value twice. The whole
+       point of the field is that it forces a single judgement. */
+    if (c.status !== "placeholder" && !c.primaryActivationLogic) {
+      data.errors.push({
+        file,
+        field: "primaryActivationLogic",
+        message: `required on any case above "placeholder". Pick exactly one id from data/vocab/activation-logic.yml.`,
+      });
+    }
+    if (c.primaryActivationLogic && !logicIds.has(c.primaryActivationLogic)) {
+      data.errors.push({
+        file,
+        field: "primaryActivationLogic",
+        message: `"${c.primaryActivationLogic}" is not in data/vocab/activation-logic.yml.${suggest(
+          c.primaryActivationLogic,
+          logicIds,
+        )}`,
+      });
+    }
+    if (c.secondaryActivationLogic && !logicIds.has(c.secondaryActivationLogic)) {
+      data.errors.push({
+        file,
+        field: "secondaryActivationLogic",
+        message: `"${c.secondaryActivationLogic}" is not in data/vocab/activation-logic.yml.${suggest(
+          c.secondaryActivationLogic,
+          logicIds,
+        )}`,
+      });
+    }
+    if (
+      c.secondaryActivationLogic &&
+      c.secondaryActivationLogic === c.primaryActivationLogic
+    ) {
+      data.errors.push({
+        file,
+        field: "secondaryActivationLogic",
+        message: "must differ from primaryActivationLogic, or be left empty.",
+      });
+    }
+
     // A record cannot claim to be verified with nothing to verify it against.
     // This is an error, not a notice: it must be impossible to publish.
     if (
@@ -339,12 +384,18 @@ export function loadDataSet(): DataSet {
   const errors: DataSetError[] = [];
   const spatialTypes = readYaml("spatial-types.yml", SpatialTypeSchema, errors);
   const tags = readYaml("classification-tags.yml", ClassificationTagSchema, errors);
+  const activationLogics = readYaml(
+    "activation-logic.yml",
+    ActivationLogicSchema,
+    errors,
+  );
   const data: DataSet = {
     cases: loadCases(errors),
     brands: loadBrands(errors),
     events: loadEvents(errors),
     spatialTypes,
     tags,
+    activationLogics,
     errors,
   };
   checkReferences(data);

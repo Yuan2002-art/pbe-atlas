@@ -63,13 +63,40 @@ for (const status of ["verified", "partially-verified", "ai-reconstructed", "pla
   if (n > 0) console.log(`  ${status.padEnd(20)} ${n}`);
 }
 
-/* Activation logic is free text on purpose, which means a typo silently
-   creates a new category. Listing every distinct value with its count makes
-   "Community" vs "community" vs "Communtiy" obvious at a glance. */
-const logicCounts = new Map<string, number>();
+/* Activation logic is a controlled vocabulary; unknown ids are errors, not
+   notices. What is worth printing is the distribution — if every case has a
+   different primary, the field is not yet doing comparative work. */
+const primaryCounts = new Map<string, number>();
+const secondaryCounts = new Map<string, number>();
 for (const c of data.cases) {
-  for (const logic of c.primaryActivationLogic) {
-    logicCounts.set(logic, (logicCounts.get(logic) ?? 0) + 1);
+  if (c.primaryActivationLogic) {
+    primaryCounts.set(
+      c.primaryActivationLogic,
+      (primaryCounts.get(c.primaryActivationLogic) ?? 0) + 1,
+    );
+  }
+  if (c.secondaryActivationLogic) {
+    secondaryCounts.set(
+      c.secondaryActivationLogic,
+      (secondaryCounts.get(c.secondaryActivationLogic) ?? 0) + 1,
+    );
+  }
+}
+
+if (primaryCounts.size > 0) {
+  console.log(`
+${DIM}Activation logic${OFF} ${DIM}(primary + secondary)${OFF}`);
+  for (const logic of data.activationLogics) {
+    const p = primaryCounts.get(logic.id) ?? 0;
+    const sec = secondaryCounts.get(logic.id) ?? 0;
+    if (p === 0 && sec === 0) continue;
+    console.log(`  ${logic.label.padEnd(24)} ${p} primary   ${sec} secondary`);
+  }
+  const unused = data.activationLogics.filter(
+    (l) => !primaryCounts.has(l.id) && !secondaryCounts.has(l.id),
+  );
+  if (unused.length > 0) {
+    console.log(`  ${DIM}not yet used: ${unused.map((l) => l.label).join(", ")}${OFF}`);
   }
 }
 
@@ -96,13 +123,6 @@ if (unjustified.length > 0) {
   );
 }
 
-if (logicCounts.size > 0) {
-  console.log(`\n${DIM}Activation logic in use${OFF} ${DIM}(check for near-duplicates)${OFF}`);
-  for (const [logic, n] of [...logicCounts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))) {
-    console.log(`  ${String(n).padStart(2)} x  ${logic}`);
-  }
-}
-
 /* --- non-blocking notices ----------------------------------------------- */
 
 const notices: string[] = [];
@@ -125,8 +145,10 @@ for (const c of data.cases) {
       `cases/${c.slug}.md: no source is categorised (official-brand / event-organiser / agency-studio / editorial).`,
     );
   }
-  if (c.primaryActivationLogic.length === 0) {
-    notices.push(`cases/${c.slug}.md has no primaryActivationLogic.`);
+  if (c.primaryActivationLogic && !c.activationLogicRationale) {
+    notices.push(
+      `cases/${c.slug}.md names an activation logic but does not say why — add activationLogicRationale.`,
+    );
   }
   if (c.status === "partially-verified" && !c.sections.verificationNotes) {
     notices.push(

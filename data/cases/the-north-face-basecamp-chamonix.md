@@ -1,11 +1,16 @@
 ---
 title: Basecamp Chalet and Chamonix Store
 brand: the-north-face
+primaryActivationLogic: media-hosting
+secondaryActivationLogic: product-trial
+activationLogicRationale: >-
+  The activation's value is produced by relay: creators and European media
+  carry the chalet outward to an audience that never entered it. Product
+  Trial is second because testing Offtrail Ultra and Summit Series on alpine
+  terrain is the substance being relayed. The permanent store is a real part
+  of the brand's Chamonix position but it is the form, not the engine, and
+  it is recorded in spatialType and tags instead.
 status: partially-verified
-primaryActivationLogic:
-  - Media Hosting
-  - Product Trial
-  - Permanent Retail
 collaborators:
   - name: Bialetti
     role: Coffee service inside the Basecamp chalet

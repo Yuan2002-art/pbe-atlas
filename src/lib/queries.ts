@@ -8,6 +8,7 @@
 import { requireDataSet } from "./content";
 import { spreadOverlappingPins, toCard, type CaseCard, type CardLookups } from "./card";
 import type {
+  ActivationLogic,
   Brand,
   Case,
   ClassificationTag,
@@ -28,6 +29,7 @@ export interface Atlas {
   events: Event[];
   spatialTypes: SpatialType[];
   tags: ClassificationTag[];
+  activationLogics: ActivationLogic[];
   /** Compact cases, with overlapping pins already spread apart. */
   cards: CaseCard[];
   countries: CountryFacet[];
@@ -75,6 +77,7 @@ export function getAtlas(): Atlas {
     events: data.events,
     spatialTypes: data.spatialTypes,
     tags: data.tags,
+    activationLogics: data.activationLogics,
     cards,
     countries: [...countryMap.entries()]
       .map(([code, name]) => ({ code, name }))
@@ -125,6 +128,10 @@ export function cardsForTag(tag: string): CaseCard[] {
 
 export function spatialTypeLabel(id: string): string {
   return getAtlas().spatialTypes.find((t) => t.id === id)?.label ?? id;
+}
+
+export function activationLogicLabel(id: string): string {
+  return getAtlas().activationLogics.find((l) => l.id === id)?.label ?? id;
 }
 
 export function tagLabel(id: string): string {

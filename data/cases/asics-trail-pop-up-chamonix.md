@@ -1,10 +1,16 @@
 ---
 title: Trail Pop-Up and Trail Camp
 brand: asics
+primaryActivationLogic: cultural-narrative
+secondaryActivationLogic: product-trial
+activationLogicRationale: >-
+  Barred from the official perimeter, ASICS competes on where it comes from:
+  Japanese calligraphy, natural materials and a lichen motif tying Fuji to
+  Mont-Blanc. That argument is carried by the room itself, which is what
+  Cultural Narrative names. Product Trial is second and sits in the
+  companion Trail Camp rather than in the pop-up, which is a hybrid this
+  schema cannot yet express.
 status: verified
-primaryActivationLogic:
-  - Product
-  - Cultural Spatial Narrative
 collaborators: []
 location:
   venue: "Trail Camp at L'Index, 309 Promenade des Crèmeries (pop-up address not sourced)"

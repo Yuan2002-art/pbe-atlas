@@ -46,19 +46,35 @@ explainable in one sentence.
    reports how many cases are plottable and flags any with a coordinate but no
    rationale. It belongs to the interpretation layer, not the facts layer.
 
-5. **Record what could not be verified.** `## Verification notes` is where
+5. **Activation logic is one primary, one optional secondary, both from
+   `data/vocab/activation-logic.yml`.** Never a list. The field answers "what
+   does this space run on", and forcing a single choice is the whole point:
+   an earlier free-text version produced fourteen distinct values across six
+   cases, of which only one ever repeated, which made the field useless for
+   comparison. `tags` is where everything that applies goes; this is where the
+   load-bearing mechanism goes. Every case that names one must also record
+   `activationLogicRationale` saying why that mechanism and not the runners-up.
+
+   The three vocabularies divide as: `spatialType` = the form (one),
+   `tags` = analytical attributes (many, unordered), activation logic = the
+   engine (one + one optional). `event-activation` and `cultural-archive` are
+   deliberately excluded from the logic vocabulary — the first is a dependency
+   relation rather than a mechanism, the second is covered by
+   `cultural-narrative` and keeping both would restart the drift.
+
+6. **Record what could not be verified.** `## Verification notes` is where
    uncertainty goes — inferred years, street-level-only coordinates,
    single-press-release trade coverage, claims deliberately excluded. A blank
    field is silent; a note is honest. `partially-verified` records must have one.
 
-6. **No LinkedIn scraping, and no scraping of any site whose terms forbid it.**
+7. **No LinkedIn scraping, and no scraping of any site whose terms forbid it.**
    If asked for that, say so and offer a manual alternative.
-7. **Data stays hand-editable.** Markdown with YAML frontmatter, one file per
+8. **Data stays hand-editable.** Markdown with YAML frontmatter, one file per
    record, in `data/`. Do not introduce a CMS or a database without being asked.
-8. **Vocabularies live in data, not code.** Spatial types and classification
-   tags come from `data/vocab/*.yml`; the filters, the map key, the case pages
-   and the Method page all read from there.
-9. **Show gaps, never hide them.** A brand or event with no cases renders an
+9. **Vocabularies live in data, not code.** Spatial types and classification
+   tags and activation logics all come from `data/vocab/*.yml`; the filters, the
+   map key, the case pages and the Method page all read from there.
+10. **Show gaps, never hide them.** A brand or event with no cases renders an
    honest empty state. Do not pad the dataset to make the interface look full.
 
 ## Stack
@@ -106,6 +122,18 @@ Pages under `src/app/`: `/` global map · `/cases` register · `/cases/[slug]` �
   duration, not timed events, so `EventTimeline` draws a bar per case across the
   edition's days. A case whose dates were never published gets a dashed ghost
   bar labelled as such rather than a guessed position.
+
+## Known limitations, recorded and not yet fixed
+
+- **`spatialType` is single-valued, but two cases are hybrids.** The North Face
+  bundles a Basecamp chalet (`activation`) with a permanent store
+  (`permanent-retail`); ASICS bundles a Trail Pop-Up with a separately-sited
+  Trail Camp. In both, the second space is currently visible only in the prose
+  and the tags. The same hybrid is what forces the activation logic's secondary
+  slot to carry a mechanism belonging to the other half of the case. Three ways
+  out when it matters: split into two cases, make `spatialType` multi-valued, or
+  add `secondarySpatialType`. Not worth doing until a third hybrid appears.
+- **`strategyMatrix` is populated on no case at all.** Deliberate — see rule 4.
 
 ## Map notes
 

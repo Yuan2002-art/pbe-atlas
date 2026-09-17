@@ -130,11 +130,20 @@ export const CaseFrontmatterSchema = z.strictObject({
   /** Partners, agencies, studios and collaborating brands, with their role. */
   collaborators: z.array(CollaboratorSchema).default([]),
   status: StatusSchema,
-  /** The strategic logic the case runs on, e.g. ["Community", "Product Drop"].
-   *  Free text on purpose: this is a research instrument still being formed,
-   *  so it must not be constrained by code. `npm run validate` lists every
-   *  distinct value in use so inconsistent wording is easy to spot. */
-  primaryActivationLogic: z.array(z.string().min(1)).default([]),
+  /** The single mechanism the space runs on — an id from
+   *  data/vocab/activation-logic.yml.
+   *
+   *  Exactly one, on purpose. Listing everything that applies is what `tags`
+   *  are for; this field forces the judgement about which mechanism is
+   *  load-bearing. An earlier free-text version produced fourteen distinct
+   *  values across six cases, which made the field useless for comparison. */
+  primaryActivationLogic: z.string().default(""),
+  /** An optional second mechanism, also from the vocabulary. At most one, and
+   *  it may not repeat the primary. */
+  secondaryActivationLogic: z.string().default(""),
+  /** Why those two were chosen over the alternatives. Interpretation, not
+   *  fact — it records a judgement and should read as one. */
+  activationLogicRationale: z.string().default(""),
   location: LocationSchema,
   date: DateRangeSchema,
   /** One spatial type — an id from data/vocab/spatial-types.yml */
@@ -303,3 +312,12 @@ export const ClassificationTagSchema = z.strictObject({
   definition: z.string().min(1),
 });
 export type ClassificationTag = z.infer<typeof ClassificationTagSchema>;
+
+export const ActivationLogicSchema = z.strictObject({
+  id: z.string().min(1),
+  label: z.string().min(1),
+  definition: z.string().min(1),
+  /** The one-line question that decides whether this logic applies. */
+  test: z.string().min(1),
+});
+export type ActivationLogic = z.infer<typeof ActivationLogicSchema>;

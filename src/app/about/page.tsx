@@ -13,7 +13,7 @@ import { ANALYSIS_SECTIONS } from "@/lib/sections";
 export const metadata: Metadata = {
   title: "Method",
   description:
-    "The classification system, the seven strategic questions, and the evidence status of every record in the Atlas.",
+    "The classification system, the activation-logic vocabulary, the strategic questions, and the evidence status of every record in the Atlas.",
 };
 
 const STATUS_NOTES = [
@@ -50,12 +50,13 @@ export default function AboutPage() {
             <MetaItem label="Cases" value={atlas.cases.length} />
             <MetaItem label="Spatial types" value={atlas.spatialTypes.length} />
             <MetaItem label="Classification tags" value={atlas.tags.length} />
+            <MetaItem label="Activation logics" value={atlas.activationLogics.length} />
             <MetaItem label="Strategic questions" value={ANALYSIS_SECTIONS.length} />
           </>
         }
       />
 
-      <div className="mx-auto w-full max-w-[1400px] px-4 py-9 sm:px-5">
+      <div className="mx-auto w-full max-w-[1400px] px-4 py-12 sm:px-6">
         {/* Evidence warning first — it is the most important thing on the page */}
         <section className="mb-12">
           <SectionHeading index="§1">Evidence and sources</SectionHeading>
@@ -69,7 +70,7 @@ export default function AboutPage() {
             says so in its verification notes rather than leaving a silent gap.
           </p>
 
-          <div className="hatch-placeholder mb-6 border px-4 py-3" style={{ borderColor: "var(--red)" }}>
+          <div className="hatch-placeholder mb-6 rounded-[var(--radius-card)] border px-5 py-4" style={{ borderColor: "var(--red)" }}>
             <p className="label-lg" style={{ color: "var(--red)" }}>
               This build contains {tally.placeholder} placeholder case
               {tally.placeholder === 1 ? "" : "s"} of {atlas.cases.length}
@@ -139,9 +140,9 @@ export default function AboutPage() {
             The physical form of the case — what was actually built. Each type has its
             own mark on the map, so the map can be read in black and white.
           </p>
-          <dl className="grid gap-px border border-rule bg-rule sm:grid-cols-2">
+          <dl className="grid gap-4 sm:grid-cols-2">
             {atlas.spatialTypes.map((type) => (
-              <div key={type.id} className="bg-paper p-4">
+              <div key={type.id} className="card p-5">
                 <dt className="flex items-center gap-2">
                   <PinGlyph
                     shape={type.pinShape}
@@ -188,9 +189,40 @@ export default function AboutPage() {
           </dl>
         </section>
 
+        {/* Activation logic */}
+        <section className="mb-12">
+          <SectionHeading index="§4" note="one primary, one optional second">
+            Activation logic
+          </SectionHeading>
+          <p className="prose-atlas mb-5 text-graphite">
+            The engine — what a space actually runs on. Every case names exactly
+            one primary mechanism and at most one secondary. That constraint is
+            deliberate: listing every mechanism that applies is what the
+            classification tags above are for, and a field where nothing repeats
+            cannot support comparison. Each case also records, in its own words,
+            why it chose that mechanism over the alternatives.
+          </p>
+          <dl className="border-t border-rule">
+            {atlas.activationLogics.map((logic) => (
+              <div
+                key={logic.id}
+                className="grid gap-x-8 gap-y-1 border-b border-rule py-3.5 md:grid-cols-[minmax(0,14rem)_minmax(0,1fr)]"
+              >
+                <dt className="label-lg" style={{ color: "var(--ink)" }}>
+                  {logic.label}
+                </dt>
+                <dd className="max-w-[70ch] text-[13.5px] leading-snug text-graphite">
+                  {logic.definition}
+                  <span className="label mt-1.5 block">Test · {logic.test}</span>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+
         {/* The seven questions */}
         <section className="mb-12">
-          <SectionHeading index="§4" note="asked of every case">
+          <SectionHeading index="§5" note="asked of every case">
             Strategic analysis
           </SectionHeading>
           <p className="prose-atlas mb-5 text-graphite">
@@ -222,7 +254,7 @@ export default function AboutPage() {
 
         {/* How the data works */}
         <section className="mb-12">
-          <SectionHeading index="§5">Where the data lives</SectionHeading>
+          <SectionHeading index="§6">Where the data lives</SectionHeading>
           <dl className="border-t border-rule">
             {[
               ["data/cases/", "One Markdown file per case. This is the Atlas."],
@@ -262,7 +294,7 @@ export default function AboutPage() {
 
         {/* Deliberate limits */}
         <section>
-          <SectionHeading index="§6">Deliberate limits of this build</SectionHeading>
+          <SectionHeading index="§7">Deliberate limits of this build</SectionHeading>
           <ul className="prose-atlas">
             <li>
               No AI-assisted research, no image-to-3D or floor-plan reconstruction, no

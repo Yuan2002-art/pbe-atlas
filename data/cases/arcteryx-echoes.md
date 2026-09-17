@@ -1,10 +1,16 @@
 ---
 title: ECHOES
 brand: arcteryx
+primaryActivationLogic: cultural-narrative
+secondaryActivationLogic: ""
+activationLogicRationale: >-
+  Recorded runner voices arranged around mind, body, mountain and soul, with
+  no product named and nothing to sell: the mechanism is the argument
+  itself. No secondary is recorded, and the reason is evidential rather than
+  analytical - the Chamonix installation was never confirmed to have opened,
+  so this reading describes the published concept and material, not an
+  observed space.
 status: partially-verified
-primaryActivationLogic:
-  - Immersive Storytelling
-  - Emotion
 collaborators:
   - name: El Flamingo Films
     role: Production company
@@ -98,6 +104,14 @@ March 2023. Moment Factory is not credited on ECHOES and that work is unrelated.
 
 **Whether Arc'teryx had UTMB's sanction is unknown.** No source establishes
 whether this was an official partner activation or an independent presence.
+
+**The activation logic describes the published work, not a verified space.**
+`cultural-narrative` is read from the concept and material Arc'teryx published
+— the recorded voices, the four themes, the absence of any product — not from
+anything observed in a room. No secondary logic is recorded for the same
+reason: a second mechanism could only be identified by seeing what the
+installation actually did, and there is no evidence it opened. Treat the
+mechanism as provisional until the space itself is documented.
 
 ## Strategic purpose
 Attach an emotional, non-commercial artefact to the two moments when the brand's

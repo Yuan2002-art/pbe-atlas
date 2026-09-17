@@ -1,0 +1,102 @@
+# ===========================================================================
+# ACTIVATION LOGIC — what a space runs on.
+#
+# Each case names exactly ONE primary logic and at most ONE secondary. That
+# constraint is deliberate: listing every mechanism that applies is what the
+# `tags` vocabulary is for. This field forces a judgement about which single
+# mechanism is load-bearing — the one that, if removed, would make the space
+# stop working.
+#
+# The three vocabularies divide like this:
+#   spatialType  = the physical form        (one per case)
+#   tags         = analytical attributes    (many per case, unordered)
+#   activation   = the engine               (one primary, one optional second)
+#
+# Deliberately NOT in this list:
+#   event-activation  — a dependency relation, not a mechanism. As a primary
+#                       it would make every case at one event identical.
+#   cultural-archive  — its mechanism sense is covered by cultural-narrative.
+#                       Two near-identical options is how vocabulary drift
+#                       starts again. It remains a valid tag.
+# ===========================================================================
+
+- id: sponsorship
+  label: Sponsorship
+  definition: >-
+    Official status purchased from the event owner. The space works because the
+    brand holds rights, position and access that competitors cannot buy.
+  test: Remove the official status — could this space still exist? If not, this is the logic.
+
+- id: media-hosting
+  label: Media Hosting
+  definition: >-
+    Activation value is generated through secondary transmission — journalists,
+    creators and invited storytellers who relay the experience onward — rather
+    than by the people who physically attend. Restricted access is a common
+    symptom of this logic, not its definition: a space open to anyone can still
+    run on it if its real output is coverage rather than visits.
+  test: Is the intended output an article, a film or a post, rather than a visit?
+
+- id: cultural-narrative
+  label: Cultural Narrative
+  definition: >-
+    The argument is made through design, material and story rather than through
+    proof of performance. The space asserts where the brand belongs culturally.
+  test: Strip out the written copy — is the space still making an argument?
+
+- id: service
+  label: Service
+  definition: >-
+    Repair, fitting, customisation or maintenance is itself the reason to come,
+    and the reason to come back. Expertise is demonstrated by doing, not stating.
+  test: Is there a reason to walk in without buying anything?
+
+- id: community-programming
+  label: Community Programming
+  definition: >-
+    Recurring participation — group runs, clubs, workshops, screenings — that
+    brings the same people back more than once. Value accrues through repeat
+    visits rather than through a single impressive encounter.
+  test: Does the mechanism depend on the second and third visit?
+
+- id: product-trial
+  label: Product Trial
+  definition: >-
+    The visitor puts the product to use on site, under conditions approximating
+    real use. Belief is transferred through the body rather than through claims.
+  test: Does the product leave the shelf and end up on the visitor?
+
+- id: limited-drop
+  label: Limited Drop
+  definition: >-
+    Scarcity is the mechanism — location-exclusive, time-limited or numbered
+    product that makes physical attendance a condition of access.
+  test: Is there something here that cannot be bought without showing up?
+
+- id: collaboration
+  label: Collaboration
+  definition: >-
+    A partner's audience or authority is the engine, not the brand's own. The
+    brand is borrowing access across a boundary it could not cross alone.
+  test: Swap the partner out — does the space collapse?
+
+- id: performance-archive
+  label: Performance Archive
+  definition: >-
+    The space argues from physical evidence of past performance — race-worn kit,
+    prototypes, expedition records, split times. It argues from history.
+  test: Is the case being made by objects that have already been proven?
+
+- id: performance-testing
+  label: Performance Testing
+  definition: >-
+    Measurement or product development actually happens on site. The brand is
+    generating performance knowledge here, not only displaying it.
+  test: Does the brand leave with data it did not arrive with?
+
+- id: retail
+  label: Retail
+  definition: >-
+    Commercial transaction is the engine. The space exists in order to sell, and
+    would have no reason to exist without the till.
+  test: Remove the till — is there any remaining reason for the space?

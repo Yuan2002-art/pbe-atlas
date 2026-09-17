@@ -63,6 +63,8 @@ export default async function CasePage({
   const next = ordered[position + 1];
 
   const tagOf = (id: string) => atlas.tags.find((t) => t.id === id);
+  const logicLabel = (id: string) =>
+    atlas.activationLogics.find((l) => l.id === id)?.label ?? id;
 
   return (
     <article>
@@ -204,18 +206,23 @@ export default async function CasePage({
                 ))}
               </span>
             </FieldRow>
-            {record.primaryActivationLogic.length > 0 && (
+            {record.primaryActivationLogic && (
               <FieldRow label="Activation logic">
-                <span className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
-                  {record.primaryActivationLogic.map((logic, i) => (
-                    <span key={logic} className="flex items-center gap-1.5">
-                      {i > 0 && <span className="text-pencil">+</span>}
-                      <span className="label-lg" style={{ color: "var(--ink)" }}>
-                        {logic}
-                      </span>
-                    </span>
-                  ))}
+                <span className="label-lg block" style={{ color: "var(--ink)" }}>
+                  {logicLabel(record.primaryActivationLogic)}
                 </span>
+                <span className="label mt-0.5 block">primary</span>
+                {record.secondaryActivationLogic && (
+                  <>
+                    <span
+                      className="label-lg mt-2 block"
+                      style={{ color: "var(--graphite)" }}
+                    >
+                      {logicLabel(record.secondaryActivationLogic)}
+                    </span>
+                    <span className="label mt-0.5 block">secondary</span>
+                  </>
+                )}
               </FieldRow>
             )}
             <FieldRow label="Evidence">
@@ -261,6 +268,33 @@ export default async function CasePage({
               </SectionHeading>
               <InterpretationNotice />
             </div>
+
+            {record.activationLogicRationale && (
+              <div className="card p-6">
+                <p className="label flex flex-wrap items-baseline gap-x-2">
+                  <span style={{ color: "var(--ink)" }}>Activation logic</span>
+                  <span className="text-pencil">
+                    · why this mechanism and not another
+                  </span>
+                </p>
+                <p className="mt-2 flex flex-wrap items-center gap-2">
+                  <span className="label-lg rounded-[var(--radius-pill)] bg-ink px-3 py-1.5" style={{ color: "var(--paper-raised)" }}>
+                    {logicLabel(record.primaryActivationLogic)}
+                  </span>
+                  {record.secondaryActivationLogic && (
+                    <>
+                      <span className="text-pencil">+</span>
+                      <span className="label-lg rounded-[var(--radius-pill)] border border-rule px-3 py-1.5" style={{ color: "var(--ink)" }}>
+                        {logicLabel(record.secondaryActivationLogic)}
+                      </span>
+                    </>
+                  )}
+                </p>
+                <p className="mt-3 max-w-[68ch] text-[14px] leading-snug text-graphite">
+                  {record.activationLogicRationale}
+                </p>
+              </div>
+            )}
 
             <FramingStrip sections={record.sections} />
             <AnalysisGrid sections={record.sections} index="" />

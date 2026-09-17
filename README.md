@@ -61,6 +61,13 @@ Other commands:
    - `relatedEvent` — a filename from `data/events/` if it happened at an event;
      delete the line if not. **Events are per edition**, so point at
      `utmb-mont-blanc-2026`, not at a generic "UTMB"
+   - `primaryActivationLogic` — **exactly one** id from
+     `data/vocab/activation-logic.yml`: the single mechanism the space runs on.
+     `secondaryActivationLogic` is optional and must differ. Listing everything
+     that applies is what `tags` are for — this field is a judgement, and the
+     constraint is what makes it worth having
+   - `activationLogicRationale` — one short paragraph saying why that mechanism
+     and not the ones you rejected. Interpretation, not fact
    - `strategyMatrix` — leave every value `null` unless the evidence genuinely
      supports a position on the two axes. This feeds a future comparison chart,
      and a guessed number is worse than an empty one
@@ -118,6 +125,7 @@ data/                    ← everything you edit is in here
   vocab/
     spatial-types.yml       the six spatial types, their definitions and map marks
     classification-tags.yml the nine research tags and their definitions
+    activation-logic.yml    the eleven mechanisms, each with a one-line test
   map-palette.json       map colours (then run `npm run map-style`)
 
 public/
@@ -154,6 +162,12 @@ the code needs to change.
 
 For a new spatial type, `pinShape` must be one of: `square`, `circle`,
 `triangle`, `cross`, `diamond`, `chevron`.
+
+Adding to `activation-logic.yml` deserves more resistance than the other two.
+The field only works because the list is short: if every new case can invent a
+mechanism, nothing ever repeats and nothing can be compared. Before adding one,
+check that none of the existing eleven, read with its `test` line, already
+covers the case.
 
 ---
 

@@ -1,10 +1,17 @@
 ---
 title: UTMB Mont-Blanc Activation Ecosystem
 brand: hoka
+primaryActivationLogic: sponsorship
+secondaryActivationLogic: product-trial
+activationLogicRationale: >-
+  The title partnership is the only thing that makes three simultaneous
+  sites possible: without it there is no naming, no expo position and no
+  branded cable car. Product Trial is second because the free 24-hour Tecton
+  X 4 loan is a distinct mechanism operating inside that bought position,
+  not a consequence of it. Community was considered - the shakeout run and
+  finisher area both qualify - but those are hospitality extended to an
+  audience sponsorship already delivered.
 status: verified
-primaryActivationLogic:
-  - Sponsorship
-  - Event Ecosystem
 collaborators:
   - name: Compagnie du Mont-Blanc
     role: Cable-car operator — HOKA-branded lift to the Refuge site

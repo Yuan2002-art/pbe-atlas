@@ -51,8 +51,13 @@ brand: ${slugify(brandArg)}
 # placeholder | ai-reconstructed | partially-verified | verified
 # Anything above "placeholder" needs at least one source with a url.
 status: placeholder
-# The strategic logic, free text. e.g. Community, Product Drop, Collaboration
-primaryActivationLogic: []
+# The ONE mechanism this space runs on — an id from
+# data/vocab/activation-logic.yml. Exactly one; listing everything that applies
+# is what tags are for. An optional second may follow, and must differ.
+primaryActivationLogic: ""
+secondaryActivationLogic: ""
+activationLogicRationale: >-
+  Why those two and not the alternatives you considered.
 collaborators: []
 #  - name: ""
 #    role: ""              # what they actually did: agency, production, product

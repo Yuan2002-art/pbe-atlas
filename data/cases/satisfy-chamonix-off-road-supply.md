@@ -1,11 +1,16 @@
 ---
 title: Chamonix Off-Road Supply
 brand: satisfy
+primaryActivationLogic: community-programming
+secondaryActivationLogic: limited-drop
+activationLogicRationale: >-
+  Daily runs departing from the door manufacture repeat visits across six
+  days; the exclusive product manufactures one. The engine is the return, so
+  Community Programming leads. Limited Drop is a real second mechanism
+  rather than a by-product: the in-store-first release makes attendance a
+  condition of access. Collaboration and Retail both apply as attributes and
+  are recorded as tags.
 status: verified
-primaryActivationLogic:
-  - Community
-  - Product Drop
-  - Collaboration
 collaborators:
   - name: Oakley
     role: Product collaboration — SATISFY Oakley Suture Jacket

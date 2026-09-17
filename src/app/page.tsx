@@ -8,8 +8,9 @@ export default function HomePage() {
   /* The filter rail is built from the data, not hard-coded: add a spatial
      type or a tag to data/vocab/ and it appears here automatically. */
   /* Rail order, top to bottom: who, then what form, then where — brand, spatial
-     type, event, country. Classification and city follow because they are the
-     ones you reach for last. */
+     type, event, country, city. Classification sits last: it is the research
+     lens rather than a property of the space, and it is the one you reach for
+     only once you already know what you are looking at. */
   const groups: FilterGroupDef[] = [
     {
       group: "brand",
@@ -43,15 +44,15 @@ export default function HomePage() {
       })),
     },
     {
+      group: "city",
+      legend: "City",
+      options: atlas.cities.map((city) => ({ value: city, label: city })),
+    },
+    {
       group: "tag",
       legend: "Classification",
       hint: "The research lens. A case can carry several.",
       options: atlas.tags.map((tag) => ({ value: tag.id, label: tag.label })),
-    },
-    {
-      group: "city",
-      legend: "City",
-      options: atlas.cities.map((city) => ({ value: city, label: city })),
     },
   ];
 

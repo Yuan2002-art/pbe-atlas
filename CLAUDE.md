@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # Performance Brand Experience Atlas — project brief
 
 ## What this is
@@ -103,6 +107,35 @@ component library.
 Pages under `src/app/`: `/` global map · `/cases` register · `/cases/[slug]` ·
 `/brands` + `/brands/[slug]` · `/events` + `/events/[slug]` · `/about` method.
 
+### How a Markdown file becomes a page
+
+Worth tracing once, because no single file shows it:
+
+1. `content.ts` reads `data/**/*.md`, splits frontmatter from body with
+   `gray-matter`, and validates the frontmatter against `schema.ts`.
+2. The body is split on `## ` headings and each heading is matched — case and
+   punctuation insensitively — against `CASE_SECTIONS` in `sections.ts`. An
+   unrecognised heading is an error, not silently dropped. Each section's
+   Markdown is rendered to HTML once, here. **So adding a prose section means
+   editing `sections.ts`, not any page.**
+3. `content.ts` then runs cross-reference checks: brand, event, tag, spatial
+   type and activation-logic ids must exist; `verified` needs a sourced url;
+   a secondary logic may not repeat the primary. Anything wrong is collected
+   and `requireDataSet()` throws, so the build fails loudly rather than
+   rendering blanks.
+4. `queries.ts` wraps that into `getAtlas()` and derives what pages ask for —
+   including `cards`, the compact form of a case that the client map and the
+   lists receive as props. Full cases carry rendered HTML and never cross to
+   the client.
+5. `card.ts` spreads pins that share a coordinate so none hide behind another.
+
+`getAtlas()` and `loadDataSet()` memoise **in production only**. In development
+every request re-reads `data/`, so editing a Markdown file and reloading is
+enough — no restart. If an edit seems not to apply, that is not why.
+
+`scripts/*.ts` run through `tsx` so they import the same `schema.ts` the site
+uses; there is deliberately no second copy of the rules.
+
 ## Design decisions worth not undoing
 
 - **Performance credibility and cultural meaning are stored once**, as answers
@@ -160,7 +193,31 @@ npm run validate     # check every file in data/ and report problems in plain la
 npm run new-case     # npm run new-case -- <brand-slug> "<Title>"
 npm run map-style    # rebuild the map style + worker after changing colours
 npm run build        # production build; also type-checks
+npx tsc --noEmit     # type-check alone — much faster than a build while iterating
 ```
+
+**There is no test framework and no linter in this project.** Nothing is
+missing or broken; none was ever added. The checks that exist are
+`npm run validate` for data and `npx tsc --noEmit` / `npm run build` for code.
+Do not scaffold Jest, Vitest or ESLint unless asked.
+
+### Shell note — this matters on the owner's machine
+
+Her terminal is **Windows PowerShell 5.1 with the execution policy at
+Restricted**, which has two consequences for any command handed to her:
+
+- `npm` and `npx` resolve to `npm.ps1` / `npx.ps1` and are **blocked**. Use
+  `npm.cmd` and `npx.cmd`, which bypass PowerShell scripts entirely.
+- `&&` is a parse error. Chain with `;`.
+
+```bash
+cd "C:\Users\yuan\Claude Projects\Performance Brand Experience Atlas"; npm.cmd run dev
+```
+
+The project path contains spaces, so quote it. To check a command the way she
+will actually experience it:
+`powershell -NoProfile -ExecutionPolicy Restricted -Command "<cmd>"` — an agent's
+own shell usually runs with Bypass and will not reproduce her failure.
 
 ## Not built yet — do not add unasked
 

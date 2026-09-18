@@ -92,6 +92,23 @@ explainable in one sentence.
 10. **Show gaps, never hide them.** A brand or event with no cases renders an
    honest empty state. Do not pad the dataset to make the interface look full.
 
+    A corollary learned the hard way: **a standing claim about the data must come
+    from the data.** The footer banner asserted "cases marked placeholder are
+    invented demo material" on every page, and stayed there after the last
+    placeholder was deleted — telling readers to watch for a marking that no
+    longer existed. It now reads off `statusTally()`. Anything that counts or
+    characterises the dataset should be computed, not written down.
+
+11. **`founded` describes the entity, not its parent.** An independent brand uses
+   the field. A sub-brand or product line leaves it **blank** unless a sourced
+   date belongs clearly to that entity, and the parent's date goes in the prose
+   where it cannot be misread. Nike Running / ACG carried 1971 and adidas
+   Running / Terrex carried 1949 — neither described the line the record is
+   about, and 1971 is not even Nike's founding (1964, as Blue Ribbon Sports).
+   Both are now blank; ACG's sourced 1989 debut lives in the prose. Amazfit
+   keeps `founded: 2015` because that date is Amazfit's own, not Zepp Health's —
+   that is the distinction the rule turns on.
+
 ## Stack
 
 Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · MapLibre GL with a free
@@ -109,14 +126,36 @@ component library.
 - `src/lib/queries.ts` — everything the pages ask of the data.
 - `src/lib/sections.ts` — the prose sections of a case, in order. Drives the
   template, the parser and the page layout.
-- `src/lib/filters.ts` and `src/lib/card.ts` — pure, no filesystem, no React;
-  they run in the browser as well as on the server.
+- `src/lib/filters.ts`, `src/lib/card.ts` and `src/lib/format.ts` — pure, no
+  filesystem, no React; they run in the browser as well as on the server.
+  `format.ts` holds the date, coordinate and place formatters, and dates are
+  formatted in a fixed archival style rather than the visitor's locale so a
+  screenshot in a thesis always reads the same.
 - `src/lib/pin.ts` — the six map marks. Used by the map, the legend and the
   lists so the shapes can never drift apart.
 - `src/styles/tokens.css` — every colour and measurement in the design.
 
 Pages under `src/app/`: `/` global map · `/cases` register · `/cases/[slug]` ·
 `/brands` + `/brands/[slug]` · `/events` + `/events/[slug]` · `/about` method.
+
+### `research/` — leads, and deliberately not data
+
+A top-level directory of unverified research leads. **`content.ts` only reads
+`data/`, so nothing in `research/` is ever loaded, validated or rendered.** It
+holds `utmb-2026-marathon-weekend-leads.md`: 149 brand activations listed by a
+third-party aggregator for UTMB 2026, every one marked
+`research lead / unverified` with the url it came from.
+
+Its `README.md` is the thing to read before touching it, because it records the
+one exception: the 26 `Pop-up / Expo` leads were transcribed into
+`data/events/utmb-mont-blanc-2026.md` as `reportedActivity` and do render — as
+leads, never as cases. The other 123 were not, because they are activities
+rather than spaces with a duration.
+
+Refresh it **by hand, in a browser**. marathon-weekend.com returns 429 to curl
+and keeps doing so with full browser headers — it blocks at the TLS-fingerprint
+level. Its `robots.txt` permits access and its Imprint carries no terms against
+it, but the block is the answer that counts, so never put this behind a cron job.
 
 ### How a Markdown file becomes a page
 
@@ -204,8 +243,11 @@ uses; there is deliberately no second copy of the rules.
 - **An edition may show reported activity it has not researched, as leads.**
   `reportedActivity` on an event record holds branded spaces a third party
   lists for that edition, unverified. UTMB Mont-Blanc 2026 carries 26 of them
-  against 5 researched cases, and that ratio is the reason the section exists:
-  showing only the 5 would make the research look more complete than it is.
+  against a smaller number of researched cases, and that ratio is the reason the
+  section exists: showing only the researched ones would make the research look
+  more complete than it is. **Run `npm run validate` for the current counts** —
+  this file said "against 5 researched cases" until the fifth new case landed,
+  which is the same way the footer banner went stale.
 
   The rules that keep it from becoming a second class of case: every entry must
   carry the url it was reported at (the schema refuses one without); the

@@ -1,0 +1,167 @@
+---
+title: Arc'teryx × Distance Aid Station
+brand: arcteryx
+primaryActivationLogic: community-programming
+secondaryActivationLogic: limited-drop
+activationLogicRationale: >-
+  The space is described by its own announcement as a meeting point open to
+  everyone, running events and experiences across the whole week — a reason
+  to come back rather than a reason to buy once. So Community Programming
+  leads. Limited Drop is the real second mechanism and not a by-product: the
+  capsule exists only during race week and part of it cannot be bought at
+  all, only earned by completing Strava Challenges, which makes participation
+  the condition of access. Collaboration and Retail both apply and are
+  recorded as tags, not as the engine: the collaboration is who built the
+  space, and retail is the room it happens in.
+status: partially-verified
+collaborators:
+  - name: Distance
+    role: Retail and creative partner — collection, programme and Aid Station
+  - name: Strava
+    role: Challenge platform gating part of the collection
+location:
+  venue: Arc'teryx Chamonix, 265 Rue du Docteur Paccard
+  city: Chamonix
+  region: Haute-Savoie
+  country: France
+  countryCode: FR
+  coordinates: [6.8694, 45.9237]
+  coordinatePrecision: city
+date:
+  start: 2026-08-24
+  end: 2026-08-30
+  precision: day
+spatialType: permanent-retail
+relatedEvent: utmb-mont-blanc-2026
+product: Arc'teryx × Distance capsule collection; Sylan 2 race-week edition
+tags:
+  - community
+  - collaboration
+  - limited-drop
+  - retail
+  - event-activation
+images: []
+sources:
+  - title: "ARC'TERYX e DISTANCE, una settimana di attività all'UTMB di Chamonix — sponsored trade feature, quoting the Arc'teryx × Distance press release (\"Dal comunicato\"), published 19 August 2026"
+    publisher: 4ActionSport (Daniele Milano)
+    url: https://www.4actionsport.it/arcteryx-e-distance-una-settimana-di-attivita-allutmb-di-chamonix/
+    type: other
+    accessed: 2026-09-17
+  - title: "Arc'teryx Chamonix — 265 Rue du Docteur Paccard, 74400, brand store and service centre"
+    publisher: Arc'teryx
+    url: https://stores.arcteryx.com/chamonix
+    type: official-brand
+    accessed: 2026-09-17
+  - title: "HOKA UTMB Mont-Blanc 2026 — event dates, 24–30 August"
+    publisher: UTMB Mont-Blanc
+    url: https://montblanc.utmb.world/discover/the-event/animation
+    type: event-organiser
+    accessed: 2026-09-16
+---
+
+## Description
+For UTMB race week, 24–30 August 2026, Arc'teryx and Distance turned the
+Arc'teryx Chamonix store on Rue du Docteur Paccard into what the announcement
+calls an **Aid Station** — not a temporary structure but the brand's own
+permanent shop, reprogrammed for a week.
+
+The announcement frames the space as open to everyone: *"Lo spazio sarà un
+punto d'incontro per atleti, sostenitori e per l'intera community del trail
+running, con eventi ed esperienze aperti a tutti."* It ran for the full week and
+held information, activities and the collaboration's exclusive collection.
+
+Three dated moments are named:
+
+- **Opening Night, 25 August** — screenings, athlete talks and a garment
+  customisation workshop.
+- **Aid Station, 24–30 August** — the week-long core of the collaboration.
+- **Closing Party, 28 August** — at Maison des Artistes, with a DJ set and a
+  tie-dye workshop, described as celebrating the community after the races.
+
+The **Arc'teryx × Distance collection** was limited to race week. Some pieces
+could be bought in store; others were obtainable only by completing dedicated
+Strava Challenges. A race-week edition of the **Sylan 2** shoe was a reward for
+completing those challenges and was otherwise held in limited quantity at
+selected Distance stores.
+
+A limited-edition **Echoes journal** was given away free in the store, alongside
+a photographic selection shown at Place de l'Aiguille du Midi.
+
+## Verification notes
+**The principal source is sponsored content, and that is the main limit on this
+record.** The 4ActionSport feature is labelled "Sponsored", and it quotes the
+Arc'teryx × Distance press release directly ("Dal comunicato"). It is therefore
+the brand speaking through a trade title rather than a title reporting on the
+brand, which is why it is filed as `other` and not as `editorial` — filing it as
+editorial would claim an independence it does not have.
+
+**It is also dated 19 August 2026, five days before the week opened.** Every
+statement in the Description is an announcement of intent. Nothing here confirms
+the Aid Station opened, that the Opening Night or Closing Party happened, or
+that the collection was released as described. No post-event coverage,
+photographs or attendance figures were found.
+
+**The store address is documented; the pin is not.** Arc'teryx publishes the
+address as 265 Rue du Docteur Paccard, 74400 Chamonix, but that address was not
+geocoded here, so the coordinate is Chamonix town centre and the precision is
+recorded as `city`. The pin is less precise than the address, deliberately.
+
+**`spatialType` is `permanent-retail` because the room is permanent.** This is
+the brand's existing shop given a temporary programme, not a pop-up, and the
+distinction matters: the location was not selected for this event. The
+week-long programme is carried in the tags and in the activation logic instead.
+
+**One date conflict was resolved and is recorded here.** The third-party listing
+that first surfaced this case gives the Aid Station as 25–30 August in its own
+date field while describing it as 24–30 August in its text. The press-release
+feature gives 24–30 August, and that is what this record uses.
+
+**The relationship to the ECHOES case is not established.** `arcteryx-echoes`
+covers the audio-visual journal Arc'teryx published on 30 July 2026 and records
+that the Chamonix installation was never confirmed to have opened. This source
+describes an Echoes *journal* and a *photographic selection* at Place de
+l'Aiguille du Midi — which is a different form from the "unique immersive
+installation" Arc'teryx's own page announced. Whether the photographic selection
+is that installation, a reduced version of it, or a separate piece of the same
+project is unknown. The two records are deliberately kept apart until a source
+settles it.
+
+**Distance's own account has not been retrieved.** Everything about Distance's
+role comes from the same sponsored feature. Its own channels were not consulted,
+so the division of work between the two brands is unverified.
+
+## Strategic purpose
+*Not yet written.* This layer is the author's reading, and it has not been
+drafted for this case. The facts available to work from: the space is the
+brand's own permanent store rather than a structure built for the week, and its
+announcement describes an open meeting point rather than a sales floor.
+
+## Archive use
+*Not yet written.* The material that bears on it: a free limited-edition journal
+given away in the store, and a photographic selection shown in a public square
+rather than inside the shop.
+
+## Why this location?
+*Not yet written.* The fact that constrains any answer: Arc'teryx did not choose
+this location for UTMB. The store on Rue du Docteur Paccard already existed, and
+the brand's long presence in the valley is the reason the collaboration cites
+for siting itself there.
+
+## Why this timing?
+*Not yet written.* The dates are 24–30 August 2026, the full race week, with the
+Opening Night on the 25th and the Closing Party on the 28th — the evening after
+CCC and the day UTMB itself was still running.
+
+## What performance claim is being reinforced?
+*Not yet written.* The only product claim in the source is about the Sylan 2,
+described in the press release as built for trail runners pushing their limits
+on technical terrain.
+
+## What cultural meaning is being built?
+*Not yet written.* The material: a journal, a photographic exhibition, a DJ set
+and a tie-dye workshop — none of which is a performance claim.
+
+## What role does the physical experience play?
+*Not yet written.* What is known of the room: a permanent shop used as a
+thoroughfare and meeting point for a week, with part of the collection
+unavailable to anyone who did not take part in a Strava Challenge.

@@ -61,6 +61,11 @@ sources:
     url: https://montblanc.utmb.world/discover/the-event/animation
     type: event-organiser
     accessed: 2026-09-16
+  - title: "ARC'TERYX e DISTANCE, una settimana di attività all'UTMB di Chamonix — sponsored trade feature quoting the press release, 19 August 2026; names an Echoes journal in the Arc'teryx store and a photographic selection at Place de l'Aiguille du Midi"
+    publisher: 4ActionSport (Daniele Milano)
+    url: https://www.4actionsport.it/arcteryx-e-distance-una-settimana-di-attivita-allutmb-di-chamonix/
+    type: other
+    accessed: 2026-09-17
 ---
 
 ## Description
@@ -92,6 +97,28 @@ week, used only to place the case in the right year; it is not a claim about
 when, or whether, anything opened.
 
 **The pin is Chamonix town centre** because no location was ever announced.
+
+**A location has since been named, and it does not settle this.** A sponsored
+trade feature published 19 August 2026, quoting the Arc'teryx × Distance press
+release, describes an Echoes *journal* given away in the Arc'teryx Chamonix
+store and a *photographic selection* shown at Place de l'Aiguille du Midi during
+race week. That is the first source to attach any Chamonix location to Echoes.
+Three reasons it does not upgrade this record:
+
+- It is **sponsored content quoting a press release**, so it is the brand
+  speaking through a trade title, not independent confirmation.
+- It is dated **five days before the week opened**, so it announces rather than
+  reports. Still nothing says anything opened.
+- It describes a **photographic selection**, which is not the "unique immersive
+  installation" Arc'teryx's own page announced. Whether the exhibition is that
+  installation, a reduced version of it, or a separate part of the same project
+  is unknown.
+
+The `venue` field is therefore still empty and the pin still sits on the town
+centre. A named intention is not a confirmed space, and the distinction is the
+whole point of this record. See `arcteryx-distance-aid-station`, which covers
+the store programme this source is actually about and is kept separate for the
+same reason.
 
 **Nothing is known about what it physically contained** — no structures, rooms,
 screens or audio equipment are described anywhere. No spatial designer,

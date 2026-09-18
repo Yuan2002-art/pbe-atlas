@@ -162,8 +162,13 @@ export default async function CasePage({
               <span className="data">{formatCoordinates(record.location.coordinates)}</span>
               {record.location.coordinatePrecision !== "exact" && (
                 <span className="label mt-0.5 block">
+                  {/* Describes the pin, not the record's knowledge. It used to
+                      say "no street address sourced", which contradicted the
+                      venue field on any case whose address is documented but
+                      was never geocoded — the pin is the town centre either
+                      way, and that is what this line is about. */}
                   {record.location.coordinatePrecision === "city"
-                    ? "town centre — no street address sourced"
+                    ? "town centre — pin not geocoded"
                     : "approximate"}
                 </span>
               )}

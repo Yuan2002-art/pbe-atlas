@@ -1,15 +1,40 @@
 import Link from "next/link";
 
+import { statusTally } from "@/lib/queries";
+
 export function SiteFooter() {
+  /* Read the banner off the data rather than asserting it. It used to say
+     "cases marked placeholder are invented demo material" on every page of the
+     site — which stayed there after the last placeholder was deleted, telling
+     readers to watch for a marking that no longer existed and implying the
+     dataset still held invented material. A standing claim about the data
+     should come from the data. */
+  const tally = statusTally();
+  const invented = tally.placeholder + tally["ai-reconstructed"];
+
   return (
     <footer className="mt-20 border-t border-rule">
-      <div className="hatch-placeholder border-b border-rule px-4 py-2.5 sm:px-6">
+      <div
+        className={`border-b border-rule px-4 py-2.5 sm:px-6 ${
+          invented > 0 ? "hatch-placeholder" : ""
+        }`}
+      >
         <p
           className="label mx-auto max-w-[1400px]"
-          style={{ color: "var(--red)" }}
+          style={{ color: invented > 0 ? "var(--red)" : "var(--graphite)" }}
         >
-          Prototype · cases marked placeholder are invented demo material and
-          must not be cited as research
+          {invented > 0 ? (
+            <>
+              Prototype · {invented} case{invented === 1 ? "" : "s"} marked
+              placeholder or AI-reconstructed are not research and must not be
+              cited
+            </>
+          ) : (
+            <>
+              Prototype · every case here is research, at the evidence level
+              stated on it · nothing in this dataset is invented
+            </>
+          )}
         </p>
       </div>
 

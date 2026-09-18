@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
-import { Prose } from "@/components/case/CaseParts";
+import { Prose, SourceList } from "@/components/case/CaseParts";
 import { EventTimeline } from "@/components/event/EventTimeline";
 import { MiniMap } from "@/components/map/MiniMap";
 import { PinGlyph } from "@/components/ui/PinGlyph";
@@ -77,11 +77,14 @@ export default async function EventPage({
   let n = 0;
   const num = () => `§${++n}`;
   const hasReported = event.reportedActivity.length > 0;
+  /* Declared in the order they appear down the page, because num() counts as
+     it is called. Reported activity is last on the page, so it numbers last. */
   const timelineIndex = hasTimeline ? num() : "";
   const comparisonIndex = num();
   const mapIndex = hasMap ? num() : "";
-  const reportedIndex = hasReported ? num() : "";
   const noteIndex = num();
+  const sourcesIndex = num();
+  const reportedIndex = hasReported ? num() : "";
 
   /* Brands already researched at this edition, so the reported list can say
      which of its entries are covered and which are still only reported. */
@@ -315,6 +318,10 @@ export default async function EventPage({
                 </ul>
               </div>
             )}
+
+            <div className="mt-8">
+              <SourceList sources={event.sources} index={sourcesIndex} />
+            </div>
 
             <p className="label mt-5">
               Source file ·{" "}

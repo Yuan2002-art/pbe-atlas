@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
-import { Prose } from "@/components/case/CaseParts";
+import { Prose, SourceList } from "@/components/case/CaseParts";
 import { CaseListRow } from "@/components/case/CaseListRow";
 import { MiniMap } from "@/components/map/MiniMap";
 import {
@@ -61,6 +61,16 @@ export default async function BrandPage({
     ).entries(),
   ];
 
+  /* Section numbers count up as they render, so a section hidden on a brand
+     with no cases leaves no gap in the sequence. Same idiom as the event page. */
+  let n = 0;
+  const num = () => `§${++n}`;
+  const casesIndex = num();
+  const noteIndex = num();
+  const mixIndex = cards.length > 0 ? num() : "";
+  const eventsIndex = events.length > 0 ? num() : "";
+  const sourcesIndex = num();
+
   return (
     <div>
       <PlaceholderBand status={brand.status} />
@@ -85,7 +95,7 @@ export default async function BrandPage({
       <div className="mx-auto grid w-full max-w-[1400px] gap-x-12 gap-y-9 px-4 py-9 sm:px-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)]">
         {/* Map + list */}
         <div className="min-w-0">
-          <SectionHeading index="§1" note={plural(cards.length, "case")}>
+          <SectionHeading index={casesIndex} note={plural(cards.length, "case")}>
             Where this brand builds
           </SectionHeading>
 
@@ -121,13 +131,13 @@ export default async function BrandPage({
         {/* Brand record */}
         <aside className="flex min-w-0 flex-col gap-8">
           <section>
-            <SectionHeading index="§2">Brand note</SectionHeading>
+            <SectionHeading index={noteIndex}>Brand note</SectionHeading>
             <Prose html={brand.body} className="text-[14px]" />
           </section>
 
           {cards.length > 0 && (
             <section>
-              <SectionHeading index="§3">Spatial mix</SectionHeading>
+              <SectionHeading index={mixIndex}>Spatial mix</SectionHeading>
               <MixBar items={typeMix} total={cards.length} />
               <p className="mt-4 label">Classification emphasis</p>
               <ul className="mt-2 border-t border-rule">
@@ -146,7 +156,7 @@ export default async function BrandPage({
 
           {events.length > 0 && (
             <section>
-              <SectionHeading index="§4">Events attended</SectionHeading>
+              <SectionHeading index={eventsIndex}>Events attended</SectionHeading>
               <ul className="border-t border-rule">
                 {events.map(([eventSlug, name]) => (
                   <li key={eventSlug} className="border-b border-rule py-2">
@@ -161,6 +171,8 @@ export default async function BrandPage({
               </ul>
             </section>
           )}
+
+          <SourceList sources={brand.sources} index={sourcesIndex} />
 
           <p className="label">
             Source file ·{" "}

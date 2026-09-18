@@ -1,7 +1,6 @@
 ---
 name: Nike Running / ACG
 country: United States
-founded: 1971
 category: road-running
 positioning: Sport as mass culture; ACG as its technical, outdoor-facing edge.
 accent: "#16161a"
@@ -28,18 +27,17 @@ footwear and apparel line for athletes who ran, hiked, climbed and explored
 outdoors — Nike's own account. That is the half of this record the Atlas
 actually cares about, and it is now sourced.
 
-**`founded: 1971` is not sourced, and it sits between three different dates.**
-Nike's own material puts the company's start at 1964, as Blue Ribbon Sports;
-1971 is when the Nike name and Swoosh arrive; ACG launches in 1989. So the field
-currently records the brand's renaming, not the company's founding and not the
-line this record is half about. Nothing retrieved here states 1971 — that came
-from a search summary of Nike pages that were not opened — so it stays
-unsourced rather than being written up as fact.
+**`founded` is deliberately blank.** It previously read 1971, which is none of
+the three dates in play: Nike's own material puts the company's start at 1964 as
+Blue Ribbon Sports, 1971 is when the Nike name and Swoosh arrive, and ACG
+launches in 1989. A record bundling Nike Running with ACG has no single
+establishment date, and 1971 was not sourced by anything retrieved here — it
+came from a search summary of pages that were not opened.
 
-**The decision that needs making:** what `founded` means on a record that
-bundles a parent brand with a sub-line. adidas Running / Terrex has the same
-problem, with 1949 standing in for a much later division. Either these records
-split, or the field is documented as meaning the parent.
+Per the standing rule, a sub-brand leaves `founded` blank unless a date belongs
+clearly to that entity. **ACG's 1989 debut is sourced** and is stated in the
+prose above; it is not promoted into the field because the field would then
+describe half the record.
 
 **The positioning line, and the reading of borrowed specialist credibility, are
 the author's** — the most interesting claim in this record is the least sourced

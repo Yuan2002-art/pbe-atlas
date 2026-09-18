@@ -1,7 +1,6 @@
 ---
 name: adidas Running / Terrex
 country: Germany
-founded: 1949
 category: outdoor
 positioning: Mass sportswear reaching for mountain legitimacy through Terrex.
 accent: "#16161a"
@@ -22,16 +21,16 @@ destination retail.
 Included here as a brand record with **no cases yet** — a reminder that the
 Atlas shows gaps in the research rather than hiding them.
 
-**What is verified:** the 1949 founding and the country, in adidas's own words —
-registered on 18 August 1949 in Herzogenaurach, Germany, with 47 employees. The
-same page dates the 3-Stripes to that year.
+**What is verified:** the country, and adidas's own founding — registered on 18
+August 1949 in Herzogenaurach, Germany, with 47 employees, per adidas's own
+history page, which dates the 3-Stripes to the same year.
 
-**What the founding date is not about.** This record covers adidas Running and
-Terrex, and 1949 is the date of the parent company. Terrex is a later outdoor
-line and its own launch date is not sourced here, so `founded` describes adidas
-and not the division this record is actually about. Worth settling if a Terrex
-case is ever written: either source the line's own start or accept that the
-field means the parent.
+**`founded` is deliberately blank.** It previously read 1949, which is the
+parent company's date, not this record's. Terrex is a later outdoor division and
+no source retrieved here gives its own start. Per the standing rule, a
+sub-brand leaves the field blank unless a date belongs clearly to that entity;
+adidas's 1949 is sourced and stays in the prose, where it cannot be mistaken for
+Terrex's.
 
 **The positioning line is the author's reading**, not adidas's, and no source
 is claimed for it.

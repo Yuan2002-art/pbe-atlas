@@ -223,14 +223,28 @@ uses; there is deliberately no second copy of the rules.
 
 ## Known limitations, recorded and not yet fixed
 
-- **`spatialType` is single-valued, but two cases are hybrids.** The North Face
-  bundles a Basecamp chalet (`activation`) with a permanent store
+- **`spatialType` is single-valued, and three cases are now hybrids.** The North
+  Face bundles a Basecamp chalet (`activation`) with a permanent store
   (`permanent-retail`); ASICS bundles a Trail Pop-Up with a separately-sited
-  Trail Camp. In both, the second space is currently visible only in the prose
-  and the tags. The same hybrid is what forces the activation logic's secondary
-  slot to carry a mechanism belonging to the other half of the case. Three ways
-  out when it matters: split into two cases, make `spatialType` multi-valued, or
-  add `secondarySpatialType`. Not worth doing until a third hybrid appears.
+  Trail Camp; rabbit takes over two hotels and calls the result "part pop-up
+  shop" while running a separate Vendor Village chalet on different dates. In
+  each, the second space is visible only in the prose and the tags.
+
+  **The third hybrid has arrived, and the decision is made but not yet built.**
+  When this changes, it becomes `primarySpatialType` plus an optional
+  `secondarySpatialType` — deliberately *not* an unrestricted multi-select. The
+  reason is the same one behind rule 5: a free list invites one case to carry
+  four types and destroys comparison, whereas one primary plus one optional
+  secondary forces the judgement about which form leads. Until it is built,
+  hybrids keep a single primary type and say so in their verification notes.
+
+- **Activation-logic vocabulary candidates are tracked, not added.** Two cases
+  have hit mechanisms the vocabulary cannot express — see the candidate block at
+  the foot of `data/vocab/activation-logic.yml`. A candidate is only promoted to
+  a real value once the **same** mechanism appears in additional cases, because
+  a value invented for a single case is how the earlier free-text drift started.
+  A case that hits a gap records it in `activationLogicRationale`, names the
+  values it tested and rejected, and files under the closest honest value.
 - **`strategyMatrix` is populated on no case at all.** Deliberate — see rule 4.
 
 ## Map notes

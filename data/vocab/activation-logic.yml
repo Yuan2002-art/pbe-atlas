@@ -100,3 +100,43 @@
     Commercial transaction is the engine. The space exists in order to sell, and
     would have no reason to exist without the till.
   test: Remove the till — is there any remaining reason for the space?
+
+# ===========================================================================
+# VOCABULARY CANDIDATES — tracked, NOT values. Nothing below this line is a
+# usable id, and `npm run validate` will reject any case that names one.
+#
+# A candidate becomes a real value only once the SAME mechanism turns up in
+# ADDITIONAL cases. One case is never enough: a value invented to fit a single
+# record is exactly how the earlier free-text version reached fourteen distinct
+# values across six cases, only one of which ever repeated.
+#
+# A case that hits one of these gaps stays honest by filing under the closest
+# available value and naming, in `activationLogicRationale`, which values it
+# tested and why each was rejected.
+#
+# --- candidate: paid hospitality -------------------------------------------
+#   Seen in: rabbit-clubhouse-chamonix (1 case)
+#   The mechanism: access to the space is sold as accommodation. rabbit's own
+#   page is a booking page — "BOOK NOW", "a curated hospitality experience" —
+#   and the guest is buying a bed, with the programme attached to the stay.
+#   Why no existing value fits: `service` is nearest and is wrong. Its
+#   definition is repair, fitting and maintenance, and its test asks whether
+#   there is a reason to walk in WITHOUT buying anything — which is the
+#   opposite of this mechanism. `retail` sells goods, not nights.
+#   Filed meanwhile as: community-programming + limited-drop.
+#
+# --- candidate: benchmarked challenge --------------------------------------
+#   Seen in: compressport-couloir-base-camp (1 case)
+#   The mechanism: a timed course starting at the door, with the brand's own
+#   elite athletes' times as the standard to beat — "Think you can outperform
+#   our elite athletes?" The space is the start line of a competition against
+#   the brand's roster.
+#   Why no existing value fits: `performance-testing` requires measurement or
+#   product development to happen on site and asks whether the brand leaves
+#   with data it did not arrive with — here the data is amateur finishing
+#   times gathered off-site on a mountain, not product measurement.
+#   `performance-archive` needs proven physical objects, and there are none.
+#   `sponsorship` fails its own test: remove Compressport's official status
+#   and a partnership with a cafe still exists.
+#   Filed meanwhile as: community-programming, no secondary.
+# ===========================================================================

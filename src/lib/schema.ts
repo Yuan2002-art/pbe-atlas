@@ -230,6 +230,14 @@ export const BrandFrontmatterSchema = z.strictObject({
   name: z.string().min(1, "name is required"),
   /** Country of origin / headquarters. */
   country: z.string().default(""),
+  /** Establishment date of **this** entity, and optional for that reason.
+   *
+   *  A sub-brand or product line leaves it blank unless a sourced date belongs
+   *  clearly to the sub-brand itself. Nike Running / ACG and adidas Running /
+   *  Terrex both carried a parent's date — 1971 and 1949 — which described
+   *  neither the line the record is about nor, in Nike's case, the company's
+   *  actual founding in 1964. A date that belongs to the parent goes in the
+   *  prose, where it cannot be read as the division's. */
   founded: z.union([z.number(), z.string()]).optional(),
   /** trail · road-running · outdoor · lifestyle · eyewear · cycling · other */
   category: z.string().default("other"),

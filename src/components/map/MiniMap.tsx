@@ -34,6 +34,9 @@ export function MiniMap({
       frameKey={frameKey}
       /* Always the pins: this map is already narrowed to one brand or one
          edition, so the country it sits in is not the question. */
+      /* Always fits its own pins: a locator that opened on the world would
+         show nothing. Only the global map has a world frame. */
+      unfiltered={false}
       frameBounds={null}
       className={`border border-rule ${className}`}
     />

@@ -14,6 +14,7 @@ import {
   EMPTY_FILTERS,
   facetCounts,
   filterCards,
+  isEmpty,
   parseFilters,
   toggleValue,
   type FilterGroup,
@@ -79,6 +80,7 @@ export function MapExplorer({
   const counts = useMemo(() => facetCounts(cards, filters), [cards, filters]);
   const visible = useMemo(() => new Set(shown.map((card) => card.slug)), [shown]);
   const frameKey = useMemo(() => shown.map((card) => card.slug).join("|"), [shown]);
+  const unfiltered = useMemo(() => isEmpty(filters), [filters]);
 
   /* Country is the one filter that asks "where in this country", so on its own
      it frames the whole country rather than the cases inside it. Narrow it with
@@ -174,6 +176,7 @@ export function MapExplorer({
           onSelect={setSelected}
           types={types}
           frameKey={frameKey}
+          unfiltered={unfiltered}
           frameBounds={frameBounds}
           className="h-[62svh] min-h-[380px] lg:h-[calc(100svh-var(--header))]"
         />

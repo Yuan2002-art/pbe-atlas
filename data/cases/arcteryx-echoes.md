@@ -7,9 +7,10 @@ activationLogicRationale: >-
   Recorded runner voices arranged around mind, body, mountain and soul, with
   no product named and nothing to sell: the mechanism is the argument
   itself. No secondary is recorded, and the reason is evidential rather than
-  analytical - the Chamonix installation was never confirmed to have opened,
-  so this reading describes the published concept and material, not an
-  observed space.
+  analytical: what is confirmed to have reached Chamonix is the printed
+  journal, not the "unique immersive installation" the brand announced, so
+  this reading describes the published concept and material rather than an
+  observed room.
 status: partially-verified
 collaborators:
   - name: El Flamingo Films
@@ -31,7 +32,7 @@ location:
 date:
   start: 2026-08-24
   end: 2026-08-30
-  precision: unknown
+  precision: day
 primarySpatialType: activation
 secondarySpatialType: ""
 relatedEvent: utmb-mont-blanc-2026
@@ -67,6 +68,16 @@ sources:
     url: https://www.4actionsport.it/arcteryx-e-distance-una-settimana-di-attivita-allutmb-di-chamonix/
     type: other
     accessed: 2026-09-17
+  - title: "Arc'teryx Chamonix week, full programme graphic — \"24/8 - 30/8 - ALL WEEK: AID STATION @ ARC'TERYX CHAMONIX STORE / 'ECHOES' JOURNAL / STRAVA CHALLENGES / LIMITED EDITION COLLECTION\"; posted 22 August 2026 and labelled Anzeige (paid partnership) with arcteryxdach. Ties the journal to the 24-30 week."
+    publisher: runners_highest (Instagram)
+    url: https://www.instagram.com/p/DcVf8LwAtOY/
+    type: other
+    accessed: 2026-09-20
+  - title: "Arc'teryx post from Chamonix, 27 August 2026, during race week and in the past tense — \"Arc'teryx x Distance transformed the Chamonix store into an Aid Station, a place to start a run, return after time on the trail, and recharge for the next objective. Strava Challenges, Limited Edition Collection, the Echoes journal, and athlete conversations bring more stories from the mountains into town.\" Supplied by the author as a screenshot; see verification notes."
+    publisher: Arc'teryx (Facebook)
+    url: ""
+    type: official-brand
+    accessed: 2026-09-20
 ---
 
 ## Description
@@ -87,39 +98,51 @@ Arc'teryx. The recorded runners are Milly Young, Edoardo Rossano, Martin Kern
 and Louis Derrien.
 
 ## Verification notes
-**This record is about an announcement, not a confirmed space.** No source
-confirms the Chamonix installation was ever built or opened. There is no venue,
-no address, no opening dates, no photographs and no post-event coverage of any
-kind — only the brand's own forward-looking sentence. Everything in the record
-above concerns the *project*; the *installation* is unverified.
+**Part of ECHOES reached Chamonix, and part of it is still unconfirmed. The
+two should not be collapsed.**
 
-**The date is therefore recorded as unknown.** The range given is the 2026 UTMB
-week, used only to place the case in the right year; it is not a claim about
-when, or whether, anything opened.
+*Confirmed:* a printed ECHOES journal was given away in the Arc'teryx Chamonix
+store during race week. Four sources say so, and one of them is the brand
+itself writing **during** the week: an Arc'teryx post from Chamonix dated 27
+August 2026 says "Arc'teryx x Distance transformed the Chamonix store into an
+Aid Station" and lists "the Echoes journal" among what "bring more stories from
+the mountains into town." That is past tense, first-party, and posted while the
+week was running — the first evidence of any kind that ECHOES physically
+existed in Chamonix rather than being announced.
 
-**The pin is Chamonix town centre** because no location was ever announced.
+*Still unconfirmed:* the **"unique immersive installation"** Arc'teryx's own
+July page promised. Two outlets dated 19 August describe instead a
+*photographic selection* at Place de l'Aiguille du Midi. Both predate the week,
+both derive from the same press release, and nothing retrieved reports that the
+display opened, what it contained, or whether it was the announced installation,
+a reduced version of it, or a different part of the same project. A journal is
+a printed object, not a room. **The `venue` field therefore stays empty and the
+pin stays on the town centre.**
 
-**A location has since been named, and it does not settle this.** A sponsored
-trade feature published 19 August 2026, quoting the Arc'teryx × Distance press
-release, describes an Echoes *journal* given away in the Arc'teryx Chamonix
-store and a *photographic selection* shown at Place de l'Aiguille du Midi during
-race week. That is the first source to attach any Chamonix location to Echoes.
-Three reasons it does not upgrade this record:
+**The dates are now recorded as days, not as unknown.** They were `unknown`
+because nothing tied ECHOES to a date. The full-week programme graphic puts
+"'ECHOES' JOURNAL" inside "24/8 - 30/8 - ALL WEEK" alongside the Aid Station
+and the Strava Challenges, and the brand's 27 August post places it in that
+week. 24–30 August is now a sourced claim about the journal's availability. It
+is **not** a claim about the installation, which has no dates at all.
 
-- It is **sponsored content quoting a press release**, so it is the brand
-  speaking through a trade title, not independent confirmation.
-- It is dated **five days before the week opened**, so it announces rather than
-  reports. Still nothing says anything opened.
-- It describes a **photographic selection**, which is not the "unique immersive
-  installation" Arc'teryx's own page announced. Whether the exhibition is that
-  installation, a reduced version of it, or a separate part of the same project
-  is unknown.
+**One source here could not be retrieved and is recorded as such.** The 27
+August Arc'teryx post was supplied by the author as a screenshot of the brand's
+verified Facebook page. Facebook serves this client a login wall, so the post
+could not be opened, and it is cited without a url. Its content is quoted in
+the source entry exactly as it appears. Anyone checking this record should open
+it on the brand's own page.
 
-The `venue` field is therefore still empty and the pin still sits on the town
-centre. A named intention is not a confirmed space, and the distinction is the
-whole point of this record. See `arcteryx-distance-aid-station`, which covers
-the store programme this source is actually about and is kept separate for the
-same reason.
+**Why the Place de l'Aiguille du Midi display still does not settle it.** Two
+outlets name it — a sponsored trade feature and an Italian trade title, both 19
+August 2026, both quoting the same Arc'teryx × Distance press release. They
+announce rather than report, they are one source wearing two mastheads, and
+what they describe is a *photographic selection* rather than the "unique
+immersive installation" Arc'teryx's own page promised. A named intention is not
+a confirmed space, and that distinction is the whole point of this record.
+
+See `arcteryx-distance-aid-station`, which covers the store programme those
+sources are mostly about and is kept separate for the same reason.
 
 **Nothing is known about what it physically contained** — no structures, rooms,
 screens or audio equipment are described anywhere. No spatial designer,

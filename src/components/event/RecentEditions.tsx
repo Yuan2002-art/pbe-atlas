@@ -1,171 +1,149 @@
 import Link from "next/link";
 
 import { formatDateRange, placeStamp, plural } from "@/lib/format";
-import { pinInner } from "@/lib/pin";
-import type { CountryBounds, Event } from "@/lib/schema";
+import type { Event } from "@/lib/schema";
 
 /* ===========================================================================
-   Recent editions — the strip across the top of the home page.
+   Recent editions — the strip floating over the home map.
 
-   One card per dated edition, most recently finished first. Each card shows a
-   photograph if the record has one and a locator drawn from its own
-   coordinates if it does not. It never shows a stand-in picture: an invented
-   plate is how a placeholder once passed for research, and a photograph is the
-   most convincing thing on a page.
+   A bar calendar rather than a row of picture cards. The cards were three
+   panels of 300px each and took a slab out of the top of the map; this is one
+   panel, five rows, and it says the same thing in a third of the space.
+
+   It is a real time axis: every bar sits at its true position between the
+   earliest start and the latest end of the five editions shown, so the gap
+   between two race weeks is visible as a gap. Read the horizontal position as
+   "when", never the colour — the colours only tell rows apart, and the
+   meaning-bearing colour in this project is the spatial-type accent on the
+   map, which is shape-coded as well.
    =========================================================================== */
 
-/** Where the edition sits inside its country, drawn rather than photographed.
- *
- *  Honest by construction: the frame is the country's box from
- *  data/vocab/country-bounds.yml and the mark is the edition's own coordinate
- *  inside it, so there is nothing here that is not already in the data. It is
- *  a diagram and reads as one — no coastlines, because we do not have any. */
-function Locator({
-  coordinates,
-  bounds,
-  countryCode,
-}: {
-  coordinates: [number, number];
-  bounds: CountryBounds["bounds"] | null;
-  countryCode: string;
-}) {
-  const [lng, lat] = coordinates;
-  // Fall back to a centred mark when the country has no box on file.
-  const [west, south, east, north] = bounds ?? [lng - 4, lat - 3, lng + 4, lat + 3];
-  const x = ((lng - west) / (east - west)) * 100;
-  const y = ((north - lat) / (north - south)) * 100;
-
-  /* The lines are stretched to the card with preserveAspectRatio="none",
-     which is right for a graticule and wrong for a glyph — it would flatten
-     the mark into a different shape from the one the map key defines. So the
-     mark is a separate, unstretched layer placed with percentages. */
-  /* Nearly opaque, not fully frosted. This panel is itself a small map, and
-     letting the real basemap read through it would put two maps on top of each
-     other at different scales. */
-  return (
-    <div className="relative h-full w-full" style={{ background: "var(--glass-strong)" }}>
-      <svg
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-        className="absolute inset-0 h-full w-full"
-      >
-        {[20, 40, 60, 80].map((n) => (
-          <g key={n} stroke="var(--grid)" strokeWidth="0.7">
-            <line x1={n} y1="0" x2={n} y2="100" />
-            <line x1="0" y1={n} x2="100" y2={n} />
-          </g>
-        ))}
-        {/* Crosshair on the edition, so the position reads at thumbnail size. */}
-        <g stroke="var(--rule-strong)" strokeWidth="0.7" strokeDasharray="2.5 2.5">
-          <line x1={x} y1="0" x2={x} y2="100" />
-          <line x1="0" y1={y} x2="100" y2={y} />
-        </g>
-      </svg>
-
-      <svg
-        viewBox="0 0 24 24"
-        width={16}
-        height={16}
-        aria-hidden="true"
-        className="absolute -ml-2 -mt-2"
-        style={{ left: `${x}%`, top: `${y}%` }}
-        dangerouslySetInnerHTML={{
-          __html: pinInner({
-            shape: "triangle",
-            accent: "var(--ink)",
-            status: "verified",
-          }),
-        }}
-      />
-
-      <span
-        className="label absolute bottom-1 left-2"
-        style={{ color: "var(--graphite)" }}
-      >
-        {countryCode}
-      </span>
-    </div>
-  );
+/** Midnight UTC, so a date never shifts a day with the reader's timezone —
+ *  the same reason dates are formatted in a fixed archival style. */
+function toTime(day: string): number {
+  return new Date(`${day}T00:00:00Z`).getTime();
 }
 
 export function RecentEditions({
   editions,
-  countryBounds,
 }: {
   editions: { event: Event; caseCount: number }[];
-  countryBounds: CountryBounds[];
 }) {
-  // Nothing dated to show: say so rather than render an empty rail.
-  if (editions.length === 0) return null;
+  /* Dated editions only. An undated one has no position on an axis, and
+     guessing one would be inventing a fact to make a graphic work. */
+  const rows = editions
+    .filter((e) => e.event.startDate || e.event.endDate)
+    .slice(0, 5)
+    .map(({ event, caseCount }) => {
+      const start = toTime((event.startDate ?? event.endDate)!);
+      const end = toTime((event.endDate ?? event.startDate)!);
+      return { event, caseCount, start, end };
+    });
 
-  /* Three floating cards, not a band. The strip used to be a full-width bar
-     with its own ground and a rule under it, which cost a horizontal slab
-     across the page and pushed the map down; now each edition is its own
-     rounded panel over the map, and the label is a pill rather than a header
-     row. Nothing here draws a background wider than the thing it contains. */
+  if (rows.length === 0) return null;
+
+  const axisStart = Math.min(...rows.map((r) => r.start));
+  const axisEnd = Math.max(...rows.map((r) => r.end));
+  // A single dated edition would give a zero-width axis; give it one day.
+  const span = Math.max(axisEnd - axisStart, 86_400_000);
+
+  /* One tick per January inside the range, so the axis is readable without a
+     row of month labels crowding a 560px panel. */
+  const years: number[] = [];
+  for (
+    let y = new Date(axisStart).getUTCFullYear();
+    y <= new Date(axisEnd).getUTCFullYear();
+    y++
+  ) {
+    years.push(y);
+  }
+
   return (
-    <section aria-labelledby="recent-editions">
-      <div className="glass mb-2.5 inline-flex items-baseline gap-3 rounded-[var(--radius-pill)] px-3.5 py-1.5">
-        <h2 id="recent-editions" className="label-lg" style={{ color: "var(--ink)" }}>
-          Recent editions
-        </h2>
-        <Link href="/events" className="label hover:text-ink">
-          All events →
-        </Link>
-      </div>
+    <section aria-labelledby="recent-editions" className="w-[34rem] max-w-full">
+      <div className="glass rounded-[var(--radius-card)] px-3.5 py-3">
+        <div className="mb-2.5 flex items-baseline justify-between gap-3">
+          <h2 id="recent-editions" className="label-lg" style={{ color: "var(--ink)" }}>
+            Recent editions
+          </h2>
+          <Link href="/events" className="label hover:text-ink">
+            All events →
+          </Link>
+        </div>
 
-      {/* One row, scrolled sideways on a narrow screen rather than wrapped. */}
-      <ul className="quiet-scroll flex gap-3 overflow-x-auto pb-1">
-        {editions.map(({ event, caseCount }) => {
-          const bounds =
-            countryBounds.find((b) => b.code === event.location.countryCode)?.bounds ?? null;
-          return (
-            /* Exactly the rail's width, so the first card and the rail beneath
-               it share a left edge and a right edge — one column, not two
-               things that nearly line up. */
-            <li key={event.slug} className="w-[var(--rail)] shrink-0">
-              <Link
-                href={`/events/${event.slug}`}
-                className="glass group block overflow-hidden rounded-[var(--radius-card)] transition-shadow hover:shadow-[var(--shadow-lift)]"
-              >
-                <div className="relative h-[5.5rem] w-full border-b border-rule">
-                  {event.hero ? (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img
-                      src={event.hero.src}
-                      alt={event.hero.caption}
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <Locator
-                      coordinates={event.location.coordinates}
-                      bounds={bounds}
-                      countryCode={event.location.countryCode}
-                    />
-                  )}
-                </div>
+        <ul>
+          {rows.map((row, i) => {
+            const left = ((row.start - axisStart) / span) * 100;
+            const width = ((row.end - row.start) / span) * 100;
+            const dateLabel = formatDateRange({
+              start: row.event.startDate ?? "",
+              end: row.event.endDate,
+            });
+            return (
+              <li key={row.event.slug}>
+                <Link
+                  href={`/events/${row.event.slug}`}
+                  className="group grid grid-cols-[9.5rem_1fr] items-center gap-3 rounded-[var(--radius-sm)] px-1.5 py-1 hover:bg-paper-sunk"
+                  title={`${row.event.name} · ${dateLabel} · ${placeStamp(
+                    row.event.location.city,
+                    row.event.location.countryCode,
+                  )} · ${
+                    row.caseCount === 0 ? "no cases yet" : plural(row.caseCount, "case")
+                  }`}
+                >
+                  <span className="min-w-0">
+                    <span className="block truncate text-[12.5px] font-medium leading-tight group-hover:underline">
+                      {row.event.shortName || row.event.name}
+                    </span>
+                    <span className="label block truncate leading-tight">{dateLabel}</span>
+                  </span>
 
-                <div className="px-3 py-2.5">
-                  <p className="label truncate">
-                    {formatDateRange({
-                      start: event.startDate ?? "",
-                      end: event.endDate,
+                  <span className="relative block h-[13px]">
+                    {/* Year rules, behind the bar. */}
+                    {years.map((y) => {
+                      const x = ((toTime(`${y}-01-01`) - axisStart) / span) * 100;
+                      if (x < 0 || x > 100) return null;
+                      return (
+                        <span
+                          key={y}
+                          aria-hidden
+                          className="absolute top-0 h-full w-px"
+                          style={{ left: `${x}%`, background: "var(--rule)" }}
+                        />
+                      );
                     })}
-                  </p>
-                  <p className="mt-0.5 truncate text-[13.5px] font-medium leading-snug group-hover:underline">
-                    {event.shortName || event.name}
-                  </p>
-                  <p className="label mt-1 truncate">
-                    {placeStamp(event.location.city, event.location.countryCode)} ·{" "}
-                    {caseCount === 0 ? "No cases yet" : plural(caseCount, "case")}
-                  </p>
-                </div>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+
+                    {/* The bar. min-width is a legibility floor, not a claim
+                        about duration: a seven-day race week across a two-year
+                        axis is under four pixels, which reads as a dot and
+                        cannot show its gradient. Short editions are drawn at
+                        18px; the exact dates are beside the name, and those
+                        are the fact. */}
+                    <span
+                      className="absolute top-0 h-full min-w-[18px] rounded-[var(--radius-sm)]"
+                      style={{
+                        left: `${left}%`,
+                        width: `${width}%`,
+                        background: `var(--edition-${(i % 5) + 1})`,
+                      }}
+                    />
+                  </span>
+                </Link>
+
+              </li>
+            );
+          })}
+        </ul>
+
+        {/* Axis footer: the two ends, and the years between them. */}
+        <div
+          aria-hidden
+          className="label mt-1.5 flex items-center justify-between border-t border-rule pl-[10.25rem] pt-1.5"
+        >
+          {years.map((y) => (
+            <span key={y}>{y}</span>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

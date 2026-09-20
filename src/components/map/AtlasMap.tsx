@@ -45,11 +45,19 @@ interface AtlasMapProps {
   types: MapTypeStyle[];
   /** Changes whenever the filter set changes — the map reframes on a new one. */
   frameKey: string;
+  /** True when no filter and no search is set. The map then shows the world
+   *  rather than fitting the pins — every case is in one valley today, so
+   *  fitting them on arrival opened the Atlas zoomed into Chamonix. */
+  unfiltered: boolean;
   /** A box to frame instead of the pins, [west, south, east, north]. Used when
    *  the filter is asking "where in this country"; null fits the pins. */
   frameBounds: [number, number, number, number] | null;
   className?: string;
 }
+
+/** The opening frame, and the frame you get back when you clear the filters.
+ *  Declared once because two places need to agree on it. */
+const WORLD_VIEW = { center: [8, 25] as [number, number], zoom: 1.15 };
 
 export function AtlasMap({
   cards,
@@ -58,6 +66,7 @@ export function AtlasMap({
   onSelect,
   types,
   frameKey,
+  unfiltered,
   frameBounds,
   className = "",
 }: AtlasMapProps) {
@@ -76,8 +85,8 @@ export function AtlasMap({
     const instance = new MapLibreMap({
       container: container.current,
       style: STYLE_URL,
-      center: [6, 38],
-      zoom: 1.35,
+      center: WORLD_VIEW.center,
+      zoom: WORLD_VIEW.zoom,
       minZoom: 1,
       maxZoom: 17,
       attributionControl: { compact: true },
@@ -176,7 +185,7 @@ export function AtlasMap({
     /* The frame box is part of the frame's identity, not just the set of pins:
        adding a brand to a country filter can leave the same cases showing and
        still has to reframe, because it stops being a country question. */
-    const frameId = `${frameBounds?.join(",") ?? "pins"}::${frameKey}`;
+    const frameId = `${unfiltered ? "world" : (frameBounds?.join(",") ?? "pins")}::${frameKey}`;
     if (frameId === lastFrame.current) return;
     lastFrame.current = frameId;
 
@@ -196,6 +205,14 @@ export function AtlasMap({
        a zoom cap: the same zoom shows twice as much land on a wide monitor as
        on a narrow one, so a fixed number would frame France correctly on one
        screen and nowhere else. fitBounds works from the viewport it has. */
+    /* Nothing filtered: show the world. The Atlas is global in intent and
+       local in its current contents, and fitting the pins on arrival made it
+       look like an atlas of one valley. Set a filter and the pins take over. */
+    if (unfiltered) {
+      instance.easeTo({ ...WORLD_VIEW, duration: 700 });
+      return;
+    }
+
     if (frameBounds) {
       const [west, south, east, north] = frameBounds;
       instance.fitBounds(
@@ -221,7 +238,7 @@ export function AtlasMap({
       maxZoom: shown.length === 1 ? 11 : 14,
       duration: 700,
     });
-  }, [frameKey, cards, visible, ready, frameBounds]);
+  }, [frameKey, cards, visible, ready, frameBounds, unfiltered]);
 
   /* --- ease to a case chosen from a list -------------------------------- */
   useEffect(() => {

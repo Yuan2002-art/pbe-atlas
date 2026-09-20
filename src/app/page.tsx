@@ -67,10 +67,7 @@ export default function HomePage() {
     <div>
       <MapExplorer
         hero={
-          <RecentEditions
-            editions={recentEditions()}
-            countryBounds={atlas.countryBounds}
-          />
+          <RecentEditions editions={recentEditions(5)} />
         }
         cards={atlas.cards}
         groups={groups}

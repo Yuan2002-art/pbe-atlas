@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /* Two tiers, because the sections are not peers. Map, Events and Brands are
-   the three ways into the research; Register and Method are how you read it
-   once you are in. Order here is the order on screen. */
+   the three ways into the research and stay on the bar. Register and Method
+   are how you read it once you are in, so they sit behind the Research
+   button rather than competing with the three. Order here is the order on
+   screen. */
 const NAV = [
   { href: "/", label: "Map", tier: "primary" },
   { href: "/events", label: "Events", tier: "primary" },
@@ -18,16 +20,49 @@ const NAV = [
 const PRIMARY = NAV.filter((item) => item.tier === "primary");
 const SECONDARY = NAV.filter((item) => item.tier === "secondary");
 
+/** The Atlas's standing line. Declared once, used in the strip and as the
+ *  mobile fallback, so the two can never drift. */
+const STANDING_LINE =
+  "How performance brands use permanent retail, races, pop-ups, launches and activations to build performance credibility and cultural meaning.";
+
 export function SiteHeader() {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [researchOpen, setResearchOpen] = useState(false);
+  const researchRef = useRef<HTMLDivElement>(null);
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
+  const researchActive = SECONDARY.some((item) => isActive(item.href));
+
+  /* Close the Research menu on Escape and on any click outside it. Both are
+     what a reader expects of a dropdown, and neither is worth a library. */
+  useEffect(() => {
+    if (!researchOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setResearchOpen(false);
+    };
+    const onDown = (e: MouseEvent) => {
+      if (!researchRef.current?.contains(e.target as Node)) setResearchOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onDown);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onDown);
+    };
+  }, [researchOpen]);
+
+  /* Route change closes both menus. */
+  useEffect(() => {
+    setResearchOpen(false);
+    setMobileOpen(false);
+  }, [pathname]);
+
   return (
     <header className="sticky top-0 z-50 border-b border-rule bg-paper/90 backdrop-blur-md">
-      <div className="mx-auto flex h-[var(--header)] w-full max-w-[1400px] items-center justify-between gap-6 px-4 sm:px-6">
+      <div className="mx-auto flex h-[var(--header-bar)] w-full max-w-[1400px] items-center justify-between gap-6 px-4 sm:px-6">
         {/* Wordmark */}
         <Link href="/" className="flex shrink-0 items-center gap-2.5">
           <span
@@ -45,40 +80,93 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        {/* The Atlas's standing line, in the header beside the wordmark. It
-            wraps to two lines rather than truncating: a thesis sentence cut off
-            at "…to build" is worse than no sentence, and two lines of 12.5px
-            fit inside the 64px bar. */}
-        <p className="hidden min-w-0 max-w-[36rem] flex-1 text-[12.5px] leading-snug text-graphite lg:block">
-          How performance brands use permanent retail, races, pop-ups, launches and
-          activations to build performance credibility and cultural meaning.
-        </p>
-
-        {/* Desktop nav — quiet pills, filled when active. Primary tier sits
-            larger and in ink; secondary stays at label size and graphite. */}
+        {/* Desktop nav — the three ways in, then Research. */}
         <nav className="hidden items-center gap-1 sm:flex" aria-label="Main">
           {PRIMARY.map((item) => (
             <NavPill key={item.href} item={item} active={isActive(item.href)} primary />
           ))}
+
           <span aria-hidden className="mx-2 h-4 w-px shrink-0 bg-rule" />
-          {SECONDARY.map((item) => (
-            <NavPill key={item.href} item={item} active={isActive(item.href)} />
-          ))}
+
+          <div ref={researchRef} className="relative">
+            <button
+              type="button"
+              onClick={() => setResearchOpen((v) => !v)}
+              aria-expanded={researchOpen}
+              aria-haspopup="menu"
+              aria-controls="research-menu"
+              className={`label-xl rounded-[var(--radius-pill)] border border-rule px-3.5 py-2 transition-colors ${
+                researchActive || researchOpen ? "bg-ink" : "hover:bg-paper-sunk hover:text-ink"
+              }`}
+              style={
+                researchActive || researchOpen
+                  ? { color: "var(--paper-raised)" }
+                  : { color: "var(--ink)" }
+              }
+            >
+              Research
+              <span aria-hidden className="ml-1.5 inline-block text-[9px] align-middle">
+                {researchOpen ? "▲" : "▼"}
+              </span>
+            </button>
+
+            {researchOpen && (
+              <div
+                id="research-menu"
+                role="menu"
+                className="absolute right-0 top-[calc(100%+8px)] min-w-[11rem] rounded-[var(--radius-sm)] border border-rule bg-paper-raised p-1.5 shadow-lg"
+              >
+                {SECONDARY.map((item) => {
+                  const active = isActive(item.href);
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      role="menuitem"
+                      aria-current={active ? "page" : undefined}
+                      className={`label block rounded-[var(--radius-sm)] px-3 py-2.5 ${
+                        active ? "bg-ink" : "hover:bg-paper-sunk hover:text-ink"
+                      }`}
+                      style={active ? { color: "var(--paper-raised)" } : undefined}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
+          </div>
         </nav>
 
-        {/* Mobile toggle */}
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          className="btn-quiet sm:hidden"
-        >
-          {open ? "Close" : "Menu"}
-        </button>
+        {/* Mobile toggle. The hiding lives on the wrapper, not the button:
+            .btn-quiet sets display:flex and outranks the sm:hidden utility on
+            the same element, which is why this button used to sit on the
+            desktop bar next to the nav it duplicates. */}
+        <div className="sm:hidden">
+          <button
+            type="button"
+            onClick={() => setMobileOpen((v) => !v)}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-nav"
+            className="btn-quiet"
+          >
+            {mobileOpen ? "Close" : "Menu"}
+          </button>
+        </div>
       </div>
 
-      {open && (
+      {/* The standing line, on its own full-width rule under the bar rather
+          than squeezed beside the wordmark. One line, and only from 1024px —
+          narrower than that it wraps, and a thesis sentence broken across two
+          lines in a 34px strip reads worse than no strip. --header carries its
+          height so the map underneath still fills the window exactly. */}
+      <div className="hidden h-[35px] border-t border-rule bg-paper-sunk lg:block">
+        <p className="mx-auto flex h-full w-full max-w-[1400px] items-center truncate px-4 text-[12.5px] text-graphite sm:px-6">
+          {STANDING_LINE}
+        </p>
+      </div>
+
+      {mobileOpen && (
         <nav
           id="mobile-nav"
           aria-label="Main"
@@ -90,11 +178,14 @@ export function SiteHeader() {
             return (
               <div key={item.href}>
                 {!primary && NAV[i - 1]?.tier === "primary" && (
-                  <hr aria-hidden className="my-2 border-rule" />
+                  <>
+                    <hr aria-hidden className="my-2 border-rule" />
+                    <p className="label px-4 pb-1 pt-1">Research</p>
+                  </>
                 )}
                 <Link
                   href={item.href}
-                  onClick={() => setOpen(false)}
+                  onClick={() => setMobileOpen(false)}
                   aria-current={active ? "page" : undefined}
                   className={`${
                     primary ? "label-xl" : "label"
@@ -114,6 +205,10 @@ export function SiteHeader() {
               </div>
             );
           })}
+          <hr aria-hidden className="my-2 border-rule" />
+          <p className="px-4 pb-3 pt-1 text-[12.5px] leading-snug text-graphite">
+            {STANDING_LINE}
+          </p>
         </nav>
       )}
     </header>

@@ -58,6 +58,11 @@ sources:
     url: https://montblanc.utmb.world/discover/the-event/animation
     type: event-organiser
     accessed: 2026-09-16
+  - title: "Arc'teryx post from Chamonix, 27 August 2026, during race week and in the past tense — \"This week, the trail running community has come together in Chamonix. Arc'teryx x Distance transformed the Chamonix store into an Aid Station, a place to start a run, return after time on the trail, and recharge for the next objective. Strava Challenges, Limited Edition Collection, the Echoes journal, and athlete conversations bring more stories from the mountains into town... Next up: CCC, UTMB, and closing party.\" Supplied by the author as a screenshot; see verification notes."
+    publisher: Arc'teryx (Facebook)
+    url: ""
+    type: official-brand
+    accessed: 2026-09-20
 ---
 
 ## Description
@@ -96,11 +101,30 @@ the brand speaking through a trade title rather than a title reporting on the
 brand, which is why it is filed as `other` and not as `editorial` — filing it as
 editorial would claim an independence it does not have.
 
-**It is also dated 19 August 2026, five days before the week opened.** Every
-statement in the Description is an announcement of intent. Nothing here confirms
-the Aid Station opened, that the Opening Night or Closing Party happened, or
-that the collection was released as described. No post-event coverage,
-photographs or attendance figures were found.
+**It is also dated 19 August 2026, five days before the week opened**, so every
+statement it carries is an announcement of intent.
+
+**That is no longer the only evidence, and the Aid Station itself is now
+confirmed.** Arc'teryx posted from Chamonix on **27 August 2026**, during the
+week and in the past tense: "Arc'teryx x Distance **transformed** the Chamonix
+store into an Aid Station, a place to start a run, return after time on the
+trail, and recharge for the next objective." The same post names the Strava
+Challenges, the Limited Edition Collection and the Echoes journal as present,
+and closes "Next up: CCC, UTMB, and closing party" — written mid-week, with the
+Friday closing party still ahead.
+
+**What that post does and does not settle.** It confirms the space existed and
+operated, and it confirms three of the four programme elements by name. It does
+**not** confirm the Opening Night on 25 August or the Closing Party on 28
+August happened as scheduled, it gives no attendance, and it is promotional
+copy on the brand's own channel rather than independent reporting. No
+independent post-event coverage was found.
+
+**This source could not be retrieved and is recorded as such.** It was supplied
+by the author as a screenshot of Arc'teryx's verified Facebook page. Facebook
+serves this client a login wall, so the post could not be opened and it is
+cited without a url, with its text quoted in the source entry as it appears.
+Anyone checking this record should open it on the brand's own page.
 
 **The store address is documented; the pin is not.** Arc'teryx publishes the
 address as 265 Rue du Docteur Paccard, 74400 Chamonix, but that address was not

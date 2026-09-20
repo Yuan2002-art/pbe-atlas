@@ -49,8 +49,35 @@
   --radius-card: 16px;      /* cards, panels, media                          */
   --radius-pill: 999px;     /* buttons, chips                                */
   --radius-sm: 8px;         /* inputs, small surfaces                        */
-  --measure: 68ch;          /* prose line length                             */
+  /* Prose line length. 68ch left a third of the record pages' text column
+     empty on a desktop — the §1 block stopped well short of the right edge.
+     86ch fills most of it and still sits inside a readable measure at 15.5px
+     with 1.65 line-height. Change this one value to change every record page;
+     lower it if the lines start reading long. */
+  --measure: 86ch;          /* prose line length                             */
   --rail: 300px;            /* filter rail width                             */
   --panel-right: 136px;     /* map key + list button — one column, one width  */
-  --header: 64px;           /* site header height                            */
+  /* --header is everything stuck to the top of the window: the nav bar plus
+     the standing-line strip under it. The map and the sticky case sidebar
+     subtract this, so it must stay the total. --header-bar is just the nav
+     row. The strip only shows from 1024px, where the sentence fits on one
+     line, so below that the two are equal. */
+  /* Recent-editions bars, one gradient per row. Decorative and positional
+     only: the meaning-bearing colour in this project is the spatial-type
+     accent, and the map is shape-coded anyway, so a reader cannot mistake a
+     row colour for a classification. Five, because the strip shows five. */
+  --edition-1: linear-gradient(90deg, #1e4fd8, #5b9dff);
+  --edition-2: linear-gradient(90deg, #c8371f, #ff8a4c);
+  --edition-3: linear-gradient(90deg, #0f766e, #3ddc97);
+  --edition-4: linear-gradient(90deg, #5b21b6, #c084fc);
+  --edition-5: linear-gradient(90deg, #a16207, #fbbf24);
+
+  --header-bar: 64px;       /* nav row                                       */
+  --header: 64px;           /* total sticky height                           */
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header: 100px;        /* nav row + 1px rule + 35px strip               */
+  }
 }

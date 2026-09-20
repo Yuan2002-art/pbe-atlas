@@ -191,6 +191,30 @@ a {
 .prose-atlas li { margin-block: 0.25em; }
 
 /* --------------------------------------------------------------------------
+   Type over a photograph.
+
+   A case header with a hero image lays the same markup over a dark scrim, so
+   every colour in it has to flip at once. One class on the container rather
+   than a conditional on each element: the header keeps one shape whether or
+   not the record has a picture.
+   -------------------------------------------------------------------------- */
+.on-photo,
+.on-photo .label,
+.on-photo .label-lg,
+.on-photo .display,
+.on-photo a {
+  color: var(--paper-raised);
+}
+.on-photo .display { text-shadow: 0 1px 24px rgba(10, 10, 12, 0.45); }
+.on-photo a { text-decoration-color: rgba(255, 255, 255, 0.55); }
+/* The status pill draws its own colour inline, so it needs the border and the
+   text lightened here to stay legible on the scrim. */
+.on-photo [class*="rounded-[var(--radius-pill)]"] {
+  color: var(--paper-raised) !important;
+  border-color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* --------------------------------------------------------------------------
    Technical paper grid — a faint graticule used behind hero areas.
    -------------------------------------------------------------------------- */
 .grid-paper {

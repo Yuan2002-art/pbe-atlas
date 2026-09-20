@@ -116,11 +116,17 @@ const STATUS_COPY: Record<
     trusted: false,
     band: "Unsourced record — the subject is real, but nothing on this page is cited yet. Do not cite.",
   },
+  /* No band. Partially verified is the normal state of a working research
+     record, not a warning, and a strip across the top of every real page
+     announcing it made the ordinary case look doubtful. The status is still
+     stamped on the record in §0 and on every card. The bands above stay,
+     because those three say "do not cite" about content that is not
+     research — that is the warning rule 1 exists for. */
   "partially-verified": {
     label: "Partially verified",
     tone: "var(--blue)",
     trusted: true,
-    band: "Partially verified — some claims are sourced and some are not. See the verification notes.",
+    band: "",
   },
   verified: {
     label: "Verified",

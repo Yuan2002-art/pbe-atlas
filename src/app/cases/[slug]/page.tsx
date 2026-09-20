@@ -69,13 +69,45 @@ export default async function CasePage({
   const logicLabel = (id: string) =>
     atlas.activationLogics.find((l) => l.id === id)?.label ?? id;
 
+  /* The first image is the hero and the rest are plates. One list, first item
+     leads — the same rule as the primary spatial type, and no second field to
+     keep in sync. There is no fallback picture: a case with no image keeps the
+     plain header, because a stand-in photograph is the most convincing thing
+     on a page and inventing one is how a placeholder once passed for
+     research. */
+  const hero = record.images[0] ?? null;
+
   return (
     <article>
       <PlaceholderBand status={record.status} />
 
       {/* ---- Header ---- */}
-      <header className="border-b border-rule">
-        <div className="mx-auto w-full max-w-[1400px] px-4 pb-10 pt-10 sm:px-6 sm:pb-14 sm:pt-14">
+      <header className="relative border-b border-rule">
+        {hero && (
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={hero.src}
+              alt={hero.caption}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              aria-hidden
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(10,10,12,0.55) 0%, rgba(10,10,12,0.30) 45%, rgba(10,10,12,0.80) 100%)",
+              }}
+            />
+          </>
+        )}
+        <div
+          className={`relative mx-auto w-full max-w-[1400px] px-4 sm:px-6 ${
+            hero
+              ? "on-photo pb-12 pt-28 sm:pb-16 sm:pt-40"
+              : "pb-10 pt-10 sm:pb-14 sm:pt-14"
+          }`}
+        >
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <PinGlyph
               shape={card.pinShape}
@@ -107,8 +139,31 @@ export default async function CasePage({
             {record.title}
           </h1>
           {record.product && (
-            <p className="mt-3 max-w-[52ch] text-[15px] text-graphite">
+            <p
+              className={`mt-3 max-w-[52ch] text-[15px] ${
+                hero ? "" : "text-graphite"
+              }`}
+            >
               {record.product}
+            </p>
+          )}
+
+          {hero && (
+            <p className="label mt-8">
+              {hero.caption} · {hero.credit}
+              {hero.sourceUrl && (
+                <>
+                  {" · "}
+                  <a
+                    href={hero.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline"
+                  >
+                    source
+                  </a>
+                </>
+              )}
             </p>
           )}
         </div>
@@ -267,17 +322,13 @@ export default async function CasePage({
             </SectionHeading>
             <Prose html={record.sections.description} />
 
-            {record.sections.verificationNotes && (
-              <div className="mt-6 rounded-[var(--radius-card)] border border-dashed border-rule-strong bg-paper-sunk px-5 py-4">
-                <p className="label" style={{ color: "var(--ink)" }}>
-                  Verification notes — what could not be confirmed
-                </p>
-                <Prose
-                  html={record.sections.verificationNotes}
-                  className="mt-1.5 text-[13.5px]"
-                />
-              </div>
-            )}
+            {/* `## Verification notes` is no longer shown on the page. It is
+                still required by rule 6, still written on every record, still
+                in data/cases/*.md and still checked by `npm run validate` — it
+                is the working note behind the record, not something the reader
+                is made to read first. What the page publishes is meant to be
+                the confirmed account. The source file is linked in §0 for
+                anyone who wants the rest. */}
           </section>
 
           {/* ---- Layer B: what the author makes of them ---- */}
@@ -321,7 +372,7 @@ export default async function CasePage({
             <KeyInsight html={record.sections.keyStrategicInsight} />
           </section>
 
-          <ImagePlates images={record.images} caseRef={record.ref} index="§3" />
+          <ImagePlates images={record.images.slice(1)} caseRef={record.ref} index="§3" />
           <SourceList sources={record.sources} index="§4" />
 
           <nav className="flex flex-wrap gap-x-6 gap-y-2 border-t border-rule pt-5">

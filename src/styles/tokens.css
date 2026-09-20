@@ -57,11 +57,6 @@
   --measure: 86ch;          /* prose line length                             */
   --rail: 300px;            /* filter rail width                             */
   --panel-right: 136px;     /* map key + list button — one column, one width  */
-  /* --header is everything stuck to the top of the window: the nav bar plus
-     the standing-line strip under it. The map and the sticky case sidebar
-     subtract this, so it must stay the total. --header-bar is just the nav
-     row. The strip only shows from 1024px, where the sentence fits on one
-     line, so below that the two are equal. */
   /* Recent-editions bars, one gradient per row. Decorative and positional
      only: the meaning-bearing colour in this project is the spatial-type
      accent, and the map is shape-coded anyway, so a reader cannot mistake a
@@ -72,12 +67,15 @@
   --edition-4: linear-gradient(90deg, #5b21b6, #c084fc);
   --edition-5: linear-gradient(90deg, #a16207, #fbbf24);
 
-  --header-bar: 64px;       /* nav row                                       */
-  --header: 64px;           /* total sticky height                           */
+  /* Everything stuck to the top of the window. The map and the sticky case
+     sidebar subtract it, so it has to match what the header actually
+     occupies. It grows at 1024px, which is where the standing line appears
+     under the wordmark. */
+  --header: 64px;           /* sticky header height                          */
 }
 
 @media (min-width: 1024px) {
   :root {
-    --header: 100px;        /* nav row + 1px rule + 35px strip               */
+    --header: 82px;         /* + the standing line under the wordmark        */
   }
 }

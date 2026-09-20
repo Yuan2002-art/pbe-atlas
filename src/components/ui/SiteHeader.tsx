@@ -62,23 +62,33 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-rule bg-paper/90 backdrop-blur-md">
-      <div className="mx-auto flex h-[var(--header-bar)] w-full max-w-[1400px] items-center justify-between gap-6 px-4 sm:px-6">
-        {/* Wordmark */}
-        <Link href="/" className="flex shrink-0 items-center gap-2.5">
-          <span
-            aria-hidden
-            className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-ink text-[8px] font-medium tracking-[0.04em]"
-            style={{ fontFamily: "var(--font-plex-mono), monospace", color: "var(--paper-raised)" }}
-          >
-            PBE
-          </span>
-          <span className="leading-tight">
-            <span className="block text-[13.5px] font-medium tracking-[-0.01em]">
-              Performance Brand Experience Atlas
+      <div className="mx-auto flex h-[var(--header)] w-full max-w-[1400px] items-center justify-between gap-6 px-4 sm:px-6">
+        {/* Wordmark, with the standing line stacked under it. The line had
+            its own full-width strip for a while; it read as a separate band of
+            site furniture rather than as what the Atlas is. It belongs to the
+            wordmark, so it sits under "Global research prototype" and indents
+            to the same left edge as the title (28px badge + 10px gap). Shown
+            from 1024px, where it fits on one line. */}
+        <div className="flex min-w-0 flex-col justify-center">
+          <Link href="/" className="flex items-center gap-2.5 self-start">
+            <span
+              aria-hidden
+              className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-ink text-[8px] font-medium tracking-[0.04em]"
+              style={{ fontFamily: "var(--font-plex-mono), monospace", color: "var(--paper-raised)" }}
+            >
+              PBE
             </span>
-            <span className="label hidden sm:block">Global research prototype</span>
-          </span>
-        </Link>
+            <span className="leading-tight">
+              <span className="block text-[13.5px] font-medium tracking-[-0.01em]">
+                Performance Brand Experience Atlas
+              </span>
+              <span className="label hidden sm:block">Global research prototype</span>
+            </span>
+          </Link>
+          <p className="hidden truncate pl-[38px] pt-1 text-[12.5px] leading-tight text-graphite lg:block">
+            {STANDING_LINE}
+          </p>
+        </div>
 
         {/* Desktop nav — the three ways in, then Research. */}
         <nav className="hidden items-center gap-1 sm:flex" aria-label="Main">
@@ -153,17 +163,6 @@ export function SiteHeader() {
             {mobileOpen ? "Close" : "Menu"}
           </button>
         </div>
-      </div>
-
-      {/* The standing line, on its own full-width rule under the bar rather
-          than squeezed beside the wordmark. One line, and only from 1024px —
-          narrower than that it wraps, and a thesis sentence broken across two
-          lines in a 34px strip reads worse than no strip. --header carries its
-          height so the map underneath still fills the window exactly. */}
-      <div className="hidden h-[35px] border-t border-rule bg-paper-sunk lg:block">
-        <p className="mx-auto flex h-full w-full max-w-[1400px] items-center truncate px-4 text-[12.5px] text-graphite sm:px-6">
-          {STANDING_LINE}
-        </p>
       </div>
 
       {mobileOpen && (

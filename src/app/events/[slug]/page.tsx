@@ -220,12 +220,12 @@ export default async function EventPage({
                         <span className="flex items-center gap-2">
                           <PinGlyph
                             shape={card.pinShape}
-                            accent={accentOf(card.spatialType)}
+                            accent={accentOf(card.primarySpatialType)}
                             status={card.status}
                             size={13}
                           />
                           <span className="label" style={{ color: "var(--ink)" }}>
-                            {card.spatialTypeLabel}
+                            {card.spatialTypeSummary}
                           </span>
                         </span>
                         <span className="data mt-1 block text-[11px] text-pencil">
@@ -335,8 +335,10 @@ export default async function EventPage({
 
       {/* Reported, unverified activity. Deliberately the last section on the
           page and deliberately not styled like a case: these are other
-          people's claims, and the gap between five researched cases and
-          twenty-six reported spaces is the point of showing them at all. */}
+          people's claims, and the gap between what has been researched here and
+          what a third party lists is the point of showing them at all. Both
+          numbers move, so neither is written down — the copy below counts
+          them. */}
       {hasReported && (
         <div className="border-t border-rule bg-paper-sunk">
           <div className="mx-auto w-full max-w-[1400px] px-4 py-12 sm:px-6 sm:py-16">

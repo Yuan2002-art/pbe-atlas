@@ -9,7 +9,7 @@ activationLogicRationale: >-
   Trial is second because testing Offtrail Ultra and Summit Series on alpine
   terrain is the substance being relayed. The permanent store is a real part
   of the brand's Chamonix position but it is the form, not the engine, and
-  it is recorded in spatialType and tags instead.
+  it is recorded as the secondary spatial form and in the tags instead.
 status: partially-verified
 collaborators:
   - name: Bialetti
@@ -28,7 +28,8 @@ date:
   start: 2026-08-24
   end: 2026-08-30
   precision: unknown
-spatialType: activation
+primarySpatialType: activation
+secondarySpatialType: permanent-retail
 relatedEvent: utmb-mont-blanc-2026
 product: Offtrail collection; Offtrail Ultra shoe; Summit Series
 tags:

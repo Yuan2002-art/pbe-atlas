@@ -136,11 +136,11 @@ export function AtlasMap({
       element.className = "atlas-pin";
       element.setAttribute(
         "aria-label",
-        `${card.brandName}, ${card.title}. ${card.spatialTypeLabel} in ${card.city}, ${card.dateLabel}.`,
+        `${card.brandName}, ${card.title}. ${card.spatialTypeSummary} in ${card.city}, ${card.dateLabel}.`,
       );
       element.innerHTML = pinSvg({
         shape: card.pinShape,
-        accent: accentOf(card.spatialType),
+        accent: accentOf(card.primarySpatialType),
         status: card.status,
         size: 22,
       });

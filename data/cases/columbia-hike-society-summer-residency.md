@@ -38,7 +38,8 @@ date:
   start: 2026-08-23
   end: 2026-08-29
   precision: day
-spatialType: activation
+primarySpatialType: activation
+secondarySpatialType: ""
 relatedEvent: utmb-mont-blanc-2026
 product: ""
 tags:

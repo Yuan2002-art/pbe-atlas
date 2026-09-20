@@ -160,8 +160,20 @@ export const CaseFrontmatterSchema = z.strictObject({
   activationLogicRationale: z.string().default(""),
   location: LocationSchema,
   date: DateRangeSchema,
-  /** One spatial type — an id from data/vocab/spatial-types.yml */
-  spatialType: z.string().min(1, "spatialType is required"),
+  /** The form the space primarily takes — an id from
+   *  data/vocab/spatial-types.yml.
+   *
+   *  One primary, on purpose, and deliberately not an unrestricted
+   *  multi-select: a free list invites one case to carry four types and
+   *  destroys the comparison the field exists for. This is the field that
+   *  decides the map mark, because a case is one space at one coordinate. */
+  primarySpatialType: z.string().min(1, "primarySpatialType is required"),
+  /** An optional second form, for a genuinely hybrid space — a chalet beside a
+   *  permanent store, a pop-up beside a camp. At most one, and it may not
+   *  repeat the primary. Same shape as the activation-logic pair above, and
+   *  for the same reason: naming a second form is allowed, but naming which
+   *  one leads is still required. */
+  secondarySpatialType: z.string().default(""),
   /** Event slug from data/events/, if this case happened at an event. */
   relatedEvent: z.string().min(1).optional(),
   /** Product or collaboration at the centre of the case. */

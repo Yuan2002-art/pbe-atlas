@@ -246,7 +246,7 @@ export function MapExplorer({
                   <CaseListRow
                     key={card.slug}
                     card={card}
-                    accent={accentOf(card.spatialType)}
+                    accent={accentOf(card.primarySpatialType)}
                   />
                 ))}
               </div>
@@ -270,7 +270,7 @@ export function MapExplorer({
           <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 p-3">
             <PreviewCard
               card={selectedCard}
-              accent={accentOf(selectedCard.spatialType)}
+              accent={accentOf(selectedCard.primarySpatialType)}
               tagLabels={tagLabels}
               onClose={() => setSelected(null)}
             />

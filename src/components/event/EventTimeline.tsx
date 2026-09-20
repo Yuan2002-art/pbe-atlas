@@ -114,7 +114,7 @@ export function EventTimeline({
 
           {/* One row per case */}
           {rows.map(({ record, unknown, colStart, span, clippedStart, clippedEnd }) => {
-            const accent = accentOf(record.spatialType);
+            const accent = accentOf(record.primarySpatialType);
             return (
               <div
                 key={record.slug}
@@ -125,7 +125,7 @@ export function EventTimeline({
               >
                 <div className="flex items-center gap-2 px-4 py-2.5">
                   <PinGlyph
-                    shape={shapeOf(record.spatialType)}
+                    shape={shapeOf(record.primarySpatialType)}
                     accent={accent}
                     status={record.status}
                     size={12}

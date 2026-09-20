@@ -113,7 +113,7 @@ export default async function BrandPage({
                   <li key={card.slug}>
                     <CaseListRow
                       card={card}
-                      accent={accentOf(card.spatialType)}
+                      accent={accentOf(card.primarySpatialType)}
                       showBrand={false}
                     />
                   </li>

@@ -277,14 +277,31 @@ function checkReferences(data: DataSet): void {
         message: `no brand file data/brands/${c.brand}.md.${suggest(c.brand, brandSlugs)}`,
       });
     }
-    if (!typeIds.has(c.spatialType)) {
+    if (!typeIds.has(c.primarySpatialType)) {
       data.errors.push({
         file,
-        field: "spatialType",
-        message: `"${c.spatialType}" is not in data/vocab/spatial-types.yml.${suggest(
-          c.spatialType,
+        field: "primarySpatialType",
+        message: `"${c.primarySpatialType}" is not in data/vocab/spatial-types.yml.${suggest(
+          c.primarySpatialType,
           typeIds,
         )}`,
+      });
+    }
+    if (c.secondarySpatialType && !typeIds.has(c.secondarySpatialType)) {
+      data.errors.push({
+        file,
+        field: "secondarySpatialType",
+        message: `"${c.secondarySpatialType}" is not in data/vocab/spatial-types.yml.${suggest(
+          c.secondarySpatialType,
+          typeIds,
+        )}`,
+      });
+    }
+    if (c.secondarySpatialType && c.secondarySpatialType === c.primarySpatialType) {
+      data.errors.push({
+        file,
+        field: "secondarySpatialType",
+        message: "must differ from primarySpatialType, or be left empty.",
       });
     }
     if (c.relatedEvent && !eventSlugs.has(c.relatedEvent)) {

@@ -27,7 +27,7 @@ export function PreviewCard({
       <div className="flex items-start justify-between gap-3 border-b border-rule px-3.5 py-2.5">
         <p className="label flex items-center gap-2">
           <PinGlyph shape={card.pinShape} accent={accent} status={card.status} size={13} />
-          Case {card.ref} · {card.spatialTypeLabel}
+          Case {card.ref} · {card.spatialTypeSummary}
         </p>
         <button
           type="button"

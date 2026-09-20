@@ -96,7 +96,9 @@ function valuesOf(card: CaseCard, group: FilterGroup): string[] {
     case "city":
       return [card.city];
     case "type":
-      return [card.spatialType];
+      // Both, so filtering by "pop-up" finds a case whose pop-up is its
+      // second form. Recording the second form is pointless if it is invisible.
+      return [card.primarySpatialType, card.secondarySpatialType].filter(Boolean);
     case "event":
       return card.relatedEvent ? [card.relatedEvent] : [];
     case "tag":
@@ -115,7 +117,7 @@ function matchesText(card: CaseCard, q: string): boolean {
     card.venue,
     card.product,
     card.relatedEventName,
-    card.spatialTypeLabel,
+    card.spatialTypeSummary,
     card.summary,
     card.tags.join(" "),
   ]

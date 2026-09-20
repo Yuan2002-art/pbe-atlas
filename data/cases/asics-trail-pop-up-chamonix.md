@@ -8,8 +8,9 @@ activationLogicRationale: >-
   Japanese calligraphy, natural materials and a lichen motif tying Fuji to
   Mont-Blanc. That argument is carried by the room itself, which is what
   Cultural Narrative names. Product Trial is second and sits in the
-  companion Trail Camp rather than in the pop-up, which is a hybrid this
-  schema cannot yet express.
+  companion Trail Camp rather than in the pop-up. The Camp is
+  now named as this case's secondary spatial form, so the hybrid is in the
+  data rather than only in this sentence.
 status: verified
 collaborators: []
 location:
@@ -24,7 +25,8 @@ date:
   start: 2026-08-24
   end: 2026-08-29
   precision: day
-spatialType: pop-up
+primarySpatialType: pop-up
+secondarySpatialType: activation
 relatedEvent: utmb-mont-blanc-2026
 product: METAFUJI TRAIL 2
 tags:

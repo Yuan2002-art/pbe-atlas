@@ -26,7 +26,7 @@ export function CaseListRow({
 
       <span className="min-w-0">
         <span className="label block">
-          Case {card.ref} · {card.spatialTypeLabel}
+          Case {card.ref} · {card.spatialTypeSummary}
           {card.relatedEventName && ` · ${card.relatedEventName}`}
         </span>
         <span className="mt-1 block text-[15.5px] leading-snug group-hover:underline">

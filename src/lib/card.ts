@@ -26,9 +26,18 @@ export interface CaseCard {
   /** Coordinates nudged so two cases in the same place do not overlap. */
   pinCoordinates: [number, number];
 
-  spatialType: string;
-  spatialTypeLabel: string;
-  spatialTypeShort: string;
+  primarySpatialType: string;
+  primarySpatialTypeLabel: string;
+  primarySpatialTypeShort: string;
+  secondarySpatialType: string;
+  secondarySpatialTypeLabel: string;
+  secondarySpatialTypeShort: string;
+  /** "Pop-up", or "Pop-up + Permanent Retail" for a hybrid. The one string a
+   *  list or a preview card should print; everything that needs a single
+   *  value — the pin, the accent, sorting — uses the primary. */
+  spatialTypeSummary: string;
+  /** From the primary type: a case is one space at one coordinate, so it
+   *  carries one mark. */
   pinShape: PinShape;
 
   relatedEvent: string;
@@ -53,7 +62,10 @@ export interface CardLookups {
 }
 
 export function toCard(c: Case, look: CardLookups): CaseCard {
-  const type = look.spatialType(c.spatialType);
+  const type = look.spatialType(c.primarySpatialType);
+  const second = c.secondarySpatialType
+    ? look.spatialType(c.secondarySpatialType)
+    : null;
   return {
     slug: c.slug,
     ref: c.ref,
@@ -69,9 +81,13 @@ export function toCard(c: Case, look: CardLookups): CaseCard {
     coordinates: c.location.coordinates,
     pinCoordinates: c.location.coordinates,
 
-    spatialType: c.spatialType,
-    spatialTypeLabel: type.label,
-    spatialTypeShort: type.short,
+    primarySpatialType: c.primarySpatialType,
+    primarySpatialTypeLabel: type.label,
+    primarySpatialTypeShort: type.short,
+    secondarySpatialType: c.secondarySpatialType,
+    secondarySpatialTypeLabel: second?.label ?? "",
+    secondarySpatialTypeShort: second?.short ?? "",
+    spatialTypeSummary: second ? `${type.label} + ${second.label}` : type.label,
     pinShape: type.pinShape,
 
     relatedEvent: c.relatedEvent ?? "",

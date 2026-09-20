@@ -1,6 +1,13 @@
 # ===========================================================================
 # SPATIAL TYPES — the six kinds of physical/experiential presence the Atlas
-# distinguishes. A case has exactly ONE spatial type (its primary form).
+# distinguishes.
+#
+# A case names ONE primary form, and may name ONE optional secondary form for a
+# genuinely hybrid space — a chalet beside a permanent store, a pop-up beside a
+# camp. Deliberately not an unrestricted multi-select: a free list invites one
+# case to carry four types and destroys the comparison the field exists for.
+# The primary is what the map draws, because a case is one space at one
+# coordinate. Everything else that applies belongs in `tags`.
 #
 # `id` is used in case files and in URLs — do not rename one without updating
 # every case file that uses it. `pinShape` is how it is drawn on the map.

@@ -178,12 +178,46 @@ for (const event of data.events) {
   }
 }
 
+/* Spatial form. Printed the same way as activation logic because it is now the
+   same shape — one primary, one optional secondary. The hybrid count is the
+   number that made the second field necessary. */
+const typePrimary = new Map<string, number>();
+const typeSecondary = new Map<string, number>();
+for (const c of data.cases) {
+  typePrimary.set(c.primarySpatialType, (typePrimary.get(c.primarySpatialType) ?? 0) + 1);
+  if (c.secondarySpatialType) {
+    typeSecondary.set(
+      c.secondarySpatialType,
+      (typeSecondary.get(c.secondarySpatialType) ?? 0) + 1,
+    );
+  }
+}
+const hybrids = data.cases.filter((c) => c.secondarySpatialType);
+console.log(`
+${DIM}Spatial form${OFF} ${DIM}(primary + secondary)${OFF}`);
+for (const type of data.spatialTypes) {
+  const p = typePrimary.get(type.id) ?? 0;
+  const q = typeSecondary.get(type.id) ?? 0;
+  if (p || q) {
+    console.log(`  ${type.label.padEnd(22)} ${String(p).padStart(2)} primary   ${q} secondary`);
+  }
+}
+console.log(
+  `  ${DIM}hybrids: ${hybrids.length} of ${data.cases.length} cases name a second form${OFF}`,
+);
+
 const usedTags = new Set(data.cases.flatMap((c) => c.tags));
 for (const tag of data.tags) {
   if (!usedTags.has(tag.id)) notices.push(`tag "${tag.id}" is not used by any case.`);
 }
 
-const usedTypes = new Set(data.cases.map((c) => c.spatialType));
+/* A type used only as a second form is still used — reporting it as unused
+   would send someone hunting for a gap that is not there. */
+const usedTypes = new Set(
+  data.cases.flatMap((c) =>
+    [c.primarySpatialType, c.secondarySpatialType].filter(Boolean),
+  ),
+);
 for (const type of data.spatialTypes) {
   if (!usedTypes.has(type.id)) {
     notices.push(`spatial type "${type.id}" is not used by any case.`);

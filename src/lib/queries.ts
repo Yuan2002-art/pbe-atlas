@@ -186,7 +186,10 @@ export interface Mix {
 export function spatialTypeMix(cards: CaseCard[]): Mix[] {
   const counts = new Map<string, number>();
   for (const card of cards) {
-    counts.set(card.spatialType, (counts.get(card.spatialType) ?? 0) + 1);
+    // Primary only. One case is one space, and MixBar draws these against
+    // cards.length — counting a hybrid twice would push the bar past 100%.
+    const id = card.primarySpatialType;
+    counts.set(id, (counts.get(id) ?? 0) + 1);
   }
   return getAtlas()
     .spatialTypes.filter((t) => counts.has(t.id))

@@ -53,7 +53,10 @@ export default async function CasePage({
   const atlas = getAtlas();
   const brand = atlas.brands.find((b) => b.slug === record.brand);
   const event = atlas.events.find((e) => e.slug === record.relatedEvent);
-  const type = atlas.spatialTypes.find((t) => t.id === record.spatialType);
+  const type = atlas.spatialTypes.find((t) => t.id === record.primarySpatialType);
+  const secondType = record.secondarySpatialType
+    ? atlas.spatialTypes.find((t) => t.id === record.secondarySpatialType)
+    : undefined;
   const card = atlas.cards.find((c) => c.slug === record.slug)!;
 
   // Walk the register in case order for the previous/next links.
@@ -81,7 +84,7 @@ export default async function CasePage({
               size={18}
             />
             <p className="label-lg">
-              Case {record.ref} · {type?.label ?? record.spatialType}
+              Case {record.ref} · {type?.label ?? record.primarySpatialType}
               {/* A year here would be a claim. Records whose date is unknown
                   carry a sort value only, so the header stays silent. */}
               {record.date.precision !== "unknown" && ` · ${card.year}`} ·{" "}
@@ -181,11 +184,23 @@ export default async function CasePage({
             </FieldRow>
             <FieldRow label="Spatial type">
               <Link
-                href={`/?type=${record.spatialType}`}
+                href={`/?type=${record.primarySpatialType}`}
                 className="underline hover:no-underline"
               >
-                {type?.label ?? record.spatialType}
+                {type?.label ?? record.primarySpatialType}
               </Link>
+              {secondType && (
+                <>
+                  {" + "}
+                  <Link
+                    href={`/?type=${record.secondarySpatialType}`}
+                    className="underline hover:no-underline"
+                  >
+                    {secondType.label}
+                  </Link>
+                  <span className="label ml-2">second form</span>
+                </>
+              )}
             </FieldRow>
             <FieldRow label="Related event">
               {event ? (
@@ -318,7 +333,7 @@ export default async function CasePage({
                 → Compare brands at {event.name}
               </Link>
             )}
-            <Link href={`/?type=${record.spatialType}`} className="label hover:text-ink">
+            <Link href={`/?type=${record.primarySpatialType}`} className="label hover:text-ink">
               → Map all {type?.label.toLowerCase() ?? "cases"}
             </Link>
           </nav>

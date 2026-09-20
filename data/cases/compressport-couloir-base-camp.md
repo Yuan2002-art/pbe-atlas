@@ -38,7 +38,8 @@ date:
   start: 2026-08-24
   end: 2026-08-30
   precision: day
-spatialType: activation
+primarySpatialType: activation
+secondarySpatialType: ""
 relatedEvent: utmb-mont-blanc-2026
 product: ""
 tags:
@@ -131,10 +132,11 @@ segment and a schedule, and the weakest is the room.
 confirmation the café operated as described, no leaderboard result, and no
 photographs.
 
-**`spatialType` is `activation`.** It is not `permanent-retail` because the
+**`primarySpatialType` is `activation`.** It is not `permanent-retail` because the
 premises are someone else's, and not `pop-up` because nothing indicates a
-temporary retail build. A branded programme inside a borrowed room is the
-closest the single-valued field gets.
+temporary retail build. `secondarySpatialType` is empty: the field exists for
+a space that genuinely takes two forms, and this is one room running one
+programme. `activation` is not a compromise here, it is the accurate name.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

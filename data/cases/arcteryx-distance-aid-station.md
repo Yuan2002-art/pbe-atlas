@@ -31,7 +31,8 @@ date:
   start: 2026-08-24
   end: 2026-08-30
   precision: day
-spatialType: permanent-retail
+primarySpatialType: permanent-retail
+secondarySpatialType: ""
 relatedEvent: utmb-mont-blanc-2026
 product: Arc'teryx × Distance capsule collection; Sylan 2 race-week edition
 tags:
@@ -106,7 +107,8 @@ address as 265 Rue du Docteur Paccard, 74400 Chamonix, but that address was not
 geocoded here, so the coordinate is Chamonix town centre and the precision is
 recorded as `city`. The pin is less precise than the address, deliberately.
 
-**`spatialType` is `permanent-retail` because the room is permanent.** This is
+**`primarySpatialType` is `permanent-retail` because the room is permanent.**
+No secondary form is named: there is one room, not two spaces. This is
 the brand's existing shop given a temporary programme, not a pop-up, and the
 distinction matters: the location was not selected for this event. The
 week-long programme is carried in the tags and in the activation logic instead.

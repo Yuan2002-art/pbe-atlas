@@ -47,7 +47,8 @@ date:
   start: 2026-08-24
   end: 2026-08-30
   precision: day
-spatialType: activation
+primarySpatialType: activation
+secondarySpatialType: pop-up
 relatedEvent: utmb-mont-blanc-2026
 product: Chamonix-exclusive collection, sold at the Vendor Village chalet
 tags:
@@ -125,13 +126,18 @@ listing, filed as `other`. Open the brand's own schedule page to upgrade them.
 Place de l'Église, 74400 Chamonix, per the listing; that address was not
 geocoded here, so the coordinate is the town centre and precision is `city`.
 
-**`spatialType` is `activation`, and it is a compromise.** The form is a
-takeover of two existing hotels, which is not `pop-up`, not `permanent-retail`
-and not an `event`. But rabbit itself calls it "part pop-up shop", and the
-Vendor Village chalet is a separate pop-up in a second location. This is the
-third hybrid in the dataset — after The North Face and ASICS — and CLAUDE.md
-records that a third hybrid is the point at which single-valued `spatialType`
-should be revisited. **That threshold has now been reached.**
+**`primarySpatialType` is `activation` and `secondarySpatialType` is `pop-up`.**
+The leading form is a takeover of two existing hotels, which is not `pop-up`,
+not `permanent-retail` and not an `event` — a guest in premises the brand does
+not own is what `activation` names. The second form is real and now recorded:
+rabbit itself calls the Clubhouse "part pop-up shop", and the Vendor Village
+chalet is a separate pop-up in a second location.
+
+This was the case that triggered the change. It was the third hybrid in the
+dataset — after The North Face and ASICS — and CLAUDE.md set a third hybrid as
+the point at which the single-valued field should be revisited. It has been:
+the field is now one primary plus one optional secondary, and all three hybrids
+carry both.
 
 **Two spaces, one record.** The Clubhouse and the Vendor Village chalet were in
 different places with different purposes and, per the listing, different dates

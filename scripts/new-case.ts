@@ -74,7 +74,8 @@ date:
   # end: ${today}          # delete if it is a single day
   ongoing: false           # true for a store that is still open
   precision: day           # day | month | year | unknown
-spatialType: pop-up        # see data/vocab/spatial-types.yml
+primarySpatialType: pop-up   # the form that leads — data/vocab/spatial-types.yml
+secondarySpatialType: ""     # only for a genuine hybrid; must differ from the primary
 # relatedEvent:            # see data/events/ — delete if not at an event
 product: ""
 tags:                      # see data/vocab/classification-tags.yml

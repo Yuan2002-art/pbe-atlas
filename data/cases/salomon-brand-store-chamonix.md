@@ -27,7 +27,8 @@ date:
   start: 2026-01-01
   ongoing: true
   precision: unknown
-spatialType: permanent-retail
+primarySpatialType: permanent-retail
+secondarySpatialType: ""
 product: Full range across trail running, hiking, road running, alpine skiing, snowboarding and ski touring; SportStyle footwear
 tags:
   - retail

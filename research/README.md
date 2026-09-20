@@ -23,9 +23,12 @@ They are **still leads**. They are not cases, they carry no evidence status of
 their own, they are drawn as dashed boxes rather than cards, the section says in
 its first sentence that none of it is research and none of it may be cited, and
 every row links to where it was reported. The reason for showing them is that
-the Atlas has five researched cases at that edition and the listing carries
-twenty-six spaces: displaying only the five would make the research look more
-complete than it is, which rule 10 exists to prevent.
+the listing carries twenty-six spaces and the Atlas has researched fewer of
+them: displaying only the researched ones would make the research look more
+complete than it is, which rule 10 exists to prevent. **Run
+`npm run validate` for the current case count at that edition** — this file
+said "five" until the tenth case landed, which is exactly how the footer banner
+went stale.
 
 The other 123 leads — runs, talks, parties, races — were not copied. They are
 activities rather than spaces with a duration, which is what this Atlas records.

@@ -70,9 +70,9 @@ explainable in one sentence.
    load-bearing mechanism goes. Every case that names one must also record
    `activationLogicRationale` saying why that mechanism and not the runners-up.
 
-   The three vocabularies divide as: `spatialType` = the form (one),
-   `tags` = analytical attributes (many, unordered), activation logic = the
-   engine (one + one optional). `event-activation` and `cultural-archive` are
+   The three vocabularies divide as: spatial type = the form (one + one
+   optional), `tags` = analytical attributes (many, unordered), activation
+   logic = the engine (one + one optional). `event-activation` and `cultural-archive` are
    deliberately excluded from the logic vocabulary — the first is a dependency
    relation rather than a mechanism, the second is covered by
    `cultural-narrative` and keeping both would restart the drift.
@@ -193,6 +193,32 @@ uses; there is deliberately no second copy of the rules.
   strip at the top of a case page and in the analysis grid below. The original
   field list had them in both places; duplicating the field would mean writing
   the same paragraph twice.
+- **Spatial form is one primary plus one optional secondary**, the same shape as
+  activation logic, and deliberately *not* an unrestricted multi-select. A free
+  list invites one case to carry four types and destroys the comparison the
+  field exists for; one primary plus one optional secondary still forces the
+  judgement about which form leads.
+
+  Three cases are hybrids and all three now carry both values: The North Face
+  bundles a Basecamp chalet (`activation`) with a permanent store
+  (`permanent-retail`); ASICS bundles a Trail Pop-Up with a separately-sited
+  Trail Camp (`activation`); rabbit takes over two hotels and calls the result
+  "part pop-up shop" while running a separate Vendor Village chalet (`pop-up`).
+  **Run `npm run validate` for the current hybrid count** — it is computed.
+
+  Three consequences, and they will break quietly if separated:
+
+  1. **The map draws the primary only.** A case is one space at one coordinate,
+     so it carries one mark. `card.pinShape`, the accent and the sort order all
+     read the primary.
+  2. **The filters match either.** Filtering by `pop-up` finds rabbit, whose
+     pop-up is its second form — recording a second form is pointless if it is
+     invisible. So the facet counts sum to more than the number of cases, the
+     same way tag counts already do.
+  3. **The brand-page spatial mix counts the primary only**, because `MixBar`
+     draws it against `cards.length` and counting a hybrid twice would push the
+     bar past 100%.
+
 - **The map is shape-coded, not colour-coded.** Colour is a redundant second
   channel, so the map survives colour-vision deficiency and black-and-white
   printing in a thesis. A dashed outline means a placeholder record.
@@ -264,21 +290,6 @@ uses; there is deliberately no second copy of the rules.
   bar labelled as such rather than a guessed position.
 
 ## Known limitations, recorded and not yet fixed
-
-- **`spatialType` is single-valued, and three cases are now hybrids.** The North
-  Face bundles a Basecamp chalet (`activation`) with a permanent store
-  (`permanent-retail`); ASICS bundles a Trail Pop-Up with a separately-sited
-  Trail Camp; rabbit takes over two hotels and calls the result "part pop-up
-  shop" while running a separate Vendor Village chalet on different dates. In
-  each, the second space is visible only in the prose and the tags.
-
-  **The third hybrid has arrived, and the decision is made but not yet built.**
-  When this changes, it becomes `primarySpatialType` plus an optional
-  `secondarySpatialType` — deliberately *not* an unrestricted multi-select. The
-  reason is the same one behind rule 5: a free list invites one case to carry
-  four types and destroys comparison, whereas one primary plus one optional
-  secondary forces the judgement about which form leads. Until it is built,
-  hybrids keep a single primary type and say so in their verification notes.
 
 - **Activation-logic vocabulary candidates are tracked, not added.** Two cases
   have hit mechanisms the vocabulary cannot express — see the candidate block at

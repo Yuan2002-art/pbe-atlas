@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const SORTS = {
   case: { label: "Case", compare: (a: CaseCard, b: CaseCard) => b.ref.localeCompare(a.ref) },
   brand: { label: "Brand", compare: (a: CaseCard, b: CaseCard) => a.brandName.localeCompare(b.brandName) },
-  type: { label: "Type", compare: (a: CaseCard, b: CaseCard) => a.spatialTypeLabel.localeCompare(b.spatialTypeLabel) },
+  type: { label: "Type", compare: (a: CaseCard, b: CaseCard) => a.primarySpatialTypeLabel.localeCompare(b.primarySpatialTypeLabel) },
   place: { label: "Place", compare: (a: CaseCard, b: CaseCard) => a.city.localeCompare(b.city) },
   date: { label: "Date", compare: (a: CaseCard, b: CaseCard) => b.year.localeCompare(a.year) || b.ref.localeCompare(a.ref) },
 } as const;
@@ -114,7 +114,7 @@ export default async function RegisterPage({
                     <span className="data flex items-center gap-2 text-pencil">
                       <PinGlyph
                         shape={card.pinShape}
-                        accent={accentOf(card.spatialType)}
+                        accent={accentOf(card.primarySpatialType)}
                         status={card.status}
                         size={13}
                       />
@@ -128,7 +128,7 @@ export default async function RegisterPage({
                     </Link>
                   </td>
                   <td className="px-3 py-4">
-                    <span className="label">{card.spatialTypeLabel}</span>
+                    <span className="label">{card.spatialTypeSummary}</span>
                     {card.relatedEventName && (
                       <Link
                         href={`/events/${card.relatedEvent}`}

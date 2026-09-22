@@ -108,6 +108,15 @@ export default async function CasePage({
               : "pb-10 pt-10 sm:pb-14 sm:pt-14"
           }`}
         >
+          {/* Back to the register. Every record page carries one: a case is
+              one entry in a list, and the browser Back button is not an answer
+              when the reader arrived from the map or from a link. */}
+          <p className="mb-4">
+            <Link href="/cases" className="label hover:text-ink">
+              ← All cases
+            </Link>
+          </p>
+
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <PinGlyph
               shape={card.pinShape}
@@ -135,7 +144,7 @@ export default async function CasePage({
               {brand?.name ?? record.brand}
             </Link>
           </p>
-          <h1 className="display mt-2 max-w-[18ch] text-[clamp(2.2rem,5.5vw,4rem)]">
+          <h1 className="display mt-2 text-[clamp(2.2rem,4.6vw,3.6rem)]">
             {record.title}
           </h1>
           {record.product && (

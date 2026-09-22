@@ -39,7 +39,12 @@ export function PageHeader({
           </p>
         )}
         <p className="label-lg">{eyebrow}</p>
-        <h1 className="display mt-4 max-w-[20ch] text-[clamp(2.3rem,6vw,4.25rem)]">
+        {/* No ch cap. A 20ch measure is right for a paragraph and wrong for a
+            title: it broke "HOKA UTMB Mont-Blanc 2026" across two lines on a
+            1440px screen with most of the column empty beside it. The column
+            is the limit now, so a title wraps when it genuinely does not
+            fit. */}
+        <h1 className="display mt-4 text-[clamp(2.3rem,5vw,4rem)]">
           {title}
         </h1>
         {lede && (

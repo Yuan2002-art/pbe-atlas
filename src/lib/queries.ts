@@ -128,30 +128,45 @@ export function cardsForTag(tag: string): CaseCard[] {
   return newestFirst(getAtlas().cards.filter((c) => c.tags.includes(tag)));
 }
 
-/** Editions for the home-page strip: most recently finished first.
+/** Every dated edition, in the compact shape the home-page strip needs.
  *
- *  Undated editions are left out rather than guessed into a position. Two
- *  records currently have no dates at all, and placing them would be inventing
- *  a recency the record cannot support — the same reason the event timeline
- *  draws an undated case as a ghost bar instead of picking a day for it.
+ *  Undated editions are left out rather than guessed into a position. Placing
+ *  one would be inventing a date the record cannot support — the same reason
+ *  the event timeline draws an undated case as a ghost bar instead of picking
+ *  a day for it.
  *
- *  Nothing in the dataset is upcoming, so this is "recent", not "next". */
-export interface RecentEdition {
-  event: Event;
+ *  This returns them ALL, and the strip picks its five in the browser. The
+ *  home page is statically built, so "today" on the server is the build date;
+ *  a strip that colours an edition red for "starting within a month" would
+ *  still say so a year after the build. Which five, and what colour, are
+ *  therefore decided client-side against the reader's own clock.
+ *
+ *  The shape is deliberately minimal — no body HTML crosses to the client. */
+export interface EditionRow {
+  slug: string;
+  name: string;
+  /** Empty when the record has no short name; the strip falls back to `name`. */
+  shortName: string;
+  /** ISO day. Always present: undated editions are filtered out. */
+  start: string;
+  /** ISO day; equal to `start` for a single-day edition. */
+  end: string;
   caseCount: number;
 }
 
-export function recentEditions(limit = 6): RecentEdition[] {
-  return getAtlas()
-    .events.filter((e) => e.endDate || e.startDate)
-    .sort((a, b) =>
-      (b.endDate ?? b.startDate ?? "").localeCompare(a.endDate ?? a.startDate ?? ""),
-    )
-    .slice(0, limit)
+export function datedEditions(): EditionRow[] {
+  const atlas = getAtlas();
+  return atlas.events
+    .filter((e) => e.startDate || e.endDate)
     .map((event) => ({
-      event,
-      caseCount: getAtlas().cards.filter((c) => c.relatedEvent === event.slug).length,
-    }));
+      slug: event.slug,
+      name: event.name,
+      shortName: event.shortName,
+      start: (event.startDate ?? event.endDate)!,
+      end: (event.endDate ?? event.startDate)!,
+      caseCount: atlas.cards.filter((c) => c.relatedEvent === event.slug).length,
+    }))
+    .sort((a, b) => b.end.localeCompare(a.end));
 }
 
 /* --- vocabulary lookups ------------------------------------------------- */

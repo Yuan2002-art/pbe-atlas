@@ -76,6 +76,7 @@ export default async function BrandPage({
       <PlaceholderBand status={brand.status} />
 
       <PageHeader
+        back={{ href: "/brands", label: "All brands" }}
         eyebrow={`Brand · ${brand.category}`}
         title={brand.name}
         lede={brand.positioning}

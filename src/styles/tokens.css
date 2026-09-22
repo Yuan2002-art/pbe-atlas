@@ -57,15 +57,13 @@
   --measure: 86ch;          /* prose line length                             */
   --rail: 300px;            /* filter rail width                             */
   --panel-right: 136px;     /* map key + list button — one column, one width  */
-  /* Recent-editions bars, one gradient per row. Decorative and positional
-     only: the meaning-bearing colour in this project is the spatial-type
-     accent, and the map is shape-coded anyway, so a reader cannot mistake a
-     row colour for a classification. Five, because the strip shows five. */
-  --edition-1: linear-gradient(90deg, #1e4fd8, #5b9dff);
-  --edition-2: linear-gradient(90deg, #c8371f, #ff8a4c);
-  --edition-3: linear-gradient(90deg, #0f766e, #3ddc97);
-  --edition-4: linear-gradient(90deg, #5b21b6, #c084fc);
-  --edition-5: linear-gradient(90deg, #a16207, #fbbf24);
+  /* Editions-strip bars. Three, because colour here carries the edition's
+     STATE and there are three of those. It used to be one gradient per row,
+     which told the reader nothing. The strip also marks today on the axis and
+     prints a key, so the state never rests on colour alone. */
+  --edition-past: linear-gradient(90deg, #3f3f46, #7c7c87);
+  --edition-now: linear-gradient(90deg, #c8371f, #ff8a4c);
+  --edition-future: linear-gradient(90deg, #1e4fd8, #5b9dff);
 
   /* Everything stuck to the top of the window. The map and the sticky case
      sidebar subtract it, so it has to match what the header actually

@@ -1,22 +1,36 @@
-import Link from "next/link";
+"use client";
 
-import { formatDateRange, placeStamp, plural } from "@/lib/format";
-import type { Event } from "@/lib/schema";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+import { formatDateRange, plural } from "@/lib/format";
+import type { EditionRow } from "@/lib/queries";
 
 /* ===========================================================================
-   Recent editions — the strip floating over the home map.
+   Editions — the strip floating over the home map.
 
-   A bar calendar rather than a row of picture cards. The cards were three
-   panels of 300px each and took a slab out of the top of the map; this is one
-   panel, five rows, and it says the same thing in a third of the space.
+   A bar calendar on a real shared time axis: every bar sits at its true
+   position between the earliest and latest date shown, so the gap between two
+   race weeks reads as a gap.
 
-   It is a real time axis: every bar sits at its true position between the
-   earliest start and the latest end of the five editions shown, so the gap
-   between two race weeks is visible as a gap. Read the horizontal position as
-   "when", never the colour — the colours only tell rows apart, and the
-   meaning-bearing colour in this project is the spatial-type accent on the
-   map, which is shape-coded as well.
+   Colour is the edition's STATE, not its month. Grey has finished, red is
+   running now or starts within a month, blue is further out. Position on the
+   axis still says when, and a rule marks today on every row, so the state is
+   carried in two channels rather than in colour alone — the same reason the
+   map is shape-coded.
+
+   Client-side on purpose. The home page is static, so "today" on the server is
+   the build date; a strip built in September that still called a race
+   "upcoming" in December would be a written-down claim about live data, which
+   is what rule 10's corollary exists to prevent. Which five, and what colour,
+   are worked out against the reader's own clock.
    =========================================================================== */
+
+const DAY = 86_400_000;
+/** How far ahead still counts as imminent. */
+const SOON = 31 * DAY;
+
+type State = "past" | "now" | "soon" | "future";
 
 /** Midnight UTC, so a date never shifts a day with the reader's timezone —
  *  the same reason dates are formatted in a fixed archival style. */
@@ -24,31 +38,51 @@ function toTime(day: string): number {
   return new Date(`${day}T00:00:00Z`).getTime();
 }
 
-export function RecentEditions({
-  editions,
-}: {
-  editions: { event: Event; caseCount: number }[];
-}) {
-  /* Dated editions only. An undated one has no position on an axis, and
-     guessing one would be inventing a fact to make a graphic work. */
-  const rows = editions
-    .filter((e) => e.event.startDate || e.event.endDate)
+function stateOf(start: number, end: number, now: number): State {
+  if (end < now) return "past";
+  if (start <= now) return "now";
+  return start - now <= SOON ? "soon" : "future";
+}
+
+const BAR: Record<State, string> = {
+  past: "var(--edition-past)",
+  now: "var(--edition-now)",
+  soon: "var(--edition-now)",
+  future: "var(--edition-future)",
+};
+
+const WORDS: Record<State, string> = {
+  past: "finished",
+  now: "running now",
+  soon: "within a month",
+  future: "upcoming",
+};
+
+export function RecentEditions({ editions }: { editions: EditionRow[] }) {
+  /* Null until mounted. Rendering a date-relative view on the server and then
+     changing it on hydration is a mismatch; the panel is simply not drawn
+     until there is a real clock to draw it against. */
+  const [now, setNow] = useState<number | null>(null);
+  useEffect(() => setNow(Date.now()), []);
+  if (now === null || editions.length === 0) return null;
+
+  /* The five closest to today in either direction, then latest first — so the
+     furthest ahead sits at the top and the most recently finished at the
+     bottom, reading down through now. */
+  const rows = [...editions]
+    .map((e) => ({ ...e, s: toTime(e.start), e2: toTime(e.end) }))
+    .sort((a, b) => {
+      const da = Math.min(Math.abs(a.s - now), Math.abs(a.e2 - now));
+      const db = Math.min(Math.abs(b.s - now), Math.abs(b.e2 - now));
+      return da - db;
+    })
     .slice(0, 5)
-    .map(({ event, caseCount }) => {
-      const start = toTime((event.startDate ?? event.endDate)!);
-      const end = toTime((event.endDate ?? event.startDate)!);
-      return { event, caseCount, start, end };
-    });
+    .sort((a, b) => b.e2 - a.e2);
 
-  if (rows.length === 0) return null;
+  const axisStart = Math.min(...rows.map((r) => r.s));
+  const axisEnd = Math.max(...rows.map((r) => r.e2));
+  const span = Math.max(axisEnd - axisStart, DAY);
 
-  const axisStart = Math.min(...rows.map((r) => r.start));
-  const axisEnd = Math.max(...rows.map((r) => r.end));
-  // A single dated edition would give a zero-width axis; give it one day.
-  const span = Math.max(axisEnd - axisStart, 86_400_000);
-
-  /* One tick per January inside the range, so the axis is readable without a
-     row of month labels crowding a 560px panel. */
   const years: number[] = [];
   for (
     let y = new Date(axisStart).getUTCFullYear();
@@ -58,6 +92,8 @@ export function RecentEditions({
     years.push(y);
   }
 
+  const nowX = ((now - axisStart) / span) * 100;
+
   /* Exactly the rail's width, so the strip and the filter panel beneath it
      share a left edge and a right edge — one column, not two things that
      nearly line up. */
@@ -66,7 +102,7 @@ export function RecentEditions({
       <div className="glass rounded-[var(--radius-card)] px-3.5 py-3">
         <div className="mb-2.5 flex items-baseline justify-between gap-3">
           <h2 id="recent-editions" className="label-lg" style={{ color: "var(--ink)" }}>
-            Recent editions
+            Editions
           </h2>
           <Link href="/events" className="label hover:text-ink">
             All events →
@@ -74,34 +110,28 @@ export function RecentEditions({
         </div>
 
         <ul>
-          {rows.map((row, i) => {
-            const left = ((row.start - axisStart) / span) * 100;
-            const width = ((row.end - row.start) / span) * 100;
-            const dateLabel = formatDateRange({
-              start: row.event.startDate ?? "",
-              end: row.event.endDate,
-            });
+          {rows.map((row) => {
+            const state = stateOf(row.s, row.e2, now);
+            const left = ((row.s - axisStart) / span) * 100;
+            const width = ((row.e2 - row.s) / span) * 100;
+            const dateLabel = formatDateRange({ start: row.start, end: row.end });
             return (
-              <li key={row.event.slug}>
+              <li key={row.slug}>
                 <Link
-                  href={`/events/${row.event.slug}`}
+                  href={`/events/${row.slug}`}
                   className="group grid grid-cols-[7.5rem_1fr] items-center gap-2 rounded-[var(--radius-sm)] px-1.5 py-1 hover:bg-paper-sunk"
-                  title={`${row.event.name} · ${dateLabel} · ${placeStamp(
-                    row.event.location.city,
-                    row.event.location.countryCode,
-                  )} · ${
+                  title={`${row.name} · ${dateLabel} · ${WORDS[state]} · ${
                     row.caseCount === 0 ? "no cases yet" : plural(row.caseCount, "case")
                   }`}
                 >
                   <span className="min-w-0">
                     <span className="block truncate text-[12.5px] font-medium leading-tight group-hover:underline">
-                      {row.event.shortName || row.event.name}
+                      {row.shortName || row.name}
                     </span>
                     <span className="label block truncate leading-tight">{dateLabel}</span>
                   </span>
 
                   <span className="relative block h-[13px]">
-                    {/* Year rules, behind the bar. */}
                     {years.map((y) => {
                       const x = ((toTime(`${y}-01-01`) - axisStart) / span) * 100;
                       if (x < 0 || x > 100) return null;
@@ -115,36 +145,58 @@ export function RecentEditions({
                       );
                     })}
 
-                    {/* The bar. min-width is a legibility floor, not a claim
-                        about duration: a seven-day race week across a two-year
-                        axis is under four pixels, which reads as a dot and
-                        cannot show its gradient. Short editions are drawn at
-                        18px; the exact dates are beside the name, and those
-                        are the fact. */}
+                    {/* Today, on every row, so the eye can see which side of
+                        it each bar falls on. */}
+                    {nowX >= 0 && nowX <= 100 && (
+                      <span
+                        aria-hidden
+                        className="absolute -top-0.5 h-[17px] w-px"
+                        style={{ left: `${nowX}%`, background: "var(--rule-strong)" }}
+                      />
+                    )}
+
+                    {/* min-width is a legibility floor, not a claim about
+                        duration: a one-day marathon on a months-long axis is a
+                        hairline. The exact dates are beside the name. */}
                     <span
-                      className="absolute top-0 h-full min-w-[18px] rounded-[var(--radius-sm)]"
+                      className="absolute top-0 h-full min-w-[14px] rounded-[var(--radius-sm)]"
                       style={{
                         left: `${left}%`,
                         width: `${width}%`,
-                        background: `var(--edition-${(i % 5) + 1})`,
+                        background: BAR[state],
                       }}
                     />
                   </span>
                 </Link>
-
               </li>
             );
           })}
         </ul>
 
-        {/* Axis footer: the two ends, and the years between them. */}
-        <div
-          aria-hidden
-          className="label mt-1.5 flex items-center justify-between border-t border-rule pl-[8.1rem] pt-1.5"
-        >
-          {years.map((y) => (
-            <span key={y}>{y}</span>
-          ))}
+        <div className="mt-1.5 border-t border-rule pt-1.5">
+          <div aria-hidden className="label flex items-center justify-between pl-[8.1rem]">
+            {years.map((y) => (
+              <span key={y}>{y}</span>
+            ))}
+          </div>
+          <ul className="label mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1">
+            {(
+              [
+                ["past", "Finished"],
+                ["now", "Now / within a month"],
+                ["future", "Upcoming"],
+              ] as [State, string][]
+            ).map(([key, label]) => (
+              <li key={key} className="flex items-center gap-1.5">
+                <span
+                  aria-hidden
+                  className="inline-block h-2 w-3.5 rounded-[2px]"
+                  style={{ background: BAR[key] }}
+                />
+                {label}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

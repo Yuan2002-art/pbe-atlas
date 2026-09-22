@@ -1,7 +1,7 @@
 import { RecentEditions } from "@/components/event/RecentEditions";
 import { MapExplorer } from "@/components/map/MapExplorer";
 import type { FilterGroupDef } from "@/components/filters/FilterRail";
-import { getAtlas, recentEditions, tagLabels } from "@/lib/queries";
+import { datedEditions, getAtlas, tagLabels } from "@/lib/queries";
 
 export default function HomePage() {
   const atlas = getAtlas();
@@ -67,7 +67,7 @@ export default function HomePage() {
     <div>
       <MapExplorer
         hero={
-          <RecentEditions editions={recentEditions(5)} />
+          <RecentEditions editions={datedEditions()} />
         }
         cards={atlas.cards}
         groups={groups}

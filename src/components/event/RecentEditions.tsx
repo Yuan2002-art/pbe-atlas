@@ -3,6 +3,14 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+import {
+  DAY,
+  editionState,
+  STATE_BAR,
+  STATE_WORDS,
+  toTime,
+  type EditionState,
+} from "@/lib/edition-state";
 import { formatDateRange, plural } from "@/lib/format";
 import type { EditionRow } from "@/lib/queries";
 
@@ -25,38 +33,6 @@ import type { EditionRow } from "@/lib/queries";
    is what rule 10's corollary exists to prevent. Which five, and what colour,
    are worked out against the reader's own clock.
    =========================================================================== */
-
-const DAY = 86_400_000;
-/** How far ahead still counts as imminent. */
-const SOON = 31 * DAY;
-
-type State = "past" | "now" | "soon" | "future";
-
-/** Midnight UTC, so a date never shifts a day with the reader's timezone —
- *  the same reason dates are formatted in a fixed archival style. */
-function toTime(day: string): number {
-  return new Date(`${day}T00:00:00Z`).getTime();
-}
-
-function stateOf(start: number, end: number, now: number): State {
-  if (end < now) return "past";
-  if (start <= now) return "now";
-  return start - now <= SOON ? "soon" : "future";
-}
-
-const BAR: Record<State, string> = {
-  past: "var(--edition-past)",
-  now: "var(--edition-now)",
-  soon: "var(--edition-now)",
-  future: "var(--edition-future)",
-};
-
-const WORDS: Record<State, string> = {
-  past: "finished",
-  now: "running now",
-  soon: "within a month",
-  future: "upcoming",
-};
 
 export function RecentEditions({ editions }: { editions: EditionRow[] }) {
   /* Null until mounted. Rendering a date-relative view on the server and then
@@ -111,7 +87,7 @@ export function RecentEditions({ editions }: { editions: EditionRow[] }) {
 
         <ul>
           {rows.map((row) => {
-            const state = stateOf(row.s, row.e2, now);
+            const state = editionState(row.s, row.e2, now);
             const left = ((row.s - axisStart) / span) * 100;
             const width = ((row.e2 - row.s) / span) * 100;
             const dateLabel = formatDateRange({ start: row.start, end: row.end });
@@ -120,7 +96,7 @@ export function RecentEditions({ editions }: { editions: EditionRow[] }) {
                 <Link
                   href={`/events/${row.slug}`}
                   className="group grid grid-cols-[7.5rem_1fr] items-center gap-2 rounded-[var(--radius-sm)] px-1.5 py-1 hover:bg-paper-sunk"
-                  title={`${row.name} · ${dateLabel} · ${WORDS[state]} · ${
+                  title={`${row.name} · ${dateLabel} · ${STATE_WORDS[state].toLowerCase()} · ${
                     row.caseCount === 0 ? "no cases yet" : plural(row.caseCount, "case")
                   }`}
                 >
@@ -163,7 +139,7 @@ export function RecentEditions({ editions }: { editions: EditionRow[] }) {
                       style={{
                         left: `${left}%`,
                         width: `${width}%`,
-                        background: BAR[state],
+                        background: STATE_BAR[state],
                       }}
                     />
                   </span>
@@ -185,13 +161,13 @@ export function RecentEditions({ editions }: { editions: EditionRow[] }) {
                 ["past", "Finished"],
                 ["now", "Now / within a month"],
                 ["future", "Upcoming"],
-              ] as [State, string][]
+              ] as [EditionState, string][]
             ).map(([key, label]) => (
               <li key={key} className="flex items-center gap-1.5">
                 <span
                   aria-hidden
                   className="inline-block h-2 w-3.5 rounded-[2px]"
-                  style={{ background: BAR[key] }}
+                  style={{ background: STATE_BAR[key] }}
                 />
                 {label}
               </li>

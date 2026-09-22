@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { EditionTint } from "@/components/event/EditionTint";
 import { Locator } from "@/components/event/Locator";
 import { MetaItem, PageHeader, StatusMark } from "@/components/ui/Primitives";
 import { formatDateRange } from "@/lib/format";
@@ -66,11 +67,14 @@ export default function EventsPage() {
           {rows.map(({ event, cards, brands }) => (
             <li
               key={event.slug}
-              className="glass card-hover overflow-hidden rounded-[var(--radius-card)]"
+              className="glass card-hover relative overflow-hidden rounded-[var(--radius-card)]"
             >
+              {/* The wash and the word for this edition's state, worked out in
+                  the browser. Server-side "today" is the build date. */}
+              <EditionTint start={event.startDate ?? ""} end={event.endDate ?? ""} />
               <Link
                 href={`/events/${event.slug}`}
-                className="group flex h-full flex-col"
+                className="group relative z-10 flex h-full flex-col"
               >
                 {/* A photograph when the record has one, and a locator drawn
                     from the edition's own coordinate when it does not. Never a

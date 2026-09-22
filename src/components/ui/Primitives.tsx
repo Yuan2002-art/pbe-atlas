@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { BackLink } from "@/components/ui/BackLink";
+
 import type { Status } from "@/lib/schema";
 
 /* --------------------------------------------------------------------------
@@ -33,9 +35,7 @@ export function PageHeader({
       <div className="mx-auto w-full max-w-[1400px] px-4 pb-10 pt-12 sm:px-6 sm:pb-14 sm:pt-16">
         {back && (
           <p className="mb-4">
-            <Link href={back.href} className="label hover:text-ink">
-              ← {back.label}
-            </Link>
+            <BackLink fallback={back} />
           </p>
         )}
         <p className="label-lg">{eyebrow}</p>

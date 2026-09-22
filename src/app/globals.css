@@ -279,6 +279,24 @@ a {
 }
 
 /* --------------------------------------------------------------------------
+   The one moving thing on the site.
+
+   An edition that is running right now breathes, because "now" is the only
+   state that is changing while you look at it. Everything else here is still.
+   Honoured only when the reader has not asked for reduced motion.
+   -------------------------------------------------------------------------- */
+@keyframes edition-breathe {
+  0%, 100% { opacity: 0.72; }
+  50% { opacity: 1; }
+}
+.edition-pulse {
+  animation: edition-breathe 3.2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .edition-pulse { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
    Type over a photograph.
 
    A case header with a hero image lays the same markup over a dark scrim, so

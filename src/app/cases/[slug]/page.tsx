@@ -12,6 +12,8 @@ import {
   Prose,
   SourceList,
 } from "@/components/case/CaseParts";
+import { Locator } from "@/components/event/Locator";
+import { BackLink } from "@/components/ui/BackLink";
 import { PinGlyph } from "@/components/ui/PinGlyph";
 import {
   FieldRow,
@@ -81,9 +83,16 @@ export default async function CasePage({
     <article>
       <PlaceholderBand status={record.status} />
 
-      {/* ---- Header ---- */}
+      {/* ---- Header ----
+           Every case reserves the same band, so the register reads as one
+           shape whether or not a record has a picture yet. With a photograph
+           it is the photograph, under a scrim, with the type flipped. Without
+           one it is the locator — the case's own coordinate inside its
+           country's box, a diagram made only of data already in the record.
+           It is never a stand-in photograph: an invented plate is how a
+           placeholder once passed for research. */}
       <header className="relative border-b border-rule">
-        {hero && (
+        {hero ? (
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -100,21 +109,29 @@ export default async function CasePage({
               }}
             />
           </>
+        ) : (
+          <div aria-hidden className="absolute inset-0 opacity-[0.55]">
+            <Locator
+              coordinates={record.location.coordinates}
+              bounds={
+                atlas.countryBounds.find(
+                  (b) => b.code === record.location.countryCode,
+                )?.bounds ?? null
+              }
+              countryCode={record.location.countryCode}
+            />
+          </div>
         )}
         <div
-          className={`relative mx-auto w-full max-w-[1400px] px-4 sm:px-6 ${
-            hero
-              ? "on-photo pb-12 pt-28 sm:pb-16 sm:pt-40"
-              : "pb-10 pt-10 sm:pb-14 sm:pt-14"
+          className={`relative mx-auto w-full max-w-[1400px] px-4 pb-12 pt-20 sm:px-6 sm:pb-16 sm:pt-28 ${
+            hero ? "on-photo" : ""
           }`}
         >
           {/* Back to the register. Every record page carries one: a case is
               one entry in a list, and the browser Back button is not an answer
               when the reader arrived from the map or from a link. */}
           <p className="mb-4">
-            <Link href="/cases" className="label hover:text-ink">
-              ← All cases
-            </Link>
+            <BackLink fallback={{ href: "/cases", label: "All cases" }} />
           </p>
 
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">

@@ -41,7 +41,35 @@ tags:
   - limited-drop
   - retail
   - event-activation
-images: []
+images:
+  - src: /images/cases/arcteryx-distance-aid-station/01-key-art.jpg
+    caption: >-
+      The collaboration's key art — the Arc'teryx and D15T4NCE wordmarks over
+      halftoned mountain imagery, with a strip reading Chamonix / Mont Blanc /
+      Planpraz / 24-30 Aug. 2026. Graphic identity, not a photograph of the
+      space.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/02-storefront.jpg
+    caption: >-
+      The Arc'teryx Chamonix store dressed for the week: the lockup mounted
+      above the window, garments on mannequins inside, and the Chamonix / Mont
+      Blanc / Planpraz / August 24-30, 2026 strip across the glass. The only
+      retrieved photograph of the space itself.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/03-vk-route.jpg
+    caption: >-
+      The VK Challenge route, drawn in red from the valley up to a finish mark
+      at Planpraz over a halftoned rendering of the massif.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/04-5k-route.jpg
+    caption: >-
+      The 5K Challenge route, drawn as a low-elevation loop on the same
+      halftoned base.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
 sources:
   - title: "ARC'TERYX e DISTANCE, una settimana di attività all'UTMB di Chamonix — sponsored trade feature, quoting the Arc'teryx × Distance press release (\"Dal comunicato\"), published 19 August 2026"
     publisher: 4ActionSport (Daniele Milano)
@@ -58,6 +86,21 @@ sources:
     url: https://montblanc.utmb.world/discover/the-event/animation
     type: event-organiser
     accessed: 2026-09-16
+  - title: >-
+      DISTANCE X ARC'TERYX — Distance's own campaign page. "CHAMONIX-MONT-BLANC
+      / AUGUST 24 - 30"; "AID STATION / FIND US AT ARC'TERYX CHAMONIX STORE";
+      names a VK Challenge ("A CLIMB FROM THE VALLEY TO PLANPRAZ") and a 5K
+      Challenge ("A SHORTER, LOW-ELEVATION ROUTE FOR ALL RUNNERS"), both joined
+      through Strava, both rewarding "SYLAN 2 LIMITED EDITION AND DISTANCE
+      ACCESSORIES"; prices the Sylan 2 UTMB Limited Edition at EUR 220 in men's
+      and women's; gives Opening Night as Tuesday Aug. 25, 6:00 PM - 9:30 PM at
+      the Arc'teryx Chamonix store and the Closing Party as Friday Aug. 28,
+      12:00 PM - 4:00 PM at Maison des Artistes with a DJ set by Koz Floka;
+      "ACCESSORIES AVAILABLE IN CHAMONIX ONLY". Source of the four images.
+    publisher: Distance
+    url: https://distance-store.com/en/pages/selection-running-trail
+    type: official-brand
+    accessed: 2026-09-22
   - title: "Arc'teryx post from Chamonix, 27 August 2026, during race week and in the past tense — \"This week, the trail running community has come together in Chamonix. Arc'teryx x Distance transformed the Chamonix store into an Aid Station, a place to start a run, return after time on the trail, and recharge for the next objective. Strava Challenges, Limited Edition Collection, the Echoes journal, and athlete conversations bring more stories from the mountains into town... Next up: CCC, UTMB, and closing party.\" Supplied by the author as a screenshot; see verification notes."
     publisher: Arc'teryx (Facebook)
     url: ""
@@ -125,6 +168,19 @@ by the author as a screenshot of Arc'teryx's verified Facebook page. Facebook
 serves this client a login wall, so the post could not be opened and it is
 cited without a url, with its text quoted in the source entry as it appears.
 Anyone checking this record should open it on the brand's own page.
+
+**Two street numbers are in circulation for the same store.** Arc'teryx's own
+page gives 265 Rue du Docteur Paccard and the record follows it; the
+third-party listing gives 306. Distance's campaign page names the store but no
+number. Not resolved here, and the pin is on the town centre either way.
+
+**Four images, all from Distance's campaign page, and only one is a
+photograph.** The storefront shot is the single retrieved picture of the space
+itself, and at 640px it is the largest the source offers. The other three are
+the collaboration's own graphics — the key art and the two challenge route
+diagrams — captioned as such so none of them reads as documentation of the
+room. No photograph of the interior, the Opening Night or the Closing Party
+was found.
 
 **The store address is documented; the pin is not.** Arc'teryx publishes the
 address as 265 Rue du Docteur Paccard, 74400 Chamonix, but that address was not

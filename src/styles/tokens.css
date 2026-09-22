@@ -22,10 +22,29 @@
      reads through them, plus a blur so the type on top stays legible over
      whatever the map happens to be showing. Raise the alpha if a panel ever
      sits over dense coastline and the labels start to fight. */
-  --glass:        rgba(247, 246, 243, 0.72);
-  --glass-strong: rgba(247, 246, 243, 0.86);
-  --glass-edge:   rgba(255, 255, 255, 0.55);
-  --glass-blur:   16px;
+  /* Liquid glass, not frosted glass. The difference is where the work
+     happens: a frosted panel is uniformly milky, this one is close to clear
+     through the middle and does everything at the rim — a bright specular
+     edge above, a dimmer fill below, and saturation pushed back up because
+     blurring averages colours together and drains it. Without the saturate
+     the panel reads as dirty plastic.
+     True refraction would need an SVG displacement filter: no backdrop-filter
+     function moves a pixel. Not worth a Chromium-only dependency here. */
+  --glass:          rgba(252, 251, 249, 0.42);
+  --glass-strong:   rgba(250, 249, 246, 0.88);
+  --glass-edge:     rgba(255, 255, 255, 0.70);
+  --glass-blur:     22px;
+  --glass-saturate: 190%;
+  /* The rim. Bright along the top edge, a muted return along the bottom —
+     the double rim that makes the panel read as a solid piece of glass
+     rather than a translucent rectangle. */
+  --glass-rim:      inset 0 1px 0 0 rgba(255, 255, 255, 0.85),
+                    inset 0 -1px 0 0 rgba(255, 255, 255, 0.34),
+                    inset 1px 0 0 0 rgba(255, 255, 255, 0.40),
+                    inset -1px 0 0 0 rgba(255, 255, 255, 0.40);
+  /* The lift. Deeper and softer than a card's, because glass floats. */
+  --glass-lift:     0 12px 34px -12px rgba(22, 22, 26, 0.24),
+                    0 2px 8px -2px rgba(22, 22, 26, 0.10);
 
   /* --- Rules, edges & grid ---------------------------------------------- */
   --rule:         #e4e1da;  /* hairline rules, card borders                  */
@@ -65,13 +84,14 @@
   --edition-now: linear-gradient(90deg, #c8371f, #ff8a4c);
   --edition-future: linear-gradient(90deg, #1e4fd8, #5b9dff);
 
-  /* The same three states as a wash over an edition card in the register.
-     Translucent on purpose: the card's own paper still reads through, so the
-     grid keeps one material and the colour reads as a state rather than as a
-     different kind of card. */
-  --wash-past: linear-gradient(145deg, rgba(63, 63, 70, 0.13), rgba(124, 124, 135, 0.05));
-  --wash-now: linear-gradient(145deg, rgba(200, 55, 31, 0.22), rgba(255, 138, 76, 0.07));
-  --wash-future: linear-gradient(145deg, rgba(30, 79, 216, 0.15), rgba(91, 157, 255, 0.05));
+  /* The same three states, as a tint in the glass of an edition card rather
+     than a block of colour behind its text. It lies over the whole card,
+     locator included, at an alpha low enough to read through — that is what
+     tinted glass does, and a wash that stopped where the picture started was
+     the thing that looked like a pastel rectangle. */
+  --wash-past:   linear-gradient(140deg, rgba(63, 63, 70, 0.10) 0%, rgba(124, 124, 135, 0.03) 55%, rgba(63, 63, 70, 0.07) 100%);
+  --wash-now:    linear-gradient(140deg, rgba(200, 55, 31, 0.16) 0%, rgba(255, 138, 76, 0.05) 55%, rgba(200, 55, 31, 0.11) 100%);
+  --wash-future: linear-gradient(140deg, rgba(30, 79, 216, 0.12) 0%, rgba(91, 157, 255, 0.04) 55%, rgba(30, 79, 216, 0.08) 100%);
 
   /* Everything stuck to the top of the window. The map and the sticky case
      sidebar subtract it, so it has to match what the header actually

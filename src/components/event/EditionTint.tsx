@@ -41,9 +41,13 @@ export function EditionTint({ start, end }: { start: string; end: string }) {
 
   return (
     <>
+      {/* Over the whole card, picture included, at an alpha you read straight
+          through — a pane of tinted glass rather than a block behind the
+          text. z-30 puts it above the card's own content; pointer-events-none
+          keeps the link clickable. */}
       <span
         aria-hidden
-        className={`pointer-events-none absolute inset-0 ${
+        className={`pointer-events-none absolute inset-0 z-30 rounded-[var(--radius-card)] ${
           state === "now" ? "edition-pulse" : ""
         }`}
         style={{ background: STATE_WASH[state] }}
@@ -51,8 +55,8 @@ export function EditionTint({ start, end }: { start: string; end: string }) {
       {/* On its own frosted chip, because it sits over the locator diagram on
           some cards and over the wash on others, and has to read on both. */}
       <span
-        className="label absolute right-3 top-3 z-20 rounded-[var(--radius-pill)] px-2.5 py-1"
-        style={{ color: "var(--ink)", background: "var(--glass-strong)" }}
+        className="label glass absolute right-3 top-3 z-40 rounded-[var(--radius-pill)] px-2.5 py-1"
+        style={{ color: "var(--ink)" }}
       >
         {STATE_WORDS[state]}
       </span>

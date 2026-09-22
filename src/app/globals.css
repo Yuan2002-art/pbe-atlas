@@ -261,15 +261,38 @@ a {
      to nearly solid in that case, so it degrades to the old opaque card rather
      than to something unreadable. */
   .glass {
+    position: relative;
     background: var(--glass);
-    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
-    backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+    backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
     border: var(--hairline) solid var(--glass-edge);
-    box-shadow: var(--shadow-card);
+    box-shadow: var(--glass-rim), var(--glass-lift);
   }
 
+  /* The sheen: a single diagonal pass of light across the top-left, clipped to
+     the panel's own corner radius. One pseudo-element rather than a stack,
+     because the rim above is doing most of the work and a second bright layer
+     turns glass into plastic. */
+  .glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.12) 26%,
+      rgba(255, 255, 255, 0) 52%
+    );
+  }
+
+  /* Without backdrop-filter the panel would be a 42%-opaque wash over a map,
+     which is unreadable rather than merely weaker. It falls back to solid
+     paper, and the sheen comes off with it. */
   @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     .glass { background: var(--paper); }
+    .glass::before { display: none; }
   }
 
   .quiet-scroll { scrollbar-width: thin; scrollbar-color: var(--rule-strong) transparent; }

@@ -1,8 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-import { EditionTint } from "@/components/event/EditionTint";
-import { Locator } from "@/components/event/Locator";
+import { EditionMedia } from "@/components/event/EditionMedia";
 import { MetaItem, PageHeader } from "@/components/ui/Primitives";
 import { formatDateRange, plural } from "@/lib/format";
 import { cardsForEvent, getAtlas } from "@/lib/queries";
@@ -73,34 +72,21 @@ export default function EventsPage() {
               key={event.slug}
               className="card-hover relative aspect-[5/4] overflow-hidden rounded-[var(--radius-card)] border border-rule"
             >
-              {/* A photograph when the record has one, and a locator drawn from
-                  the edition's own coordinate when it does not. Never a
-                  stand-in image: `hero` carries credit and sourceUrl for the
-                  same reason a claim carries a source. */}
-              {event.hero ? (
-                /* eslint-disable-next-line @next/next/no-img-element */
-                <img
-                  src={event.hero.src}
-                  alt={event.hero.caption}
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
-              ) : (
-                <div className="absolute inset-0">
-                  <Locator
-                    coordinates={event.location.coordinates}
-                    bounds={
-                      atlas.countryBounds.find(
-                        (b) => b.code === event.location.countryCode,
-                      )?.bounds ?? null
-                    }
-                    countryCode={event.location.countryCode}
-                  />
-                </div>
-              )}
-
-              {/* The wash and the word for this edition's state, worked out in
-                  the browser. Server-side "today" is the build date. */}
-              <EditionTint start={event.startDate ?? ""} end={event.endDate ?? ""} />
+              {/* Picture, wash and state word, all worked out against the
+                  reader's clock — including the grayscale on a finished
+                  edition, which is not knowable at build time. */}
+              <EditionMedia
+                hero={event.hero}
+                coordinates={event.location.coordinates}
+                bounds={
+                  atlas.countryBounds.find(
+                    (b) => b.code === event.location.countryCode,
+                  )?.bounds ?? null
+                }
+                countryCode={event.location.countryCode}
+                start={event.startDate ?? ""}
+                end={event.endDate ?? ""}
+              />
 
               <Link
                 href={`/events/${event.slug}`}
@@ -112,7 +98,19 @@ export default function EventsPage() {
                   <p className="label truncate">
                     {event.eventType} · {event.location.city}, {event.location.countryCode}
                   </p>
-                  <h2 className="display mt-1 text-[1.1rem] leading-tight group-hover:underline">
+                  {/* A fixed two-line box. A long name steps down a size
+                      rather than pushing the panel taller, so every card in
+                      the grid is the same height. Chosen from the string
+                      length on the server, so it is the same on every load. */}
+                  <h2
+                    className={`display mt-1 line-clamp-2 h-[2.5rem] leading-tight group-hover:underline ${
+                      event.name.length > 34
+                        ? "text-[0.88rem]"
+                        : event.name.length > 22
+                          ? "text-[1rem]"
+                          : "text-[1.15rem]"
+                    }`}
+                  >
                     {event.name}
                   </h2>
                   <p className="label mt-1">

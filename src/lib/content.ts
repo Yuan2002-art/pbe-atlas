@@ -380,7 +380,12 @@ function checkReferences(data: DataSet): void {
       data.errors.push({
         file,
         field: "status",
-        message: `"${c.status}" requires at least one source with a url. Either add the source, or set status to "placeholder".`,
+        /* Never suggests "placeholder". Rule 1 is explicit that the answer to
+           an uncited REAL record is `unsourced` or a source: records were once
+           pushed down to placeholder to satisfy this check, which made the
+           Boston Marathon page announce that the Boston Marathon was invented.
+           The advice a check gives is part of the check. */
+        message: `"${c.status}" requires at least one source with a url. Add the source, or set status to "unsourced" if the subject is real but nothing is cited yet.`,
       });
     }
   }

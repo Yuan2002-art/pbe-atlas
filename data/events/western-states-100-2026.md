@@ -19,6 +19,12 @@ notes: >-
   Unlike the 2025 record, this edition carries an end date: the retrieved
   coverage states the race ran into the following day. The coordinate is still
   the valley rather than the start line.
+hero:
+  src: /images/events/western-states-100-2026/hero.jpg
+  caption: >-
+    The Western States finish line. The source does not state which edition, so no year is claimed here.
+  credit: Trackinfo · CC BY-SA 4.0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Western_States_100_Finish_Line.JPEG
 status: partially-verified
 sources:
   - title: "2026 Results — the organiser's own results page for the 27 June 2026 edition"

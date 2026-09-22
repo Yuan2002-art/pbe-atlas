@@ -15,6 +15,12 @@ startDate: 2025-03-02
 endDate: 2025-03-02
 officialUrl: https://www.marathon.tokyo/en/
 notes: Only the date is sourced. The start-line venue and the coordinate are not.
+hero:
+  src: /images/events/tokyo-marathon-2025/hero.jpg
+  caption: >-
+    The Tokyo Marathon. The source does not state which edition, so no year is claimed here; it is not the 2025 one unless it happens to be.
+  credit: TheNickster · CC BY-SA 2.0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Tokyo_Marathon_-_47322102021.jpg
 status: partially-verified
 sources:
   - title: "Tokyo Marathon 2025 Entry Categories and Schedule — \"to be held on Sunday, March 2, 2025\""

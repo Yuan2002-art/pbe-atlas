@@ -19,6 +19,12 @@ notes: >-
   An edition that has not happened yet. The date and the anniversary are
   sourced from the organiser; nothing else is. The coordinate is the city — the
   course crosses all five boroughs.
+hero:
+  src: /images/events/new-york-city-marathon-2026/hero.jpg
+  caption: >-
+    The 2024 edition: the elite men's leaders. An earlier running of the same race, not the 2026 one.
+  credit: Nrbelex · CC BY-SA 4.0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:2024_New_York_City_Marathon_Elite_Men_Leaders.jpg
 status: partially-verified
 sources:
   - title: "New York Road Runners announces the 2026 TCS New York City Marathon professional athlete field — gives the race as Sunday 1 November 2026 and the 50th anniversary of the five-borough course, first run in 1976"

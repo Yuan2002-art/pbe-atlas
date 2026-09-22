@@ -19,6 +19,12 @@ notes: >-
   Only the date is sourced. No venue is recorded: the course runs from
   Blackheath to The Mall and no single address describes it, so the coordinate
   is the city and the precision says so.
+hero:
+  src: /images/events/london-marathon-2026/hero.jpg
+  caption: >-
+    The 2010 edition, on the London course. An earlier running of the same race, not the 2026 one.
+  credit: Julian Mason · CC BY 2.0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:2010_London_Marathon_II.jpg
 status: partially-verified
 sources:
   - title: "TCS London Marathon 2026 — the organiser's own results site for the 26 April 2026 edition"

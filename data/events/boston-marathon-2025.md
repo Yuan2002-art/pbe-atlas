@@ -15,6 +15,12 @@ startDate: 2025-04-21
 endDate: 2025-04-21
 officialUrl: https://www.baa.org/races/boston-marathon
 notes: Only the date and the edition number are sourced. The finish-area venue and the coordinate are not.
+hero:
+  src: /images/events/boston-marathon-2025/hero.jpg
+  caption: >-
+    The 2021 edition: runners at Mile 19. An earlier running of the same race, not the 2025 one.
+  credit: ArnoldReinhold · CC BY-SA 4.0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Runners_at_Mile_19_Boston_Marathon_2021.agr.jpg
 status: partially-verified
 sources:
   - title: "Memorable 129th Boston Marathon presented by Bank of America Plays Out from Start to Finish"

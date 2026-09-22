@@ -19,6 +19,12 @@ notes: >-
   The date and the edition number are sourced from the organiser. The
   finish-area venue and the coordinate are not — the pin is the city, as on the
   2025 record.
+hero:
+  src: /images/events/boston-marathon-2026/hero.jpg
+  caption: >-
+    The 2019 edition: the women's lead pack on the Boston course. An earlier running of the same race, not the 2026 one.
+  credit: ArnoldReinhold · CC BY-SA 4.0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Boston_Marathon_2019_Women%27s_pack.agr.jpg
 status: partially-verified
 sources:
   - title: "130th Boston Marathon presented by Bank of America Featured Course Records and Back-to-Back Champions — the organiser's own race report for the 2026 edition"

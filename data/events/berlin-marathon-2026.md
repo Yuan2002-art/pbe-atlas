@@ -19,6 +19,12 @@ notes: >-
   An edition that has not happened yet. Only the date is recorded. No venue:
   the course runs across the city and finishes at the Brandenburg Gate, and no
   single address describes it, so the coordinate is the city.
+hero:
+  src: /images/events/berlin-marathon-2026/hero.jpg
+  caption: >-
+    The 2021 edition: handbikes and wheelchairs at Kaisereiche. An earlier running of the same race, not the 2026 one.
+  credit: Leonhard Lenz · CC0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Berlin_Marathon_2021_handbikes_and_wheelchairs_at_Kaisereiche_49.jpg
 status: partially-verified
 sources:
   - title: "BMW BERLIN-MARATHON 2026 — the organiser's own site, giving the date as 27 September 2026"

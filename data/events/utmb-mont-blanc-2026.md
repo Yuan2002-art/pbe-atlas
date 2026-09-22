@@ -228,6 +228,12 @@ reportedActivity:
     end: 2026-08-28
     venue: "Maurten, Chemin de la Corbette"
     url: https://www.marathon-weekend.com/chamonix/utmb-2026/events/maurten-at-utmb-mont-blanc
+hero:
+  src: /images/events/utmb-mont-blanc-2026/hero.jpg
+  caption: >-
+    The 2015 edition of UTMB. An earlier running of the same race, not the 2026 one.
+  credit: BeatPitch · CC BY-SA 4.0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:UTMB_2015.jpg
 status: verified
 sources:
   - title: "HOKA UTMB Mont-Blanc — event concept and official title"

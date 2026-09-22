@@ -24,6 +24,12 @@ keyRaces:
     distanceKm: 173.3
     elevationGainM: 9525
 notes: Held as a companion record to the 2026 edition so that cases from different years reference the right edition. Only the flagship UTMB race is recorded; the other races of this edition have not been researched.
+hero:
+  src: /images/events/utmb-mont-blanc-2024/hero.jpg
+  caption: >-
+    The 2017 edition of UTMB. An earlier running of the same race, not the 2024 one.
+  credit: Pablo Gualdron Photography · CC BY 3.0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:UTMB_(2017).png
 status: partially-verified
 sources:
   - title: "UTMB Index race record 2024 — 173.3 km, 9525 m D+, 30 August 2024, Chamonix"

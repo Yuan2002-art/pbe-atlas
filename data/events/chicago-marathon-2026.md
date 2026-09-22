@@ -19,6 +19,12 @@ notes: >-
   An edition that has not happened yet. The date and the edition number are
   sourced; nothing else is. The coordinate is the city, because a loop course
   through twenty-nine neighbourhoods has no single address.
+hero:
+  src: /images/events/chicago-marathon-2026/hero.jpg
+  caption: >-
+    The 2023 edition: Clayton Young on the Chicago course. An earlier running of the same race, not the 2026 one.
+  credit: Chad Veal · CC BY-SA 4.0 · Wikimedia Commons
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Clayton_Young_2023_Chicago_Marathon.jpg
 status: partially-verified
 sources:
   - title: "Bank of America Chicago Marathon — the organiser's own site, giving the 48th edition as Sunday 11 October 2026"

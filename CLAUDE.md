@@ -77,10 +77,28 @@ explainable in one sentence.
    relation rather than a mechanism, the second is covered by
    `cultural-narrative` and keeping both would restart the drift.
 
-6. **Record what could not be verified.** `## Verification notes` is where
-   uncertainty goes — inferred years, street-level-only coordinates,
-   single-press-release trade coverage, claims deliberately excluded. A blank
-   field is silent; a note is honest. `partially-verified` records must have one.
+6. **Record what could not be verified — in the file, not on the page.**
+   `## Verification notes` is where uncertainty goes: inferred years,
+   street-level-only coordinates, single-press-release trade coverage, claims
+   deliberately excluded. A blank field is silent; a note is honest.
+   `partially-verified` records must have one, and `npm run validate` still
+   checks it.
+
+   **The page does not print it, and the `verified` / `partially-verified`
+   badges are not shown either.** What the Atlas records is published strategy:
+   a brand's own announcement of a space is a fact about that brand's plan
+   whether or not it later rained. Badging one real record "verified" and the
+   next "partially verified" invited a reader to grade them against each other,
+   when the difference is mostly that a title partner gets written about by the
+   organiser and a non-partner does not — which says more about who holds
+   rights than about the research. The note is the working record behind the
+   page, reachable through the source-file link in §0.
+
+   **The three badges that remain are the ones that say "do not cite":**
+   `placeholder`, `ai-reconstructed`, `unsourced`. Those warn about content
+   that is not research, which is what rule 1 is for. The Method page still
+   prints all five, because it documents the vocabulary rather than stamping a
+   record.
 
 7. **No LinkedIn scraping, and no scraping of any site whose terms forbid it.**
    If asked for that, say so and offer a manual alternative.
@@ -219,6 +237,37 @@ uses; there is deliberately no second copy of the rules.
      draws it against `cards.length` and counting a hybrid twice would push the
      bar past 100%.
 
+- **Component CSS lives in `@layer components`, and has to stay there.**
+  Tailwind v4 puts its utilities in `@layer utilities`, and **anything written
+  outside a layer beats every layer, whatever the specificity.** Unlayered,
+  `.card` won over `bg-ink` on the same element — which is why the Key
+  strategic insight box rendered white text on a light card, and why
+  `.btn-quiet` kept the mobile Menu button sitting on the desktop bar. Two
+  symptoms, one cause. Inside the layer, a utility on the element wins, which
+  is what every call site already assumed. `.on-photo` and the MapLibre
+  overrides stay *outside* on purpose: the first has to beat utilities to flip
+  a header's colours over a photograph, the second has to beat a third-party
+  stylesheet.
+
+- **`.glass` is liquid glass, not frosted glass.** Frosted is uniformly milky;
+  this is close to clear through the middle and does its work at the rim — a
+  bright specular edge above, a muted return below, one diagonal sheen, and
+  saturation at 190% because blurring averages colours together and drains
+  them. Without the saturate it reads as dirty plastic. True refraction is
+  deliberately not attempted: no `backdrop-filter` function displaces a pixel,
+  so it would need an SVG displacement filter, which is Chromium-only.
+
+  **It only works when there is something behind it.** The events register
+  looked like flat pastel blocks for a while because the cards sat on plain
+  paper. The fix was putting the photograph behind the panel, not tuning the
+  colours.
+
+- **Every record page has a back control, and it goes back.** A case belongs to
+  a brand, an edition and the register at once, so a fixed "All cases" link
+  sent everyone to the same place whichever of the three they arrived from.
+  `BackLink` is an arrow that steps back through history, falling back to a
+  real link when `history.length` says there is nowhere to return to.
+
 - **The map is shape-coded, not colour-coded.** Colour is a redundant second
   channel, so the map survives colour-vision deficiency and black-and-white
   printing in a thesis. A dashed outline means a placeholder record.
@@ -252,19 +301,51 @@ uses; there is deliberately no second copy of the rules.
   (`--glass-strong`) on purpose: they are small maps, and letting the basemap
   through them would stack two maps at different scales.
 
-- **The recent-editions strip draws a locator rather than borrowing a photo.**
-  The home page opens with one card per *dated* edition, most recently finished
-  first. Each shows the edition's `hero` photograph if it has one, and if it
-  does not, a locator built from the country box in
-  `data/vocab/country-bounds.yml` with the edition's own coordinate marked in
-  it — a diagram, made only of data already in the record. It never
-  substitutes a stand-in image, because a photograph is the most convincing
-  thing on a page and an invented plate is how a placeholder once passed for
-  research. `hero` carries `credit` and `sourceUrl` like a case image does: an
-  uncredited photo is the same problem as an unsourced claim.
+- **The editions strip is a bar calendar, and its colour is state, not
+  decoration.** The home page floats one panel over the map with the five dated
+  editions nearest today — some behind, some ahead — on a real shared time
+  axis, so the gap between two race weeks reads as a gap. Grey has finished,
+  red is running now or starts within a month, blue is further out. Position
+  still says *when*, a rule marks today on every row, and the key is printed
+  underneath, so the state never rests on hue alone. The events register
+  carries the same three states as a wash over each card, and a finished
+  edition renders in grayscale.
 
-  Undated editions are left out of the strip rather than guessed into an order,
-  and nothing in the dataset is upcoming, so it says "recent", not "next".
+  Undated editions are left out rather than guessed into an order.
+
+  **Both are client components, and that is the point.** The pages are
+  statically built, so the server's "today" is the build date; a strip built in
+  September that still called a race "upcoming" in December would be a
+  written-down claim about live data, which is exactly what rule 10's corollary
+  exists to prevent. Which five, what colour, and whether to desaturate are all
+  worked out against the reader's clock. The shared logic is
+  `src/lib/edition-state.ts` — pure, no React — so the two views can never
+  disagree about what "upcoming" means.
+
+- **Pictures are real, credited, and honest about what they show.** `hero` on
+  an event and `images` on a case both carry `credit` and `sourceUrl`: an
+  uncredited photo is the same problem as an unsourced claim. The first entry
+  in a case's `images` is its hero. A case with no picture still reserves the
+  same header band and fills it with the locator — the record's own coordinate
+  inside its country's box from `data/vocab/country-bounds.yml`, a diagram made
+  only of data already in the record. **Never a stand-in photograph**, because
+  a photograph is the most convincing thing on a page and an invented plate is
+  how a placeholder once passed for research.
+
+  Two live compromises, both written into the captions rather than hidden.
+  Most event heroes come from Wikimedia Commons and show an **earlier edition**
+  of the same race, so every caption leads with the year and says plainly that
+  it is not the edition the record is about; where a source states no year, the
+  caption claims none. And Sydney has no hero at all, because Commons has no
+  photograph of that race — the gap stands rather than being filled. If the
+  first compromise is ever judged wrong, the fix is to delete the heroes, not
+  to soften the captions.
+
+  Brand-published product visuals are used even where the brand generated them
+  rather than photographed them. What this Atlas studies is what brands
+  publish, and how a brand made its own product shot does not stop it being the
+  brand's material; the caption carries the distinction, and a verification
+  note records the provenance.
 
 - **An edition may show reported activity it has not researched, as leads.**
   `reportedActivity` on an event record holds branded spaces a third party
@@ -291,9 +372,10 @@ uses; there is deliberately no second copy of the rules.
 
 ## Known limitations, recorded and not yet fixed
 
-- **Activation-logic vocabulary candidates are tracked, not added.** Two cases
+- **Activation-logic vocabulary candidates are tracked, not added.** Some cases
   have hit mechanisms the vocabulary cannot express — see the candidate block at
-  the foot of `data/vocab/activation-logic.yml`. A candidate is only promoted to
+  the foot of `data/vocab/activation-logic.yml`, which is the list, so this file
+  does not carry a count that can rot. A candidate is only promoted to
   a real value once the **same** mechanism appears in additional cases, because
   a value invented for a single case is how the earlier free-text drift started.
   A case that hits a gap records it in `activationLogicRationale`, names the
@@ -373,4 +455,10 @@ aggregate charts across cases (an aggregate is a research finding, and
 findings need verified data first).
 
 Evidence labels are now **built**, not postponed: see the five-value status in
-rule 1 and `SOURCE_TYPES` in `src/lib/schema.ts`.
+rule 1 and `SOURCE_TYPES` in `src/lib/schema.ts`. Images are built too — see
+the picture rule under design decisions.
+
+There is still **no image pipeline**, and none is wanted. Sources serve wildly
+different sizes; anything oversized is resized once by hand with the `sharp`
+already in `node_modules` and then the record says it was resized. A source
+that served 20-30MB originals is the reason this is written down.

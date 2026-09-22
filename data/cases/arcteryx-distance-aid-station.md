@@ -70,6 +70,70 @@ images:
       halftoned base.
     credit: Distance (©DISTANCE)
     sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/05-accessory.jpg
+    caption: >-
+      Race-week tote: a black bag carrying the Arc'teryx / D15T4NCE lockup and the Chamonix / Mont Blanc / Planpraz / 24-30 Aug. 2026 strip.
+      Product visual from the "Accessories available in Chamonix only" section
+      of Distance's campaign page, shown on a plain ground; not a photograph of
+      the space. See the verification notes on how these images were made.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/06-accessory.jpg
+    caption: >-
+      Running socks in black and red, DISTANCE knitted into the cuff and the archaeopteryx skeleton running up the foot.
+      Product visual from the "Accessories available in Chamonix only" section
+      of Distance's campaign page, shown on a plain ground; not a photograph of
+      the space. See the verification notes on how these images were made.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/07-accessory.jpg
+    caption: >-
+      A red soft flask marked ©DISTANCE.
+      Product visual from the "Accessories available in Chamonix only" section
+      of Distance's campaign page, shown on a plain ground; not a photograph of
+      the space. See the verification notes on how these images were made.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/08-accessory.jpg
+    caption: >-
+      A collapsible race cup, frosted with a red ©DISTANCE and a black lid loop.
+      Product visual from the "Accessories available in Chamonix only" section
+      of Distance's campaign page, shown on a plain ground; not a photograph of
+      the space. See the verification notes on how these images were made.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/09-accessory.jpg
+    caption: >-
+      A white t-shirt: the archaeopteryx skeleton laid across the D15T4NCE wordmark in red outline.
+      Product visual from the "Accessories available in Chamonix only" section
+      of Distance's campaign page, shown on a plain ground; not a photograph of
+      the space. See the verification notes on how these images were made.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/10-accessory.jpg
+    caption: >-
+      A black five-panel running cap with the same skeleton-through-wordmark device.
+      Product visual from the "Accessories available in Chamonix only" section
+      of Distance's campaign page, shown on a plain ground; not a photograph of
+      the space. See the verification notes on how these images were made.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/11-accessory.jpg
+    caption: >-
+      A black drawstring pouch lined in red, carrying the wordmark on the diagonal.
+      Product visual from the "Accessories available in Chamonix only" section
+      of Distance's campaign page, shown on a plain ground; not a photograph of
+      the space. See the verification notes on how these images were made.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
+  - src: /images/cases/arcteryx-distance-aid-station/12-accessory.jpg
+    caption: >-
+      The sticker set: the lockup card with the Chamonix / Mont Blanc / Planpraz / 24-30 Aug. 2026 strip, a die-cut skeleton, and a long bumper sticker.
+      Product visual from the "Accessories available in Chamonix only" section
+      of Distance's campaign page, shown on a plain ground; not a photograph of
+      the space. See the verification notes on how these images were made.
+    credit: Distance (©DISTANCE)
+    sourceUrl: https://distance-store.com/en/pages/selection-running-trail
 sources:
   - title: "ARC'TERYX e DISTANCE, una settimana di attività all'UTMB di Chamonix — sponsored trade feature, quoting the Arc'teryx × Distance press release (\"Dal comunicato\"), published 19 August 2026"
     publisher: 4ActionSport (Daniele Milano)
@@ -174,13 +238,24 @@ page gives 265 Rue du Docteur Paccard and the record follows it; the
 third-party listing gives 306. Distance's campaign page names the store but no
 number. Not resolved here, and the pin is on the town centre either way.
 
-**Four images, all from Distance's campaign page, and only one is a
-photograph.** The storefront shot is the single retrieved picture of the space
-itself, and at 640px it is the largest the source offers. The other three are
-the collaboration's own graphics — the key art and the two challenge route
-diagrams — captioned as such so none of them reads as documentation of the
-room. No photograph of the interior, the Opening Night or the Closing Party
-was found.
+**Twelve images, all published by Distance on its own campaign page, and only
+one is a photograph.** The storefront shot is the single retrieved picture of
+the space itself, and at 640px it is the largest the source serves. Everything
+else is the collaboration's own material: the key art, the two challenge route
+diagrams, and eight product visuals of the Chamonix-only accessories. Each is
+captioned for what it is, so none of them reads as documentation of the room.
+No photograph of the interior, the Opening Night or the Closing Party was
+found.
+
+**Seven of the eight accessory visuals were generated rather than
+photographed**, on the evidence of the filenames Distance serves them under —
+`ChatGPT_Image_24_aout_2026_*` — and the eighth is `Pasted-20260824-*`. That is
+recorded, not used as a reason to leave them out. They are what the brand
+published about its own products, which is a thing this Atlas studies, and the
+products themselves were real and sold in Chamonix. What would be wrong is
+presenting them as photographs of the week, so the captions do not. Anyone
+citing the look of a specific accessory should go to the garment rather than
+to these.
 
 **The store address is documented; the pin is not.** Arc'teryx publishes the
 address as 265 Rue du Docteur Paccard, 74400 Chamonix, but that address was not

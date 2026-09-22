@@ -153,7 +153,31 @@ const STATUS_COPY: Record<
   },
 };
 
-export function StatusMark({ status }: { status: Status }) {
+/** The evidence stamp.
+ *
+ *  Silent on `verified` and `partially-verified`, because what the Atlas
+ *  records is published strategy: a brand's own announcement of a space is a
+ *  fact about that brand's plan whether or not it later rained. Badging one
+ *  real record "verified" and the next "partially verified" invited the
+ *  reader to grade them against each other, when the difference is mostly
+ *  that an event's title partner gets written about by the organiser and a
+ *  non-partner does not. The status is still in the data, still enforced by
+ *  `npm run validate`, and still visible on the three statuses that mean
+ *  something a reader must act on — placeholder, ai-reconstructed and
+ *  unsourced all say "do not cite".
+ *
+ *  `always` overrides this, for the Method page, which is documenting the
+ *  vocabulary rather than stamping a record. */
+export function StatusMark({
+  status,
+  always = false,
+}: {
+  status: Status;
+  always?: boolean;
+}) {
+  if (!always && (status === "verified" || status === "partially-verified")) {
+    return null;
+  }
   const { label, tone } = STATUS_COPY[status];
   return (
     <span

@@ -1,6 +1,7 @@
 ---
 name: Goldwin
-country: ""
+country: Japan
+founded: 1951
 category: outdoor
 positioning: ""
 accent: "#c8371f"
@@ -17,6 +18,15 @@ sources:
       Dyneema into 20-denier nylon.
     publisher: Goldwin
     url: https://www.goldwin-global.com/eu/feature/chamonix/
+    type: official-brand
+    accessed: 2026-09-22
+  - title: >-
+      Company Outline — "Company name: Goldwin Inc."; "Establishment: December
+      22, 1951"; capitalised at 7,079 million yen on the Prime Market of the
+      Tokyo Stock Exchange, with consolidated annual turnover of 137,516
+      million yen to 31 March 2026.
+    publisher: Goldwin Inc.
+    url: https://about.goldwin.co.jp/eng/about/company
     type: official-brand
     accessed: 2026-09-22
   - title: >-
@@ -73,18 +83,16 @@ Tour in 2016.
 Grinius contract, the Vertical Trail Rain Jacket and Pants with Dyneema, and
 the Voxeloft description — all from Goldwin's own pages.
 
-**What is not. `country` and `founded` are both empty, deliberately.** Goldwin
-is widely known as a Japanese company, and the corporate site at
-`corp.goldwin.co.jp` would say so, but it returns 403 to this client. The only
-statement of identity on the pages that did load is the footer line "© GOLDWIN
-INC." — a company name, not a country or a date. Following the same rule
-applied to Compressport and Oakley, neither field is filled from general
-knowledge. Either page on the corporate site, opened in a normal browser, will
-close both.
+**`country` and `founded` are now sourced.** Both were blank for one commit
+because `corp.goldwin.co.jp` serves this client a 403. The corporate site is
+also at `about.goldwin.co.jp`, which does open: Goldwin Inc. was established
+**22 December 1951** and is listed on the Prime Market of the Tokyo Stock
+Exchange. The wrong subdomain, not a missing fact.
 
-**No case yet, and that is a sourcing problem rather than an absence.** Goldwin
-had a visible week in Chamonix for UTMB 2026 — an installation at a rented
-chalet and a jacket drop at the Ultra-Trail Village — but every retrieved
-description of both traces back to one third-party aggregator. See the
-verification note on the UTMB Mont-Blanc 2026 edition record for what is
-reported and why none of it has been written up.
+**Two spaces in Chamonix for UTMB 2026, and only one of them is written up.**
+The jacket drop at the Ultra-Trail Village is stated on Goldwin's own Voxeloft
+page and is now a case. The installation at a rented chalet on Chemin du Lai —
+Motion Studies Vol. 10, produced with Product Index — is not: Goldwin's own
+site does not mention it and every retrieved description traces to one
+third-party aggregator. It is the more interesting of the two and it is the
+one still missing.

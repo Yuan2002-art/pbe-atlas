@@ -309,9 +309,12 @@ export default async function CasePage({
                 )}
               </FieldRow>
             )}
-            <FieldRow label="Evidence">
-              <StatusMark status={record.status} />
-            </FieldRow>
+            {/* Only when there is a mark to show; see StatusMark. */}
+            {record.status !== "verified" && record.status !== "partially-verified" && (
+              <FieldRow label="Evidence">
+                <StatusMark status={record.status} />
+              </FieldRow>
+            )}
           </dl>
 
           <p className="label mt-4">

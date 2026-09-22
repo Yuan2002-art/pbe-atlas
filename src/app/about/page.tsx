@@ -95,7 +95,7 @@ export default function AboutPage() {
                 className="grid gap-x-6 gap-y-1 border-b border-rule py-3 sm:grid-cols-[10rem_minmax(0,1fr)]"
               >
                 <dt>
-                  <StatusMark status={item.status} />
+                  <StatusMark status={item.status} always />
                 </dt>
                 <dd className="max-w-[70ch] text-[13.5px] leading-snug text-graphite">
                   {item.note}

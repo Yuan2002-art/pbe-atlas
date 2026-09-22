@@ -133,7 +133,9 @@ export default async function EventPage({
                 }
               />
             )}
-            <MetaItem label="Evidence" value={<StatusMark status={event.status} />} />
+            {event.status !== "verified" && event.status !== "partially-verified" && (
+              <MetaItem label="Evidence" value={<StatusMark status={event.status} />} />
+            )}
           </>
         }
       />

@@ -185,7 +185,15 @@ export function MapExplorer({
             The column itself is transparent to the pointer so the map can still
             be dragged in the gap beside the panels; each panel takes its own
             events back. */}
-        <div className="pointer-events-none absolute inset-3 z-20 flex flex-col items-start gap-3 sm:inset-4">
+        {/* Hidden while a case is open. Choosing a pin is a decision to look
+            at one thing, and leaving the rail and the editions up over the
+            same map left three panels competing for a small screen. Close
+            brings them back. */}
+        <div
+          className={`pointer-events-none absolute inset-3 z-20 flex-col items-start gap-3 sm:inset-4 ${
+            selectedCard ? "hidden" : "flex"
+          }`}
+        >
           {/* Stop short of the key and the list button on the right. Every
               edition now carries a date, so the row went from three cards to
               five and ran straight under that column; it scrolls sideways

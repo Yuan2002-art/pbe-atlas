@@ -58,8 +58,11 @@ export function RecentEditions({
     years.push(y);
   }
 
+  /* Exactly the rail's width, so the strip and the filter panel beneath it
+     share a left edge and a right edge — one column, not two things that
+     nearly line up. */
   return (
-    <section aria-labelledby="recent-editions" className="w-[34rem] max-w-full">
+    <section aria-labelledby="recent-editions" className="w-[var(--rail)] max-w-full">
       <div className="glass rounded-[var(--radius-card)] px-3.5 py-3">
         <div className="mb-2.5 flex items-baseline justify-between gap-3">
           <h2 id="recent-editions" className="label-lg" style={{ color: "var(--ink)" }}>
@@ -82,7 +85,7 @@ export function RecentEditions({
               <li key={row.event.slug}>
                 <Link
                   href={`/events/${row.event.slug}`}
-                  className="group grid grid-cols-[9.5rem_1fr] items-center gap-3 rounded-[var(--radius-sm)] px-1.5 py-1 hover:bg-paper-sunk"
+                  className="group grid grid-cols-[6.25rem_1fr] items-center gap-2.5 rounded-[var(--radius-sm)] px-1.5 py-1 hover:bg-paper-sunk"
                   title={`${row.event.name} · ${dateLabel} · ${placeStamp(
                     row.event.location.city,
                     row.event.location.countryCode,
@@ -137,7 +140,7 @@ export function RecentEditions({
         {/* Axis footer: the two ends, and the years between them. */}
         <div
           aria-hidden
-          className="label mt-1.5 flex items-center justify-between border-t border-rule pl-[10.25rem] pt-1.5"
+          className="label mt-1.5 flex items-center justify-between border-t border-rule pl-[6.85rem] pt-1.5"
         >
           {years.map((y) => (
             <span key={y}>{y}</span>

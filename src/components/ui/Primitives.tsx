@@ -12,11 +12,16 @@ export function PageHeader({
   lede,
   ledeMax = "56ch",
   meta,
+  back,
   children,
 }: {
   eyebrow: string;
   title: string;
   lede?: string;
+  /** A way back to the list this record came from. One edition is one item in
+   *  a register, and the browser Back button is not an answer when the reader
+   *  arrived from the map or from a link. */
+  back?: { href: string; label: string };
   /** Measure for the lede. 56ch is the default editorial column; a page whose
    *  lede is doing more explaining than introducing can widen it. */
   ledeMax?: string;
@@ -26,6 +31,13 @@ export function PageHeader({
   return (
     <header className="border-b border-rule">
       <div className="mx-auto w-full max-w-[1400px] px-4 pb-10 pt-12 sm:px-6 sm:pb-14 sm:pt-16">
+        {back && (
+          <p className="mb-4">
+            <Link href={back.href} className="label hover:text-ink">
+              ← {back.label}
+            </Link>
+          </p>
+        )}
         <p className="label-lg">{eyebrow}</p>
         <h1 className="display mt-4 max-w-[20ch] text-[clamp(2.3rem,6vw,4.25rem)]">
           {title}

@@ -70,7 +70,13 @@ export function SiteHeader() {
             to the same left edge as the title (28px badge + 10px gap). Shown
             from 1024px, where it fits on one line. */}
         <div className="flex min-w-0 flex-col justify-center">
-          <Link href="/" className="flex items-center gap-2.5 self-start">
+          {/* A plain anchor, not a Link, on purpose. Filter state lives in
+              the address bar and is read once on mount and on popstate; a
+              client-side Link to "/" from "/?brand=columbia" changes neither,
+              so the wordmark appeared to do nothing on the map page. A real
+              navigation clears the filters, the selection and the frame —
+              which is what clicking the title is for. */}
+          <a href="/" className="flex items-center gap-2.5 self-start">
             <span
               aria-hidden
               className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-ink text-[8px] font-medium tracking-[0.04em]"
@@ -84,7 +90,7 @@ export function SiteHeader() {
               </span>
               <span className="label hidden sm:block">Global research prototype</span>
             </span>
-          </Link>
+          </a>
           <p className="hidden truncate pl-[38px] pt-1 text-[12.5px] leading-tight text-graphite lg:block">
             {STANDING_LINE}
           </p>

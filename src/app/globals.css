@@ -61,134 +61,222 @@ a {
 }
 
 /* --------------------------------------------------------------------------
-   Archival label — uppercase, letterspaced mono. The signature of the system.
-   Used for field names, case numbers, tags, legend entries.
+   Component classes live in @layer components on purpose.
+
+   Tailwind v4 puts its utilities in @layer utilities, and anything written
+   outside a layer beats every layer no matter what. Unlayered, `.card` won
+   over `bg-ink` on the same element — which is why the Key strategic insight
+   box rendered white text on a light card, and why `.btn-quiet` kept the
+   mobile Menu button on the desktop bar. Inside the layer, a utility on the
+   element wins, which is what every call site already assumes.
+
+   Two things stay OUT of the layer, deliberately: `.on-photo`, which has to
+   override utilities to flip a header's colours over a photograph, and the
+   MapLibre overrides, which have to beat a third-party stylesheet.
    -------------------------------------------------------------------------- */
-.label {
-  font-family: var(--font-mono), monospace;
-  font-size: 10px;
-  line-height: 1.3;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--graphite);
-}
+@layer components {
+  /* --------------------------------------------------------------------------
+     Archival label — uppercase, letterspaced mono. The signature of the system.
+     Used for field names, case numbers, tags, legend entries.
+     -------------------------------------------------------------------------- */
+  .label {
+    font-family: var(--font-mono), monospace;
+    font-size: 10px;
+    line-height: 1.3;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--graphite);
+  }
 
-.label-lg {
-  font-family: var(--font-mono), monospace;
-  font-size: 11px;
-  line-height: 1.4;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--graphite);
-}
+  .label-lg {
+    font-family: var(--font-mono), monospace;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--graphite);
+  }
 
-/* Top of the label scale. Used for the primary nav, where Map / Events /
-   Brands sit a tier above Register / Method. Tracking loosens as type gets
-   smaller, so this is tighter than .label-lg, not looser. */
-.label-xl {
-  font-family: var(--font-mono), monospace;
-  font-size: 13px;
-  line-height: 1.4;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--graphite);
-}
+  /* Top of the label scale. Used for the primary nav, where Map / Events /
+     Brands sit a tier above Register / Method. Tracking loosens as type gets
+     smaller, so this is tighter than .label-lg, not looser. */
+  .label-xl {
+    font-family: var(--font-mono), monospace;
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--graphite);
+  }
 
-/* Monospaced data: coordinates, dates, counts, IDs. */
-.data {
-  font-family: var(--font-mono), monospace;
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  font-variant-numeric: tabular-nums;
-}
+  /* Monospaced data: coordinates, dates, counts, IDs. */
+  .data {
+    font-family: var(--font-mono), monospace;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    font-variant-numeric: tabular-nums;
+  }
 
-/* Editorial display type for titles. */
-.display {
-  font-family: var(--font-sans), sans-serif;
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.05;
-}
+  /* Editorial display type for titles. */
+  .display {
+    font-family: var(--font-sans), sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+  }
 
-/* --------------------------------------------------------------------------
-   Card — the unit the whole layout is now built from. Soft white surface on
-   a light ground, generous radius, shadow instead of a hard rule.
-   -------------------------------------------------------------------------- */
-.card {
-  background: var(--paper-raised);
-  border: var(--hairline) solid var(--rule);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
-}
+  /* --------------------------------------------------------------------------
+     Card — the unit the whole layout is now built from. Soft white surface on
+     a light ground, generous radius, shadow instead of a hard rule.
+     -------------------------------------------------------------------------- */
+  .card {
+    background: var(--paper-raised);
+    border: var(--hairline) solid var(--rule);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
 
-.card-hover {
-  transition: box-shadow 180ms ease, transform 180ms ease;
-}
-.card-hover:hover {
-  box-shadow: var(--shadow-lift);
-  transform: translateY(-2px);
-}
+  .card-hover {
+    transition: box-shadow 180ms ease, transform 180ms ease;
+  }
+  .card-hover:hover {
+    box-shadow: var(--shadow-lift);
+    transform: translateY(-2px);
+  }
 
-/* Pill — buttons, chips, filter toggles. */
-.pill {
-  border-radius: var(--radius-pill);
-}
+  /* Pill — buttons, chips, filter toggles. */
+  .pill {
+    border-radius: var(--radius-pill);
+  }
 
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: var(--radius-pill);
-  background: var(--ink);
-  color: var(--paper-raised);
-  padding: 0.7rem 1.25rem;
-  font-family: var(--font-mono), monospace;
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  transition: opacity 160ms ease;
-}
-.btn-primary:hover { opacity: 0.85; }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: var(--radius-pill);
+    background: var(--ink);
+    color: var(--paper-raised);
+    padding: 0.7rem 1.25rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: opacity 160ms ease;
+  }
+  .btn-primary:hover { opacity: 0.85; }
 
-.btn-quiet {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: var(--radius-pill);
-  background: var(--paper-raised);
-  border: var(--hairline) solid var(--rule);
-  color: var(--ink);
-  padding: 0.6rem 1.1rem;
-  font-family: var(--font-mono), monospace;
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  transition: border-color 160ms ease, box-shadow 160ms ease;
-}
-.btn-quiet:hover {
-  border-color: var(--ink);
-  box-shadow: var(--shadow-card);
-}
+  .btn-quiet {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: var(--radius-pill);
+    background: var(--paper-raised);
+    border: var(--hairline) solid var(--rule);
+    color: var(--ink);
+    padding: 0.6rem 1.1rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+  }
+  .btn-quiet:hover {
+    border-color: var(--ink);
+    box-shadow: var(--shadow-card);
+  }
 
-/* Long-form research prose. */
-.prose-atlas {
-  max-width: var(--measure);
-  font-size: 15.5px;
-  line-height: 1.65;
-  color: var(--ink);
+  /* Long-form research prose. */
+  .prose-atlas {
+    max-width: var(--measure);
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+  .prose-atlas p { margin-block: 0.85em; }
+  .prose-atlas p:first-child { margin-top: 0; }
+  .prose-atlas p:last-child { margin-bottom: 0; }
+  .prose-atlas em { font-style: italic; }
+  .prose-atlas strong { font-weight: 600; }
+  .prose-atlas a {
+    color: var(--blue);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .prose-atlas ul { margin-block: 0.85em; padding-left: 1.1em; list-style: square; }
+  .prose-atlas li { margin-block: 0.25em; }
+
+  /* --------------------------------------------------------------------------
+     Technical paper grid — a faint graticule used behind hero areas.
+     -------------------------------------------------------------------------- */
+  .grid-paper {
+    background-image:
+      linear-gradient(to right, var(--grid) var(--hairline), transparent var(--hairline)),
+      linear-gradient(to bottom, var(--grid) var(--hairline), transparent var(--hairline));
+    background-size: 32px 32px;
+  }
+
+  /* Diagonal hatch — marks placeholder / unverified material. */
+  .hatch-placeholder {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--red-sunk) 0 6px,
+      transparent 6px 12px
+    );
+  }
+
+  /* --------------------------------------------------------------------------
+     MapLibre overrides — strip the default web-map chrome.
+     -------------------------------------------------------------------------- */
+  .maplibregl-ctrl-group {
+    background: var(--paper-raised) !important;
+    border: var(--hairline) solid var(--rule) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: none !important;
+  }
+  .maplibregl-ctrl-group button + button {
+    border-top: var(--hairline) solid var(--rule) !important;
+  }
+  .maplibregl-ctrl-attrib {
+    background: rgba(245, 242, 234, 0.82) !important;
+    font-family: var(--font-mono), monospace !important;
+    font-size: 9px !important;
+    letter-spacing: 0.04em;
+  }
+  .maplibregl-ctrl-attrib a { color: var(--graphite) !important; }
+  .maplibregl-ctrl-scale {
+    background: transparent !important;
+    border-color: var(--rule-strong) !important;
+    color: var(--graphite) !important;
+    font-family: var(--font-mono), monospace !important;
+    font-size: 9px !important;
+    letter-spacing: 0.08em;
+  }
+
+  /* Scrollbars inside panels stay quiet. */
+  /* A panel floating over the map: frosted, so the basemap reads through it
+     without the type on top having to fight the coastline underneath.
+
+     backdrop-filter is the whole effect, and a browser without it would leave
+     type on a 72%-opaque wash — legible, but weaker. @supports raises the panel
+     to nearly solid in that case, so it degrades to the old opaque card rather
+     than to something unreadable. */
+  .glass {
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+    backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+    border: var(--hairline) solid var(--glass-edge);
+    box-shadow: var(--shadow-card);
+  }
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass { background: var(--paper); }
+  }
+
+  .quiet-scroll { scrollbar-width: thin; scrollbar-color: var(--rule-strong) transparent; }
+  .quiet-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+  .quiet-scroll::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }
+  .quiet-scroll::-webkit-scrollbar-track { background: transparent; }
 }
-.prose-atlas p { margin-block: 0.85em; }
-.prose-atlas p:first-child { margin-top: 0; }
-.prose-atlas p:last-child { margin-bottom: 0; }
-.prose-atlas em { font-style: italic; }
-.prose-atlas strong { font-weight: 600; }
-.prose-atlas a {
-  color: var(--blue);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.prose-atlas ul { margin-block: 0.85em; padding-left: 1.1em; list-style: square; }
-.prose-atlas li { margin-block: 0.25em; }
 
 /* --------------------------------------------------------------------------
    Type over a photograph.
@@ -214,74 +302,3 @@ a {
   border-color: rgba(255, 255, 255, 0.65) !important;
 }
 
-/* --------------------------------------------------------------------------
-   Technical paper grid — a faint graticule used behind hero areas.
-   -------------------------------------------------------------------------- */
-.grid-paper {
-  background-image:
-    linear-gradient(to right, var(--grid) var(--hairline), transparent var(--hairline)),
-    linear-gradient(to bottom, var(--grid) var(--hairline), transparent var(--hairline));
-  background-size: 32px 32px;
-}
-
-/* Diagonal hatch — marks placeholder / unverified material. */
-.hatch-placeholder {
-  background-image: repeating-linear-gradient(
-    -45deg,
-    var(--red-sunk) 0 6px,
-    transparent 6px 12px
-  );
-}
-
-/* --------------------------------------------------------------------------
-   MapLibre overrides — strip the default web-map chrome.
-   -------------------------------------------------------------------------- */
-.maplibregl-ctrl-group {
-  background: var(--paper-raised) !important;
-  border: var(--hairline) solid var(--rule) !important;
-  border-radius: var(--radius) !important;
-  box-shadow: none !important;
-}
-.maplibregl-ctrl-group button + button {
-  border-top: var(--hairline) solid var(--rule) !important;
-}
-.maplibregl-ctrl-attrib {
-  background: rgba(245, 242, 234, 0.82) !important;
-  font-family: var(--font-mono), monospace !important;
-  font-size: 9px !important;
-  letter-spacing: 0.04em;
-}
-.maplibregl-ctrl-attrib a { color: var(--graphite) !important; }
-.maplibregl-ctrl-scale {
-  background: transparent !important;
-  border-color: var(--rule-strong) !important;
-  color: var(--graphite) !important;
-  font-family: var(--font-mono), monospace !important;
-  font-size: 9px !important;
-  letter-spacing: 0.08em;
-}
-
-/* Scrollbars inside panels stay quiet. */
-/* A panel floating over the map: frosted, so the basemap reads through it
-   without the type on top having to fight the coastline underneath.
-
-   backdrop-filter is the whole effect, and a browser without it would leave
-   type on a 72%-opaque wash — legible, but weaker. @supports raises the panel
-   to nearly solid in that case, so it degrades to the old opaque card rather
-   than to something unreadable. */
-.glass {
-  background: var(--glass);
-  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
-  backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
-  border: var(--hairline) solid var(--glass-edge);
-  box-shadow: var(--shadow-card);
-}
-
-@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  .glass { background: var(--paper); }
-}
-
-.quiet-scroll { scrollbar-width: thin; scrollbar-color: var(--rule-strong) transparent; }
-.quiet-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
-.quiet-scroll::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }
-.quiet-scroll::-webkit-scrollbar-track { background: transparent; }

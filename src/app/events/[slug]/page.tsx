@@ -95,6 +95,7 @@ export default async function EventPage({
       <PlaceholderBand status={event.status} />
 
       <PageHeader
+        back={{ href: "/events", label: "All events" }}
         eyebrow={`Event · ${event.eventType} · ${event.year}`}
         title={event.name}
         lede={`${event.location.city}, ${event.location.country}${

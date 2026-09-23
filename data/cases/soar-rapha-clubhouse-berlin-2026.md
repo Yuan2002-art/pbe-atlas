@@ -97,7 +97,7 @@ clubhouse.
 *Not yet written.*
 
 ## Why this location?
-*Not yet written.* The facts: Rapha's clubhouse, Alte Schönhauser Straße, Mitte.
+*Not yet written.* The facts: Rapha's clubhouse, Alte Schönhauser Straße.
 
 ## Why this timing?
 *Not yet written.* What is known: Friday to the Monday after the race.

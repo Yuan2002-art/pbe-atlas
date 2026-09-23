@@ -83,8 +83,8 @@ the morning shift."
 a Rapha shop on Alte Schönhauser Straße at the point for number 5, postcode
 10119, which fits; the pin is that shop, precision `exact`.
 
-**Rapha is in this Atlas.** The cycling brand's own record had no cases; this
-is the first, as host rather than subject.
+**Rapha is in this Atlas, and still has no case of its own.** The cycling
+brand appears here only as host; this record belongs to SOAR.
 
 **No picture stored.** The page's images are header graphics.
 

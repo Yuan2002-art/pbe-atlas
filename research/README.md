@@ -37,6 +37,30 @@ activities rather than spaces with a duration, which is what this Atlas records.
 `data/`. The 26 entries were transcribed into a record under `data/` and are
 validated by `schema.ts` like anything else there; nothing here is loaded.
 
+## Leads closed without a case, and why
+
+A lead that was researched and deliberately not written up is recorded here,
+so the next person does not research it again.
+
+- **NNormal at UTMB Mont-Blanc 2026.** Not a space. The listing itself says
+  NNormal "has no single space in Chamonix" and lists its sessions at a café, a
+  guinguette and a microbrewery. The only non-aggregator page found is the
+  Kilian Jornet Foundation's (`kilianjornetfoundation.org/chamonix-2026/`),
+  which presents three sessions as the *Foundation's* own — a Running Minds &
+  Cadí GORE-TEX shoe test, a breakfast, and the Trail Keepers film premiere —
+  and names no venue in its visible text. Nothing points to a space with a
+  duration, which is what this Atlas records. If the Foundation's week is ever
+  worth a record, it is the Foundation's, not NNormal's.
+- **Rossignol at the Ultra-Trail Village.** A stand, like the others in the
+  Village; Rossignol's own mention of it is one line of its Run & Try Days
+  calendar. The brand's Chamonix *store* was written up instead
+  (`data/cases/rossignol-store-chamonix.md`).
+- **Every other "Brand X at the Ultra-Trail Village" lead.** One of 110 brands
+  in the organiser's square. Written from the aggregator they would add records
+  and no research; see `data/cases/ultra-trail-village-chamonix.md`. The way to
+  do them is the organiser's Exhibitors Guide PDF, by hand. The exception is a
+  stand the brand documents itself, as Goldwin and Altra did.
+
 ## Refresh these by hand, in a real browser. Never on a schedule.
 
 `marathon-weekend.com` returns **HTTP 429 Too Many Requests** to `curl`, and

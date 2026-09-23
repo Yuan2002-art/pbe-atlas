@@ -39,6 +39,20 @@ tags:
   - limited-drop
   - community
   - event-activation
+images:
+  - src: /images/cases/bandit-boston-2026/01-interior.jpg
+    caption: >-
+      Inside the 2026 pop-up: apparel on chain-link racking either side of a
+      timber floor, with a green garden hose looping over a planted bed down
+      the middle of the room and the Bandit mark lit at the back.
+    credit: "Bandit Running (via Athletech News)"
+    sourceUrl: https://athletechnews.com/how-top-fitness-running-brands-activated-at-the-boston-marathon/
+  - src: /images/cases/bandit-boston-2026/02-planted-display.jpg
+    caption: >-
+      A glass cylinder planted with greenery around a shoe, set against the
+      chain-link.
+    credit: "Bandit Running (via Athletech News)"
+    sourceUrl: https://athletechnews.com/how-top-fitness-running-brands-activated-at-the-boston-marathon/
 sources:
   - title: >-
       How Top Fitness & Running Brands Activated at the Boston Marathon —
@@ -101,8 +115,9 @@ independent supports it.
 **A name reported elsewhere is not used.** One research pass gave the space a
 title; nothing opened in this pass states it.
 
-**Photographs exist and are not yet stored.** The article carries two images
-credited "Bandit Running"; they wait on approval to download.
+**The photographs are the brand's**, published in the article with the credit
+"Bandit Running". They support the magazine's description of a green,
+luck-themed room.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

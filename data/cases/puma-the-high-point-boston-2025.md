@@ -50,6 +50,33 @@ tags:
   - limited-drop
   - performance-testing
   - event-activation
+images:
+  - src: /images/cases/puma-the-high-point-boston-2025/01-storefront.jpg
+    caption: >-
+      The High Point from Boylston Street: a glazed shopfront lettered
+      "Welcome to the High Point", with a lime-green door marked "PUMA Go
+      Wild".
+    credit: "Sneaker Freaker (no photographer credited)"
+    sourceUrl: https://www.sneakerfreaker.com/performance/news/puma-chased-the-runners-high-boston-marathon
+  - src: /images/cases/puma-the-high-point-boston-2025/02-nitro-lab.jpg
+    caption: >-
+      The NITRO Lab corner: an illuminated shelving unit of racing shoes and
+      screens under a "NITRO LAB" sign, with a treadmill in front.
+    credit: "Sneaker Freaker (no photographer credited)"
+    sourceUrl: https://www.sneakerfreaker.com/performance/news/puma-chased-the-runners-high-boston-marathon
+  - src: /images/cases/puma-the-high-point-boston-2025/03-footwear-wall.jpg
+    caption: >-
+      The footwear wall, lit shelf by shelf, beside apparel rails. A sign at
+      the top pairs the PUMA mark with the name of the Boston retailer
+      Marathon Sports; the sources do not explain the connection.
+    credit: "Sneaker Freaker (no photographer credited)"
+    sourceUrl: https://www.sneakerfreaker.com/performance/news/puma-chased-the-runners-high-boston-marathon
+  - src: /images/cases/puma-the-high-point-boston-2025/04-find-your-high.jpg
+    caption: >-
+      A counter lettered "FIND YOUR HIGH" under exposed ducts, in red light,
+      with screens along the walls.
+    credit: "Sneaker Freaker (no photographer credited)"
+    sourceUrl: https://www.sneakerfreaker.com/performance/news/puma-chased-the-runners-high-boston-marathon
 sources:
   - title: >-
       PUMA reveals Fast-R NITRO™ Elite 3 — PUMA newsroom, Herzogenaurach, 17
@@ -129,8 +156,8 @@ record ends on Sunday 20 April.
 **A hybrid.** The space is filed pop-up first and product-launch second: it
 sold one shoe ahead of its global release, but also hosted a race and a lab.
 
-**No picture stored yet.** The magazine carries photographs of the interior,
-not yet requested.
+**The photographs are the magazine's.** Sneaker Freaker's article carries
+them with the alt text "PUMA Boston Marathon" and no photographer credit.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

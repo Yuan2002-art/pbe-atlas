@@ -41,6 +41,31 @@ tags:
   - retail
   - product-trial
   - event-activation
+images:
+  - src: /images/cases/brooks-tokyo-marathon-expo-2025/01-booth.jpg
+    caption: >-
+      The booth from the aisle: a black truss frame carrying a large screen of
+      a runner and the word "PRIDE", the BROOKS name overhead, mannequins, and
+      a shoe wall on blue.
+    credit: "Achilles Corporation"
+    sourceUrl: https://www.achilles.jp/news/event/2025/0310.html
+  - src: /images/cases/brooks-tokyo-marathon-expo-2025/02-booth-side.jpg
+    caption: >-
+      The other face of the booth: a tall BROOKS column, apparel rails, a
+      HYPERION ELITE 4 PB banner and a second shoe wall.
+    credit: "Achilles Corporation"
+    sourceUrl: https://www.achilles.jp/news/event/2025/0310.html
+  - src: /images/cases/brooks-tokyo-marathon-expo-2025/03-trying-on.jpg
+    caption: >-
+      Visitors trying shoes on at the wall, seated on low stools on the blue
+      floor.
+    credit: "Achilles Corporation"
+    sourceUrl: https://www.achilles.jp/news/event/2025/0310.html
+  - src: /images/cases/brooks-tokyo-marathon-expo-2025/04-fitting.jpg
+    caption: >-
+      A member of staff kneels with a Brooks box while a visitor laces a shoe.
+    credit: "Achilles Corporation"
+    sourceUrl: https://www.achilles.jp/news/event/2025/0310.html
 sources:
   - title: >-
       「東京マラソンEXPO 2025」に出展いたしました。（シューズ事業部）— Achilles
@@ -67,7 +92,8 @@ itself as the brand's sole distributor in Japan.
 **What was in it, in the distributor's words.** The latest shoes, led by the
 HYPERION ELITE 4 PB racer, and apparel; "sales and experience content where
 you could try the shoes" (販売及びシューズのトライアルができる体験コンテンツ)
-inside the booth. "Each day many customers came, and it was a great success."
+inside the booth. The report adds that it was busy every day —
+各日とも多くのお客様にご来場いただき、大盛況となりました.
 
 ## Verification notes
 **The brand did not speak; its distributor did.** The source is Achilles's own
@@ -83,8 +109,8 @@ researched here. The organiser's own report could not be opened in this pass.
 
 **The pin is Tokyo Big Sight**, not the booth; precision `approximate`.
 
-**Photographs exist and are not yet stored.** The report carries four booth
-photographs, waiting on approval to download.
+**The photographs are the distributor's**, all captioned "展示ブースの様子" (the
+booth) in its report.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

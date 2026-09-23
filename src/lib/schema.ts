@@ -366,6 +366,7 @@ export const PIN_SHAPES = [
   "cross",
   "diamond",
   "chevron",
+  "ring",
 ] as const;
 export type PinShape = (typeof PIN_SHAPES)[number];
 

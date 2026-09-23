@@ -22,6 +22,9 @@ export const SHAPE_GEOMETRY: Record<PinShape, string> = {
     '<polygon points="9.6,3 14.4,3 14.4,9.6 21,9.6 21,14.4 14.4,14.4 14.4,21 9.6,21 9.6,14.4 3,14.4 3,9.6 9.6,9.6" />',
   diamond: '<polygon points="12,2.8 21.2,12 12,21.2 2.8,12" />',
   chevron: '<polygon points="12,3.4 21,20.6 12,15.4 3,20.6" />',
+  // Hollow: a presence with no site of its own. The empty centre is the point,
+  // and it keeps a town-level pin from reading as an address.
+  ring: '<path fill-rule="evenodd" d="M12 4.4a7.6 7.6 0 1 0 0 15.2a7.6 7.6 0 1 0 0-15.2zM12 7.2a4.8 4.8 0 1 1 0 9.6a4.8 4.8 0 1 1 0-9.6z" />',
 };
 
 export interface PinOptions {

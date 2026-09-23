@@ -123,7 +123,7 @@ data/                    ← everything you edit is in here
   brands/<slug>.md       one file per brand
   events/<slug>.md       one file per event
   vocab/
-    spatial-types.yml       the six spatial types, their definitions and map marks
+    spatial-types.yml       the spatial types, their definitions and map marks
     classification-tags.yml the nine research tags and their definitions
     activation-logic.yml    the eleven mechanisms, each with a one-line test
   map-palette.json       map colours (then run `npm run map-style`)
@@ -161,7 +161,9 @@ the case pages and the Method page all read from those two files, so nothing in
 the code needs to change.
 
 For a new spatial type, `pinShape` must be one of: `square`, `circle`,
-`triangle`, `cross`, `diamond`, `chevron`.
+`triangle`, `cross`, `diamond`, `chevron`, `ring`. Each is drawn once in
+`src/lib/pin.ts`; a new shape means adding it there and to `PIN_SHAPES` in
+`src/lib/schema.ts`.
 
 Adding to `activation-logic.yml` deserves more resistance than the other two.
 The field only works because the list is short: if every new case can invent a

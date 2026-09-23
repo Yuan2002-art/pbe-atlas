@@ -1,5 +1,5 @@
 # ===========================================================================
-# SPATIAL TYPES — the six kinds of physical/experiential presence the Atlas
+# SPATIAL TYPES — the kinds of physical/experiential presence the Atlas
 # distinguishes.
 #
 # A case names ONE primary form, and may name ONE optional secondary form for a
@@ -11,7 +11,7 @@
 #
 # `id` is used in case files and in URLs — do not rename one without updating
 # every case file that uses it. `pinShape` is how it is drawn on the map.
-# Valid pinShape values: square · circle · triangle · cross · diamond · chevron
+# Valid pinShape values: square · circle · triangle · cross · diamond · chevron · ring
 # ===========================================================================
 
 - id: permanent-retail
@@ -73,3 +73,18 @@
     A competitive event the brand owns, titles, or co-produces — races, series
     finals, record attempts. The strongest form of performance proof because
     the outcome is not controlled by the brand.
+
+# Added 2026-09-22 for NNormal at UTMB Mont-Blanc 2026, whose race week had no
+# space of its own at all — every session was in someone else's venue. That is
+# recorded as a form, not as a gap. A `distributed` case is still one record at one coordinate, but that coordinate
+# is the town (precision `city`), because no single venue is the space. The
+# venues belong in the prose, each with its source.
+- id: distributed
+  label: Distributed
+  short: Distributed
+  pinShape: ring
+  accent: "#1e4fd8"
+  definition: >-
+    A brand presence spread across several venues it does not own — cafés,
+    bars, cinemas, other brands' shops — with no space of its own for the
+    duration. The absence of a single site is the form.

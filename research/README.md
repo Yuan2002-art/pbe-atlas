@@ -42,15 +42,10 @@ validated by `schema.ts` like anything else there; nothing here is loaded.
 A lead that was researched and deliberately not written up is recorded here,
 so the next person does not research it again.
 
-- **NNormal at UTMB Mont-Blanc 2026.** Not a space. The listing itself says
-  NNormal "has no single space in Chamonix" and lists its sessions at a café, a
-  guinguette and a microbrewery. The only non-aggregator page found is the
-  Kilian Jornet Foundation's (`kilianjornetfoundation.org/chamonix-2026/`),
-  which presents three sessions as the *Foundation's* own — a Running Minds &
-  Cadí GORE-TEX shoe test, a breakfast, and the Trail Keepers film premiere —
-  and names no venue in its visible text. Nothing points to a space with a
-  duration, which is what this Atlas records. If the Foundation's week is ever
-  worth a record, it is the Foundation's, not NNormal's.
+(NNormal was on this list for one commit, as "not a space". It is now a case
+under a new spatial type, `distributed`, because the absence of a space turned
+out to be the finding.)
+
 - **Rossignol at the Ultra-Trail Village.** A stand, like the others in the
   Village; Rossignol's own mention of it is one line of its Run & Try Days
   calendar. The brand's Chamonix *store* was written up instead

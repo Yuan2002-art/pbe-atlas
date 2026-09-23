@@ -149,7 +149,7 @@ component library.
   `format.ts` holds the date, coordinate and place formatters, and dates are
   formatted in a fixed archival style rather than the visitor's locale so a
   screenshot in a thesis always reads the same.
-- `src/lib/pin.ts` — the six map marks. Used by the map, the legend and the
+- `src/lib/pin.ts` — the map marks, one per spatial type. Used by the map, the legend and the
   lists so the shapes can never drift apart.
 - `src/styles/tokens.css` — every colour and measurement in the design.
 

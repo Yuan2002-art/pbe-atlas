@@ -44,10 +44,22 @@ export function EventTimeline({
   shapeOf: (spatialType: string) => PinShape;
   brandNameOf: (slug: string) => string;
 }) {
-  if (!event.startDate || !event.endDate || cases.length === 0) return null;
+  if (!event.startDate || cases.length === 0) return null;
+  const raceStart = event.startDate;
+  const raceEnd = event.endDate ?? event.startDate;
 
-  const days = eachDay(event.startDate, event.endDate);
+  /* The axis covers the race days and every dated space around them. A
+     marathon is one day, but the spaces built for it open days before; an
+     axis of race days alone clipped every London bar to "1 day". If the spread
+     is implausibly long (a permanent store's opening year, say), the axis
+     falls back to the race days and clips, as before. */
+  const dated = cases.filter((c) => c.date.precision !== "unknown" && !c.date.ongoing);
+  const spanStart = [raceStart, ...dated.map((c) => c.date.start)].sort()[0];
+  const spanEnd = [raceEnd, ...dated.map((c) => c.date.end ?? c.date.start)].sort().at(-1)!;
+  let days = eachDay(spanStart, spanEnd);
+  if (days.length > 60) days = eachDay(raceStart, raceEnd);
   if (days.length === 0 || days.length > 60) return null;
+  const isRaceDay = (day: string) => day >= raceStart && day <= raceEnd;
 
   const first = toUtc(days[0]);
   const last = toUtc(days[days.length - 1]);
@@ -67,11 +79,15 @@ export function EventTimeline({
       const colStart = Math.round((start - first) / DAY_MS) + 1;
       const span = Math.max(1, Math.round((end - start) / DAY_MS) + 1);
 
+      // An undated case is drawn across the race days only, not the wider axis.
+      const raceCol = days.indexOf(raceStart) + 1 || 1;
+      const raceSpan = days.filter(isRaceDay).length || days.length;
+
       return {
         record,
         unknown,
-        colStart: unknown ? 1 : colStart,
-        span: unknown ? days.length : span,
+        colStart: unknown ? raceCol : colStart,
+        span: unknown ? raceSpan : span,
         clippedStart: rawStart < first,
         clippedEnd: rawEnd > last,
       };
@@ -96,13 +112,17 @@ export function EventTimeline({
             </div>
             {days.map((day) => {
               const date = new Date(toUtc(day));
+              const race = isRaceDay(day);
               return (
                 <div
                   key={day}
-                  className="border-l border-rule px-1 py-3 text-center"
+                  className={`border-l border-rule px-1 py-3 text-center ${
+                    race ? "bg-paper-raised" : ""
+                  }`}
+                  style={race ? { boxShadow: "inset 0 3px 0 var(--ink)" } : undefined}
                 >
                   <span className="label block">
-                    {WEEKDAY[date.getUTCDay()]}
+                    {race ? "Race" : WEEKDAY[date.getUTCDay()]}
                   </span>
                   <span className="data mt-0.5 block text-[13px]">
                     {date.getUTCDate()}
@@ -188,8 +208,10 @@ export function EventTimeline({
       </div>
 
       <p className="label border-t border-rule px-4 py-3">
-        Bar length is the days each space was open. A dashed bar means the date
-        was never published — the case is placed in the week, not dated.
+        Bar length is the days each space was open. Columns marked Race are the
+        edition's own dates; the axis runs wider when spaces opened before or
+        stayed after. A dashed bar means the date was never published — the case
+        is placed in the week, not dated.
       </p>
     </div>
   );

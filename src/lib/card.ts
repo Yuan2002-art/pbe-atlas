@@ -49,6 +49,10 @@ export interface CaseCard {
   dateLabel: string;
   /** Plain-text first sentences, for preview cards. */
   summary: string;
+  /** The case's first picture, its hero, or "" when it has none. Lists and
+   *  preview cards show it as a thumbnail; a case without one shows nothing
+   *  in its place, never a stand-in. */
+  heroImage: string;
 }
 
 export interface CardLookups {
@@ -98,6 +102,7 @@ export function toCard(c: Case, look: CardLookups): CaseCard {
     year: yearOf(c.date),
     dateLabel: formatDateRange(c.date),
     summary: stripHtml(c.sections.description),
+    heroImage: c.images[0]?.src ?? "",
   };
 }
 

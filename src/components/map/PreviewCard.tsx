@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+import { CaseThumb } from "@/components/case/CaseThumb";
 import { PinGlyph } from "@/components/ui/PinGlyph";
 import { StatusMark, TagChip } from "@/components/ui/Primitives";
 import type { CaseCard } from "@/lib/card";
@@ -38,6 +39,10 @@ export function PreviewCard({
           Close
         </button>
       </div>
+
+      {card.heroImage && (
+        <CaseThumb card={card} className="aspect-[16/9] h-auto w-full rounded-none" />
+      )}
 
       <div className="px-3.5 py-3">
         <p className="label">{card.brandName}</p>

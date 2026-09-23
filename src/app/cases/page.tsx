@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { CaseThumb } from "@/components/case/CaseThumb";
 import { PinGlyph } from "@/components/ui/PinGlyph";
 import {
   PageHeader,
@@ -122,9 +123,12 @@ export default async function RegisterPage({
                     </span>
                   </td>
                   <td className="px-3 py-4">
-                    <Link href={`/cases/${card.slug}`} className="block max-w-[26ch] hover:underline">
-                      <span className="block text-[14px] font-medium leading-tight">{card.brandName}</span>
-                      <span className="block text-[14px] leading-tight text-graphite">{card.title}</span>
+                    <Link href={`/cases/${card.slug}`} className="flex max-w-[34ch] items-start gap-3 hover:underline">
+                      <CaseThumb card={card} className="h-12 w-16" />
+                      <span>
+                        <span className="block text-[14px] font-medium leading-tight">{card.brandName}</span>
+                        <span className="block text-[14px] leading-tight text-graphite">{card.title}</span>
+                      </span>
                     </Link>
                   </td>
                   <td className="px-3 py-4">

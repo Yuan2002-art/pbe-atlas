@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { CaseThumb } from "@/components/case/CaseThumb";
 import { PinGlyph } from "@/components/ui/PinGlyph";
 import { StatusMark } from "@/components/ui/Primitives";
 import type { CaseCard } from "@/lib/card";
@@ -40,8 +41,9 @@ export function CaseListRow({
         </span>
       </span>
 
-      <span className="col-span-2 flex items-start gap-2 sm:col-span-1 sm:justify-end">
+      <span className="col-span-2 flex items-start gap-3 sm:col-span-1 sm:justify-end">
         <StatusMark status={card.status} />
+        <CaseThumb card={card} />
       </span>
     </Link>
   );

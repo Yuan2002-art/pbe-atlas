@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
 import { Prose, SourceList } from "@/components/case/CaseParts";
+import { CaseThumb } from "@/components/case/CaseThumb";
 import { EventTimeline } from "@/components/event/EventTimeline";
 import { MiniMap } from "@/components/map/MiniMap";
 import { PinGlyph } from "@/components/ui/PinGlyph";
@@ -211,13 +212,20 @@ export default async function EventPage({
                       className="border-b border-rule align-top transition-colors hover:bg-paper-sunk"
                     >
                       <td className="px-3 py-4 pl-0">
-                        <Link
-                          href={`/brands/${record.brand}`}
-                          className="text-[15px] font-medium hover:underline"
-                        >
-                          {card.brandName}
-                        </Link>
-                        <span className="label mt-0.5 block">Case {card.ref}</span>
+                        <span className="flex items-start gap-3">
+                          <Link href={`/cases/${card.slug}`} aria-label={card.title}>
+                            <CaseThumb card={card} className="h-12 w-16" />
+                          </Link>
+                          <span>
+                            <Link
+                              href={`/brands/${record.brand}`}
+                              className="text-[15px] font-medium hover:underline"
+                            >
+                              {card.brandName}
+                            </Link>
+                            <span className="label mt-0.5 block">Case {card.ref}</span>
+                          </span>
+                        </span>
                       </td>
                       <td className="px-3 py-4">
                         <span className="flex items-center gap-2">

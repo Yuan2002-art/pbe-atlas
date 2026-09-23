@@ -223,6 +223,10 @@ note also said the Foundation presented three sessions as its own — true of
 the Foundation's page, but all eight sessions, those three included, are
 organised under NNormal's own name on Eventbrite.
 
+**A 2024 precedent exists.** NNormal's 2024 week was also four sessions in four
+borrowed venues, one of them the same microbrewery; it is its own record, so
+the two editions can be compared.
+
 **The pin is the town, not a venue.** No single venue is the space, so the
 coordinate is Chamonix centre and precision is `city`. The five addresses are
 in the description, each from the event's own page.

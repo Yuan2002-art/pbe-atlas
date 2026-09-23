@@ -89,10 +89,11 @@ also at `about.goldwin.co.jp`, which does open: Goldwin Inc. was established
 **22 December 1951** and is listed on the Prime Market of the Tokyo Stock
 Exchange. The wrong subdomain, not a missing fact.
 
-**Two spaces in Chamonix for UTMB 2026, and only one of them is written up.**
-The jacket drop at the Ultra-Trail Village is stated on Goldwin's own Voxeloft
-page and is now a case. The installation at a rented chalet on Chemin du Lai —
-Motion Studies Vol. 10, produced with Product Index — is not: Goldwin's own
-site does not mention it and every retrieved description traces to one
-third-party aggregator. It is the more interesting of the two and it is the
-one still missing.
+**Two spaces in Chamonix for UTMB 2026, both now cases.** The jacket drop at
+the Ultra-Trail Village is stated on Goldwin's own Voxeloft page. The
+installation at Japonyard, a holiday chalet on Chemin du Lai — Motion Studies
+Vol. 10, directed by Product Index — is not on Goldwin's website, but is
+stated in a collaborative Instagram post published under both Product Index's
+and Goldwin's global accounts. It was left unwritten for a while because every
+description retrieved then traced to one aggregator; the aggregator turned out
+to link the post it came from.

@@ -151,10 +151,9 @@ online store rather than a figure, and no price was published for the Village
 release.
 
 **Not the same as Motion Studies Vol. 10.** Goldwin also had an installation
-at a rented chalet on Chemin du Lai that week, produced with Product Index.
-That is a different space at a different address with a different mechanism,
-and it is not written up: no Goldwin page mentions it and every description
-retrieved traces to the aggregator. Keeping them apart matters — one is a
+at Japonyard, a holiday chalet on Chemin du Lai, that week, directed by Product
+Index. That is a different space at a different address with a different
+mechanism, and it is its own case. Keeping them apart matters — one is a
 stand in the organiser's village, the other a chalet the brand took over.
 
 ## Strategic purpose

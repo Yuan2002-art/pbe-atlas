@@ -47,6 +47,13 @@ product: LightSpray Cloudboom Strike; LightSpray Cloudmonster 3 Hyper
 tags:
   - product-trial
   - event-activation
+images:
+  - src: /images/cases/on-lightspray-tour-london/01-robot.jpg
+    caption: >-
+      The LightSpray robot in its glass-walled white cell, captioned by
+      Wallpaper* "The On LightSpray robot in situ at the London pop-up".
+    credit: "On (via Wallpaper*)"
+    sourceUrl: https://www.wallpaper.com/fashion-beauty/on-running-sneaker-lightspray-pop-up-london-marathon-hellen-obiri
 sources:
   - title: >-
       On Brings its LightSpray™ Technology to London with an Immersive Public
@@ -121,9 +128,8 @@ Performance Testing was not assigned.
 limited-edition drops" in general; neither source says they were sold at
 Hanover Square.
 
-**No picture stored yet.** Wallpaper* carries On's photograph of "the On
-LightSpray robot in situ at the London pop-up"; it is waiting on approval to
-download.
+**The picture is On's, as published by Wallpaper*,** which captions it "The
+On LightSpray robot in situ at the London pop-up" and credits On.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

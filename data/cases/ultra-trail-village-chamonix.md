@@ -43,7 +43,14 @@ tags:
   - retail
   - community
   - event-activation
-images: []
+images:
+  - src: /images/cases/ultra-trail-village-chamonix/01-village-plan-2026.jpg
+    caption: >-
+      The organiser's 2026 plan of the Ultra-Trail Village: numbered stand
+      plots on Place du Mont-Blanc, the Fan Experience and the official store.
+      A diagram, not a photograph.
+    credit: "UTMB Mont-Blanc"
+    sourceUrl: https://montblanc.utmb.world/get-involved/join-adventure/ultra-trail-village
 sources:
   - title: >-
       Ultra-Trail® Village — the organiser's own page. "2026 ULTRA-TRAIL
@@ -121,7 +128,8 @@ cases. **They are six of a hundred and ten**, and writing each from an
 aggregator would add records without adding research. If the Exhibitors Guide
 is opened by hand, it names them all at once and properly.
 
-**No images.** Nothing of the Village itself was retrieved.
+**The only picture is the organiser's 2026 plan.** Photographs on the
+organiser's page carry 2022 and 2023 in their file names and are not used.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

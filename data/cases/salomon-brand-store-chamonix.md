@@ -35,7 +35,19 @@ tags:
   - community
   - product-trial
   - collaboration
-images: []
+images:
+  - src: /images/cases/salomon-brand-store-chamonix/01-storefront-2022.jpg
+    caption: >-
+      The corner storefront at night, as photographed in December 2022 when
+      the store reopened after a redesign. The store is permanent and may have
+      changed since.
+    credit: "Running Insights (no photographer credited)"
+    sourceUrl: https://www.running-insights.com/news/salomon-unveils-larger-newly-designed-branded-store-in-chamonix/
+  - src: /images/cases/salomon-brand-store-chamonix/02-interior-2022.jpg
+    caption: >-
+      The outdoor apparel wall inside, from the same 2022 article.
+    credit: "Running Insights (no photographer credited)"
+    sourceUrl: https://www.running-insights.com/news/salomon-unveils-larger-newly-designed-branded-store-in-chamonix/
 sources:
   - title: "Salomon Brand Store Chamonix — address, services and opening hours"
     publisher: Salomon

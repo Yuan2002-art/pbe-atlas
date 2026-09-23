@@ -43,7 +43,26 @@ tags:
   - community
   - collaboration
   - limited-drop
-images: []
+images:
+  - src: /images/cases/hoka-utmb-mont-blanc-ecosystem/01-refuge-flegere.jpg
+    caption: >-
+      The Refuge de la Flégère lettered HOKA, with a yellow cable car passing
+      above and the Mont Blanc massif behind. The credit comes from the file
+      name; the article prints none.
+    credit: "©PVerticale / C. Hudry (per file name)"
+    sourceUrl: https://outdoormagazine.it/2026/08/24/hoka-utmb-mont-blanc-chamonix/
+  - src: /images/cases/hoka-utmb-mont-blanc-ecosystem/02-refuge-interior.jpg
+    caption: >-
+      Inside the refuge: log walls, a lit stone fireplace, yellow HOKA letters
+      on a bench, and shoes on shelves above a timber counter roped in yellow.
+    credit: "©PVerticale (per file name)"
+    sourceUrl: https://outdoormagazine.it/2026/08/24/hoka-utmb-mont-blanc-chamonix/
+  - src: /images/cases/hoka-utmb-mont-blanc-ecosystem/03-signage.jpg
+    caption: >-
+      Stencilled on a concrete stairwell: "See you at the HOKA REFUGE DE LA
+      FLÉGÈRE at 1877m."
+    credit: "©PVerticale / C. Hudry (per file name)"
+    sourceUrl: https://outdoormagazine.it/2026/08/24/hoka-utmb-mont-blanc-chamonix/
 sources:
   - title: "HOKA secures Title Partner position for the circuit's flagship events, through 2028"
     publisher: UTMB World Series

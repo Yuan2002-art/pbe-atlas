@@ -63,7 +63,27 @@ tags:
   - product-trial
   - event-activation
   - collaboration
-images: []
+images:
+  - src: /images/cases/i-run-home-of-mountains/01-lounge.jpg
+    caption: >-
+      A loft room laid out as a lounge: a patterned rug, leather chairs, a
+      record player and books on open shelves, a clothing rail under the roof.
+      From i-Run's page for the space, which states no year; the file sits in
+      its 2026 folder.
+    credit: "i-Run"
+    sourceUrl: https://www.i-run.fr/entreprise/evenements-partenaires/the-home-of-mountains.html
+  - src: /images/cases/i-run-home-of-mountains/02-workshop.jpg
+    caption: >-
+      A customisation workshop: people at a table of sewing machines, thread
+      and cut fabric. Undated on the brand's page, like the others.
+    credit: "i-Run"
+    sourceUrl: https://www.i-run.fr/entreprise/evenements-partenaires/the-home-of-mountains.html
+  - src: /images/cases/i-run-home-of-mountains/03-display.jpg
+    caption: >-
+      A moss, fern and birch landscape built as a display in front of a "PLAY
+      HARDER" graphic. Undated on the brand's page.
+    credit: "i-Run"
+    sourceUrl: https://www.i-run.fr/entreprise/evenements-partenaires/the-home-of-mountains.html
 strategyMatrix:
   performanceToCulture: null
   productToExperience: null
@@ -195,8 +215,10 @@ is a street number, so precision is recorded as `exact`.
 
 **Nothing after the fact.** U Run was published on 19 August 2026, before the
 week, and i-Run's page is written in the present tense of a live event. There is
-no post-event coverage, no attendance figure and no photograph, so nothing here
-confirms how the space was actually used. This is intent and plan, not
+no post-event coverage and no attendance figure. The brand's page now carries
+an undated gallery, in a folder named for 2026, showing the rooms in use; it
+does not say when the photographs were taken, so nothing here confirms how the
+space was actually used during the week. This is intent and plan, not
 observation.
 
 **A 2025 predecessor exists, and it is a different record.** i-Run ran **The

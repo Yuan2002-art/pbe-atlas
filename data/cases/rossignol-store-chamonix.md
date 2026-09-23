@@ -47,6 +47,26 @@ product: Vercors, Vezor and Venosk trail running shoes (test runs); full Rossign
 tags:
   - retail
   - product-trial
+images:
+  - src: /images/cases/rossignol-store-chamonix/01-vezor-display.jpg
+    caption: >-
+      The trail range in the store, undated: a plinth of Vezor components and
+      shoes against a red backdrop. From the brand's store locator.
+    credit: "Rossignol"
+    sourceUrl: https://storefinder.rossignol.com/en-gb/outdoor/5318/rossignol-store-chamonix
+  - src: /images/cases/rossignol-store-chamonix/02-interior-2018.jpg
+    caption: >-
+      The store as announced in May 2018: backlit shelving of apparel and a
+      glass table of footwear. This is the 2018 fit-out, before the brand made
+      trail shoes.
+    credit: "Rossignol Group"
+    sourceUrl: https://www.grouperossignol.com/en/rossignol-agrandit-sa-boutique-chamonix/
+  - src: /images/cases/rossignol-store-chamonix/03-counter-2018.jpg
+    caption: >-
+      The 2018 counter and a grey dividing wall under linear lighting. From
+      the opening announcement.
+    credit: "Rossignol Group"
+    sourceUrl: https://www.grouperossignol.com/en/rossignol-agrandit-sa-boutique-chamonix/
 sources:
   - title: >-
       Rossignol renovates and extends the historical boutique in Chamonix —
@@ -153,8 +173,9 @@ a schedule, dated 29 April 2026.
 **The coordinate is the brand's own.** It comes from the structured data on
 Rossignol's store locator page for this address.
 
-**No picture is stored.** The store locator carries photographs of the shop;
-none was downloaded, so none is captioned here and the page uses the locator.
+**Pictures from two dates.** Two are from the 2018 opening announcement and
+show the ski-era fit-out; one, from the store locator, is undated and shows the
+trail range. The captions say which is which.
 
 **What is not known:** how many runners the tests take, their route or
 length, whether the test shoes are sold from the same room, and how the

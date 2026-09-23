@@ -46,7 +46,13 @@ tags:
   - limited-drop
   - product-trial
   - event-activation
-images: []
+images:
+  - src: /images/cases/goldwin-voxeloft-trail-jacket/01-jacket.jpg
+    caption: >-
+      The Voxeloft Trail Jacket, as the brand pictures it on its Voxeloft
+      page. A product image, not a photograph of the stand.
+    credit: "Goldwin"
+    sourceUrl: https://www.goldwin-global.com/eu/feature/voxeloft/
 sources:
   - title: >-
       Voxeloft Technology — Goldwin's own technology page. Under Products:

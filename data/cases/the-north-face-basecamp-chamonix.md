@@ -36,7 +36,14 @@ tags:
   - product-trial
   - event-activation
   - retail
-images: []
+images:
+  - src: /images/cases/the-north-face-basecamp-chamonix/01-store.jpg
+    caption: >-
+      The North Face's permanent Chamonix store on Avenue Michel Croz, which
+      is the case's secondary form, not the 2026 Basecamp chalet. Undated,
+      from the brand's store page. No photograph of the chalet was found.
+    credit: "The North Face"
+    sourceUrl: https://locations.thenorthface.eu/chamonix/chamonix/s571/
 strategyMatrix:
   performanceToCulture: null
   productToExperience: null

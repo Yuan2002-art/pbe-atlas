@@ -35,7 +35,34 @@ tags:
   - product-trial
   - community
   - event-activation
-images: []
+images:
+  - src: /images/cases/asics-trail-pop-up-chamonix/01-storefront.jpg
+    caption: >-
+      The ASICS Trail Pop-Up from the street: timber-framed shop windows with
+      mountain scenes and the line "Move your body, move your mind", the ASICS
+      mark on the door.
+    credit: "Martin de Alava Perez"
+    sourceUrl: https://outdoormagazine.it/2026/08/25/asics-trail-running-chamonix/
+  - src: /images/cases/asics-trail-pop-up-chamonix/02-interior.jpg
+    caption: >-
+      Inside: dark timber walls, a lit circular disc holding a single shoe, a
+      yellow floor circle, and a glass case of pressed flowers along the
+      right-hand wall.
+    credit: "Martin de Alava Perez"
+    sourceUrl: https://outdoormagazine.it/2026/08/25/asics-trail-running-chamonix/
+  - src: /images/cases/asics-trail-pop-up-chamonix/03-shoe-wall.jpg
+    caption: >-
+      The shoe wall: trail shoes held on a grid of tensioned yellow-green
+      cords against timber, beside an illuminated ASICS mark on a grey pillar.
+    credit: "Martin de Alava Perez"
+    sourceUrl: https://outdoormagazine.it/2026/08/25/asics-trail-running-chamonix/
+  - src: /images/cases/asics-trail-pop-up-chamonix/04-race-kit.jpg
+    caption: >-
+      Race kit pinned behind glass on a patterned yellow wall, either side of
+      a full-height portrait of an athlete. The article places this image by
+      its paragraph on the Trail Camp, so it may show the second space.
+    credit: "Martin de Alava Perez"
+    sourceUrl: https://outdoormagazine.it/2026/08/25/asics-trail-running-chamonix/
 sources:
   - title: "UTMB World Series partners — ASICS is not listed at any tier"
     publisher: UTMB World Series

@@ -48,6 +48,21 @@ tags:
   - community
   - product-trial
   - event-activation
+images:
+  - src: /images/cases/new-balance-london-run-house/01-installation.jpg
+    caption: >-
+      An installation in the Run House: a suspended lightbox glowing green
+      above a lit plinth of shoes in a dark gallery. Published by Clash on 26
+      April 2026; the photographer is credited only in the file name.
+    credit: "@adrienozouf (per file name, via Clash)"
+    sourceUrl: https://www.clashmusic.com/fashion/new-balance-launches-london-run-house/
+  - src: /images/cases/new-balance-london-run-house/02-announcement.jpg
+    caption: >-
+      The brand's announcement illustration: a line drawing of Somerset
+      House's courtyard over "Run House at Somerset House". A graphic, not a
+      photograph.
+    credit: "New Balance"
+    sourceUrl: https://fashionunited.uk/press/fashion/new-balance-launches-london-run-house-a-community-hub-open-during-event-weekend/2026042187597
 sources:
   - title: >-
       New Balance Launches London Run House — the brand's press release,
@@ -141,9 +156,9 @@ builder.
 "New Balance store" at the ExCeL expo. That is a different space and is not
 this record.
 
-**No picture stored yet.** Candidate photographs exist — the release's own
-image and an event photographer's set — and are waiting on approval to
-download.
+**The photograph's credit is a file name.** Clash published it on race day
+with the photographer's handle in the file name and no printed credit. The
+second image is the brand's own announcement drawing.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

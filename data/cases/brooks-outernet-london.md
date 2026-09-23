@@ -50,6 +50,14 @@ tags:
   - limited-drop
   - retail
   - event-activation
+images:
+  - src: /images/cases/brooks-outernet-london/01-outernet.jpg
+    caption: >-
+      Inside Outernet during the takeover: floor-to-ceiling screens carrying
+      the Brooks mark and a shoe, with visitors queuing below. The venue's own
+      alt text: "Brooks Running inside The Now Building".
+    credit: "Outernet London"
+    sourceUrl: https://www.outernet.com/b2b/news/brooks-running-launches-pre-london-marathon-domination-campaign-at-outernet
 sources:
   - title: >-
       Brooks Running launches pre–London Marathon domination campaign at
@@ -119,8 +127,8 @@ coordinate is Outernet's, precision `approximate`.
 "immersive scenarios" for a Brooks London Marathon experience at Outernet, but
 states no year; it is not in the record.
 
-**No picture stored yet.** Outernet's own photograph, "Brooks Running inside
-The Now Building", is waiting on approval to download.
+**The picture is the venue's own**, from its case study, with its alt text
+"Brooks Running inside The Now Building".
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

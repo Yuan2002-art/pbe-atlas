@@ -43,6 +43,16 @@ product: ""
 tags:
   - retail
   - event-activation
+images:
+  - src: /images/cases/salomon-hotel-le-faucigny-showroom-2024/01-display.jpg
+    caption: >-
+      A Salomon product display in a curtained room: three upright screens of
+      shoe imagery behind a timber table of shoes and parts — midsoles, uppers,
+      a shoe marked SALOMON. It is the only indoor Salomon display among the
+      agency's photographs for the week; the page captions none of them, so
+      that this is the hotel showroom is an inference, not a statement.
+    credit: "Mark Event"
+    sourceUrl: https://www.mark-event.com/utmb-2024/
 sources:
   - title: >-
       UTMB 2024 — Mark Event, 31 August 2024. "À l'occasion de la 21ème
@@ -106,8 +116,11 @@ the hotel's street address as 118 Place de l'Église.
 **The Village stand and the Brand Store are not this record.** The stand is
 one of the Village's; the store is its own permanent record.
 
-**No picture stored.** The agency's photographs are not described on its page,
-so which room each shows is unknown; none has been requested.
+**One picture, placed by inference.** The agency's page carries seven
+uncaptioned photographs. Looked at, two show its other client BOA's stand, one
+its van, three runs and a stretching session outdoors; one shows a Salomon
+display indoors, and that is the one used. That it was taken in the hotel is
+not stated anywhere.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

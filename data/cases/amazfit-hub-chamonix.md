@@ -54,7 +54,21 @@ tags:
   - community
   - collaboration
   - event-activation
-images: []
+images:
+  - src: /images/cases/amazfit-hub-chamonix/01-industry-night.jpg
+    caption: >-
+      An evening gathering on a garden and deck beside a chalet, an Alba
+      Optics flag on the lawn — matching the agency's account of "our Industry
+      Night with Amazfit and Alba Optics at the hub". Uncaptioned.
+    credit: "Athletic Affair (no photographer credited)"
+    sourceUrl: https://culture.athleticaffair.co/p/monday-break-issue-195
+  - src: /images/cases/amazfit-hub-chamonix/02-garden.jpg
+    caption: >-
+      A session on mats in the same garden, the chalet behind. Uncaptioned;
+      the agency also ran another brand's activations that week, so this is
+      placed by the building, not by a caption.
+    credit: "Athletic Affair (no photographer credited)"
+    sourceUrl: https://culture.athleticaffair.co/p/monday-break-issue-195
 sources:
   - title: "Monday Break — Issue 194: \"Join us in Chamonix at the Amazfit Hub!\" — the producing agency's own account, 17 August 2026. \"We've created The Amazfit Hub in Chamonix, that serves as the ultimate hub for performance, community, and brand experience during UTMB week… the house offers a balanced program focused on smart race preparation, active engagement, and authentic storytelling.\" Details Industry Night (4th edition), the Ben Dhiman & Rod Farvard live podcast, the mileSTONES social run, and the Amazfit Night cheering point at Notre-Dame de la Gorge"
     publisher: Athletic Affair
@@ -141,6 +155,11 @@ them in the product field would imply a launch that no source describes.
 what was installed in it, or whether it was a hotel, a chalet or a shopfront.
 For an Atlas of spaces this record is strong on programme and silent on
 architecture — the same shape of gap as Columbia's and Compressport's.
+
+**Pictures from beyond the cited sources.** The pictures were found in later
+coverage — portfolios, newsletters, the press — and each was looked at before
+captioning. Where a caption places a picture by inference rather than by the
+page's own words, it says so.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

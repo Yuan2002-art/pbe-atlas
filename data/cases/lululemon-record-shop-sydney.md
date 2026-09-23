@@ -47,6 +47,20 @@ product: ""
 tags:
   - community
   - event-activation
+images:
+  - src: /images/cases/lululemon-record-shop-sydney/01-entrance.jpg
+    caption: >-
+      A queue at a red doorway lettered "lululemon record shop". Credited
+      "Image: lululemon." in an article about the Print Shop.
+    credit: "lululemon (via RetailBoss)"
+    sourceUrl: https://retailboss.co/lululemon-creates-nearly-4000-personalized-pieces-at-its-sydney-race-week-print-shop/
+  - src: /images/cases/lululemon-record-shop-sydney/02-session.jpg
+    caption: >-
+      A talk in a red-lit brick hall, the audience on low stools. Credited
+      "Image: lululemon." and otherwise uncaptioned; placed here because the
+      Record Shop hosted the week's talks — an inference.
+    credit: "lululemon (via RetailBoss)"
+    sourceUrl: https://retailboss.co/lululemon-creates-nearly-4000-personalized-pieces-at-its-sydney-race-week-print-shop/
 sources:
   - title: >-
       lululemon – Record Shop — the brand's microsite. "record shop / AUG 28 —
@@ -95,7 +109,10 @@ a sponsored article, which was not read.
 
 **The pin is the street.** The geocoder found Riley Street, not number 121.
 
-**No picture stored.** The microsite's images are graphic artboards.
+**Pictures from beyond the cited sources.** The pictures were found in later
+coverage — portfolios, newsletters, the press — and each was looked at before
+captioning. Where a caption places a picture by inference rather than by the
+page's own words, it says so.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

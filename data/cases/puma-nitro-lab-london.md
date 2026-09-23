@@ -52,6 +52,38 @@ tags:
   - product-trial
   - community
   - event-activation
+images:
+  - src: /images/cases/puma-nitro-lab-london/01-treadmill-stage.jpg
+    caption: >-
+      The treadmill stage: treadmills on a raised platform under a ceiling of
+      LED panels showing a runner's figures — the overhead feature the AV
+      supplier describes above the challenge zone.
+    credit: "iMAG"
+    sourceUrl: https://www.imagdisplays.co.uk/puma-nitro-lab
+  - src: /images/cases/puma-nitro-lab-london/02-speed-trial.jpg
+    caption: >-
+      The 1K speed trial: treadmills in front of a wall of screens reading
+      "Speed Trial 1K" and "1K Smashed", with times.
+    credit: "Proper Magazine (no photographer credited)"
+    sourceUrl: https://www.propermag.com/?p=110586
+  - src: /images/cases/puma-nitro-lab-london/03-find-your-fast.jpg
+    caption: >-
+      A white-lit room of shoe cubbies under a grid of ceiling lights,
+      lettered "Speed Trial: 1K" and "Find your fast", with two plinths.
+    credit: "Proper Magazine (no photographer credited)"
+    sourceUrl: https://www.propermag.com/?p=110586
+  - src: /images/cases/puma-nitro-lab-london/04-gallery-room.jpg
+    caption: >-
+      A tall white room of the ICA with a curved velvet sofa, a low table of
+      shoes and apparel, a clothing rail and the LDN mark on the wall.
+    credit: "Proper Magazine (no photographer credited)"
+    sourceUrl: https://www.propermag.com/?p=110586
+  - src: /images/cases/puma-nitro-lab-london/05-project3-room.jpg
+    caption: >-
+      The Project3 room: a wall lettered "Here to break things", a low
+      platform of race kit and shoes, and a wall of names.
+    credit: "Proper Magazine (no photographer credited)"
+    sourceUrl: https://www.propermag.com/?p=110586
 sources:
   - title: >-
       What to look out for at the 2026 London Marathon — PUMA CATch up, 22
@@ -138,8 +170,10 @@ not assigned.
 **A coffee partner reported elsewhere is not recorded.** A research pass
 named one; the trade article it was attributed to does not mention it.
 
-**No picture stored.** The images found are a pre-event promotional graphic
-and an editorial gallery whose files could not be retrieved.
+**Pictures from beyond the cited sources.** The pictures were found in later
+coverage — portfolios, newsletters, the press — and each was looked at before
+captioning. Where a caption places a picture by inference rather than by the
+page's own words, it says so.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

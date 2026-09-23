@@ -49,6 +49,27 @@ tags:
   - community
   - retail
   - event-activation
+images:
+  - src: /images/cases/tracksmith-tokyo-2025/01-pop-up.jpg
+    caption: >-
+      Racks and mannequins on a timber frame inside SELECT by BAYCREW'S. WWD
+      Japan's caption: 「セレクト バイ ベイクルーズ」で行われている、「ノア」「トラックスミス」のポップアップから — from
+      the NOAH and Tracksmith pop-up at SELECT by BAYCREW'S.
+    credit: "WWD Japan"
+    sourceUrl: https://www.wwdjapan.com/articles/2046849
+  - src: /images/cases/tracksmith-tokyo-2025/02-rail.jpg
+    caption: >-
+      A rail of pieces and a mannequin by the tower's glazing. Caption:
+      「ノア」「トラックスミス」ポップアップから — from the NOAH and Tracksmith pop-up.
+    credit: "WWD Japan"
+    sourceUrl: https://www.wwdjapan.com/articles/2046849
+  - src: /images/cases/tracksmith-tokyo-2025/03-chain-stitching.jpg
+    caption: >-
+      A chain-stitcher at work on a navy hoodie under a lamp. Caption: 「セレクト
+      バイ ベイクルーズ」では、フーディーにチェーンステッチで刺しゅうを入れてカスタマイズするサービスも実施 — hoodies were
+      customised with chain-stitch embroidery.
+    credit: "WWD Japan"
+    sourceUrl: https://www.wwdjapan.com/articles/2046849
 sources:
   - title: >-
       Tokyo Marathon Weekend 2025 — Tracksmith's own journal. "Join us in
@@ -118,8 +139,10 @@ the floor.
 **The pin is the building.** Toranomon Hills Station Tower was geocoded
 directly; precision `exact` for the building, not the floor.
 
-**No picture stored.** The brand's photographs appear to predate the pop-up;
-the host's are product shots.
+**Pictures from beyond the cited sources.** The pictures were found in later
+coverage — portfolios, newsletters, the press — and each was looked at before
+captioning. Where a caption places a picture by inference rather than by the
+page's own words, it says so.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

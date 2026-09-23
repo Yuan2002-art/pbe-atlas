@@ -57,7 +57,30 @@ tags:
   - limited-drop
   - retail
   - event-activation
-images: []
+images:
+  - src: /images/cases/rabbit-clubhouse-chamonix/01-entrance.jpg
+    caption: >-
+      A garden path under bunting with a rabbit TRAIL flag, captioned by the
+      newsletter "the entrance to the rabbit clubhouse". Its author discloses
+      a consulting engagement with rabbit.
+    credit: "Long Run Labs (newsletter)"
+    sourceUrl: https://longrunlabs.substack.com/p/what-justifies-the-space
+  - src: /images/cases/rabbit-clubhouse-chamonix/02-view-from-door.jpg
+    caption: >-
+      Looking out from the door: rabbit boards and a parasol in a hedged
+      forecourt, hotels and the mountains beyond. Captioned "The view from the
+      door of the rabbit Clubhouse at Hotel Le Faucigny just steps from the
+      finish line."
+    credit: "A Matter of Brand (newsletter)"
+    sourceUrl: https://amatterofbrand.substack.com/p/utmb-2026-turning-the-mirror-on-ourselves
+  - src: /images/cases/rabbit-clubhouse-chamonix/03-interior.jpg
+    caption: >-
+      A timber-floored room of chairs in a circle under pendant lamps, a
+      Chamonix-Mont-Blanc map on the wall. Uncaptioned; placed after the
+      author's account of an industry night at the clubhouse, so the room is
+      inferred.
+    credit: "Long Run Labs (newsletter)"
+    sourceUrl: https://longrunlabs.substack.com/p/what-justifies-the-space
 sources:
   - title: "rabbit Clubhouse Series — \"The rabbit Clubhouse is a home base during race week. Part hotel room, part pop-up shop, part community hub\"; \"rabbit is taking over Hotel Le Faucigny & Appart'Hotel Le Genepy, creating a home base in the heart of Chamonix\"; carries a BOOK NOW call to action"
     publisher: rabbit
@@ -153,6 +176,11 @@ actually used.
 **The same hotel housed another brand in 2024.** Salomon's event agency set up
 a showroom at Hotel Le Faucigny for UTMB 2024; that is its own record. Nothing
 retrieved connects the two bookings.
+
+**Pictures from beyond the cited sources.** The pictures were found in later
+coverage — portfolios, newsletters, the press — and each was looked at before
+captioning. Where a caption places a picture by inference rather than by the
+page's own words, it says so.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

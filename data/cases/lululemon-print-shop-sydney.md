@@ -37,6 +37,15 @@ tags:
   - limited-drop
   - retail
   - event-activation
+images:
+  - src: /images/cases/lululemon-print-shop-sydney/01-print-counter.jpg
+    caption: >-
+      A red counter of heat presses with staff printing, shelves of Sydney
+      2026 graphics behind. Credited "Image: lululemon."; the article's alt
+      text says only "race-week activation", and the heat presses are why it
+      is placed here.
+    credit: "lululemon (via RetailBoss)"
+    sourceUrl: https://retailboss.co/lululemon-creates-nearly-4000-personalized-pieces-at-its-sydney-race-week-print-shop/
 sources:
   - title: >-
       lululemon – Record Shop — the brand's microsite, Print Shop section.
@@ -79,7 +88,10 @@ programme with a Print Shop; it was not read in this pass and is not recorded.
 **The pin is the mall.** Pitt Street Mall is a pedestrian street; precision is
 `approximate`.
 
-**No picture stored.**
+**Pictures from beyond the cited sources.** The pictures were found in later
+coverage — portfolios, newsletters, the press — and each was looked at before
+captioning. Where a caption places a picture by inference rather than by the
+page's own words, it says so.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

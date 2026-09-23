@@ -38,6 +38,21 @@ tags:
   - limited-drop
   - product-trial
   - event-activation
+images:
+  - src: /images/cases/on-labs-boston-2025/01-roundtable.jpg
+    caption: >-
+      A roundtable under the lettering "Yes, the future of running is here." —
+      the line on On's own page for On Labs Boston. Captioned "Photo Credit
+      On/Pierce Townsend" by a newsletter that calls its visit a paid media
+      trip.
+    credit: "On / Pierce Townsend"
+    sourceUrl: https://amatterofbrand.substack.com/p/the-on-running-deep-dive-you-need
+  - src: /images/cases/on-labs-boston-2025/02-roundtable-wide.jpg
+    caption: >-
+      The same roundtable from further back, with cameras in the foreground.
+      Same credit.
+    credit: "On / Pierce Townsend"
+    sourceUrl: https://amatterofbrand.substack.com/p/the-on-running-deep-dive-you-need
 sources:
   - title: >-
       On Labs Boston — On's event page, read as archived by the Wayback Machine
@@ -85,7 +100,10 @@ does not mention it. Whether it was in Boston in 2026 is not known.
 places Brooks's Hyperion House at 400 Newbury Street. Nothing retrieved says
 how the unit is let.
 
-**No picture stored.**
+**Pictures from beyond the cited sources.** The pictures were found in later
+coverage — portfolios, newsletters, the press — and each was looked at before
+captioning. Where a caption places a picture by inference rather than by the
+page's own words, it says so.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

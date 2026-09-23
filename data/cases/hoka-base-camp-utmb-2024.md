@@ -20,6 +20,10 @@ status: partially-verified
 collaborators:
   - name: Montagne-en-Scène
     role: Ran the HOKA Film Festival on Wednesday 28 August
+  - name: SetSquare Creative
+    role: >-
+      Built Base Camp, per its own portfolio ("our team travelled to Chamonix,
+      France to assist HOKA")
 location:
   venue: HOKA Base Camp, Ultra-Trail Village, Place du Mont-Blanc
   city: Chamonix-Mont-Blanc
@@ -40,6 +44,35 @@ tags:
   - product-trial
   - community
   - event-activation
+images:
+  - src: /images/cases/hoka-base-camp-utmb-2024/01-base-camp.jpg
+    caption: >-
+      HOKA Base Camp at dusk: a two-storey timber structure with slatted
+      screens, lettered "HOKA Base Camp", glazed display bays at ground level
+      and the Aiguilles behind. From its builder's portfolio, which states no
+      year; the file sits in the site's September 2024 upload folder.
+    credit: "SetSquare Creative (no photographer credited)"
+    sourceUrl: https://www.setsquarecreative.co.uk/portfolio/hoka-utmb-mont-blanc/
+  - src: /images/cases/hoka-base-camp-utmb-2024/02-base-camp-day.jpg
+    caption: >-
+      Base Camp by day, visitors crossing the square beneath a sculptural arch
+      on the roof. Filed by the campaign's art director as "UTMB-2024-BRAND",
+      28 August.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
+  - src: /images/cases/hoka-base-camp-utmb-2024/03-flylab-test-ride.jpg
+    caption: >-
+      Inside the FLY LAB: Tecton X 3 shoes on shelves beside a panel reading
+      "Test ride Tecton X 3 — A demo pair is waiting for you at HOKA
+      Basecamp".
+    credit: "SetSquare Creative (no photographer credited)"
+    sourceUrl: https://www.setsquarecreative.co.uk/portfolio/hoka-utmb-mont-blanc/
+  - src: /images/cases/hoka-base-camp-utmb-2024/04-flylab-display.jpg
+    caption: >-
+      A row of lit glass cases each holding a Tecton X 3, against walls
+      printed with the shoe's name. Filed as "UTMB-2024-BRAND", 27 August.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
 sources:
   - title: >-
       Join us at HOKA UTMB® Mont-Blanc race week! — HOKA's own Facebook video
@@ -75,6 +108,17 @@ sources:
     url: https://electriccablecar.com/hokas-event-calendar-for-umtb-week/
     type: editorial
     accessed: 2026-09-22
+  - title: >-
+      HOKA @ UTMB Mont-Blanc — SetSquare Creative's portfolio page, undated;
+      its images sit in a September 2024 upload folder. "Base Camp was built to
+      showcase the new HOKA Tecton X3 Trail Running Shoes." "Athletes were
+      invited to demo footwear in FLY LAB a state-of-the-art retail suite where
+      runners could discover the innovation, engineering and technology of the
+      latest running footwear."
+    publisher: SetSquare Creative
+    url: https://www.setsquarecreative.co.uk/portfolio/hoka-utmb-mont-blanc/
+    type: agency-studio
+    accessed: 2026-09-23
 ---
 
 ## Description
@@ -104,8 +148,12 @@ own registration page linked from the post was not read.
 — and by the Tecton X 3 launch, which the blog dates to that week in its post
 of 21 August 2024. The post itself carries no date.
 
-**What the FLyLab was in 2024 is not stated,** nor whether it sat inside the
-Base Camp or apart from it. The 2026 FlyLab is described in the 2026 record.
+**What the FLY LAB was, per its builder:** "a state-of-the-art retail suite
+where runners could discover the innovation, engineering and technology of the
+latest running footwear", where "Athletes were invited to demo footwear". A
+panel photographed inside it reads "A demo pair is waiting for you at HOKA
+Basecamp". The builder's page carries no date; its images are in a September
+2024 folder and it names the Tecton X3, which launched that week.
 
 **When the partnership began is given two ways.** The organiser's 2024
 announcement says HOKA "began its partnership with UTMB World Series in
@@ -115,7 +163,10 @@ Not settled here.
 **The pin is the Village**, precision `approximate`; no stand position was
 published.
 
-**No picture stored.**
+**Pictures from beyond the cited sources.** The pictures were found in later
+coverage — portfolios, newsletters, the press — and each was looked at before
+captioning. Where a caption places a picture by inference rather than by the
+page's own words, it says so.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

@@ -150,6 +150,10 @@ before or during the week. No post-event coverage, photographs, attendance or
 booking figures were found, so there is no confirmation of how the space was
 actually used.
 
+**The same hotel housed another brand in 2024.** Salomon's event agency set up
+a showroom at Hotel Le Faucigny for UTMB 2024; that is its own record. Nothing
+retrieved connects the two bookings.
+
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.
 The material: a brand with no permanent retail in Chamonix bought a week of

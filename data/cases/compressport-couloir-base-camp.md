@@ -97,6 +97,14 @@ Compressport comes to this edition as the **official compression supplier of
 HOKA UTMB Mont-Blanc for the thirteenth consecutive year**.
 
 ## Verification notes
+**The brand's page has no year in it, and may be rewritten.** The address of
+Compressport's UTMB week page carries no year, and the page dates itself only
+by weekday — "Sunday 30 August" fits 2026. What is recorded here is the page as
+read on 17 September 2026. A research pass reported that an earlier copy of the
+same address carried a previous year's content; that could not be reproduced
+from the archived HTML, so it is not asserted, but the next edition may well
+overwrite this one.
+
 **The primary source is the brand's own, and its dates are internally wrong.**
 Compressport's UTMB Week page lists the week as day tabs reading "Monday 25/08"
 through "Sunday 31/08", and one of them reads "Saturday 30/01" — a month typo.

@@ -217,12 +217,21 @@ uses; there is deliberately no second copy of the rules.
   field exists for; one primary plus one optional secondary still forces the
   judgement about which form leads.
 
-  Three cases are hybrids and all three now carry both values: The North Face
-  bundles a Basecamp chalet (`activation`) with a permanent store
-  (`permanent-retail`); ASICS bundles a Trail Pop-Up with a separately-sited
-  Trail Camp (`activation`); rabbit takes over two hotels and calls the result
-  "part pop-up shop" while running a separate Vendor Village chalet (`pop-up`).
-  **Run `npm run validate` for the current hybrid count** — it is computed.
+  Examples of hybrids: The North Face bundles a Basecamp chalet (`activation`)
+  with a permanent store (`permanent-retail`); ASICS bundles a Trail Pop-Up with
+  a separately-sited Trail Camp (`activation`); rabbit takes over two hotels and
+  calls the result "part pop-up shop" while running a separate Vendor Village
+  chalet (`pop-up`). **Run `npm run validate` for the current hybrid count** —
+  it is computed, and this file used to state one.
+
+- **`distributed` is a form, not a gap.** NNormal's race weeks (2024 and 2026)
+  had no space of their own — every session was in someone else's café, hotel
+  or brewery. The author judged that absence the finding, so it is the seventh
+  spatial type. A `distributed` case is still one record at one coordinate: the
+  town, at precision `city`, with the venues listed in the prose. It draws as a
+  hollow `ring` (`src/lib/pin.ts`) so a town-level pin never reads as an
+  address. A new pin shape means adding it to `PIN_SHAPES` in `schema.ts` and to
+  `pin.ts`; nothing else.
 
   Three consequences, and they will break quietly if separated:
 
@@ -347,6 +356,26 @@ uses; there is deliberately no second copy of the rules.
   brand's material; the caption carries the distinction, and a verification
   note records the provenance.
 
+- **Pictures: every case should look like `arcteryx-distance-aid-station`** — a
+  hero plus several detail plates. The author asked for this explicitly after
+  two rounds of "the pictures are still missing". Aim for 5–8 per case, in this
+  order: photographs of the space at that edition; the brand's / organiser's /
+  agency's own visuals for that activation (key art, programme graphics, maps,
+  renders) and product shots of the products the case names; official photos of
+  the venue building. Each caption says which it is ("a graphic, not a
+  photograph of the space"; "the building as listed, not the installation").
+  Never a social-media CDN (Instagram, Facebook…), stock, or another year's
+  photo passed off as this one. The cited sources are usually pre-event
+  announcements with no photos — look further: builders' and art directors'
+  portfolios, post-event newsletters, trade press. Downloads are batched and
+  approved by the author first; every picture is then looked at before it is
+  captioned, and anything over 2000px is resized with `sharp`.
+
+  **Pictures must be visible where people browse.** The card carries
+  `heroImage` (the first image) and `CaseThumb` draws it in the register, the
+  shared list row, the event comparison table and the map preview card. For a
+  while pictures existed only on case pages, and the site looked imageless.
+
 - **An edition may show reported activity it has not researched, as leads.**
   `reportedActivity` on an event record holds branded spaces a third party
   lists for that edition, unverified. UTMB Mont-Blanc 2026 carries 26 of them
@@ -366,9 +395,38 @@ uses; there is deliberately no second copy of the rules.
   press, and an aggregator points at those rather than standing in for them.
 
 - **The event page leads with occupancy, not a list.** Cases are spaces with a
-  duration, not timed events, so `EventTimeline` draws a bar per case across the
-  edition's days. A case whose dates were never published gets a dashed ghost
-  bar labelled as such rather than a guessed position.
+  duration, not timed events, so `EventTimeline` draws a bar per case. The axis
+  spans the race days **plus every dated space around them** (falling back to
+  the race days if that exceeds 60 days), with the race columns labelled Race: a
+  marathon is one day, and an axis of race days alone clipped every city space
+  to "1 day". A case whose dates were never published gets a dashed ghost bar
+  across the race days only, labelled as such, rather than a guessed position.
+
+## How research is done here — methods that worked, and traps
+
+- **A lead's origin is often one click away.** marathon-weekend.com's event
+  pages link the Instagram post or form they were built from; that post is often
+  the brand's or a co-signed collaboration (Goldwin Motion Studies was found
+  this way). Open the aggregator page **by hand in the browser**, once.
+- **Eventbrite organiser pages** list every session a brand ran in a city with
+  addresses in their JSON-LD (NNormal's whole Chamonix week came from one).
+- **Dead brand pages live on the Wayback Machine** (On Labs Boston, Chaiten).
+  Read the capture's *text*, and check the year: one Brooks capture a research
+  pass cited as 2025 was 2023 content.
+- **Year from weekday.** Pages are reused every edition. "Tuesday 25 August"
+  fits 2026, not 2025 — use it, and say so in the notes.
+- **Geocode with Nominatim, one request per address, with the postcode.**
+  "250 Boylston Street, Boston" first landed in Jamaica Plain. Street-only hits
+  are `approximate`; a named building or shop is `exact`.
+- **Agent reports are leads, never sources.** Background research agents were
+  useful for finding candidates, and wrong often enough (a coffee partner the
+  article never mentions, a 2023 page called 2025, alt text invented by a
+  summariser) that every quote was re-read on the live page before it went in.
+  WebFetch paraphrases; for quotes, read the page text in the browser.
+- **Don't loop over Instagram.** One post opened once, read from its page
+  metadata, is the limit (rule 7).
+- **Leads closed without a case** are listed, with reasons, in
+  `research/README.md`, so they are not researched twice.
 
 ## Known limitations, recorded and not yet fixed
 
@@ -441,7 +499,15 @@ Restricted**, which has two consequences for any command handed to her:
 cd "C:\Users\yuan\Claude Projects\Performance Brand Experience Atlas"; npm.cmd run dev
 ```
 
-The project path contains spaces, so quote it. To check a command the way she
+The project path contains spaces, so quote it.
+
+**Commit messages from PowerShell:** `git commit -m "…"` with double quotes
+inside the message is split into pathspecs by PowerShell 5.1. Write the message
+to a file and use `git commit -F <file>`.
+
+**Don't run `npm run build` while another session's dev server is running in
+this folder** — both use `.next`. `npx tsc --noEmit` plus loading pages in the
+browser is the safe check then. To check a command the way she
 will actually experience it:
 `powershell -NoProfile -ExecutionPolicy Restricted -Command "<cmd>"` — an agent's
 own shell usually runs with Bypass and will not reproduce her failure.

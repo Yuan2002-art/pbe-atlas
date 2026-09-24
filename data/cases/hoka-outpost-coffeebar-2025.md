@@ -130,6 +130,16 @@ images:
       net wt. 4.5 oz." cans, and stacked "Red Star" cans on a shelf.
     credit: Rhoam Creative Studio — photography Aisha McAdams and Ryan Thrower
     sourceUrl: https://rhoamcreativestudio.com/work-projects/western-states---freetrail-outpost
+  - src: /images/cases/hoka-outpost-coffeebar-2025/11-set-in-use.jpg
+    caption: >-
+      The same set with someone behind the counter: the "Freetrail ×" sign, the
+      pigeonholes of invented goods and the "Rod Farvard" pennant all match the
+      builders' photographs, but this frame comes from HOKA's **2026** Western
+      States hub page, where it illustrates that year's Freetrail coverage. It
+      is not dated, and it is not offered here as a 2025 photograph -- see the
+      verification notes.
+    credit: "HOKA"
+    sourceUrl: https://2026westernstateshokahub.splashthat.com/
 sources:
   - title: >-
       Coffeebar's own Instagram post, 23 June 2025, read once. "The HOKA
@@ -212,6 +222,17 @@ race finishes. The wall behind the presenters carries a timber "Freetrail ×"
 sign.
 
 ## Verification notes
+**The same set appears on HOKA's 2026 page, and that raises a question this
+record cannot settle.** HOKA's hub for Western States 2026 illustrates its
+"Freetrail WSER Live Coverage" listing with a photograph of what is
+unmistakably this set -- the same "Freetrail x" sign, the same fictional stock,
+the same "Rod Farvard" pennant. Either the set was put up again in 2026, or the
+2026 page is illustrated with a 2025 photograph. **The second is entirely
+possible**: the same page uses a photograph filenamed `HOKA_2022_WSER` for
+another listing. The image is stored here because the set is this record's
+subject, and its caption refuses the date rather than guessing it. If the set
+did run again in 2026, that is a second case and not this one.
+
 **The venue speaks, not the brand.** The main source is the café's own post,
 filed as `other`. No HOKA page for the Outpost was read. The organiser's
 archived agenda independently confirms the name and the Freetrail show.

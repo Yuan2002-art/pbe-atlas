@@ -38,7 +38,52 @@ product: Rocket X Trail
 tags:
   - product-trial
   - event-activation
+images:
+  - src: /images/cases/hoka-flylab-trail-western-states-2026/01-flylab-structure.jpg
+    caption: >-
+      The FlyLab Trail itself: an A-frame timber pavilion under pines, "FLYLAB" set vertically down its gable, a corrugated canopy over an open front, panels reading "Our trail story" and the HOKA mark down the side. **Undated** — see the verification notes.
+    credit: "HOKA — photography Sydney Lewis (per file name)"
+    sourceUrl: https://2026westernstateshokahub.splashthat.com/
+  - src: /images/cases/hoka-flylab-trail-western-states-2026/02-hub-key-art.jpg
+    caption: >-
+      HOKA's key art for the week, and the only image here that dates itself: a tiled panel headed "Western States Endurance Run" with "June 24 - 28 / The original mountain ultra is here, and we're so ready. See our full calendar of runs and events at States." A graphic, not a photograph of the space.
+    credit: "HOKA"
+    sourceUrl: https://2026westernstateshokahub.splashthat.com/
+  - src: /images/cases/hoka-flylab-trail-western-states-2026/03-high-camp-challenge.jpg
+    caption: >-
+      Runners climbing a dusty switchback in single file — the image HOKA uses for the High Camp Challenge, the run whose bibs were collected at the FlyLab.
+    credit: "HOKA — photography Sydney Lewis (per file name)"
+    sourceUrl: https://2026westernstateshokahub.splashthat.com/
+  - src: /images/cases/hoka-flylab-trail-western-states-2026/04-shakeout-run.jpg
+    caption: >-
+      A large field running a paved path through meadow and pine — the image for the official shakeout run.
+    credit: "HOKA — photography Sydney Lewis (per file name)"
+    sourceUrl: https://2026westernstateshokahub.splashthat.com/
+  - src: /images/cases/hoka-flylab-trail-western-states-2026/05-emigrant-pass-tram.jpg
+    caption: >-
+      An empty chairlift over ridgelines at first light — the image for the Emigrant Pass tram ride HOKA provided free on race day.
+    credit: "HOKA — photography Luke W. Webster (per file name)"
+    sourceUrl: https://2026westernstateshokahub.splashthat.com/
+  - src: /images/cases/hoka-flylab-trail-western-states-2026/06-foresthill-fly-zone.jpg
+    caption: >-
+      A runner reaching out to slap hands with spectators on a road through a town — the image for the Foresthill cheer zone, where the HOKA Fly Zone stood.
+    credit: "HOKA — photography Luke W. Webster (per file name)"
+    sourceUrl: https://2026westernstateshokahub.splashthat.com/
 sources:
+  - title: >-
+      2026 Western States | HOKA Event Hub — the brand's own calendar page for
+      the week, footed "© 2026 HOKA". Lists FlyLab Trail on "June 25 – June 26,
+      2026" in Olympic Valley, "Step into the FlyLab Trail and experience the
+      world of HOKA!", alongside the High Camp Challenge (26 June), the
+      official shakeout run and a "Raise the Bar" film screening (25 June), the
+      Foresthill Cheer Zone and the First Sunrise Emigrant Pass tram ride and
+      hike (27 June), a WSER Buckle Party in Auburn (28 June) and "Freetrail
+      WSER Live Coverage" with daily Trailgating shows, 22-25 June. Credits
+      "Photography: Luke W. Webster". Source of six images.
+    publisher: HOKA
+    url: https://2026westernstateshokahub.splashthat.com/
+    type: official-brand
+    accessed: 2026-09-23
   - title: >-
       2026 Western States Race Week Agenda — the organiser's page, "Last
       updated: June 26, 2026". Thursday 25 June "11:00am – 5:00pm – HOKA FlyLab
@@ -95,6 +140,33 @@ hours on more than one day.
 new FlyLab Trail", then with the Mafate X.
 
 ## Verification notes
+**Six pictures, and only one of them can be dated.** They come from HOKA's own
+2026 hub page, which is the first first-party source this record has had. The
+key-art panel prints "June 24 - 28" and is therefore this edition's. **The five
+photographs carry no year, and the page demonstrably mixes them**: its Buckle
+Party image is filenamed `HOKA_2022_WSER_MF_20220626`, a 2022 photograph used
+to illustrate a 2026 listing. So the FlyLab structure shown here may be this
+year's or an earlier one, and the captions say so rather than implying a date.
+
+**A separate HOKA page shows there was a FlyLab Trail in 2025 too**, which is
+why the undated photograph cannot simply be assumed to be 2026. That page gives
+"June 26th - 27th", Thursday and Friday -- weekdays that fit 2025 and not 2026
+-- and names the **Mafate X**, where this record's organiser source names the
+**Rocket X Trail**. It also carries a 2025 athlete programme the Atlas does not
+otherwise hold: a country radio listening session with Hayden Hawks, "The Art
+of Flying" with HOKA co-founder Nico Mermoud, a cold brew and bingo morning
+with Helen Mino Faukner, "Here for the Women's Race" shirt pickup with Corrine
+Malcolm, and crew-story interviews with Heather Jackson. **That is a 2025 space
+this Atlas has no record for**, and it is left as a lead rather than written up
+from one page.
+
+**Two stock photographs on the hub page were ignored.** Both are Unsplash
+files, which the picture rule excludes.
+
+**The photographer credits come from file names**, not from printed captions:
+`sydneylewis.photo` and `Webster`, the latter matching the page's own line
+"Photography: Luke W. Webster".
+
 **Only the organiser describes it.** Both agendas are the race's own pages; no
 HOKA page for the FlyLab was read. A fabricator's post describing the build is
 reported by a research pass and was not read, so its dimensions are not

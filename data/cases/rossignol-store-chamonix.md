@@ -177,6 +177,14 @@ Rossignol's store locator page for this address.
 show the ski-era fit-out; one, from the store locator, is undated and shows the
 trail range. The captions say which is which.
 
+**The two 2018 pictures were re-fetched at full size and resized.** They were
+first stored as the 1024px renditions the article page serves. The same two
+frames are on the same server as 5811×3916 and 6014×4013 originals, both
+carrying 14 May 2018 in their file data — one day after the opening the
+announcement gave as "foreseen on May 13, 2018". Those originals were
+downloaded and resized once to 2000px wide. The frames are unchanged; only the
+resolution is.
+
 **What is not known:** how many runners the tests take, their route or
 length, whether the test shoes are sold from the same room, and how the
 trail range is shown inside a store laid out in 2018 around skiwear.

@@ -48,6 +48,24 @@ tags:
   - community
   - product-trial
   - event-activation
+images:
+  - src: /images/cases/saucony-rush-delivery-depot-london/01-depot-interior.jpg
+    caption: >-
+      Inside the Depot: exposed brick and a roller conveyor carrying shoes,
+      lime-yellow pallet stacks printed "RUSH / saucony", shelving racked with
+      shoeboxes and crates, and lime diagonal stripes painted across the floor.
+      The room is empty of visitors in this frame.
+    credit: Retail Times (no photographer credited)
+    sourceUrl: https://retailtimes.co.uk/saucony-completes-delivery-of-rush-london-programme-closing-out-marathon-week-with-a-city-wide-series-of-activations/
+  - src: /images/cases/saucony-rush-delivery-depot-london/02-delivery-run.jpg
+    caption: >-
+      A group run through the City in black RUSH tops, several runners carrying
+      shoeboxes taped with lime "RUSH" tape. The picture is uncaptioned at the
+      source; the same article describes a "BRKEDOFF Delivery Run" with "a
+      surprise broke down delivery truck that left runners having to complete
+      the delivery".
+    credit: Retail Times (no photographer credited)
+    sourceUrl: https://retailtimes.co.uk/saucony-completes-delivery-of-rush-london-programme-closing-out-marathon-week-with-a-city-wide-series-of-activations/
 sources:
   - title: >-
       Saucony To Deliver Its RUSH Depot to Shoreditch for London Marathon Week
@@ -67,6 +85,26 @@ sources:
     url: https://sports-insight.co.uk/news/saucony-to-deliver-its-rush-depot-to-shoreditch-for-london-marathon-week/
     type: editorial
     accessed: 2026-09-22
+  - title: >-
+      Saucony completes delivery of RUSH London programme, closing out marathon
+      week with a city-wide series of activations — Fiona Briggs, published 27
+      April 2026, after the week. Reports the programme as run: "Saucony has
+      completed delivery of its RUSH London programme". "Running from April
+      21–25, RUSH transformed London into a live delivery route… anchored by
+      the RUSH Depot in Shoreditch." On the fit-out: "the space drew on the
+      visual language of industrial logistics – with warehouse-inspired
+      interiors, neon accents and functional detailing throughout. Conveyor
+      belts, dispatch-style graphics and shipping cues brought the delivery
+      narrative to life." Lists the Depot's fittings and the city-wide
+      programme, including "BRKEDOFF Delivery Run – community run from the RUSH
+      Depot with a surprise broke down delivery truck that left runners having
+      to complete the delivery". Notes "A full gallery of imagery and video
+      assets capturing the week's activity is now available". Source of both
+      images.
+    publisher: Retail Times
+    url: https://retailtimes.co.uk/saucony-completes-delivery-of-rush-london-programme-closing-out-marathon-week-with-a-city-wide-series-of-activations/
+    type: editorial
+    accessed: 2026-09-23
 ---
 
 ## Description
@@ -91,6 +129,15 @@ Nell's Kitchen on Friday 24; on Saturday 25 a shakeout run with The Weekend
 Project, "The Delivery Network", and a panel, "Make Fast Feel Easy". The first
 three were invite only. Hours were 11:00–20:00.
 
+**As built.** A report published two days after the week closed describes the
+room rather than the plan: "the space drew on the visual language of industrial
+logistics – with warehouse-inspired interiors, neon accents and functional
+detailing throughout. Conveyor belts, dispatch-style graphics and shipping cues
+brought the delivery narrative to life." The one retrieved photograph of the
+interior shows that literally — a roller conveyor carrying shoes, lime pallet
+stacks printed "RUSH", and lime stripes across the floor of an exposed-brick
+room.
+
 **Beyond the Depot:** a "Race the Delivery Driver" race against cargo bikes
 from Saucony's Covent Garden store on Tuesday 21 April, a citywide treasure
 hunt, and a finish-line activation "just outside the official marathon
@@ -106,12 +153,33 @@ include, rather than choose between them.
 **The source is trade press carrying the brand's announcement**, not a Saucony
 page; none was found. The wording reads as the brand's release.
 
-**Written from the plan.** The announcement is dated 6 April, before the
-Depot opened. Nothing retrieved confirms the week as run.
+**No longer written only from the plan.** The first source is dated 6 April,
+before opening. A second, published 27 April, reports the programme as
+completed and describes the built space, so the week is now confirmed as run.
 
-**No picture stored.** A listings magazine carries two "Depot Environment"
-images, published before opening — possibly renders. Their originals are
-about 24 and 28 MB each; they have not been requested.
+**The date contradiction is narrower, and the record may now be wrong.** The
+post-event report gives the programme as "Running from April 21–25", with no
+weekday attached. That matches the announcement's "21st April – 25th April" and
+suggests the error was the weekday name, "Thursday", rather than the date. The
+Depot may therefore have opened on Tuesday 21 April. The `date` field still
+reads 23–25, the range the Depot's own dated events cover; **it has not been
+changed on an inference and needs a decision.**
+
+**Two pictures, both from the same post-event trade article**, neither
+captioned on the page and neither carrying a photographer credit. The first is
+a photograph of the empty interior and corroborates the article's own
+description of conveyor belts and warehouse-inspired interiors. The second
+shows a group run carrying taped shoeboxes; the article describes a run of
+exactly that kind, but the page does not caption the picture, so the caption
+says so rather than asserting the match.
+
+**An official gallery exists and has not been retrieved.** The same article
+states that "a full gallery of imagery and video assets capturing the week's
+activity is now available", which is the obvious next source for this case.
+
+**Still no photograph from inside during opening hours** — no visitors appear
+in either frame. A listings magazine's two "Depot Environment" images were
+published before opening and may be renders; they remain unused.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

@@ -58,6 +58,48 @@ images:
       alt text: "Brooks Running inside The Now Building".
     credit: "Outernet London"
     sourceUrl: https://www.outernet.com/b2b/news/brooks-running-launches-pre-london-marathon-domination-campaign-at-outernet
+  - src: /images/cases/brooks-outernet-london/02-its-your-time-to-shine.jpg
+    caption: >-
+      The wrap-around screens running Brooks content: a burst of light over
+      cloud imagery, lettered "IT'S YOUR TIME TO SHINE" above the Brooks
+      wordmark, with visitors standing on the floor below.
+    credit: Drawlight (no photographer credited)
+    sourceUrl: https://www.drawlight.net/en/portfolio/brooks-hyperion-experience-london-marathon/
+  - src: /images/cases/brooks-outernet-london/03-atrium-crowd.jpg
+    caption: >-
+      The same space from the floor, crowded: the Brooks wordmark running up
+      the vertical screen at the left, cloud and light imagery overhead, and
+      visitors around low white plinths.
+    credit: Drawlight (no photographer credited)
+    sourceUrl: https://www.drawlight.net/en/portfolio/brooks-hyperion-experience-london-marathon/
+  - src: /images/cases/brooks-outernet-london/04-lets-run-there.jpg
+    caption: >-
+      The screens turned almost black, with prisms of colour across the ceiling
+      and the line "LET'S RUN THERE, LONDON." picked out on the far wall; a
+      queue of visitors along the right.
+    credit: Drawlight (no photographer credited)
+    sourceUrl: https://www.drawlight.net/en/portfolio/brooks-hyperion-experience-london-marathon/
+  - src: /images/cases/brooks-outernet-london/05-exterior.jpg
+    caption: >-
+      The building from the street, its façade screens carrying "LET'S RUN
+      THERE" and the Brooks wordmark in blue, with a London bus and passers-by
+      below. The only exterior view retrieved.
+    credit: Drawlight (no photographer credited)
+    sourceUrl: https://www.drawlight.net/en/portfolio/brooks-hyperion-experience-london-marathon/
+  - src: /images/cases/brooks-outernet-london/06-shoe-screen.jpg
+    caption: >-
+      A shoe run at full height on the screen above the entrance, with lighting
+      truss and rigging visible in the darkened space and visitors in Brooks
+      blue below.
+    credit: Drawlight (no photographer credited)
+    sourceUrl: https://www.drawlight.net/en/portfolio/brooks-hyperion-experience-london-marathon/
+  - src: /images/cases/brooks-outernet-london/07-now-building.jpg
+    caption: >-
+      The screens carrying a classical interior — a coffered dome, columns and
+      niches — turning the room into an imagined building, with the crowd
+      gathered beneath.
+    credit: Drawlight (no photographer credited)
+    sourceUrl: https://www.drawlight.net/en/portfolio/brooks-hyperion-experience-london-marathon/
 sources:
   - title: >-
       Brooks Running launches pre–London Marathon domination campaign at
@@ -85,6 +127,16 @@ sources:
     url: https://vergemagazine.co.uk/london-marathon-weekend-2026-brooks-running-takes-over-outernet-london-with-free-events-athlete-appearances-and-citywide-celebrations/
     type: editorial
     accessed: 2026-09-22
+  - title: >-
+      Brooks Hyperion Experience — London Marathon — the design studio's
+      portfolio page for the screen content. Describes immersive scenarios
+      staged at Outernet for the two days before the marathon. The page states
+      no year; the six images sit in the site's April 2026 upload folder.
+      Source of six images.
+    publisher: Drawlight
+    url: https://www.drawlight.net/en/portfolio/brooks-hyperion-experience-london-marathon/
+    type: agency-studio
+    accessed: 2026-09-23
 ---
 
 ## Description
@@ -123,12 +175,23 @@ Marathon". The record uses 24–25 April.
 this "the entire Outernet district" and pictures "The Now Building". The
 coordinate is Outernet's, precision `approximate`.
 
-**A design studio's credit is not used.** One studio's portfolio claims six
-"immersive scenarios" for a Brooks London Marathon experience at Outernet, but
-states no year; it is not in the record.
+**The design studio's pictures are now used, on inferred year.** Drawlight's
+portfolio page for a Brooks Hyperion experience at Outernet still **states no
+year** — that has not changed, and it is the weakest point in this record. What
+supports 2026 is circumstantial: the six files sit in the studio's `2026/04`
+upload folder, and Brooks' own release calls Outernet its first London Marathon
+footprint, which leaves no earlier edition for them to belong to. The author
+judged that sufficient. If a Brooks Outernet takeover from another year ever
+surfaces, these six are the first thing to re-check.
 
-**The picture is the venue's own**, from its case study, with its alt text
-"Brooks Running inside The Now Building".
+**The studio is credited, the photographer is not.** The page names no
+photographer, so the images carry the studio's name alone.
+
+**Seven pictures, one venue-supplied and six from the studio.** The first is
+the venue's own, with its alt text "Brooks Running inside The Now Building".
+The six are uncaptioned; their descriptions here are of what is visible in each
+frame, and the file names — including one reading "esterno", Italian for
+exterior — match what the pictures show.
 
 ## Strategic purpose
 *Not yet written.* This layer is the author's reading and has not been drafted.

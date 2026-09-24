@@ -12,14 +12,6 @@ export const metadata: Metadata = {
     "The brands covered by the Atlas, with the spatial strategies recorded for each.",
 };
 
-/** The picture a brand card is grounded on: the hero of the first of its cases
- *  that has one. Not a choice about which case matters most — it is whichever
- *  the register already orders first — so it is decoration rather than a
- *  claim, and the card carries no caption for it. */
-function heroFor(cards: { heroImage: string }[]): string {
-  return cards.find((c) => c.heroImage)?.heroImage ?? "";
-}
-
 export default function BrandsPage() {
   const atlas = getAtlas();
   const accentOf = (id: string) =>
@@ -56,38 +48,10 @@ export default function BrandsPage() {
       <div className="mx-auto w-full max-w-[1400px] px-4 py-10 sm:px-6 sm:py-14">
         <ul className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {rows.map(({ brand, cards, mix }) => (
-            <li key={brand.slug} className="card card-hover relative overflow-hidden">
-              {/* The ground the glass refracts. `.glass` only reads as glass
-                  when something with real contrast sits behind it — the events
-                  register spent a while as flat pastel blocks for exactly this
-                  reason, and the fix there was to put the photograph behind
-                  the panel. The same fix works here: a brand's card is
-                  grounded on the hero picture of one of its own cases. A brand
-                  with no cases yet has no picture, and falls back to its name
-                  set oversized, which keeps the glass honest rather than
-                  borrowing someone else's photograph. */}
-              {heroFor(cards) ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={heroFor(cards)}
-                  alt=""
-                  aria-hidden="true"
-                  className="pointer-events-none absolute inset-0 h-full w-full object-cover"
-                  loading="lazy"
-                />
-              ) : (
-                <span
-                  aria-hidden="true"
-                  className="display pointer-events-none absolute -bottom-7 -right-4 select-none whitespace-nowrap text-[6rem] text-ink/25"
-                >
-                  {brand.name}
-                </span>
-              )}
-              <span
-                aria-hidden="true"
-                className="glass glass-readable pointer-events-none absolute inset-0"
-              />
-
+            <li
+              key={brand.slug}
+              className="glass card-hover relative overflow-hidden rounded-[var(--radius-card)]"
+            >
               <Link
                 href={`/brands/${brand.slug}`}
                 className="group relative flex h-full flex-col gap-3 p-6"

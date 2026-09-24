@@ -4,6 +4,12 @@ country: ""
 category: road-running
 positioning: ""
 accent: "#0f172a"
+logo:
+  src: /images/brands/puma.png
+  caption: >-
+    PUMA's own mark, as the brand serves it from its own site.
+  credit: "PUMA"
+  sourceUrl: https://us.puma.com/assets/android-chrome-512x512.png
 status: partially-verified
 sources:
   - title: >-

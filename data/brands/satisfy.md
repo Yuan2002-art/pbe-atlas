@@ -5,6 +5,12 @@ founded: 2015
 category: lifestyle
 positioning: Running as counterculture; equipment for a trance state, not a race time.
 accent: "#c8371f"
+logo:
+  src: /images/brands/satisfy.png
+  caption: >-
+    Satisfy's own mark, as the brand serves it from its own site.
+  credit: "Satisfy"
+  sourceUrl: https://satisfyrunning.com/cdn/shop/files/FAVICON_0c956f7b-b354-4b46-b8cb-c49c53e33f99.png?width=512
 status: partially-verified
 sources:
   - title: "Brand Manifesto — \"Since launching in 2015, SATISFY® develops technical equipment that reduces distractions to help runners unlock the High\""

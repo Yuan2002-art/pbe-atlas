@@ -5,6 +5,12 @@ founded: 1947
 category: trail
 positioning: Mountain sport engineering, legitimised through competition.
 accent: "#1e4fd8"
+logo:
+  src: /images/brands/salomon.png
+  caption: >-
+    Salomon's own mark, as the brand serves it from its own site.
+  credit: "Salomon"
+  sourceUrl: https://www.salomon.com/favicons/icon-512.png
 status: partially-verified
 sources:
   - title: "Who we are — \"Founded in 1947 in Annecy, in the heart of the French Alps\"; the 1957 \"Skade\" ski-binding toe piece; the move from snow to trail via the XA PRO (2002), S/LAB (2005) and XT-6 (2013)"

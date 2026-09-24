@@ -4,6 +4,12 @@ country: ""
 category: road-running
 positioning: ""
 accent: "#15803d"
+logo:
+  src: /images/brands/bandit.png
+  caption: >-
+    Bandit's own mark, as the brand serves it from its own site.
+  credit: "Bandit"
+  sourceUrl: https://www.runbandit.com/android-chrome-512x512.png
 status: partially-verified
 sources:
   - title: >-

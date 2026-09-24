@@ -5,6 +5,12 @@ founded: 2018
 category: other
 positioning: ""
 accent: "#0f766e"
+logo:
+  src: /images/brands/big-mountain-brewing.png
+  caption: >-
+    Big Mountain Brewing Co.'s own mark, as the brand serves it from its own site.
+  credit: "Big Mountain Brewing Co."
+  sourceUrl: https://www.bigmtnbrew.co/wp-content/uploads/2024/04/cropped-BM_Icon_White-192x192.png
 status: partially-verified
 sources:
   - title: >-

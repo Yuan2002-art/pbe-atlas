@@ -5,6 +5,12 @@ founded: 1935
 category: outdoor
 positioning: Japanese technical apparel; precision and restraint over expression.
 accent: "#16161a"
+logo:
+  src: /images/brands/descente.png
+  caption: >-
+    Descente's own mark, as the brand serves it from its own site.
+  credit: "Descente"
+  sourceUrl: https://www.descente.com/content/images/size/w256h256/format/png/2024/08/descente-logo-1.svg
 status: partially-verified
 sources:
   - title: "History — \"Since our founding in 1935, DESCENTE has continuously developed performance products across multiple brands…\" and \"February 1935 'Tsuruya', the predecessor of DESCENTE, was founded by Takeo Ishimoto.\""

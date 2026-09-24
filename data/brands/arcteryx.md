@@ -5,6 +5,12 @@ founded: 1989
 category: outdoor
 positioning: Alpine technical authority, sold through expertise rather than image.
 accent: "#16161a"
+logo:
+  src: /images/brands/arcteryx.png
+  caption: >-
+    Arc'teryx's own mark, as the brand serves it from its own site.
+  credit: "Arc'teryx"
+  sourceUrl: https://arcteryx.com/apple-touch-icon.png
 status: partially-verified
 sources:
   - title: "Who we are — \"Founded by a crew of Vancouver, Canada-based climbers in 1989, we started as a basement operation, crafting high-quality climbing harnesses and packs\""

@@ -4,6 +4,12 @@ country: United States
 category: road-running
 positioning: Sport as mass culture; ACG as its technical, outdoor-facing edge.
 accent: "#16161a"
+logo:
+  src: /images/brands/nike-running-acg.png
+  caption: >-
+    Nike Running / ACG's own mark, as the brand serves it from its own site.
+  credit: "Nike Running / ACG"
+  sourceUrl: https://www.nike.com/android-icon-192x192.png
 status: partially-verified
 sources:
   - title: "The Origin Story of Nike's Outdoor Category: All Conditions Gear — dates ACG's debut to 1989 (\"Released before ACG's 1989 debut, the Lava Dome was one of Nike's first lightweight hiking shoes\") and describes ACG as a fully integrated line for athletes who ran, hiked, climbed and explored outdoors"

@@ -255,6 +255,15 @@ export const BrandFrontmatterSchema = z.strictObject({
   category: z.string().default("other"),
   /** One line on how the brand positions itself. */
   positioning: z.string().default(""),
+  /** The brand's own wordmark or logo, used to identify it in the register.
+   *
+   *  It carries the same `credit` and `sourceUrl` discipline as every other
+   *  picture here, for the same reason: a mark taken from somewhere unstated
+   *  is an unsourced claim about what the brand's identity looks like. Files
+   *  live in `public/images/brands/`. A brand without one renders as type
+   *  alone, which is an honest empty state rather than a gap to fill with a
+   *  stand-in. */
+  logo: ImageSchema.nullable().default(null),
   /** Optional hex colour used sparingly in brand views. */
   accent: z
     .string()

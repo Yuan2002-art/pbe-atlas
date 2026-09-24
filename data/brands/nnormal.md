@@ -5,6 +5,12 @@ founded: 2022
 category: trail
 positioning: ""
 accent: "#3f6212"
+logo:
+  src: /images/brands/nnormal.png
+  caption: >-
+    NNormal's own mark, as the brand serves it from its own site.
+  credit: "NNormal"
+  sourceUrl: https://www.nnormal.com/apple-touch-icon.png
 status: partially-verified
 sources:
   - title: >-

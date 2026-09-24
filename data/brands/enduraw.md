@@ -4,6 +4,12 @@ country: France
 category: other
 positioning: ""
 accent: "#0f766e"
+logo:
+  src: /images/brands/enduraw.png
+  caption: >-
+    Enduraw's own mark, as the brand serves it from its own site.
+  credit: "Enduraw"
+  sourceUrl: https://enduraw.co/logo192.png
 status: partially-verified
 sources:
   - title: >-

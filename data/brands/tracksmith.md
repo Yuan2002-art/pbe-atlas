@@ -4,6 +4,12 @@ country: ""
 category: road-running
 positioning: ""
 accent: "#1e3a5f"
+logo:
+  src: /images/brands/tracksmith.png
+  caption: >-
+    Tracksmith's own mark, as the brand serves it from its own site.
+  credit: "Tracksmith"
+  sourceUrl: https://assets.tracksmith.com/imgs/apple-touch-icon.png
 status: partially-verified
 sources:
   - title: >-

@@ -326,6 +326,15 @@ body {
     );
   }
 
+  /* Glass with a page of text on it. The 42% tint is right over a basemap and
+     wrong over a photograph with body copy on top: the picture reads through
+     the paragraph and the paragraph loses. `--glass-strong` is the token the
+     locator thumbnails already use for the same reason, and it keeps enough
+     of the picture to tint the panel without competing with the type. */
+  .glass-readable {
+    background: var(--glass-strong);
+  }
+
   /* Without backdrop-filter the panel would be a 42%-opaque wash over a map,
      which is unreadable rather than merely weaker. It falls back to solid
      paper, and the sheen comes off with it. */

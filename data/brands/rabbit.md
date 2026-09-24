@@ -3,6 +3,12 @@ name: rabbit
 country: United States
 category: road-running
 positioning: ""
+logo:
+  src: /images/brands/rabbit.png
+  caption: >-
+    rabbit's own mark, as the brand serves it from its own site.
+  credit: "rabbit"
+  sourceUrl: https://www.runinrabbit.com/cdn/shop/files/rabbit-only-blue_228x228.png?width=512&v=1640212009
 status: partially-verified
 sources:
   - title: "Our Story — \"Co-founder Jill Deering can remember the exact moment in 2013 when rabbit was conceived… She texted local ultrarunner and running store owner, Monica DeVreese\"; describes an outlook \"rooted in a California culture\" and Monica DeVreese's own shop, Santa Barbara Running"

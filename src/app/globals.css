@@ -173,32 +173,30 @@ body {
   }
   .btn-primary:hover { opacity: 0.85; }
 
-  /* Back — the one control every record page needs, so it is sized to be
-     found rather than hunted for. It was a 10px mono arrow and read as a
-     typographic mark rather than a button; this gives it a real target and a
-     visible edge. Over a photograph `.on-photo` flips its colours, which is
-     why the border and background are written in currentColor terms. */
+  /* Back — the one control every record page needs. It was a 10px mono arrow
+     and read as punctuation rather than a button. It carries `.glass` in the
+     markup instead of a background of its own: a case hero is usually a dark
+     photograph, and a dark pill on it disappears, while liquid glass reads as
+     a bright object against exactly that. Layout and size only here; the
+     glass supplies the surface. */
   .btn-back {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.55rem;
-    min-width: 2.75rem;
-    min-height: 2.75rem;
-    padding: 0 0.9rem;
+    gap: 0.5rem;
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    padding: 0 0.7rem;
     border-radius: var(--radius-pill);
-    border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
-    background: color-mix(in srgb, var(--paper-raised) 78%, transparent);
     color: var(--ink);
     font-family: var(--font-mono), monospace;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1;
-    backdrop-filter: blur(6px);
-    transition: border-color 160ms ease, background 160ms ease;
+    transition: box-shadow 160ms ease, transform 160ms ease;
   }
   .btn-back:hover {
-    border-color: currentColor;
-    background: var(--paper-raised);
+    transform: translateY(-1px);
+    box-shadow: var(--glass-rim), 0 14px 30px -10px rgba(22, 22, 26, 0.34);
   }
   .btn-back__label {
     font-size: 10px;
@@ -376,16 +374,13 @@ body {
   color: var(--paper-raised);
 }
 
-/* Over a photograph the rule above turns the back button's text white, so its
-   pill has to go dark or the two cancel out. Unlayered for the same reason as
-   the rest of this block: it must beat `.btn-back` in @layer components. */
-.on-photo .btn-back {
-  background: color-mix(in srgb, var(--ink) 45%, transparent);
-  border-color: color-mix(in srgb, var(--paper-raised) 55%, transparent);
-}
-.on-photo .btn-back:hover {
-  background: color-mix(in srgb, var(--ink) 72%, transparent);
-  border-color: var(--paper-raised);
+/* The rule above turns every link in a photo header white, which would make
+   the back button's arrow vanish into its own glass. The glass is the light
+   surface here, so the mark on it stays dark. Unlayered for the same reason as
+   the rest of this block: it has to beat `.on-photo a`. */
+.on-photo .btn-back,
+.on-photo a.btn-back {
+  color: var(--ink);
 }
 .on-photo .display { text-shadow: 0 1px 24px rgba(10, 10, 12, 0.45); }
 .on-photo a { text-decoration-color: rgba(255, 255, 255, 0.55); }

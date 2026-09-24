@@ -30,7 +30,7 @@ export function BackLink({ fallback }: { fallback: { href: string; label: string
 
   if (!canGoBack) {
     return (
-      <Link href={fallback.href} className="btn-back" title={fallback.label}>
+      <Link href={fallback.href} className="glass btn-back" title={fallback.label}>
         <span aria-hidden="true">←</span>
         <span className="btn-back__label">{fallback.label}</span>
       </Link>
@@ -42,7 +42,7 @@ export function BackLink({ fallback }: { fallback: { href: string; label: string
       type="button"
       onClick={() => router.back()}
       aria-label="Go back"
-      className="btn-back"
+      className="glass btn-back"
     >
       <span aria-hidden="true">←</span>
     </button>

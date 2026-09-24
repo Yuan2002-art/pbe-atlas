@@ -74,19 +74,26 @@ export default function AboutPage() {
             says so in its verification notes rather than leaving a silent gap.
           </p>
 
-          <div className="hatch-placeholder mb-6 rounded-[var(--radius-card)] border px-5 py-4" style={{ borderColor: "var(--red)" }}>
-            <p className="label-lg" style={{ color: "var(--red)" }}>
-              This build contains {tally.placeholder} placeholder case
-              {tally.placeholder === 1 ? "" : "s"} of {atlas.cases.length}
-            </p>
-            <p className="mt-2 max-w-[70ch] text-[13.5px] leading-snug">
-              The cases in this prototype were invented to test the structure of the
-              Atlas — the brands are real, the spaces described are not. They exist so
-              the map, the filters and the comparison views can be evaluated before
-              research begins. Replace them file by file; the status label on each
-              record is what tells you which is which.
-            </p>
-          </div>
+          {/* Only shown while placeholders actually exist. It used to render
+              unconditionally, so after the last invented case was deleted the
+              page still told readers "the spaces described are not" real — a
+              standing claim about the data that the data had stopped
+              supporting. Same failure as the old footer banner. */}
+          {tally.placeholder > 0 && (
+            <div className="hatch-placeholder mb-6 rounded-[var(--radius-card)] border px-5 py-4" style={{ borderColor: "var(--red)" }}>
+              <p className="label-lg" style={{ color: "var(--red)" }}>
+                This build contains {tally.placeholder} placeholder case
+                {tally.placeholder === 1 ? "" : "s"} of {atlas.cases.length}
+              </p>
+              <p className="mt-2 max-w-[70ch] text-[13.5px] leading-snug">
+                The cases in this prototype were invented to test the structure of the
+                Atlas — the brands are real, the spaces described are not. They exist so
+                the map, the filters and the comparison views can be evaluated before
+                research begins. Replace them file by file; the status label on each
+                record is what tells you which is which.
+              </p>
+            </div>
+          )}
 
           <dl className="border-t border-rule">
             {STATUS_NOTES.map((item) => (
@@ -133,6 +140,49 @@ export default function AboutPage() {
               </div>
             ))}
           </dl>
+
+          <p className="label mt-8 mb-3" style={{ color: "var(--ink)" }}>
+            Pictures
+          </p>
+          <p className="prose-atlas mb-4 text-graphite">
+            A photograph is the most convincing thing on a page, so every picture here
+            carries a credit, a link to where it came from, and a caption that says
+            what it actually is. Many of them are <em>not</em> photographs of the space
+            — for a dozen of these spaces no such photograph has been published by
+            anyone — and the caption says so rather than letting key art, a product
+            shot or an empty venue stand in for the room. Nothing is ever illustrated
+            with a stand-in photograph, and no picture from another year is presented
+            as this one.
+          </p>
+          <dl className="border-t border-rule">
+            {[
+              ["Photograph of the space", "The space itself, at that edition. The strongest kind, and the rarest."],
+              ["Brand or agency visual", "Key art, programme graphics, maps, renders. What the brand published, which is itself the subject of this Atlas."],
+              ["Product shot", "Products the record names, usually on a plain ground. Evidence of what was sold, not of the room."],
+              ["The venue building", "Official photographs of the building, often taken before the brand arrived and captioned as the building rather than the installation."],
+              ["Social media", "First-party accounts only — the brand's, the organiser's, the venue's, the agency's or a named photographer's. The handle, the post and its date are recorded, and the post's date is never assumed to be the photograph's."],
+            ].map(([label, note]) => (
+              <div
+                key={label}
+                className="grid gap-x-8 gap-y-1 border-b border-rule py-3 md:grid-cols-[minmax(0,14rem)_minmax(0,1fr)]"
+              >
+                <dt className="label-lg" style={{ color: "var(--ink)" }}>
+                  {label}
+                </dt>
+                <dd className="max-w-[70ch] text-[13.5px] leading-snug text-graphite">
+                  {note}
+                </dd>
+              </div>
+            ))}
+          </dl>
+          <p className="prose-atlas mt-4 text-graphite">
+            Two traps caught this research often enough to be worth naming. Brands
+            illustrate a new year&apos;s page with an old year&apos;s photograph — one
+            2026 race page carries a picture taken in 2025, another carries a file named
+            for 2022. And a travelling modular structure looks identical wherever it is
+            put up, so a photograph of one proves nothing about which race it stood at.
+            Where a year could not be established, the caption refuses to claim one.
+          </p>
         </section>
 
         {/* Spatial types */}

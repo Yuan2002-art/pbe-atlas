@@ -55,9 +55,17 @@ body {
   outline-offset: 2px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* This one has to be layered, and the reason is the same one written below.
+   Unlayered, `a { color: inherit }` beat `.btn-primary`'s own colour, so the
+   "Open case" link on the map preview card inherited the card's dark ink and
+   rendered black text on a black pill — the text was there and invisible.
+   Inside @layer base it sits below @layer components, which is what every
+   button class already assumes. */
+@layer base {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -164,6 +172,39 @@ a {
     transition: opacity 160ms ease;
   }
   .btn-primary:hover { opacity: 0.85; }
+
+  /* Back — the one control every record page needs, so it is sized to be
+     found rather than hunted for. It was a 10px mono arrow and read as a
+     typographic mark rather than a button; this gives it a real target and a
+     visible edge. Over a photograph `.on-photo` flips its colours, which is
+     why the border and background are written in currentColor terms. */
+  .btn-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    padding: 0 0.9rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+    background: color-mix(in srgb, var(--paper-raised) 78%, transparent);
+    color: var(--ink);
+    font-family: var(--font-mono), monospace;
+    font-size: 15px;
+    line-height: 1;
+    backdrop-filter: blur(6px);
+    transition: border-color 160ms ease, background 160ms ease;
+  }
+  .btn-back:hover {
+    border-color: currentColor;
+    background: var(--paper-raised);
+  }
+  .btn-back__label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
 
   .btn-quiet {
     display: inline-flex;
@@ -333,6 +374,18 @@ a {
 .on-photo .display,
 .on-photo a {
   color: var(--paper-raised);
+}
+
+/* Over a photograph the rule above turns the back button's text white, so its
+   pill has to go dark or the two cancel out. Unlayered for the same reason as
+   the rest of this block: it must beat `.btn-back` in @layer components. */
+.on-photo .btn-back {
+  background: color-mix(in srgb, var(--ink) 45%, transparent);
+  border-color: color-mix(in srgb, var(--paper-raised) 55%, transparent);
+}
+.on-photo .btn-back:hover {
+  background: color-mix(in srgb, var(--ink) 72%, transparent);
+  border-color: var(--paper-raised);
 }
 .on-photo .display { text-shadow: 0 1px 24px rgba(10, 10, 12, 0.45); }
 .on-photo a { text-decoration-color: rgba(255, 255, 255, 0.55); }

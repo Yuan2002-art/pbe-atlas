@@ -364,12 +364,38 @@ uses; there is deliberately no second copy of the rules.
   renders) and product shots of the products the case names; official photos of
   the venue building. Each caption says which it is ("a graphic, not a
   photograph of the space"; "the building as listed, not the installation").
-  Never a social-media CDN (Instagram, Facebook…), stock, or another year's
-  photo passed off as this one. The cited sources are usually pre-event
-  announcements with no photos — look further: builders' and art directors'
-  portfolios, post-event newsletters, trade press. Downloads are batched and
-  approved by the author first; every picture is then looked at before it is
-  captioned, and anything over 2000px is resized with `sharp`.
+  Never stock, and never another year's photo passed off as this one. The cited
+  sources are usually pre-event announcements with no photos — look further:
+  builders' and art directors' portfolios, post-event newsletters, trade press.
+  Downloads are batched and approved by the author first; every picture is then
+  looked at before it is captioned, and anything over 2000px is resized with
+  `sharp`.
+
+  **Social media is allowed, and is often the only place the space was
+  photographed.** The blanket ban on Instagram and Facebook was lifted by the
+  author in September 2026, because it was costing the Atlas the pictures. What
+  it was protecting against still has to be handled, so four conditions replace
+  it:
+
+  1. **First-party accounts only** — the brand's, the organiser's, the
+     venue's, the agency's, or a named photographer's own account. A repost, a
+     fan account or an aggregator is not a source, for the same reason an
+     aggregator is not a source for a case.
+  2. **Provenance is recorded in full**: the account handle, the post url and
+     the post's own date go in the caption or the source entry. An Instagram
+     post is a dated publication by a known party, and that is exactly what
+     makes it usable.
+  3. **The post's date is not the photograph's date.** Brands repost old
+     material constantly. The year still has to be established the same way it
+     is anywhere else, and where it cannot be, the caption says so.
+  4. **Files are stored locally, always.** Instagram and Facebook CDN urls are
+     signed and expire; a hotlink is a broken image in a month.
+
+  The access limit in rule 7 is unchanged: **one post, opened once, by hand.**
+  That is a rule about not hammering a site whose terms forbid automated
+  collection, not a rule about what a picture may show, and lifting the picture
+  ban does not lift it. No crawling an account, no walking a hashtag, no
+  scripted downloads across many posts.
 
   **Pictures must be visible where people browse.** The card carries
   `heroImage` (the first image) and `CaseThumb` draws it in the register, the
@@ -423,8 +449,11 @@ uses; there is deliberately no second copy of the rules.
   article never mentions, a 2023 page called 2025, alt text invented by a
   summariser) that every quote was re-read on the live page before it went in.
   WebFetch paraphrases; for quotes, read the page text in the browser.
-- **Don't loop over Instagram.** One post opened once, read from its page
-  metadata, is the limit (rule 7).
+- **Don't loop over Instagram.** One post opened once is the limit (rule 7) —
+  open it by hand, read it, take what it holds. Since September 2026 that
+  includes its **pictures**, under the four conditions in the picture rule.
+  What is still forbidden is the automated part: crawling an account, walking a
+  hashtag, or scripting downloads across many posts.
 - **Leads closed without a case** are listed, with reasons, in
   `research/README.md`, so they are not researched twice.
 

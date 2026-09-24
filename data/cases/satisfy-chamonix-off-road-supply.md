@@ -103,6 +103,21 @@ images:
     credit: "SATISFY"
     sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
 sources:
+  - title: >-
+      SATISFY's own Instagram post, @satisfyrunning, dated 24 August 2026 and
+      opened once by hand. Reports the space as open and already in use rather
+      than announced: "Our Chamonix Off-Road Supply and Fuel Station is now
+      open. A week-long high-altitude outpost for exclusive gear, daily
+      community runs and topping up before and after every outing." "This
+      morning, Run 1 was done and dusted, and the Fuel Station served its
+      purpose and our guests. Coffee poured, legs still warm from the south
+      balconies, a place to swap stories before browsing the Supply's exclusive
+      gear." "The Off-Road Supply and Fuel Station are open from now through
+      August 29, 10 AM to 6 PM, at 133 Chemin du Nant Favre."
+    publisher: SATISFY
+    url: https://www.instagram.com/p/DcbYz0GEReH/
+    type: official-brand
+    accessed: 2026-09-23
   - title: "Chamonix Off-Road Supply"
     publisher: SATISFY
     url: https://satisfyrunning.com/pages/chamonix-off-road-supply
@@ -149,6 +164,21 @@ Nant Favre but not house number 133, so the pin is on the street, not the door.
 
 **No agency, studio or production partner is credited anywhere** — for any
 edition. The field is absent rather than guessed.
+
+**The week is now confirmed as having actually run.** Everything else in this
+record was written from pages published before it, which is why the earlier
+note said nothing confirmed the week as run. The brand's own post on the
+opening day reports it in the past tense -- "Run 1 was done and dusted", "Coffee
+poured", "the Fuel Station served its purpose and our guests" -- and repeats
+the hours, the closing date and the address the Description already carried
+from the activation page. It corroborates rather than corrects them. The one
+detail it adds is atmospheric rather than factual: runners arriving "with legs
+still warm from the south balconies".
+
+**The post's own picture was not used.** Opened without an account, Instagram
+serves one 640x640 square crop per post and does not render the rest of a
+carousel; that crop is a corner of an awning against the valley, not a
+photograph of the space. The text was worth the visit and the image was not.
 
 **"Suture Jacket" is eyewear, and the name invites the wrong reading.**
 "Jacket" is Oakley's own term for a frame, not a garment. The page describes

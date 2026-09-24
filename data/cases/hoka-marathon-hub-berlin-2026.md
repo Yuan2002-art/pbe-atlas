@@ -45,6 +45,25 @@ product: ""
 tags:
   - community
   - event-activation
+images:
+  - src: /images/cases/hoka-marathon-hub-berlin-2026/01-lineup.jpg
+    caption: >-
+      The week's line-up, published by the station: "22.09-27.09" over forty-odd
+      names, with the HOKA and Refuge Worldwide marks beneath. A graphic, and
+      the only image here whose dates match the record exactly.
+    credit: "Refuge Worldwide / HOKA"
+    sourceUrl: https://refugeworldwide.com/news/hoka-hub
+  - src: /images/cases/hoka-marathon-hub-berlin-2026/02-studio-session.jpg
+    caption: >-
+      A DJ at a mixer in front of a wall-sized street map of Berlin lettered
+      "HOKA RUN CLUB", with "Together we fly higher" on a panel at the left.
+      **The year is unsettled**: the file is named for 2026, an earlier research
+      pass read a capture date of 30 August 2025 from the original, and the site
+      now serves its images through a proxy that strips that data, so it could
+      not be re-checked. Nothing identifies the room as the Leipziger Strasse
+      hub. Published as this page's header image.
+    credit: "Refuge Worldwide"
+    sourceUrl: https://refugeworldwide.com/news/hoka-hub
 sources:
   - title: >-
       Refuge Worldwide x HOKA Berlin Marathon radio pop-up — Refuge Worldwide,
@@ -63,7 +82,7 @@ sources:
       from 20:00. "Location: Leipziger Str. 60, 10117 Berlin".
     publisher: Refuge Worldwide
     url: https://refugeworldwide.com/news/hoka-hub
-    type: other
+    type: official-brand
     accessed: 2026-09-22
 ---
 
@@ -88,6 +107,20 @@ create a cheer zone for the runners going by… Come join us at kilometre 40!"
 September; 08:00–16:00 on race day, then an afterparty from 20:00.
 
 ## Verification notes
+**Two pictures, and only the graphic is certainly this week.** The line-up
+carries "22.09-27.09", which is the record's own range. The photograph is the
+page's header and shows a HOKA-branded studio session, but three things are
+wrong with dating it: its filename says 2026 while a research pass read **30
+August 2025** off the original file; that reading could not be repeated,
+because the station now serves images through a proxy that strips the
+metadata; and the filename also contains "Converse", which belongs to neither
+party here. Nothing in the frame identifies the Leipziger Strasse hub. It is
+included because it is the station's own published image of a HOKA session and
+this record had none, and the caption carries every one of those doubts.
+
+**No photograph of the hub itself exists yet.** It opened on 22 September and
+closes on race day, 27 September. This is the record to revisit first.
+
 **Announced, and opening today.** This record was written on 22 September
 2026, the hub's opening day and five days before the race. It is the plan as
 published, not an account of the week.

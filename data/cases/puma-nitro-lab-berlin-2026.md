@@ -46,7 +46,41 @@ tags:
   - limited-drop
   - collaboration
   - event-activation
+images:
+  - src: /images/cases/puma-nitro-lab-berlin-2026/01-another-cotton-lab.jpg
+    caption: >-
+      The collaboration's key visual: a runner's legs in pink socks crossing a pale ground, the PUMA cat and the word "another" over the top. From Another Cotton Lab's own sign-up page.
+    credit: "Another Cotton Lab"
+    sourceUrl: https://anothercotton.com/pages/sign-up-puma
+  - src: /images/cases/puma-nitro-lab-berlin-2026/02-deviate-pure.jpg
+    caption: >-
+      Cream and pink shoes being pulled on over pink PUMA socks, from the same page. The page names "the exclusive PUMA x Another Cotton Lab Deviate Pure" and a release date of 24.09.2026, but does not label this image with the model.
+    credit: "Another Cotton Lab"
+    sourceUrl: https://anothercotton.com/pages/sign-up-puma
+  - src: /images/cases/puma-nitro-lab-berlin-2026/03-berlin-press-image.jpg
+    caption: >-
+      **PUMA's press image for Berlin, which is its London installation with the city changed.** Same camera position, same treadmills and barriers, same screens - including the same live readings, "Franc", "Sondre", "1K SMASHED 14:38" and "HANZO 2:30" - as the photograph on this Atlas's London record, credited there to Proper Magazine from April 2026. Only the corner tile differs: LDN there, BLN here. Timing data from one session cannot be identical in two cities. It is stored as what PUMA published for Berlin, not as a picture of Berlin.
+    credit: "PUMA, via SNKR Today"
+    sourceUrl: https://snkrtoday.com/puma-another-cotton-lab-deviate-pure-nitro-berlin-2026/
 sources:
+  - title: >-
+      PUMA x Another Cotton Lab - the collaborator's own sign-up page, naming
+      "the exclusive PUMA x Another Cotton Lab Deviate Pure" and "RELEASE
+      24.09.2026". Source of two images.
+    publisher: Another Cotton Lab
+    url: https://anothercotton.com/pages/sign-up-puma
+    type: official-brand
+    accessed: 2026-09-23
+  - title: >-
+      Trade coverage of the Berlin NITRO Lab carrying PUMA's press image, which
+      it captions as a NITRO Lab publicity photograph accompanying the Berlin
+      news. Cited as the source of that image and of the opening hours it
+      gives: 24-26 September 10:00-19:00, 27 September 08:30-19:00, 28
+      September 10:00-16:00, Berlin time.
+    publisher: SNKR Today
+    url: https://snkrtoday.com/puma-another-cotton-lab-deviate-pure-nitro-berlin-2026/
+    type: editorial
+    accessed: 2026-09-23
   - title: >-
       PUMA energises Berlin from beyond the start line with marathon takeover
       — Sports Insight, 14 September 2026, carrying PUMA's announcement. "the
@@ -88,6 +122,28 @@ Berlin." On Saturday 26 September PUMA and Another Cotton Lab host a "Run &
 Rave" 5 km shakeout with a local DJ.
 
 ## Verification notes
+**The press image PUMA issued for Berlin is its London room, retouched.** This
+was checked rather than assumed. The Berlin image was placed beside this
+Atlas's own `puma-nitro-lab-london/02-speed-trial.jpg` and compared: identical
+camera position, treadmills, barriers, ceiling and screen layout, and identical
+**live data** - the leaderboard names "Franc" and "Sondre", "1K SMASHED 14:38",
+"HANZO 2:30". One tile differs, LDN against BLN. Timing from a single session
+cannot recur in another city. Which came first is also settled: the London copy
+is credited to Proper Magazine's April 2026 piece on the ICA, and PUMA's Berlin
+kit is dated 14 September 2026.
+
+It is stored here because **what this Atlas records is what brands publish**,
+and this is what PUMA published for Berlin. The caption refuses the city. It is
+placed third so that it is not the record's hero.
+
+**A second doubt follows, and it reaches back to the London record.** A
+photograph whose city tile can be swapped may be a render or a pre-opening set
+shot rather than a picture of a room in use. That doubt now attaches to the
+London image too, which is live on this site.
+
+**No photograph of the Berlin NITRO Lab exists in the record.** It opens on 24
+September at the 39 km mark; revisit after the race.
+
 **Announced, not yet open.** Written on 22 September 2026.
 
 **No address is published.** Only "the 39km mark on the marathon course". The

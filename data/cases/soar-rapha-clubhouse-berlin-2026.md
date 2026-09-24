@@ -43,7 +43,32 @@ tags:
   - collaboration
   - retail
   - event-activation
+images:
+  - src: /images/cases/soar-rapha-clubhouse-berlin-2026/01-berlin-26.jpg
+    caption: >-
+      SOAR's own header for the residency: the television tower drawn in yellow on red, lettered "BERLIN '26" with the SOAR and Rapha marks beneath. A graphic.
+    credit: "SOAR"
+    sourceUrl: https://www.soarrunning.com/pages/berlin-26
+  - src: /images/cases/soar-rapha-clubhouse-berlin-2026/02-dates-graphic.jpg
+    caption: >-
+      Rapha's graphic for the same residency, reading "25th - 28th September / soar Rapha." over a halftoned red and yellow ground - the dates this record uses, in the host's own material.
+    credit: "Rapha"
+    sourceUrl: https://content.rapha.cc/de/de/clubhouses/berlin
+  - src: /images/cases/soar-rapha-clubhouse-berlin-2026/03-rapha-clubhouse.jpg
+    caption: >-
+      Inside the Rapha Berlin Clubhouse: bicycles along the left, framed prints, a crowd seated on benches and a low timber platform, the street through the glazing. **The venue in ordinary use, not the SOAR residency** - it was published on Rapha's clubhouse page before this event, and the crowd is a cycling one.
+    credit: "Rapha"
+    sourceUrl: https://content.rapha.cc/de/de/clubhouses/berlin
 sources:
+  - title: >-
+      Rapha Berlin Clubhouse - the host's own page, which carries the
+      residency graphic reading "25th - 28th September / soar Rapha." and gives
+      the clubhouse address as Alte Schonhauser Strasse 5, 10119. Source of two
+      images.
+    publisher: Rapha
+    url: https://content.rapha.cc/de/de/clubhouses/berlin
+    type: official-brand
+    accessed: 2026-09-23
   - title: >-
       SOAR x Berlin '26 — the brand's own page. "Berlin Marathon Weekend. 25–28
       September." "SOAR comes to the Berlin Marathon with a four-day Clubhouse
@@ -76,6 +101,21 @@ Rapha Berlin, the pace turns every 2km, moving from 5:30/km down to 3:50/km."
 the morning shift."
 
 ## Verification notes
+**Three pictures, and the only photograph is of the venue before the
+residency.** The two graphics are the brands' own and carry the dates. The
+interior shot is Rapha's own picture of its clubhouse in normal trading, with a
+cycling audience in it; it is here because the room is the subject of this
+record, and the caption refuses to let it read as the SOAR week.
+
+**Rapha's page settles the address.** Alte Schonhauser Strasse 5, 10119 - the
+host's own statement, which the record previously held in a garbled form.
+
+**Three SOAR photographs were rejected.** Runners at the East Side Gallery,
+shot by Florian Kurrasch for mas.independent, belong to a SOAR apparel campaign
+rather than this residency, and carry no year.
+
+**Revisit after 28 September**, when the residency closes.
+
 **Announced, not yet open.** Written on 22 September 2026.
 
 **The printed address is garbled.** The page gives "Alte Schönhauser Straße /

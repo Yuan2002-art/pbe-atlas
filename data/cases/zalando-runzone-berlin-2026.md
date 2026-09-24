@@ -39,7 +39,26 @@ tags:
   - community
   - retail
   - event-activation
+images:
+  - src: /images/cases/zalando-runzone-berlin-2026/01-pop-kudamm-night.jpg
+    caption: >-
+      The venue at dusk: a stacked container structure on Kurfurstendamm with "POP" in neon across its upper floor, traffic streaking past. From the studio that built it; it dates the project 2025, so this is the building rather than the RunZone.
+    credit: "Concrete Candy"
+    sourceUrl: https://www.concretecandy.de/en/kudamm-229-berlin
+  - src: /images/cases/zalando-runzone-berlin-2026/02-pop-kudamm-aerial.jpg
+    caption: >-
+      The same structure from above, wedged against the Karstadt block on the boulevard, with a bus passing. Again the building as built in 2025, not this weekend's fit-out.
+    credit: "Concrete Candy"
+    sourceUrl: https://www.concretecandy.de/en/kudamm-229-berlin
 sources:
+  - title: >-
+      Kudamm 229, Berlin - the build studio's own project page for the venue
+      Zalando occupies, dated "Year: 2025". Source of two photographs of the
+      structure.
+    publisher: Concrete Candy
+    url: https://www.concretecandy.de/en/kudamm-229-berlin
+    type: agency-studio
+    accessed: 2026-09-23
   - title: >-
       Zalando RUNZONE — the brand's event microsite, "© 2026 Zalando operated by
       act.3 GmbH". "START AS A RUNNER. FINISH AS A BERLINER." "All marathon
@@ -69,6 +88,24 @@ to wear, how to move, what to eat, and where to go once you leave".
 18:00–23:00, after the race.
 
 ## Verification notes
+**Two pictures, both of the building and neither of the RunZone.** They come
+from the studio that built the container structure at Kurfurstendamm 229, which
+dates its own project to 2025. The captions say so. **Nothing from inside
+Zalando's three floors has been published**, which is expected: the doors open
+on Friday.
+
+**The venue appears under three names** across the sources - "The Space",
+"Masumi Space" and "POP Kudamm" - and the photographs here are filed by the
+studio under the last of them.
+
+**Zalando's campaign photograph was deliberately not used.** It is a fine
+picture of a runner on a street, credited to the brand, but its own embedded
+licence reads "15.08.2026 - 31.12.2026 ... PR", and an image whose permission
+expires at the end of the year does not belong on a permanent research record.
+The city in it is also not identifiable.
+
+**Revisit after 27 September.**
+
 **Announced, not yet open.** Written on 22 September 2026, three days before
 it opens.
 

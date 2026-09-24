@@ -52,6 +52,17 @@ tags:
   - community
   - retail
   - event-activation
+images:
+  - src: /images/cases/rabbit-boston-2026/01-litoff-banner.jpg
+    caption: >-
+      The rabbit x Litoff collection banner: two people in the collaboration's pieces in a room lit pink and teal. Retrieved through the Wayback Machine - the live collection page is now empty.
+    credit: "rabbit"
+    sourceUrl: https://www.runinrabbit.com/collections/rabbit-x-litoff
+  - src: /images/cases/rabbit-boston-2026/02-litoff-banner-portrait.jpg
+    caption: >-
+      The tall version of the same campaign: a figure in a cap and graphic tee reaching up into the dark towards something pale. Also via the Wayback Machine.
+    credit: "rabbit"
+    sourceUrl: https://www.runinrabbit.com/collections/rabbit-x-litoff
 sources:
   - title: >-
       Boston 2026 Pop-up Shop — rabbit's own journal. "This year we
@@ -101,6 +112,17 @@ Normatec boots and massage guns, and finisher portraits, which ran again on
 the Tuesday morning.
 
 ## Verification notes
+**Two pictures, both campaign art for the collaboration, and both recovered
+from an archive** because rabbit's live collection page is now empty. They show
+the collection, not the room.
+
+**No photograph of the Boston clubhouse exists in this record.** The
+Substack that was expected to carry them refuses connections, and that dead end
+is unchanged.
+
+**Four programme graphics made in Canva were left out**; they carry text
+rather than anything of the space.
+
 **The space's design is described in advance, not shown.** The release was
 written in March; nothing retrieved shows the installations as built.
 

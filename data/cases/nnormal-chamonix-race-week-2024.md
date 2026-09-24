@@ -55,7 +55,35 @@ tags:
   - collaboration
   - community
   - event-activation
+images:
+  - src: /images/cases/nnormal-chamonix-race-week-2024/01-events-banner.jpg
+    caption: >-
+      The banner at the head of NNormal's own 2024 events page: a runner coming down a barriered finish chute under bunting, spectators pressed either side. A race photograph, not one of the venues the week actually used.
+    credit: "NNormal"
+    sourceUrl: https://www.nnormal.com/en_ES/content/nnormal-events-utmb-2024
+  - src: /images/cases/nnormal-chamonix-race-week-2024/02-trail-blur.jpg
+    caption: >-
+      The second image on the same page, placed after "We look forward to seeing you there!": runners' legs on a trail, dragged into blur.
+    credit: "NNormal"
+    sourceUrl: https://www.nnormal.com/en_ES/content/nnormal-events-utmb-2024
+  - src: /images/cases/nnormal-chamonix-race-week-2024/03-tomir-2-profile.jpg
+    caption: >-
+      The Tomir 2.0 in profile on white, from the brand's page comparing it with the first Tomir. The shoe this week's sessions were built around.
+    credit: "NNormal"
+    sourceUrl: https://www.nnormal.com/en_ES/content/tomir-1-vs-tomir-2-a-step-further
+  - src: /images/cases/nnormal-chamonix-race-week-2024/04-tomir-2.jpg
+    caption: >-
+      The same shoe, labelled "Tomir 2.0" on the comparison page.
+    credit: "NNormal"
+    sourceUrl: https://www.nnormal.com/en_ES/content/tomir-1-vs-tomir-2-a-step-further
 sources:
+  - title: >-
+      Tomir 1 vs Tomir 2: a step further - the brand's own comparison page for
+      the shoe the 2024 week was built around. Source of two product images.
+    publisher: NNormal
+    url: https://www.nnormal.com/en_ES/content/tomir-1-vs-tomir-2-a-step-further
+    type: official-brand
+    accessed: 2026-09-24
   - title: >-
       Discover, run, and connect: experience NNormal in Chamonix — NNormal's
       own page. "This year, we are back in Chamonix with a week full of
@@ -116,6 +144,20 @@ sight selling shoes and sharing the story of his adventures". The Thursday
 session was about exactly that.
 
 ## Verification notes
+**Four pictures, and not one shows a venue** - which is the same finding as
+the 2026 record, reached the same way. Two are the brand's own page imagery, a
+finish-line photograph and a blurred trail; two are product shots of the Tomir
+2.0. NNormal published no picture of the cafe, the brewery or any other room it
+borrowed.
+
+**The page does state its year**, "Stories / August 2024", so an earlier note
+here saying it carried none was wrong and has been removed from the reading
+above.
+
+**The Kjerag was deliberately not illustrated.** The brand's current pages
+show the Kjerag 02 and the Brut, not the 2024 shoe, and matching an image to
+the 2024 model would have been inference.
+
 **The page states no year.** It is tied to 2024 by its weekdays — Monday 26
 August falls in 2024 — and by the blog post of 21 August 2024 that links it.
 

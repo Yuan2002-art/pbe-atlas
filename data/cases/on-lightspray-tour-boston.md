@@ -37,6 +37,17 @@ tags:
   - product-trial
   - retail
   - event-activation
+images:
+  - src: /images/cases/on-lightspray-tour-boston/01-boston-key-art.jpg
+    caption: >-
+      On's key art for the Boston stop: the Cloudmonster 3 Hyper LS in profile, white sprayed upper and lime outsole, lettered "On LightSpray™ Boston" against pale grey. A graphic, not the space.
+    credit: "On"
+    sourceUrl: https://www.on.com/en-us/explore/lightspray-boston
+  - src: /images/cases/on-lightspray-tour-boston/02-robot-and-shoe.jpg
+    caption: >-
+      The shoe in front of the spraying robot, the machine's arm and spool blue-lit behind it. Published as the event page's header. It shows the apparatus the case is about, but nothing dates it to Boston.
+    credit: "On"
+    sourceUrl: https://www.on.com/en-us/explore/lightspray-boston
 sources:
   - title: >-
       On LightSpray™ Tour Boston — On's event page, read as archived by the
@@ -73,6 +84,20 @@ LightSpray Cloudmonster 3 Hyper and LightSpray Cloudboom Strike" — both
 describing it.
 
 ## Verification notes
+**Two pictures, both On's own, and neither is a photograph of the Boston
+space.** The first is the stop's key art; the second shows the spraying robot
+with a shoe, which is the machine this record exists to document, but nothing
+on the page places that frame in Boston rather than at any other stop on the
+tour.
+
+**The event page was templated from another city.** One of its background
+files is named for Los Angeles, and an On photograph on the archived version
+is undated and predates the Boston week. Neither was used.
+
+**Nothing photographic from the Boston room has been found.** The London
+record has one and this one does not, which is worth remembering when the two
+are compared.
+
 **Read from an archive.** The live page returns 403; the record uses the
 Wayback Machine's capture of 30 April 2026. Only the address, dates, hours and
 the lines quoted above are used.

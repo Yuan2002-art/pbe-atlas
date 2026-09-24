@@ -73,6 +73,51 @@ images:
       printed with the shoe's name. Filed as "UTMB-2024-BRAND", 27 August.
     credit: "Peignee Verticale (via Joel Beeby)"
     sourceUrl: https://joelbeeby.com/work/tectonx3
+  - src: /images/cases/hoka-base-camp-utmb-2024/05-fly-human-fly.jpg
+    caption: >-
+      The building at night, its long flank hoarded with a runner on rock and the words "Fly Human Fly", timber cladding above. The clearest view of how the Base Camp addressed the street.
+    credit: "SetSquare Creative (no photographer credited)"
+    sourceUrl: https://www.setsquarecreative.co.uk/portfolio/hoka-utmb-mont-blanc/
+  - src: /images/cases/hoka-base-camp-utmb-2024/06-wing-install.jpg
+    caption: >-
+      The build: two people on the roof handling the white wing form that sits above the Base Camp sign, cloud closed in behind them. The file is dated 25 August, two days before the doors opened.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
+  - src: /images/cases/hoka-base-camp-utmb-2024/07-tecton-x3-room.jpg
+    caption: >-
+      An upper room lined in pale timber: a wall of Tecton X3 shoes under the model name, a FlyLab mark below, a stair rail across the foreground.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
+  - src: /images/cases/hoka-base-camp-utmb-2024/08-history-wall.jpg
+    caption: >-
+      The history wall in daylight, lettered "Tecton X" and "Tecton X 2" with "UTMB debut: 2022", collaged with race photographs and text panels; a bar and stools at the left.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
+  - src: /images/cases/hoka-base-camp-utmb-2024/09-history-wall-2.jpg
+    caption: >-
+      The same wall continued round the corner into "Tecton X 2.5" and "Tecton X3", with a lit blue slot at the end of the run.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
+  - src: /images/cases/hoka-base-camp-utmb-2024/10-jim-broke-the-record.jpg
+    caption: >-
+      A panel headed "Jim broke the record in a HOKA he helped build", set beside a photograph of a runner and a block of explanatory text, under the Tecton X3 lettering.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
+  - src: /images/cases/hoka-base-camp-utmb-2024/11-shoe-on-red.jpg
+    caption: >-
+      A black HOKA shoe mounted flat on a red panel, a rock face printed on the wall beside it and a text panel to the left.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
+  - src: /images/cases/hoka-base-camp-utmb-2024/12-visitors-panel.jpg
+    caption: >-
+      Two visitors, one in a running pack, reading a backlit panel that carries a shoe and French text -- the exhibition in use rather than empty.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
+  - src: /images/cases/hoka-base-camp-utmb-2024/13-dark-corridor.jpg
+    caption: >-
+      Three people in the darkened display room, lit from the cases they are looking into.
+    credit: "Peignee Verticale (via Joel Beeby)"
+    sourceUrl: https://joelbeeby.com/work/tectonx3
 sources:
   - title: >-
       Join us at HOKA UTMB® Mont-Blanc race week! — HOKA's own Facebook video
@@ -140,6 +185,23 @@ Mont-Blanc and a Refuge added at La Flégère — see that record. In 2024 the B
 Camp itself was in the Village.
 
 ## Verification notes
+**Thirteen pictures now, and the two agencies are both represented.** Nine
+were added from the two portfolios already cited: the exterior at night with
+its "Fly Human Fly" hoarding, the white wing being fitted to the roof two days
+before opening, the Tecton X3 room, the history wall that runs from "Tecton X"
+and "UTMB debut: 2022" through to the X3, and the darkened display room in use.
+Two candidates were discarded as **duplicates of images already stored** --
+checked by comparing them pixel by pixel against the files on disk rather than
+by eye.
+
+**The capture dates could not be re-read.** The file names carry them -- 25,
+27, 28 and 29 August -- and the portfolio prefixes them "UTMB-2024-BRAND", but
+the host serves resized copies with the metadata stripped, so the dates rest on
+the file names and the project page rather than on the files themselves.
+
+**The 25 August frame predates the opening**, and is captioned as the build
+rather than as the week.
+
 **Read from a Facebook post, once.** The post's text was read from its page
 metadata in a single visit; no other Facebook content was collected. HOKA's
 own registration page linked from the post was not read.

@@ -57,7 +57,37 @@ tags:
   - collaboration
   - community
   - event-activation
+images:
+  - src: /images/cases/goldwin-motion-studies-vol-10-chamonix/01-chalet-stove.jpg
+    caption: >-
+      Chalet Japonyard's living room as it is let: a free-standing wood burner against stone and timber, a red armchair and footstool, terracotta tiles. **The building, not the installation** - and not recent: the tourism listing's photographs carry 2015 in their own data, eleven years before this record's week.
+    credit: "Haute-Savoie Mont-Blanc Tourisme"
+    sourceUrl: https://hautesavoiemontblanc-tourisme.com/en/offers/chalet-japonyard-chamonix-mont-blanc-en-5828369/
+  - src: /images/cases/goldwin-motion-studies-vol-10-chamonix/02-chalet-lounge.jpg
+    caption: >-
+      A second room in the same listing: a large brown corner sofa, a low table under a lace cloth, framed maps and prints on the wall. Again the chalet as let, in 2015.
+    credit: "Haute-Savoie Mont-Blanc Tourisme"
+    sourceUrl: https://hautesavoiemontblanc-tourisme.com/en/offers/chalet-japonyard-chamonix-mont-blanc-en-5828369/
+  - src: /images/cases/goldwin-motion-studies-vol-10-chamonix/03-chalet-kitchen.jpg
+    caption: >-
+      The open kitchen and living area with a wall-mounted television, a stove and checked armchairs. From the same 2015 set.
+    credit: "Haute-Savoie Mont-Blanc Tourisme"
+    sourceUrl: https://hautesavoiemontblanc-tourisme.com/en/offers/chalet-japonyard-chamonix-mont-blanc-en-5828369/
+  - src: /images/cases/goldwin-motion-studies-vol-10-chamonix/04-chalet-bedroom.jpg
+    caption: >-
+      One of the bedrooms, a double bed under fur throws. Included to show the building's scale and character; it has no connection to what Goldwin put in it.
+    credit: "Haute-Savoie Mont-Blanc Tourisme"
+    sourceUrl: https://hautesavoiemontblanc-tourisme.com/en/offers/chalet-japonyard-chamonix-mont-blanc-en-5828369/
 sources:
+  - title: >-
+      Chalet Japonyard, Chamonix-Mont-Blanc - the regional tourism board's
+      listing for the building, with a gallery of 22 photographs credited
+      "(c)Haute-Savoie-Mont-Blanc". The dated files carry 2015, 2018 and 2020.
+      Source of four interior photographs, used as the building only.
+    publisher: Haute-Savoie Mont-Blanc Tourisme
+    url: https://hautesavoiemontblanc-tourisme.com/en/offers/chalet-japonyard-chamonix-mont-blanc-en-5828369/
+    type: other
+    accessed: 2026-09-24
   - title: >-
       "Product Index presents Motion Studies by Goldwin Vol. 10 [ at ]
       Japonyard" — collaborative Instagram post published under both the
@@ -160,6 +190,21 @@ Stability and Transition on numbered scales, and its posts point to "the
 Product Index web platform" for the full entry.
 
 ## Verification notes
+**Four pictures, and all four are the building as a holiday let in 2015.**
+This record still has **no image of the Motion Studies installation**, and
+these do not pretend otherwise: they are the tourism board's listing
+photographs of Chalet Japonyard, taken eleven years before the week this record
+describes, showing furniture and fittings that have no relationship to what
+Goldwin installed.
+
+They are included under the picture rule's third category - official
+photographs of the venue building - because the alternative was a page with
+nothing on it at all, and because the chalet's character is itself part of what
+the case is about. Every caption says the date and says it is the building.
+
+**The only first-party material for this activation is an Instagram post**,
+and what it holds has not been retrieved. That is the gap to close.
+
 **Moved from the aggregator to the brand.** The Atlas previously recorded
 this installation as resting on a single third-party listing, and it was left
 unwritten for that reason. That listing links its own origin: a collaborative

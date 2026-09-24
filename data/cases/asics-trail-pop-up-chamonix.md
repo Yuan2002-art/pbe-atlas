@@ -63,7 +63,29 @@ images:
       its paragraph on the Trail Camp, so it may show the second space.
     credit: "Martin de Alava Perez"
     sourceUrl: https://outdoormagazine.it/2026/08/25/asics-trail-running-chamonix/
+  - src: /images/cases/asics-trail-pop-up-chamonix/05-shopfront.jpg
+    caption: >-
+      The pop-up from the street: the asics wordmark above the door, a red-lit window carrying a mountain image and a runner, and the copy "Move your body, move your mind" and "More speed... to mind and body" across the glass. Credited on the page to ASICS.
+    credit: "Credit photo: ASICS"
+    sourceUrl: https://jai-un-pote-dans-la.com/
+  - src: /images/cases/asics-trail-pop-up-chamonix/06-interior.jpg
+    caption: >-
+      Inside: a long backlit vitrine set into a timber-panelled wall, a green floor, and the ASICS spiral filling the far wall. Also credited to ASICS.
+    credit: "Credit photo: ASICS"
+    sourceUrl: https://jai-un-pote-dans-la.com/
+  - src: /images/cases/asics-trail-pop-up-chamonix/07-metaspeed-prototype.jpg
+    caption: >-
+      A single shoe suspended on a rail inside a glowing disc, captioned on the display itself: "Metaspeed Trail 2 prototype worn by Tom Evans in Chamonix in 2025". The exhibit dates the shoe, not the photograph.
+    credit: "Martin de Alava Perez, via Outdoor Magazine"
+    sourceUrl: https://outdoormagazine.it/
 sources:
+  - title: >-
+      ASICS ouvre un pop-up trail a Chamonix - carries two photographs marked
+      "Credit photo : ASICS", one of the shopfront and one of the interior.
+    publisher: J'ai un pote dans la
+    url: https://jai-un-pote-dans-la.com/
+    type: editorial
+    accessed: 2026-09-24
   - title: "UTMB World Series partners — ASICS is not listed at any tier"
     publisher: UTMB World Series
     url: https://utmb.world/utmb-world-series-partners
@@ -120,6 +142,22 @@ sessions on nutrition, recovery, equipment and performance, including a run with
 athlete Tom Evans on Wednesday 26 August.
 
 ## Verification notes
+**Three more pictures, and two of them are the shop.** The exterior and the
+interior come from a French title that marks them "Credit photo : ASICS", so
+they are the brand's own images of its own space - the first views of the
+street frontage this record has had. The third is the fifth frame from the
+photographer already credited here, and it is the most specific object in the
+whole case: a prototype on a rail, captioned by the display as "Metaspeed Trail
+2 prototype worn by Tom Evans in Chamonix in 2025".
+
+**That caption dates the shoe, not the picture.** A 2025 prototype shown in a
+2026 pop-up is exactly what an exhibit like this is for, and the caption here
+says so rather than letting "2025" read as the year of the photograph.
+
+**The photographer's rights notice applies to this frame too.** It is embedded
+in the file, as on the four already stored, and the author's decision was to
+proceed on non-commercial grounds and record the notice. This is that record.
+
 **The pop-up's street address and opening hours are not recorded here.** They
 appear only on an event-listing aggregator that could not be retrieved directly,
 and no editorial or official source states them. The pin therefore sits on the

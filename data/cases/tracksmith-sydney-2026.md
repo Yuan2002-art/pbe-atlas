@@ -45,6 +45,27 @@ tags:
   - community
   - retail
   - event-activation
+images:
+  - src: /images/cases/tracksmith-sydney-2026/01-womens-kit.jpg
+    caption: >-
+      The women's Sydney kit laid out flat, with a "Sydney 2026" poster among the pieces. The brand's own product photograph, shot 21 July 2026 by Paul Saraceno per the file's own data - **five weeks before the race, and not a picture of the pop-up**.
+    credit: "Tracksmith - photography Paul Saraceno (per file data)"
+    sourceUrl: https://www.tracksmith.com/au/journal/article/sydney-marathon-weekend-2026
+  - src: /images/cases/tracksmith-sydney-2026/02-mens-kit.jpg
+    caption: >-
+      The men's kit in the same flat-lay series, from the same day.
+    credit: "Tracksmith - photography Paul Saraceno (per file data)"
+    sourceUrl: https://www.tracksmith.com/au/journal/article/sydney-marathon-weekend-2026
+  - src: /images/cases/tracksmith-sydney-2026/03-sydney-script.jpg
+    caption: >-
+      A close view of "Sydney" in a serif script across orange mesh - the lettering the edition's pieces carry.
+    credit: "Tracksmith"
+    sourceUrl: https://www.tracksmith.com/au/journal/article/sydney-marathon-weekend-2026
+  - src: /images/cases/tracksmith-sydney-2026/04-reversible-singlet.jpg
+    caption: >-
+      The reversible Van Cortlandt singlet from the back, with a "2026 Tracksmith" patch at the neck.
+    credit: "Tracksmith"
+    sourceUrl: https://www.tracksmith.com/au/journal/article/sydney-marathon-weekend-2026
 sources:
   - title: >-
       Sydney Marathon Weekend 2026 — Tracksmith's own journal. "Join Tracksmith
@@ -78,6 +99,20 @@ your time", on the Sunday afternoon and Monday morning. And a Saturday 5 km
 shakeout with Coffee Supreme and Tempo Journal, food by Common Supply.
 
 ## Verification notes
+**Four pictures, all product, none of the pop-up.** They are the brand's own
+journal photography for the Sydney edition, and two of them carry a capture
+date of 21 July 2026 - over a month before race week - so they belong to the
+collection rather than to the space.
+
+**A photograph on Tracksmith's own 2026 Sydney page was excluded**: its file
+data gives 28 August **2025**, which is the previous year's pop-up illustrated
+on this year's page. That is the second time this pass has caught a brand doing
+exactly that.
+
+**Nothing photographic of 21 Foley Street has been found.** The address also
+needs checking against Up There Athletics' own store address, 60 Oxford Street,
+which is a different place.
+
 **Whose shop it is is not established.** The page gives 21 Foley Street and
 names Up There Athletics as the partner; whether that address is Up There's own
 store was not confirmed.

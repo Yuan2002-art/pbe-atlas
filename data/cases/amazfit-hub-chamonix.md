@@ -69,6 +69,31 @@ images:
       placed by the building, not by a caption.
     credit: "Athletic Affair (no photographer credited)"
     sourceUrl: https://culture.athleticaffair.co/p/monday-break-issue-195
+  - src: /images/cases/amazfit-hub-chamonix/03-agenda.jpg
+    caption: >-
+      The Hub's own agenda, headed "Free Activities": Tuesday 25 core activity 09:30-11:00; Wednesday 26 a breakfast and live panel with Ben Dhiman and Rod Farvard 09:00-11:00 and the MileSTONES social run, Chamo Edition, 18:00-20:00; Thursday 27 mobility 09:30-11:00; Friday 28 Amazfit Night from 19:30. Footed "Agenda - Amazfit Hub".
+    credit: "Amazfit, via Athletic Affair"
+    sourceUrl: https://culture.athleticaffair.co/p/monday-break-issue-194
+  - src: /images/cases/amazfit-hub-chamonix/04-industry-night.jpg
+    caption: >-
+      "Industry Night", Monday 24, 19:00-22:00, over a photograph of a crowd standing on grass among trees. The card adds "Supported by aibaoptics" and an attendance-confirmation address at athleticaffair.co.
+    credit: "Amazfit, via Athletic Affair"
+    sourceUrl: https://culture.athleticaffair.co/p/monday-break-issue-194
+  - src: /images/cases/amazfit-hub-chamonix/05-live-panel.jpg
+    caption: >-
+      "Ben Dhiman & Rod Farvard - breakfast + live panel", Wednesday 26, 09:00-11:00, built from two portraits against the massif.
+    credit: "Amazfit, via Athletic Affair"
+    sourceUrl: https://culture.athleticaffair.co/p/monday-break-issue-194
+  - src: /images/cases/amazfit-hub-chamonix/06-social-run.jpg
+    caption: >-
+      "Social Run MileSTONES - Chamo Edition", Wednesday 26, 18:00-20:00, over a blurred runner in a tee lettered "The Road to Chamonix".
+    credit: "Amazfit, via Athletic Affair"
+    sourceUrl: https://culture.athleticaffair.co/p/monday-break-issue-194
+  - src: /images/cases/amazfit-hub-chamonix/07-amazfit-night.jpg
+    caption: >-
+      "Amazfit Night - Cheering Point, Notre Dame de la Gorge", Friday 28 from 19:30 "until the athletes have passed", over a portrait of a runner holding a watch to the light.
+    credit: "Amazfit, via Athletic Affair"
+    sourceUrl: https://culture.athleticaffair.co/p/monday-break-issue-194
 sources:
   - title: "Monday Break — Issue 194: \"Join us in Chamonix at the Amazfit Hub!\" — the producing agency's own account, 17 August 2026. \"We've created The Amazfit Hub in Chamonix, that serves as the ultimate hub for performance, community, and brand experience during UTMB week… the house offers a balanced program focused on smart race preparation, active engagement, and authentic storytelling.\" Details Industry Night (4th edition), the Ben Dhiman & Rod Farvard live podcast, the mileSTONES social run, and the Amazfit Night cheering point at Notre-Dame de la Gorge"
     publisher: Athletic Affair
@@ -116,6 +141,22 @@ and Helio Armband *"tracking the training and data behind her journey back to
 Chamonix"*.
 
 ## Verification notes
+**Five more pictures, and they are the programme itself.** Each is a card the
+agency published for one session, and between them they carry the week's whole
+agenda with times - including two things the prose did not hold: the Monday
+Industry Night was "supported by aibaoptics", and the Amazfit Night on the
+Friday was a **cheering point at Notre Dame de la Gorge**, running from 19:30
+"until the athletes have passed", which is a position on the course rather
+than a room in town.
+
+**None of them is a photograph of the Hub.** The photographs behind the type
+are runners and crowds, and none is dated or located by the card.
+
+**Six portrait photographs from the same newsletter were left out.** They sit
+under a line saying the team was on the ground "supporting Amazfit **and
+On**", and nothing separates which is which. Attributing them to this record
+would be a guess.
+
 **The best source here is the agency's, which is unusual and worth naming.**
 Most records in this Atlas rest on the brand or on trade press. This one rests
 on Athletic Affair's own newsletter, filed as `agency-studio` — the studio that

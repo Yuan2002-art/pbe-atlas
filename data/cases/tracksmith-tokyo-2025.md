@@ -70,6 +70,31 @@ images:
       customised with chain-stitch embroidery.
     credit: "WWD Japan"
     sourceUrl: https://www.wwdjapan.com/articles/2046849
+  - src: /images/cases/tracksmith-tokyo-2025/04-retail-director.jpg
+    caption: >-
+      A man standing in the pop-up among mannequins, a clothing rail and planting, the tower district through the glazing behind. WWD Japan's caption names him as Tracksmith's retail director, in Japan for the pop-up.
+    credit: "WWD Japan"
+    sourceUrl: https://www.wwdjapan.com/articles/2046849
+  - src: /images/cases/tracksmith-tokyo-2025/05-patch-baskets.jpg
+    caption: >-
+      Stacking baskets of embroidered patches on a steel counter - "Chicago" in red at the back, "TYO '25" in purple at the front. The caption explains that the nearest is the Tokyo Marathon patch and that others exist for the other majors.
+    credit: "WWD Japan"
+    sourceUrl: https://www.wwdjapan.com/articles/2046849
+  - src: /images/cases/tracksmith-tokyo-2025/06-rail-and-glazing.jpg
+    caption: >-
+      The shop floor: a rail and free-standing mannequins on a pale stone floor, floor-to-ceiling glazing down one side, a painted track-coloured strip underfoot.
+    credit: "WWD Japan"
+    sourceUrl: https://www.wwdjapan.com/articles/2046849
+  - src: /images/cases/tracksmith-tokyo-2025/07-noah-mannequins.jpg
+    caption: >-
+      Mannequins in the NOAH collaboration pieces - a check overshirt, a hoodie, a cap - captioned by WWD Japan as being from the NOAH and Tracksmith pop-up.
+    credit: "WWD Japan"
+    sourceUrl: https://www.wwdjapan.com/articles/2046849
+  - src: /images/cases/tracksmith-tokyo-2025/08-tokyo-kit.jpg
+    caption: >-
+      The Tokyo kit laid flat: purple singlets and a cap lettered TOKYO with a stylised blossom, gloves, and a brush laid across them. The brand's own product photograph, not the shop.
+    credit: "Tracksmith"
+    sourceUrl: https://www.tracksmith.com/us/journal/article/tokyo-marathon-weekend-2025
 sources:
   - title: >-
       Tokyo Marathon Weekend 2025 — Tracksmith's own journal. "Join us in
@@ -125,6 +150,15 @@ products with NOAH x Tracksmith hoodies and NOAH's spring–summer 2025
 collection.
 
 ## Verification notes
+**Five more pictures, and four of them are the room.** They come from the same
+WWD Japan piece as the three already here, which is the only retrieved account
+with photographs from inside. 1200px is the largest the title serves.
+
+**The patches place the pop-up in a series.** One frame shows baskets labelled
+for Chicago alongside the "TYO '25" patch, and the caption says the other
+majors have their own - so the Tokyo shop was one stop of several, which the
+prose did not record.
+
 **The brand's page now carries two years.** The journal page is titled "Tokyo
 '25", but below the 2025 schedule it lists a second one — a "Tracksmith x Noah
 Kick-off Party… at their clubhouse" on "27 Feb Fri", a shakeout on "28 Feb

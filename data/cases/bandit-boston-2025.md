@@ -38,6 +38,22 @@ tags:
   - community
   - retail
   - event-activation
+images:
+  - src: /images/cases/bandit-boston-2025/01-down-bad-capsule.jpg
+    caption: >-
+      The whole capsule laid out on white: a white singlet, a maroon singlet, a cream tee lettered "Down Bad", a maroon crew lettered "Boston", two hoodies, two caps and socks. The clearest single statement of what was sold at 250 Boylston Street.
+    credit: "Bandit Running"
+    sourceUrl: https://www.runbandit.com/blogs/journal/the-boston-2025-down-bad-capsule
+  - src: /images/cases/bandit-boston-2025/02-lookbook-road.jpg
+    caption: >-
+      A runner in the maroon singlet on a suburban road, bare trees behind. From the same lookbook; a photograph of the clothes rather than of the shop.
+    credit: "Bandit Running"
+    sourceUrl: https://www.runbandit.com/blogs/journal/the-boston-2025-down-bad-capsule
+  - src: /images/cases/bandit-boston-2025/03-lookbook-church.jpg
+    caption: >-
+      A runner in the white singlet, arms raised, in front of a white clapboard church with a clock tower - New England, but no place is named.
+    credit: "Bandit Running"
+    sourceUrl: https://www.runbandit.com/blogs/journal/the-boston-2025-down-bad-capsule
 sources:
   - title: >-
       Bandit Boston 2025 Pop-Up Experience — Bandit's own journal, 15 April
@@ -72,6 +88,21 @@ portraits — "Bring those dead legs over for a medal portrait that'll last a
 lifetime."
 
 ## Verification notes
+**Three pictures, and none of them is the pop-up.** All come from the brand's
+own lookbook for the capsule, published on the journal entry that announces
+"our 250 Boylston Street pop-up, opening Friday". They show what was sold and
+where it was worn, not the room it was sold in. **No photograph of the shop at
+250 Boylston Street has been found for 2025.**
+
+**A warning that nearly cost this record.** A trend site's page describing a
+Bandit space in Boston - a garden, clover, hoses - turned out to describe the
+**2026** room, not this one. It was checked and rejected. The two years share
+an address, so anything found for "Bandit Boston" has to be dated before it
+is believed.
+
+**Six programme tiles on the pop-up page were left out** at 600px; they are
+event graphics rather than pictures of anything.
+
 **"Back Bay" and "a few blocks from the finish line" are the brand's words.**
 The geocoder places 250 Boylston Street in Downtown rather than Back Bay. The
 record keeps the address and does not repeat either description as fact.

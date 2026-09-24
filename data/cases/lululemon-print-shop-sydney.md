@@ -46,6 +46,11 @@ images:
       is placed here.
     credit: "lululemon (via RetailBoss)"
     sourceUrl: https://retailboss.co/lululemon-creates-nearly-4000-personalized-pieces-at-its-sydney-race-week-print-shop/
+  - src: /images/cases/lululemon-print-shop-sydney/02-print-shop-map.jpg
+    caption: >-
+      The microsite's locator for the Print Shop: the lululemon mark dropped on Pitt Street Mall between King and Market Streets, York, George and Castlereagh named around it. **The pin sits mid-block while the site's own FAQ gives the Market Street corner**, so the two disagree by half a block. The brand's own typo, "Pitt Strret Mall", is on the map.
+    credit: "lululemon"
+    sourceUrl: https://www.recordshop2026.com.au/
 sources:
   - title: >-
       lululemon – Record Shop — the brand's microsite, Print Shop section.
@@ -82,6 +87,11 @@ shipped; no returns once printed.
 nothing at all. That is a separate record.
 
 ## Verification notes
+**The microsite's five background artboards were looked at and rejected.**
+They are plain red-and-pink gradients with no text, objects or people - page
+backgrounds rather than pictures of either shop. The map is the only thing on
+that site worth storing.
+
 **Whether this ran in 2025 too.** An older lululemon page carries a 2025 Sydney
 programme with a Print Shop; it was not read in this pass and is not recorded.
 

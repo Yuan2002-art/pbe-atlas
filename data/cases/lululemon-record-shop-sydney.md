@@ -61,7 +61,25 @@ images:
       Record Shop hosted the week's talks — an inference.
     credit: "lululemon (via RetailBoss)"
     sourceUrl: https://retailboss.co/lululemon-creates-nearly-4000-personalized-pieces-at-its-sydney-race-week-print-shop/
+  - src: /images/cases/lululemon-record-shop-sydney/03-record-shop-map.jpg
+    caption: >-
+      The microsite's locator for the Record Shop: the lululemon mark at the corner of Riley Street and Francis Street, with Stanley Street and Francis Lane around it.
+    credit: "lululemon"
+    sourceUrl: https://www.recordshop2026.com.au/
+  - src: /images/cases/lululemon-record-shop-sydney/04-mantra-wall.jpg
+    caption: >-
+      A woman writing at a wall covered in circular record-label stickers, each carrying a handwritten line, a TEMPO magazine open in her other hand. Marked "Image: lululemon" at the source. **Placing this at the Record Shop rather than the Print Shop is an inference** - the page captions it only as Sydney race-week activation - but the record labels and the mantras match this shop's stated idea.
+    credit: "lululemon, via RetailBoss"
+    sourceUrl: https://retailboss.co/lululemon-creates-nearly-4000-personalized-pieces-at-its-sydney-race-week-print-shop/
 sources:
+  - title: >-
+      lululemon creates nearly 4,000 personalized pieces at its Sydney race
+      week Print Shop - trade report of 11 September 2026, after the week,
+      carrying five images marked "Image: lululemon." Source of one photograph.
+    publisher: RetailBoss
+    url: https://retailboss.co/lululemon-creates-nearly-4000-personalized-pieces-at-its-sydney-race-week-print-shop/
+    type: editorial
+    accessed: 2026-09-24
   - title: >-
       lululemon – Record Shop — the brand's microsite. "record shop / AUG 28 —
       30 / 121 RILEY STREET DARLINGHURST". "The home of music, mindset and your
@@ -103,6 +121,17 @@ decks.
 did sell. That is a separate record.
 
 ## Verification notes
+**Two more pictures, and one of them is placed by inference.** The map is the
+brand's own. The photograph of the sticker wall is credited to lululemon by the
+trade title that ran it, but that title captions it only as Sydney race week -
+it does not say which of the two shops. It is filed here because record labels
+and written mantras are this shop's own stated device, and the caption states
+the inference rather than hiding it.
+
+**A second candidate from the same set was left out**: runners on a footpath
+behind a lululemon flag, which could be any shakeout and is tied to neither
+shop.
+
 **Hours are the microsite's.** Open hours outside the programmed sessions are
 recorded as the brand gives them; a research pass reported different hours in
 a sponsored article, which was not read.

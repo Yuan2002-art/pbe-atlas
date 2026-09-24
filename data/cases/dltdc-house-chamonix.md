@@ -68,6 +68,23 @@ images:
     sourceUrl: https://www.danslateteduncoureur.fr/blog/utmb-2026-conjoints-alix-noblat-mathieu-masbernard-justine-carrel-soutien-athlete-trail-running
 sources:
   - title: >-
+      @danslateteduncoureur on Instagram, 18 August 2026, opened once by hand —
+      the publication's own announcement. "Du 24 au 31 août, on ouvre la DLTDC
+      House". "Un chalet, un immense grand jardin ouvert sur le Mont Blanc, à
+      quelques minutes de la ligne de départ, où vont se croiser pendant une
+      semaine quelques-uns des visages qui ont écrit et continuent d'écrire
+      l'histoire du trail." Names Anton Krupicka, Xavier Thévenard, Mathieu
+      Blanchard, Tom Evans, Marianne Hogan, Alix Noblat and Joggeuse among the
+      guests. Gives the programme as "Podcasts Live / Rencontres avec des
+      légendes du trail / Sessions privées de coaching avec @campus.coach /
+      Masterclass & ateliers / Runs immersifs / Dîners étoilés /
+      Avant-premières". "Certains rendez-vous auront très peu de places."
+      Signs off "DLTDC HOUSE / A home for stories."
+    publisher: Dans la Tête d'un Coureur
+    url: https://www.instagram.com/p/DcNR9hVCLsV/
+    type: official-brand
+    accessed: 2026-09-23
+  - title: >-
       UTMB 2026 : Découvrez la DLTDC House au coeur de Chamonix — gives the run
       as 24 to 31 August 2026 and the position as "à quelques minutes seulement
       de l'épicentre de l'événement, la ligne de départ et d'arrivée"; names
@@ -134,6 +151,19 @@ Mountains. A single audio brand placing itself inside two other parties' rooms
 rather than taking one of its own.
 
 ## Verification notes
+**The house has a garden, and the record did not know it.** The publication's
+own announcement describes "un chalet, un immense grand jardin ouvert sur le
+Mont Blanc, à quelques minutes de la ligne de départ" — a chalet with a large
+garden open onto Mont Blanc, minutes from the start and finish. It also names
+guests the record did not hold: Anton Krupicka, Xavier Thévenard, Mathieu
+Blanchard, Tom Evans, Marianne Hogan, Alix Noblat and Joggeuse. And it adds two
+strands to the published programme — **starred dinners** and **premieres** —
+alongside private coaching run with Campus Coach. Capacity was explicitly
+small: "certains rendez-vous auront très peu de places".
+
+**The dates are now first-party.** "Du 24 au 31 août" comes from the
+publication itself, not only from the press release carried elsewhere.
+
 **Two pictures, and neither is confirmed to show the House.** The first is the
 activation's own key visual and does show a chalet interior — its embedded
 title reads "DLTDC x Shokz - Activation UTMB 2026 - 9", which ties the file to

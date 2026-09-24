@@ -135,6 +135,18 @@ images:
     credit: Distance (©DISTANCE)
     sourceUrl: https://distance-store.com/en/pages/selection-running-trail
 sources:
+  - title: >-
+      @distanceathletics on Instagram, 24 August 2026, opened once by hand —
+      posted from Chamonix on the opening day. "Touchdown in Chamonix. Arc'teryx
+      and Distance are here. From August 24–30, find us at the Arc'teryx
+      Chamonix store, transformed into an Aid Station: refreshments, Strava
+      Challenges, special events and an exclusive Arc'teryx × Distance
+      collection. Some pieces are available to purchase. Others have to be
+      earned."
+    publisher: Distance
+    url: https://www.instagram.com/p/DcbkFrjjKNZ/
+    type: official-brand
+    accessed: 2026-09-23
   - title: "ARC'TERYX e DISTANCE, una settimana di attività all'UTMB di Chamonix — sponsored trade feature, quoting the Arc'teryx × Distance press release (\"Dal comunicato\"), published 19 August 2026"
     publisher: 4ActionSport (Daniele Milano)
     url: https://www.4actionsport.it/arcteryx-e-distance-una-settimana-di-attivita-allutmb-di-chamonix/
@@ -201,6 +213,13 @@ A limited-edition **Echoes journal** was given away free in the store, alongside
 a photographic selection shown at Place de l'Aiguille du Midi.
 
 ## Verification notes
+**The collaborator confirms the week from Chamonix, on the day it opened.**
+Distance's own post of 24 August 2026 gives the dates as "From August 24–30",
+describes the store as "transformed into an Aid Station", and states the access
+rule this record turns on in one line: **"Some pieces are available to purchase.
+Others have to be earned."** That mechanism was previously read off the campaign
+page; it is now also the partner's own words, published while the week ran.
+
 **The principal source is sponsored content, and that is the main limit on this
 record.** The 4ActionSport feature is labelled "Sponsored", and it quotes the
 Arc'teryx × Distance press release directly ("Dal comunicato"). It is therefore

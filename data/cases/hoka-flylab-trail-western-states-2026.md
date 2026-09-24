@@ -71,6 +71,17 @@ images:
     sourceUrl: https://2026westernstateshokahub.splashthat.com/
 sources:
   - title: >-
+      @madefirsttn on Instagram, 10 July 2026, opened once by hand — the
+      fabricator's own post. "The HOKA Fly Lab was back at the Western States
+      Endurance Run in Tahoe, CA. The modular build was configured into a
+      24x56' configuration at the starting line, featuring new graphics,
+      dimensional signage, and display elements. Design: @HOKA / Fabrication:
+      @madefirsttn".
+    publisher: Made First
+    url: https://www.instagram.com/p/Danoi-xEd7c/
+    type: agency-studio
+    accessed: 2026-09-23
+  - title: >-
       2026 Western States | HOKA Event Hub — the brand's own calendar page for
       the week, footed "© 2026 HOKA". Lists FlyLab Trail on "June 25 – June 26,
       2026" in Olympic Valley, "Step into the FlyLab Trail and experience the
@@ -140,6 +151,20 @@ hours on more than one day.
 new FlyLab Trail", then with the Mafate X.
 
 ## Verification notes
+**The FlyLab is a travelling modular unit, and that changes what a photograph
+of it can prove.** Its fabricator states the structure "was back at the Western
+States Endurance Run" and "was configured into a 24x56' configuration at the
+starting line, featuring new graphics" — design by HOKA, fabrication by Made
+First. The same firm publishes a second Fly Lab project for the Canyons
+Endurance Run 2026, and a third, undated one photographed in an **REI Co-op car
+park**: the same A-frame timber frame, the same FLYLAB lettering, a different
+place entirely. So an undated photograph of the structure is not evidence about
+any particular race, which is why the one stored here is captioned without a
+year rather than assumed to be this edition.
+
+**"Was back" is the fabricator's word**, and it corroborates from a second
+direction that a FlyLab Trail stood at Western States before this edition.
+
 **Six pictures, and only one of them can be dated.** They come from HOKA's own
 2026 hub page, which is the first first-party source this record has had. The
 key-art panel prints "June 24 - 28" and is therefore this edition's. **The five

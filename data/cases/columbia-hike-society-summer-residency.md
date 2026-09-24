@@ -87,6 +87,17 @@ images:
     credit: "Columbia Hike Society"
     sourceUrl: https://www.eventbrite.co.uk/cc/chs-chamonix-summer-residency-4858620
 sources:
+  - title: >-
+      @brandnation on Instagram, 13 August 2026, opened once by hand — an agency
+      account announcing the residency in the first person. "Introducing the
+      Columbia Hike Society Summer Residency: a temporary living space where the
+      community can come together to share experiences, learn, exchange ideas,
+      and experience the mountains in a different way. 23-29 August, Chamonix |
+      DM for details".
+    publisher: Brandnation
+    url: https://www.instagram.com/p/Db-9wjnijAn/
+    type: agency-studio
+    accessed: 2026-09-23
   - title: "Columbia Hike Society Summer Residency Offers a Different Pace in the Heart of Chamonix — post-event trade coverage, 2 September 2026, in the past tense; quotes Claire Neuville (Marketing Manager France) and two Hike Leaders"
     publisher: Outdoor Insight
     url: https://www.outdoor-insight.co.uk/news/columbia-hike-society-summer-residency-offers-a-different-pace-in-the-heart-of-chamonix/
@@ -148,6 +159,21 @@ quoted on the experience.
 demo fleet and no shop appears in any source.
 
 ## Verification notes
+**An agency announced it, and its exact role is not stated.** The residency was
+introduced on the account of **Brandnation**, an agency, in the first person —
+"Introducing the Columbia Hike Society Summer Residency… DM for details" — with
+the dates this record already holds. The post never says what the agency did,
+so Brandnation is recorded as the announcing party and **not** added as a
+collaborator with a described role. Its own description of the space is worth
+keeping: "a temporary living space where the community can come together to
+share experiences, learn, exchange ideas, and experience the mountains in a
+different way."
+
+**Check which Hike Society event a picture belongs to before using it.** The
+Hike Society runs elsewhere too: a "HikeFest" in the Peak District in May 2026
+was covered by a UK magazine with a full set of photographs, none of which
+mentions Chamonix. Those were checked and rejected for this record.
+
 **Six pictures, none of them the chalet.** All come from the residency's own
 session listings. Four carry the "Columbia Hike Society" lockup, which makes
 them programme artwork rather than reportage; two are full camera-size

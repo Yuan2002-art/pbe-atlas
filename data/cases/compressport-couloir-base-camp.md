@@ -70,6 +70,31 @@ images:
     credit: "Couloir Chamonix"
     sourceUrl: https://www.couloirchamonix.com/
 sources:
+  - title: >-
+      @compressport on Instagram, 24 August 2026, opened once by hand. "Basecamp
+      unlocked in Chamonix. For the second year in a row, we open our support
+      station at Couloir Cafe. Welcome to your official Support Station, your
+      pit stop to recharge body, mind, and legs during UTMB week." Location
+      given as "@couloir_chamonix | 204 Av. Michel Croz, 74400". Inside: "Fresh
+      coffee and fuel with our COMPRESSPORT pic nic / Born To Race Area and
+      segment start / Good vibes with the team". Credits "Photos and videos
+      @unitestudio.fr".
+    publisher: Compressport
+    url: https://www.instagram.com/p/DcbddraiFyv/
+    type: official-brand
+    accessed: 2026-09-23
+  - title: >-
+      @compressport on Instagram, 23 August 2026, opened once by hand — the Born
+      to Race challenge. Gives the segment as "Couloir Café (204 Av. Michel
+      Croz, Chamonix) 2.92 km | +196 m D+", entry by uploading an activity
+      screenshot, and the rewards as "Grand Prize: The fastest male and female
+      athletes on Sunday, August 30th will win a full COMPRESSPORT race kit" and
+      "Raffle: 5 participants will be randomly selected to win the all-new Free
+      Belt Pro 2.0."
+    publisher: Compressport
+    url: https://www.instagram.com/p/DcZJBkuDtYC/
+    type: official-brand
+    accessed: 2026-09-23
   - title: "UTMB Week — Spend the week with Compressport! — \"Follow Couloir, our Base Camp for the week and don't miss a chance to take a coffee break!\"; gives the Born to Race segment as 2.92 km / +196 m D+ starting at Couloir Café, 204 Av. Michel Croz, Chamonix, with entry by form plus a screenshot of the activity, and the overall male and female leaders decided on Sunday 30 August"
     publisher: Compressport
     url: https://www.compressport.com/inter/en/content/691-utmb-week-spend-the-week-with-compressport
@@ -119,6 +144,29 @@ Compressport comes to this edition as the **official compression supplier of
 HOKA UTMB Mont-Blanc for the thirteenth consecutive year**.
 
 ## Verification notes
+**It is the second year, and the brand says so.** The record could only note
+that earlier editions were thinly sourced. Compressport's own opening-day post
+reads "for the second year in a row, we open our support station at Couloir
+Cafe", which puts a 2025 edition behind this one on the brand's own word. It
+does not settle the 2024 edition an aggregator reports, and that stays
+unsourced.
+
+**Two things were inside that the record did not have.** The brand names a
+"COMPRESSPORT pic nic" served with the coffee, and a **"Born To Race Area and
+segment start"** — so the challenge was not only timed from the door, it had a
+dedicated area within the café. That is the first evidence of any Compressport
+fit-out inside the venue, and it is the brand's claim rather than an observed
+one.
+
+**A prize the record missed:** besides the race kit for the fastest man and
+woman, five entrants were drawn at random to win a Free Belt Pro 2.0.
+
+**A photographer is credited and has not been retrieved.** The post ends
+"Photos and videos @unitestudio.fr". That studio's site carries a Compressport
+project, but it is a different one — "The Science of Speed", which never
+mentions Couloir, Chamonix or UTMB. **Photographs of this café exist somewhere
+and are the obvious next source for this record.**
+
 **The brand's page has no year in it, and may be rewritten.** The address of
 Compressport's UTMB week page carries no year, and the page dates itself only
 by weekday — "Sunday 30 August" fits 2026. What is recorded here is the page as

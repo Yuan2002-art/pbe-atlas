@@ -86,6 +86,24 @@ images:
     sourceUrl: https://eu.altrarunning.com/en-gb/pages/utmb-landing
 sources:
   - title: >-
+      @altrarunning_europe on Instagram, 20 August 2026, opened once by hand.
+      "Join us all week long in Chamonix to connect with runners from around the
+      world, hear inspiring stories from our athletes, take on our Strava
+      Challenges, test the strength of your toes, join a mobility workshop and
+      discover the latest Altra innovations".
+    publisher: Altra
+    url: https://www.instagram.com/p/DcQ5sDAjX2C/
+    type: official-brand
+    accessed: 2026-09-23
+  - title: >-
+      Altra x Chamonix | Climb to Floria Hut — the Strava challenge itself,
+      titled by Altra. Confirms the brand's own naming of the segment, which the
+      third-party listing gives differently.
+    publisher: Strava
+    url: https://www.strava.com/challenges/6197
+    type: other
+    accessed: 2026-09-23
+  - title: >-
       Join Altra in Chamonix — the brand's own page for UTMB week. "Visit the
       Altra Chalet at the UTMB® Village to test the strength of your toes, join
       a mobility workshop, and receive a giveaway designed to help make your
@@ -164,6 +182,14 @@ ADHD association invited to speak, described it as strictly private and by
 invitation only, for Altra's teams and professionals.
 
 ## Verification notes
+**The brand's own post says "Challenges", plural, and covers the whole week.**
+Altra's Instagram of 20 August 2026 repeats the chalet offer almost verbatim
+from its page — the toe-strength test, the mobility workshop, the athlete
+stories — and frames it as "all week long in Chamonix" rather than as the two
+dated sessions alone. The Strava challenge exists under Altra's own title,
+"Altra x Chamonix | Climb to Floria Hut", which settles the segment naming in
+the brand's favour against the third-party listing.
+
 **The earlier classification of this lead was wrong.** The Atlas's notes
 listed the Altra Chalet among the leads that are *not* Ultra-Trail Village
 stands. Altra's own page puts it "at the UTMB® Village", so it is one. It is

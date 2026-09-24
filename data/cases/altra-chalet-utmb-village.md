@@ -49,6 +49,41 @@ tags:
   - product-trial
   - community
   - event-activation
+images:
+  - src: /images/cases/altra-chalet-utmb-village/01-landing-hero.jpg
+    caption: >-
+      The header of Altra's own Chamonix page: two people climbing a grassy
+      slope with poles, a lit rock face behind them. Undated, and it shows the
+      terrain rather than the chalet.
+    credit: "Altra"
+    sourceUrl: https://eu.altrarunning.com/en-gb/pages/utmb-landing
+  - src: /images/cases/altra-chalet-utmb-village/02-group-run.jpg
+    caption: >-
+      The image beside the community-run section: a line of runners in matching
+      white and red Altra tops climbing a boulder field. Not dated, and not the
+      chalet.
+    credit: "Altra"
+    sourceUrl: https://eu.altrarunning.com/en-gb/pages/utmb-landing
+  - src: /images/cases/altra-chalet-utmb-village/03-trail-blur.jpg
+    caption: >-
+      A second section image: runners on a forest trail with an Altra shoe
+      swung into the foreground, the frame dragged to blur.
+    credit: "Altra"
+    sourceUrl: https://eu.altrarunning.com/en-gb/pages/utmb-landing
+  - src: /images/cases/altra-chalet-utmb-village/04-forest-run.jpg
+    caption: >-
+      A third: a runner seen from behind on a woodland path, the trees pulled
+      into radial streaks.
+    credit: "Altra"
+    sourceUrl: https://eu.altrarunning.com/en-gb/pages/utmb-landing
+  - src: /images/cases/altra-chalet-utmb-village/05-heal-poster.jpg
+    caption: >-
+      The poster for HEAL — "Alban searched for answers in alcohol, drugs and
+      self-destruction. He found healing on the trail", with Alban Berson,
+      produced by Storyteller Labs in partnership with Altra. The film
+      premièred at Maison des Artistes, **not** at the chalet.
+    credit: "Altra"
+    sourceUrl: https://eu.altrarunning.com/en-gb/pages/utmb-landing
 sources:
   - title: >-
       Join Altra in Chamonix — the brand's own page for UTMB week. "Visit the
@@ -166,6 +201,15 @@ is `approximate`, as on the other Village cases.
 
 **Strava is recorded narrowly.** The segments are on Strava; that is evidence
 of the platform, not of a partnership.
+
+**Five pictures, and not one of them is the chalet.** All come from Altra's
+own page. Four are running photographs placed beside the page's sections —
+terrain, a group run, two trail frames — none of them dated or located by the
+page, so none can be said to be from this edition or from Chamonix. The fifth
+is the HEAL poster, and the film it advertises premièred at Maison des
+Artistes rather than at the chalet, which the captions say. **The Altra Chalet
+itself is undocumented in pictures.** Shoe shots on the same page were left
+out, because nothing says which models were the test pairs.
 
 **What is not known:** what the toe-strength test involves, who ran the
 mobility workshop, which shoe models were available to test, how many

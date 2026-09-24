@@ -47,10 +47,48 @@ tags:
   - product-trial
   - event-activation
 images:
-  - src: /images/cases/goldwin-voxeloft-trail-jacket/01-jacket.jpg
+  - src: /images/cases/goldwin-voxeloft-trail-jacket/01-voxeloft-hero.jpg
+    caption: >-
+      The header of Goldwin's Voxeloft page: the quilted black jacket on an
+      invisible form, hood up, small against a pale gradient. A product image,
+      not the stand.
+    credit: "Goldwin"
+    sourceUrl: https://www.goldwin-global.com/eu/feature/voxeloft/
+  - src: /images/cases/goldwin-voxeloft-trail-jacket/02-jacket.jpg
     caption: >-
       The Voxeloft Trail Jacket, as the brand pictures it on its Voxeloft
       page. A product image, not a photograph of the stand.
+    credit: "Goldwin"
+    sourceUrl: https://www.goldwin-global.com/eu/feature/voxeloft/
+  - src: /images/cases/goldwin-voxeloft-trail-jacket/03-vest.jpg
+    caption: >-
+      The second garment on the same page: a sleeveless zip vest, quilted at
+      the back and plain at the front. **Not the jacket this case is named
+      for**; the page shows it under "Coming Soon".
+    credit: "Goldwin"
+    sourceUrl: https://www.goldwin-global.com/eu/feature/voxeloft/
+  - src: /images/cases/goldwin-voxeloft-trail-jacket/04-air-structure.jpg
+    caption: >-
+      A rendering of the insulation's geometry — stacked hourglass cells in
+      grey on white — beside the page's text on "A New Layered Air Structure
+      for Optimal Thermal Insulation". A diagram, not a photograph.
+    credit: "Goldwin"
+    sourceUrl: https://www.goldwin-global.com/eu/feature/voxeloft/
+  - src: /images/cases/goldwin-voxeloft-trail-jacket/05-thermal-simulation.jpg
+    caption: >-
+      The brand's own data plate: a "Thermal Insulation Performance Simulation"
+      plotting thermal resistance against air-gap thickness for the
+      multi-layered structure and a conventional product, annotated "At a
+      thickness of 100 mm, the multi-layered structure provides 10 times
+      greater thermal insulation performance"; below it, an airflow plot
+      between a 30°C body side and a 0°C environment side. A manufacturer's
+      claim, presented as its own chart.
+    credit: "Goldwin"
+    sourceUrl: https://www.goldwin-global.com/eu/feature/voxeloft/
+  - src: /images/cases/goldwin-voxeloft-trail-jacket/06-quilt-macro.jpg
+    caption: >-
+      A close view of the quilted surface, lit to raise the grid of tufted
+      cells out of the black.
     credit: "Goldwin"
     sourceUrl: https://www.goldwin-global.com/eu/feature/voxeloft/
 sources:
@@ -139,6 +177,21 @@ takes the **edition's own dates, 24-30 August**, on the basis that the jacket
 was available at the Village and the Village ran that week. That is an
 inference about duration from a sourced fact about place, and it is the
 weakest thing here.
+
+**Six pictures, all from the brand's technology page, and none is the stand.**
+Two are product views of the jacket, one is a second garment, and three are
+technical plates — a rendering of the insulation geometry, a macro of the
+quilted surface, and the brand's own simulation chart. The chart is
+**Goldwin's claim about its own material**, reproduced here as a published
+claim and not as a verified measurement; its "10 times greater thermal
+insulation performance" is the page's wording, with no test standard, sample
+or third-party laboratory named.
+
+**One of the garments is a vest, not the jacket.** The page's second product
+image shows a sleeveless piece, listed under "Coming Soon". It is included
+because it is part of what Goldwin published for this material, and the
+caption says what it is so it cannot be mistaken for the jacket the case is
+named after.
 
 **The exact stand is not recorded.** "The manufacturer exhibition area in the
 Ultra-Trail Village" is as precise as the brand gets. The coordinate is the

@@ -47,7 +47,25 @@ tags:
   - community
   - cultural-archive
   - event-activation
-images: []
+images:
+  - src: /images/cases/dltdc-house-chamonix/01-house-key-visual.jpg
+    caption: >-
+      The activation's own key visual: a chalet living room — exposed timber
+      trusses, a long dining table, low sofas around a rug, glazing onto
+      greenery — with the "dltdc house / a home for stories" lockup laid over
+      it. The image is the House's, but nothing on the page states that the
+      room shown is the room that was rented.
+    credit: "Dans la Tête d'un Coureur / Sunday Night Média"
+    sourceUrl: https://www.danslateteduncoureur.fr/blog/dltdc-house-utmb-2026-inscription-coulisses-metier-coach-campus-tristan-pawlak-running-addict
+  - src: /images/cases/dltdc-house-chamonix/02-episode-thumbnail.jpg
+    caption: >-
+      The cover of the episode the publication confirms was recorded in the
+      House: three people at microphones under the title "Dans l'ombre des
+      champions — quand la performance devient un projet de vie à deux", badged
+      "dltdc hors-série" and carrying the Shokz mark. A designed cover built
+      around a photograph of the recording, not a photograph of the room.
+    credit: "Dans la Tête d'un Coureur / Sunday Night Média"
+    sourceUrl: https://www.danslateteduncoureur.fr/blog/utmb-2026-conjoints-alix-noblat-mathieu-masbernard-justine-carrel-soutien-athlete-trail-running
 sources:
   - title: >-
       UTMB 2026 : Découvrez la DLTDC House au coeur de Chamonix — gives the run
@@ -116,6 +134,20 @@ Mountains. A single audio brand placing itself inside two other parties' rooms
 rather than taking one of its own.
 
 ## Verification notes
+**Two pictures, and neither is confirmed to show the House.** The first is the
+activation's own key visual and does show a chalet interior — its embedded
+title reads "DLTDC x Shokz - Activation UTMB 2026 - 9", which ties the file to
+this activation — but no caption anywhere says the room pictured is the room on
+Place du Triangle de l'Amitié, and a key visual may be shot anywhere. The
+second is the cover of the one episode the publication confirms was recorded
+there; it is a designed cover, and the people and microphones in it are its
+only photographic part. **The distinction matters here more than usual**,
+because this is a case about a room and the room remains undocumented.
+
+This is a different image from the site-wide key visual an earlier pass
+rejected; that one is used across the whole publication and says nothing about
+Chamonix.
+
 **The spine of this record is a press release, and it is labelled as one.** The
 Presse Agence piece carries "rédigé à partir d'un communiqué de presse transmis
 à la rédaction", so it is Sunday Night Média speaking through a title rather

@@ -40,7 +40,68 @@ tags:
   - limited-drop
   - retail
   - event-activation
-images: []
+images:
+  - src: /images/cases/satisfy-chamonix-off-road-supply/01-key-art.jpg
+    caption: >-
+      The activation page's own header image: a chopper motorcycle rendered in
+      liquid chrome, with three small white mountains floating above it on a
+      flat grey ground. A made image, not a photograph of anything in Chamonix.
+    credit: "SATISFY"
+    sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
+  - src: /images/cases/satisfy-chamonix-off-road-supply/02-massif.jpg
+    caption: >-
+      A figure in a red cap in the foreground, out of focus, against the snow
+      and rock of the massif. On the activation page, below the header;
+      undated, and not tied to a year by anything on the page.
+    credit: "SATISFY"
+    sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
+  - src: /images/cases/satisfy-chamonix-off-road-supply/03-mist-and-runners.jpg
+    caption: >-
+      Two frames side by side on the page: a sepia mountain dissolving into
+      cloud, and a group running a wet path in mist. The only image on the page
+      that shows a run; nothing states which edition it is from.
+    credit: "SATISFY"
+    sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
+  - src: /images/cases/satisfy-chamonix-off-road-supply/04-hydration-vest.jpg
+    caption: >-
+      The Justice Cordura hydration vest in the mud-dyed finish, two flasks in
+      the chest pockets. Product shot on white, from the exclusive-products
+      section.
+    credit: "SATISFY"
+    sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
+  - src: /images/cases/satisfy-chamonix-off-road-supply/05-therocker.jpg
+    caption: >-
+      TheROCKER in the same mud-dyed treatment, lettered SATISFY across the
+      toe. Product shot, not the shop.
+    credit: "SATISFY"
+    sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
+  - src: /images/cases/satisfy-chamonix-off-road-supply/06-oakley-suture.jpg
+    caption: >-
+      The SATISFY® Oakley® Suture Jacket™ — eyewear, not a garment: a
+      translucent green frame with dark lenses and the row of perforations the
+      page calls "original perforations", in the "Grenoble Green colorway…
+      exclusive to our edition".
+    credit: "SATISFY"
+    sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
+  - src: /images/cases/satisfy-chamonix-off-road-supply/07-coros-apex-4.jpg
+    caption: >-
+      The SATISFY × COROS APEX 4, its face showing a SATISFY watch screen —
+      "SUN.30.06 12:36", 21.2 km run, 138 bpm, 68% recovery.
+    credit: "SATISFY"
+    sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
+  - src: /images/cases/satisfy-chamonix-off-road-supply/08-hydrapak-flasks.jpg
+    caption: >-
+      The Hydrapak soft flasks, one printed with a Chamonix script and an
+      edelweiss. Product shot.
+    credit: "SATISFY"
+    sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
+  - src: /images/cases/satisfy-chamonix-off-road-supply/09-cow-bell.jpg
+    caption: >-
+      The Off-Road Supply mountain cow bell: a brass bell on a black leather
+      strap with brass figures and a red, yellow, green and white fringe. Sold
+      in Chamonix only.
+    credit: "SATISFY"
+    sourceUrl: https://satisfyrunning.com/pages/chamonix-off-road-supply
 sources:
   - title: "Chamonix Off-Road Supply"
     publisher: SATISFY
@@ -88,6 +149,26 @@ Nant Favre but not house number 133, so the pin is on the street, not the door.
 
 **No agency, studio or production partner is credited anywhere** — for any
 edition. The field is absent rather than guessed.
+
+**"Suture Jacket" is eyewear, and the name invites the wrong reading.**
+"Jacket" is Oakley's own term for a frame, not a garment. The page describes
+the item as having "original perforations" in a "Grenoble Green colorway", the
+file SATISFY serves it under is named `prism-oakley-satisfy-glasses-grenoble-
+green_front`, and the picture shows sunglasses. The `product` field keeps the
+full product name because that is what it is called, but anyone reading this
+record should not count a jacket among the exclusives.
+
+**Nine pictures, and none shows the shop.** All are from SATISFY's own
+activation page. Three are page imagery — a chrome-rendered motorcycle used as
+the header, a figure against the massif, and a pair of frames including a group
+run — and none of them is dated or located by the page. Six are product shots
+of the exclusives on plain grounds. **No photograph of 133 Chemin du Nant
+Favre, inside or out, was found anywhere.** For a record at `verified`, that
+gap is worth stating plainly: the evidence for the space is textual.
+
+**The header image is a made image.** It was checked rather than assumed — the
+earlier concern was that the page hero might be a photograph from a previous
+edition. It is not a photograph at all.
 
 **Earlier editions are thinly sourced.** A 2024 edition (26–31 August) appears
 only on a third-party event aggregator, and no direct source for 2025 was found,

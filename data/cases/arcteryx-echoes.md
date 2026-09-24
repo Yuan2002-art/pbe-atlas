@@ -41,7 +41,59 @@ tags:
   - cultural-archive
   - collaboration
   - event-activation
-images: []
+images:
+  - src: /images/cases/arcteryx-echoes/01-echoes-four-themes.jpg
+    caption: >-
+      The project's title card: "ECHOES" in yellow display type over dark rock,
+      with SOUL, MIND, BODY and MOUNTAIN set around it — the four themes the
+      journal is built on. From the published journal, not from any
+      installation.
+    credit: Arc'teryx — photography Carlos Blanchard
+    sourceUrl: https://blog.arcteryx.com/stories/echoes/
+  - src: /images/cases/arcteryx-echoes/02-echoes-title.jpg
+    caption: >-
+      The same wordmark over a close view of red rock and a forearm. A page
+      from the journal, not a photograph of a room.
+    credit: Arc'teryx — photography Carlos Blanchard
+    sourceUrl: https://blog.arcteryx.com/stories/echoes/
+  - src: /images/cases/arcteryx-echoes/03-contributors.jpg
+    caption: >-
+      The journal's contributor grid, headed "FEATURING:" — seven portraits
+      with names beneath. Three of the seven do not appear anywhere in the
+      page's own text; see the verification notes.
+    credit: Arc'teryx — photography Carlos Blanchard
+    sourceUrl: https://blog.arcteryx.com/stories/echoes/
+  - src: /images/cases/arcteryx-echoes/04-motion-runner.jpg
+    caption: >-
+      A runner reduced to a smear of movement against dark green, the frame
+      dragged sideways. From the journal.
+    credit: Arc'teryx — photography Carlos Blanchard
+    sourceUrl: https://blog.arcteryx.com/stories/echoes/
+  - src: /images/cases/arcteryx-echoes/05-motion-body.jpg
+    caption: >-
+      A body mid-stride against flat grey-blue, blurred past recognition.
+      From the journal.
+    credit: Arc'teryx — photography Carlos Blanchard
+    sourceUrl: https://blog.arcteryx.com/stories/echoes/
+  - src: /images/cases/arcteryx-echoes/06-flower-and-headtorch.jpg
+    caption: >-
+      Two frames side by side in the journal's own layout: a flower lit in
+      black and white against dark foliage, and a face under a headtorch.
+    credit: Arc'teryx — photography Carlos Blanchard
+    sourceUrl: https://blog.arcteryx.com/stories/echoes/
+  - src: /images/cases/arcteryx-echoes/07-rockface-and-shoe.jpg
+    caption: >-
+      A second pair: a figure small against a black-and-white rock face, and a
+      shoe planted on a mossy boulder.
+    credit: Arc'teryx — photography Carlos Blanchard
+    sourceUrl: https://blog.arcteryx.com/stories/echoes/
+  - src: /images/cases/arcteryx-echoes/08-collage.jpg
+    caption: >-
+      Five small frames scattered across white in the journal's layout — a
+      portrait, a red-lit forest, a figure on a skyline, someone sitting in the
+      dark.
+    credit: Arc'teryx — photography Carlos Blanchard
+    sourceUrl: https://blog.arcteryx.com/stories/echoes/
 sources:
   - title: "ECHOES"
     publisher: Arc'teryx (Lithographica)
@@ -143,6 +195,25 @@ a confirmed space, and that distinction is the whole point of this record.
 
 See `arcteryx-distance-aid-station`, which covers the store programme those
 sources are mostly about and is kept separate for the same reason.
+
+**Eight pictures, and not one of them shows a space.** They are the journal's
+own pages, from the brand's post, credited to Carlos Blanchard. They are here
+because the journal is the part of ECHOES that is confirmed to have reached
+Chamonix, and because they are the only published material the project has.
+**None of them is evidence that an installation existed**, and none is captioned
+as if it were. If a photograph of the Place de l'Aiguille du Midi display ever
+surfaces, it belongs above all of these.
+
+**The contributor grid names seven people; the page's text names four.** The
+image headed "FEATURING:" carries Florian Reichert, Jazmine Lowther, Louis
+Derrien, Martin Kern, Edoardo Rossano, Milly Young and Charlie Young. Only
+Derrien, Kern, Rossano and Young appear anywhere in the page's own words, which
+is where the Description's list of recorded runners comes from. The three
+extra — Reichert, Lowther and Charlie Young — appear **only inside the image**,
+and that file is named `Echoes2TEST.jpg`, which suggests a working asset rather
+than a final one. The Description has not been changed on the strength of it.
+What the seven contributed, and whether all seven are recorded voices rather
+than a wider credit list, is not stated anywhere.
 
 **Nothing is known about what it physically contained** — no structures, rooms,
 screens or audio equipment are described anywhere. No spatial designer,

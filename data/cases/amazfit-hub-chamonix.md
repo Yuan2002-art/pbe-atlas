@@ -203,37 +203,69 @@ captioning. Where a caption places a picture by inference rather than by the
 page's own words, it says so.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: a brand whose product is measurement took a house at a race and
-filled it with a podcast, a BBQ for the industry, and one athlete's training
-data.
+Buy standing in a category the brand is new to, by hosting the people already in
+it. Amazfit takes a house and fills it with an industry party, a live podcast
+and an athlete's training data — three ways of being talked about by people whose
+opinion the audience already trusts.
 
 ## Archive use
-*Not yet written.* What the week generated: a podcast recording and a reel. The
-only archive is content, and it was made on site rather than displayed there.
+The register's clearest example of a space whose product is measurement. Ruth
+Croft's training tracked on two devices is the argument, and it is made in a
+house rather than on a stand. Set it against Goldwin's Motion Studies, where the
+data is also the output but is collected from invited testers rather than from
+one athlete.
 
 ## Why this location?
-*Not yet written.* The constraint on any answer: nobody published where the house
-was. Its address is absent from the agency's own account, while the one event
-with a named location — the cheering point at Notre-Dame de la Gorge — is not in
-Chamonix at all.
+Unknown, and the absence is informative. No source publishes the address,
+including the agency's own account, while the one venue that is named — the
+cheering point at Notre-Dame de la Gorge — is not in Chamonix at all. A house
+nobody can find is a house for the industry rather than for the public.
 
 ## Why this timing?
-*Not yet written.* Industry Night opened the week and is in its fourth edition,
-so the timing is a returning fixture rather than a one-off decision.
+Monday to Friday, with Industry Night opening the week in its fourth edition.
+The timing is a fixture rather than a decision: the party has a place in the
+trade's calendar, and the Hub is what has grown around it.
+
+## Why this event?
+Because the trade is here. UTMB week is where the brand's distributors, media
+and athletes are assembled, and a brand without heritage in trail running buys
+its way into the conversation faster by feeding that room than by renting a
+stand beside it.
+
+## Why this product?
+A watch, which is the one product in this register that is worn rather than
+tested. Amazfit cannot put a device through a shoe test, so the demonstration
+becomes narrative: last year's winner, still improving, with the numbers to
+show it.
 
 ## What performance claim is being reinforced?
-*Not yet written.* Note for the record: the claim is not made about a garment or
-a shoe but about **data** — Ruth Croft's training tracked on two Amazfit
-devices, with the brand's line being that last year's winner still has something
-to improve.
+That the brand's instruments are good enough for the best. The claim is
+deliberately made about data rather than about hardware — Croft's training on
+two Amazfit devices, and the line that the reigning winner still has something
+to improve. It is a claim about what the product can see, not about what it
+can withstand.
 
 ## What cultural meaning is being built?
-*Not yet written.* The material: an industry BBQ in its fourth year, a live
-podcast, and a social run the agency describes as an alternative to the
-traditional shakeout.
+Insider standing. A BBQ in its fourth year, a live podcast, a social run framed
+as an alternative to the shakeout — the register is collegiate rather than
+consumer, and the meaning being built is that Amazfit belongs to this trade. The
+audience being persuaded is the industry, and the public is the overhearer.
 
 ## What role does the physical experience play?
-*Not yet written.* What is known: the house hosted a breakfast, an evening and a
-recording, and the two moving parts of the week — the social run and the
-cheering point — both happened outside it.
+Support rather than substance. The two parts of the week that reach anyone
+outside the house — the social run and the cheering point on the course — both
+happen outside it. The Hub is where the industry is hosted and the content is
+made; the experience that travels is the audio.
+
+## Experience mechanism
+Hospitality. Nothing is sold, nothing is tested and nothing is earned; people
+are fed, introduced and recorded. It is the oldest mechanism in this register and
+the hardest to evidence, which is why the case rests on an agency's account
+rather than on anything the brand published.
+
+## Key strategic insight
+A brand new to a sport can buy legitimacy faster by hosting its industry than by
+addressing its consumers. Amazfit's Hub is aimed at the people who will speak
+about the brand for the rest of the year, and its most valuable output is not
+the cheering point or the run but a room full of the trade, in its fourth
+consecutive year of being fed.

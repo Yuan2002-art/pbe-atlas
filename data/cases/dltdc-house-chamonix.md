@@ -212,45 +212,69 @@ is "co-construit avec des partenaires"; only Shokz surfaced, and only through
 one episode.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: a publication with no product took a building for longer than the
-race lasted, and the thing it made there was more episodes.
+Convert an audience into a room and the room back into an audience. Dans la
+Tête d'un Coureur has listeners rather than customers, and the House exists to
+put some of them in front of the microphone and the rest in the episode. The
+week is a production schedule with hospitality around it.
 
 ## Archive use
-*Not yet written.* What exists to work from: the episodes themselves, which
-outlast the room and are the only part of the week still accessible.
+The register's purest case of a space built to be transmitted. Everything of
+value the House produced leaves as audio, and one episode is confirmed by the
+publisher afterwards — which is more post-event evidence than most records here
+hold. Compare with Amazfit, where the content is also the output but the brand
+has a product behind it; here there is none.
 
 ## Why this location?
-*Not yet written.* The facts that constrain it: Place du Triangle de l'Amitié
-is minutes from the start and finish line, which is where the people the
-podcast interviews pass through.
+A chalet with a garden open onto Mont Blanc, minutes from the start and finish.
+The proximity matters for the guests rather than the public: athletes have to be
+able to arrive between obligations, and a house with somewhere to sit outside is
+what makes a two-hour recording plausible in a week when everyone is busy.
 
 ## Why this timing?
-*Not yet written.* What is known: 24 to 31 August, one day longer than the
-edition, so the house was still open after the race had ended.
+Eight days, one longer than the race itself, opening before it and closing after
+it. A media operation needs the tail: the interesting conversations with
+finishers happen once the race has stopped, and a space that shuts on Sunday
+misses them.
 
 ## Why this event?
-*Not yet written.* The material: UTMB is the week when the guest list assembles
-itself in one valley.
+Because the guest list assembles itself. Anton Krupicka, Xavier Thévenard,
+Mathieu Blanchard, Tom Evans and Marianne Hogan are all in one valley for one
+week, and a publication that would otherwise spend a year booking them can
+record a season's episodes in eight days.
 
 ## Why this product?
-*Not yet written.* There is no product. That is the observation.
+There is none, and it is the first case in this Atlas where that is true of the
+occupant rather than of the programme. Every other record here belongs to a
+company with something to sell; this one has an episode schedule. What the House
+monetises is attention, and Shokz is the brand that pays for proximity to it.
 
 ## What performance claim is being reinforced?
-*Not yet written.* Note for the record: none that has been found. The
-confirmed episode is about the partners of athletes rather than about
-performance at all.
+None of the publisher's own. The claims in the room belong to the guests, and
+the publication's position is that it is the place where they are made — which
+is a claim about access rather than about performance. The most telling episode
+is the one recorded with athletes' partners rather than athletes.
 
 ## What cultural meaning is being built?
-*Not yet written.* What is known: the one recording that is confirmed moved
-the microphone off the runners and onto the people beside them.
+Intimacy at scale. "A home for stories" is the stated line, and the programme —
+starred dinners, private coaching, premieres, very few places — is built to feel
+like a house rather than a studio. The meaning on offer is proximity to people
+the audience otherwise only hears.
 
 ## What role does the physical experience play?
-*Not yet written.* What is documented: a room close enough to the finish line
-for guests to walk in, and an audience present while the recording happened.
+Essential for the few, irrelevant for the many. Perhaps a few hundred people
+were ever inside; the audience is everyone who downloads the episode. The room
+has to be physical because a live recording needs a live audience, but its
+purpose is to be heard rather than visited.
 
 ## Experience mechanism
-*Not yet written.*
+Scarcity of places, abundance of reach. Sessions were capped — "certains
+rendez-vous auront très peu de places" — and the scarcity does double work: it
+makes attendance feel earned, and it keeps the recordings small enough to sound
+like conversations.
 
 ## Key strategic insight
-*Not yet written.*
+A media brand can occupy a race more cheaply than any equipment brand, because
+its product is the room's output rather than the room. The House is the only
+case in this register whose occupant sells nothing on site and still leaves with
+the week's most durable asset — and Shokz, which built nothing at all, appears
+inside both this room and i-Run's.

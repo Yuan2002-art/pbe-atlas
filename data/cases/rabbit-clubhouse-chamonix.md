@@ -228,38 +228,65 @@ captioning. Where a caption places a picture by inference rather than by the
 page's own words, it says so.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: a brand with no permanent retail in Chamonix bought a week of
-someone else's hotel and resold it as the product.
+Sell the stay, not the shop. rabbit has no retail in Chamonix and does not build
+any; it takes rooms in two existing hotels and resells the week itself — a bed,
+a schedule and a collection — to runners who would have needed all three anyway.
 
 ## Archive use
-*Not yet written.* What exists: a Chamonix-exclusive collection, a founders'
-panel with two nutrition brands, and an evening with an author — but no
-documented archive, exhibition or recorded material.
+The register's only case where accommodation is the product. It is also the only
+one that is explicitly portable: the same Clubhouse ran in Chicago and New York
+in the same year, so the Chamonix instance is an episode of a touring format
+rather than a response to this place.
 
 ## Why this location?
-*Not yet written.* The constraint: rabbit does not own or lease anything in
-Chamonix. It selected two existing hotels in the town centre, one of them on
-Place de l'Église, and the format is explicitly portable — the same concept ran
-in Chicago and New York in the same year.
+Two hotels in the town centre, one on Place de l'Église, chosen because they
+already exist and already have beds. The brand's own diagram makes the logic
+plain — Stay, Prepare, Gear Up, Connect, Celebrate — and only the first of those
+requires a building the brand could not otherwise obtain.
 
 ## Why this timing?
-*Not yet written.* 24–30 August 2026, the full race week, with published daily
-hours that close at 11:00 on the final Sunday — the morning after the UTMB
-finishers come through.
+The full race week, with hours that close at 11:00 on the final Sunday, the
+morning after the UTMB finishers come through. The format is bounded by the
+guest's own stay rather than by the event's programme: it opens when people
+arrive and closes when they leave.
+
+## Why this event?
+Because a destination race creates a captive accommodation market, and rabbit
+sells into it. At a city marathon a runner sleeps at home or in a hotel with no
+opinion about running; at Chamonix everyone is a visitor, and the room they take
+is available to be branded.
+
+## Why this product?
+A Chamonix-exclusive collection rather than a technical one — the record notes
+that no product performance claim appears anywhere in the sources. What is on
+sale is a souvenir of having been there, which is consistent with a business
+whose primary product is the stay.
 
 ## What performance claim is being reinforced?
-*Not yet written.* Note for the record: no product performance claim appears in
-any retrieved source. The named product is a place-exclusive collection, not a
-technical one.
+None, and the absence is the finding. In a week where every other brand here
+argues about shoes, materials or measurement, rabbit makes no claim about
+equipment at all. Its proposition is comfort and company before a hard race, and
+the record should not manufacture a performance argument it never made.
 
 ## What cultural meaning is being built?
-*Not yet written.* rabbit's own framing to work from: "part hotel room, part
-pop-up shop, part community hub… where runners settle in, dial it back, and
-fully soak in the experience."
+Settling in. The brand's own framing — "part hotel room, part pop-up shop, part
+community hub… where runners settle in, dial it back, and fully soak in the
+experience" — sets itself against the intensity of the week. The meaning is
+hospitality among strangers who have the same race in the morning.
 
 ## What role does the physical experience play?
-*Not yet written.* What is known: the space was somewhere to sleep as well as
-somewhere to gather, open to guests for nine hours a day, and the experience was
-inseparable from staying there. Nothing is documented about how either building
-was altered, fitted or branded.
+Total and inseparable. The guest sleeps inside the case. No other record here
+occupies its visitors for twenty-four hours a day, and nothing about the
+proposition survives being moved online or into a stand.
+
+## Experience mechanism
+The booking. Access runs through a room reservation rather than a door, which
+sorts the audience by commitment before anyone arrives and guarantees the brand
+several days with each of them. It is the highest-friction entry in this
+register and buys the deepest engagement.
+
+## Key strategic insight
+Occupying a runner's accommodation is the most complete form of brand presence
+available at a destination race, and the cheapest to replicate: the format needs
+no construction, only a hotel willing to let, which is why the same Clubhouse
+can appear in Chamonix, Chicago and New York in a single season.

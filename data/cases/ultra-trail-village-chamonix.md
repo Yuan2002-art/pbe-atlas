@@ -227,43 +227,72 @@ is opened by hand, it names them all at once and properly.
 organiser's page carry 2022 and 2023 in their file names and are not used.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: the race sells the ground, and the brands that buy it are the
-same brands that elsewhere in this register pay for chalets of their own.
+Sell the ground the category stands on. The organiser's business here is not
+persuasion but tenancy: it builds the square, programmes enough around the
+stands to keep people in it, and rents the floor to the brands whose own
+persuasion happens inside. Everything else in this register is a tenant or a
+refusenik.
 
 ## Archive use
-*Not yet written.* What exists to work from: an exhibitors guide and a map,
-both published by the organiser, both a record of who paid.
+The denominator. A hundred and ten brands in one square against a dozen
+researched independent spaces is the ratio that keeps this Atlas honest about
+what brand presence at UTMB normally looks like — a rented stand, not a
+building. Every other Chamonix case should be read against this number.
 
 ## Why this location?
-*Not yet written.* The facts that constrain it: Place du Mont-Blanc is the
-centre of Chamonix and the square the race itself starts and finishes beside.
+Place du Mont-Blanc is the town's own centre, not a peripheral expo hall, so the
+Village is unavoidable rather than visited. That is what the floor price buys: a
+brand inside it does not need to draw anyone across town, and a brand outside it
+must.
 
 ## Why this timing?
-*Not yet written.* What is known: the Village closes at 14:00 on the Friday,
-hours before the UTMB itself starts.
+Monday to Friday, closing at 14:00 before the racing begins, with the Fan
+Experience running a day longer. The commercial half withdraws before the
+sporting half peaks — the stands take the week of arrival and preparation, and
+hand the weekend back to the race.
 
 ## Why this event?
-*Not yet written.* The Village is the event's own, so the question inverts:
-the event exists first and the exhibition is built on it.
+UTMB is where the category's buyers, media and athletes are in one valley at
+one time, which is precisely the scarcity an exhibition monetises. The
+organiser is not competing for that attention; it convenes it and then charges
+for proximity to it.
 
 ## Why this product?
-*Not yet written.* The product is floor space.
+There is no product, and that is the case's whole distinction. The organiser
+sells square metres and the right to stand on them. What the tenants sell is
+their own problem, which is why the register's most varied spaces — a jacket
+launch, a foot-strength test, a coffee bar — can all sit inside one perimeter.
 
 ## What performance claim is being reinforced?
-*Not yet written.* Note for the record: the organiser makes none of its own
-here. It sells the right to make one.
+None of the organiser's own. The Village's claim is about the event rather than
+about equipment: that this is the place where the sport's commerce happens.
+Its rulebook is more revealing than its marketing — a document that polices who
+may imply partnership is a document asserting that the association is worth
+policing.
 
 ## What cultural meaning is being built?
-*Not yet written.* What is known: the organiser's own language for the square
-is "the beating heart of the HOKA UTMB Mont-Blanc" and "a narrative hub".
+Legitimacy, and the power to grant it. By defining what a non-partner may not
+say — no protected names, no protected hashtags, no "confusion through
+proximity" — the organiser makes official association a scarce good and sells
+the nearest legal substitute. The instruction to non-partners to "use generic
+alpine themes" is the sharpest line in the whole register: the mountain is
+common property, the race is not.
 
 ## What role does the physical experience play?
-*Not yet written.* What is documented: a square, five days, and a second
-programme inside it that outlasts the stands by a day.
+Structural rather than expressive. The Village is a serviced perimeter — timber
+chalets, power, opening hours, waste collection — inside which each tenant
+supplies its own meaning. The organiser's own contribution to experience is the
+Fan Experience, which exists to stop the square emptying between transactions.
 
 ## Experience mechanism
-*Not yet written.*
+Tenancy. The visitor's experience is assembled from a hundred and ten
+independent attempts at persuasion, unified only by the ground they stand on and
+the rules they were given. No single brand controls the encounter, and the
+organiser controls all of it without making any argument of its own.
 
 ## Key strategic insight
-*Not yet written.*
+The most powerful spatial position at an event is not the best stand but the
+freehold. By owning the square and writing the rules for everyone in and around
+it, the organiser converts the sport's central week into a lettable asset — and
+the brands that build elsewhere in Chamonix are, whether they say so or not,
+buying their way out of exactly this arrangement.

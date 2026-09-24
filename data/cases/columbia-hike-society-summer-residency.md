@@ -236,42 +236,68 @@ credited in any source. For an Atlas about space, this record is strong on
 programme and empty on architecture.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material that bears on it: a brand staged a week-long space at the world's
-largest trail race, sold nothing, tested nothing, and built the whole programme
-around slowness.
+Reach the people the race excludes. Columbia stages a week at the world's
+largest trail event and programmes it entirely against that event's values —
+walking instead of racing, slowness instead of times — which addresses an
+outdoor audience that is in Chamonix without being in the start pens.
 
 ## Archive use
-*Not yet written.* What exists to work from: a live podcast recording with an
-alpinist, a photography workshop (Frame of Mind), and quotes from Hike Leaders
-published afterwards by the brand's trade channel.
+The register's counter-programme. It is the only case here that sets itself
+explicitly against the race it sits inside, and the only one that sells nothing
+and tests nothing. Compare with NNormal, which also builds no retail but is
+still demonstrating a shoe; Columbia demonstrates nothing at all.
 
 ## Why this location?
-*Not yet written.* The constraint on any answer: the chalet was ephemeral and
-its address was never made public, described only as a few minutes from the busy
-town centre, with the meeting point sent privately. The location was chosen for
-proximity without visibility.
+A chalet whose address was never published, described only as minutes from a
+busy centre, with the meeting point sent privately. Proximity without
+visibility: close enough to reach, invisible enough that the week could not be
+gatecrashed by the crowd it was defined against.
 
 ## Why this timing?
-*Not yet written.* 23–29 August 2026, overlapping UTMB race week but starting a
-day before it and ending a day before it closed. The final day, 29 August, was
-spent walking out to cheer the UTMB runners — the one day the programme turned
-towards the race.
+23–29 August, starting a day before race week and ending a day before it closed.
+The programme runs alongside the race rather than with it, and turns towards it
+exactly once — on the final day, walking out to cheer the UTMB runners. That
+single gesture is what keeps the week adjacent rather than oppositional.
+
+## Why this event?
+Because the audience for an alternative is only legible next to the thing it is
+an alternative to. Staged in an empty week the residency would be a hiking
+holiday; staged during UTMB, "loin de la quête de performance" becomes a
+position.
+
+## Why this product?
+None is named anywhere, and no test is run. For an apparel brand at a race week
+this is close to an abstention, and it is the clearest signal that the Hike
+Society is a community programme Columbia owns rather than a marketing vehicle
+for a season's range.
 
 ## What performance claim is being reinforced?
-*Not yet written.* Note for the record: no performance claim appears in any
-source. No product is named, no test is run, and the stated proposition is
-distance from "la quête de performance".
+No performance claim appears in any source, and this record does not invent
+one. The proposition is explicitly distance from performance — which in a
+register organised around performance credibility is worth stating as a finding
+rather than as a gap.
 
 ## What cultural meaning is being built?
-*Not yet written.* The brand's own words to work from, via its Marketing Manager
-France: *"we wanted to create a space where people could experience the
-mountains differently… hiking, community, creativity, and well-being."* And a
-Hike Leader's: the chalet "showed that everyone has a place in Chamonix,
-regardless of their pace."
+Belonging without qualification. The brand's own words are about experiencing
+the mountains "differently — hiking, community, creativity, and well-being", and
+a Hike Leader's are sharper: the chalet "showed that everyone has a place in
+Chamonix, regardless of their pace." That sentence is the case's argument, and
+it was made by a participant rather than by the brand.
 
 ## What role does the physical experience play?
-*Not yet written.* What is known: the chalet functioned as a gathering point
-before and after walks rather than as a destination, and the experience was
-mostly the walking. What the chalet was actually like is not documented
-anywhere.
+Secondary to the walking. The chalet is a gathering point before and after, and
+the experience the participants actually had was outdoors. Nothing about the
+room itself is documented anywhere — which is consistent with a space whose job
+was to be left from and returned to.
+
+## Experience mechanism
+Enrolment into a named community. Sessions are booked, the group is small, the
+address is private and the leaders are named. The mechanism is the invitation
+list, and the residency is a week-long meeting of a programme that runs all year
+in other places.
+
+## Key strategic insight
+A brand can use the biggest event in a sport as a backdrop for arguing against
+that sport's dominant value. Columbia takes UTMB's audience and its week, gives
+back nothing the race would recognise, and leaves with the one position no
+competitor at this edition occupied — the mountain as a place to be slow in.

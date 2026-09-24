@@ -255,46 +255,73 @@ none was looked at closely enough to caption. The page uses the locator.
 data became Product Index entries.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: in the same week, Goldwin sold the Voxeloft jacket from a stand
-inside the organiser's village and tested the insulation from a holiday chalet
-a kilometre outside the centre, under a partner's name.
+Turn product development into a public format. Motion Studies is a series, not
+an activation, and Chamonix is its tenth instalment: Goldwin takes a material it
+is still testing, tests it in front of invited people, and lets the testing be
+the content. The brand is arguing that it works in the open.
 
 ## Archive use
-*Not yet written.* What exists to work from: the series itself, numbered and
-running since November 2025, and a platform whose output is a scored entry.
+The register's only case where data collection is the stated output. Sessions
+are "structured around testing Voxeloft technology in real alpine conditions,
+with session data and observations through the Product Index platform" — an
+archive that is neither an exhibition nor a film but a dataset, held by a third
+party. Compare with Amazfit, where the data is one athlete's and the output is
+a podcast.
 
 ## Why this location?
-*Not yet written.* The facts that constrain it: a self-catering chalet on
-Chemin du Lai, about a kilometre from the town centre according to the
-listing, rather than a shop front or a stand in the Ultra-Trail Village.
+A self-catering holiday chalet with six bedrooms, which is the point. Japonyard
+is not a venue; it is accommodation, and taking it converts the week from an
+appearance into a residency. Invited testers can be housed, briefed, sent up the
+mountain and debriefed in the same building.
 
 ## Why this timing?
-*Not yet written.* What is known: race week, 24 to 29 August, with the
-invite-only testing on the first two days and the open runs after.
+Race week, but deliberately offset from it: the closed testing runs on the
+Monday and Tuesday, the open mornings on the Wednesday and Thursday, and
+everything is over by the Friday. Goldwin uses the week for its conditions and
+its people, not for its audience.
 
 ## Why this event?
-*Not yet written.* What is known: the post places it "during race week in
-Chamonix" and does not name UTMB.
+Chamonix supplies in five days what a test programme would otherwise spend a
+season assembling — alpine terrain, variable weather, and a concentration of
+runners willing to be studied. The race is a field laboratory that happens to
+have a race attached.
 
 ## Why this product?
-*Not yet written.* The material: Goldwin describes Voxeloft as "a layered air
-structure to deliver flexible thermal regulation" (sourced in the Voxeloft
-Trail Jacket case), and the field tests took it into alpine conditions.
+Voxeloft is a technology rather than a garment, and technologies need evidence.
+Two sessions in real conditions produce observations a specification sheet
+cannot, and the same material is on sale as a jacket a few hundred metres away
+in the Village — the same brand, the same week, arguing the same thing in two
+completely different registers.
 
 ## What performance claim is being reinforced?
-*Not yet written.*
+That the claim is still being checked. The interest of this case is that Goldwin
+does not present Voxeloft as settled: it stages the testing, involves outsiders,
+and routes the results through a platform it does not own. The performance
+argument is made by the visible willingness to be measured.
 
 ## What cultural meaning is being built?
-*Not yet written.* What is known: the earlier volumes paired running with
-coffee, food, photography and a magazine.
+The laboratory as a cultural form. Pancakes after a 6K, a vinyl-quiet opening
+window from 10:00 to 12:00, an athlete-led tour of the town — the register is
+studio rather than expo, and it positions Goldwin among design practices rather
+than among sports brands. The series' other volumes, in Tokyo and Kyoto with a
+coffee roaster, a magazine and a soba restaurant, confirm the register is the
+brand's and not Chamonix's.
 
 ## What role does the physical experience play?
-*Not yet written.* What is documented: the testing happened on a hike and a
-run; the chalet was where they started and where the open mornings were held.
+Divided, and the division is the structure. The chalet is where people sleep,
+eat and talk; the mountain is where the material is tested. Neither half works
+alone — a residency with no terrain is a party, and testing with no base is a
+product shoot.
 
 ## Experience mechanism
-*Not yet written.*
+Two doors. One is invitation-only and produces the data; the other opens for two
+hours a morning and produces the audience. Most cases in this register have a
+single threshold; this one runs a closed programme and a public one out of the
+same building, and the closed half is the one with the output.
 
 ## Key strategic insight
-*Not yet written.*
+A brand can borrow a house and get a research station. By taking accommodation
+rather than a venue, Goldwin acquires the one thing a chalet on the square
+cannot supply — the ability to keep its testers overnight — and turns race week
+into the tenth episode of a development programme that was never about Chamonix
+at all.

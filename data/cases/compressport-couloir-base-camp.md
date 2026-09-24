@@ -230,38 +230,68 @@ a space that genuinely takes two forms, and this is one room running one
 programme. `activation` is not a compromise here, it is the accurate name.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: a brand with thirteen years of official status at this event chose,
-for its base, a café it does not own and a running segment starting at its door.
+Convert thirteen years of official status into something a runner can stand in.
+Compressport already has the rights, the stand and the logo on the race; what it
+lacks is a place in the town with a door. A café it does not own supplies that
+for the price of a partnership.
 
 ## Archive use
-*Not yet written.* What exists to work from: nothing physical. The only record
-the week generated is a Strava leaderboard.
+The register's example of a sponsor behaving like an outsider. A brand with
+official supplier status chose a third-party café over the Village it was
+already inside — the inverse of the non-partners who built rooms to compensate
+for having no rights at all. Read it against HOKA, which used its title position
+to occupy three sites at once.
 
 ## Why this location?
-*Not yet written.* The facts that constrain it: Couloir Café is at 204 Avenue
-Michel Croz, and The North Face's Chamonix store — already a case here — is at
-31 Avenue Michel Croz, so two of this edition's cases sit on one street.
-Compressport chose it over the Ultra-Trail Village, where its own stand and
-morning run were.
+Couloir Café is on Avenue Michel Croz, the same street as The North Face's
+store, so two of this edition's cases sit within two hundred metres of each
+other. More important, the challenge segment starts at its door: the café had to
+be somewhere a 2.92 km climb could begin, which a stand in the Village could
+not.
 
 ## Why this timing?
-*Not yet written.* The challenge opened 3 August, three weeks before race week,
-and was decided on the evening of Sunday 30 August — the day the UTMB finishers
-come in.
+The challenge opened on 3 August, three weeks before race week, and was decided
+on the evening of Sunday 30 August. The café is therefore the physical middle of
+something longer than itself — the brand ran a competition for a month and gave
+it a shopfront for one week.
+
+## Why this event?
+Because the competition needs a benchmark the audience respects, and UTMB
+supplies the athletes to set it. "Think you can outperform our elite athletes?"
+only works where the elite athletes are.
+
+## Why this product?
+No single product is named, which is unusual for a brand whose entire range is
+technical. The prize is a full race kit and a Free Belt Pro 2.0 for five drawn
+entrants, so the product appears as reward rather than as subject. What is being
+demonstrated is the brand's relationship to speed, not any particular garment.
 
 ## What performance claim is being reinforced?
-*Not yet written.* The one the brand states itself: "Think you can outperform our
-elite athletes?" — its own athletes' times set as the benchmark amateurs run
-against.
+That the brand's benchmark is its own team. Compressport sets its sponsored
+athletes' times as the target amateurs run against, which makes the claim
+relational rather than technical: the equipment is not argued for directly, it
+is simply what the people at the top of the leaderboard wear.
 
 ## What cultural meaning is being built?
-*Not yet written.* Note for the record: the brand describes itself as
-"unapologetically, a Performance Brand", which is unusually close to this
-Atlas's own vocabulary and worth handling carefully rather than quoting as
-agreement.
+Competitive familiarity. The brand calls itself "unapologetically, a Performance
+Brand" — language close enough to this Atlas's own vocabulary to be handled at
+arm's length — and then softens it with coffee, a picnic and a place to sit. The
+combination is the meaning: a brand that measures you and then feeds you.
 
 ## What role does the physical experience play?
-*Not yet written.* What is known: the café was a coffee stop and a start line,
-and the measured part of the experience happened outside it on the mountain.
-Nothing is documented about the interior.
+Partial, and the division is unusual. The café is a coffee stop and a start
+line; the measured part of the experience happens on the mountain, alone, and
+returns as a screenshot. The brand's own post names a "Born To Race Area and
+segment start" inside, which is the only evidence of any fit-out.
+
+## Experience mechanism
+The segment. A fixed 2.92 km with 196 m of climbing, timed by a third-party
+platform, entered by uploading proof. The mechanism needs almost no building:
+a start point, a leaderboard and a prize, with the café supplying only the first.
+
+## Key strategic insight
+A timed segment is the cheapest way to turn a doorway into a venue. Compressport
+buys no floor, builds no room and still produces a week of repeat visits and a
+public leaderboard — and in doing so demonstrates that official status, which it
+has held for thirteen years, does not by itself produce a place anyone wants to
+stand in.

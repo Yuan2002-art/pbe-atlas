@@ -243,43 +243,68 @@ t-shirts there were, and whether any of it happened as planned — the page
 reads as an announcement and was not updated after the week.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: a shoe brand whose chalet began with the strength of the
-visitor's toes.
+Argue the brand's one structural difference in the place where it can be felt
+rather than explained. Altra's whole proposition is the shape of the shoe around
+the foot, and a stand that measures your toes makes that case in thirty seconds
+in a way a wall of product cannot.
 
 ## Archive use
-*Not yet written.* What exists to work from: the brand's own page and two
-named Strava segments.
+The clearest example in the register of a rented stand used well. Altra takes
+the same tenancy as a hundred other brands and turns it into a circuit — test,
+run, return — which is worth comparing with the chalets that bought the same
+form and filled it with hospitality.
 
 ## Why this location?
-*Not yet written.* The facts that constrain it: a chalet inside the
-organiser's Village on Place du Mont-Blanc, rather than a building of the
-brand's own in town; the film went to a separate venue.
+Inside the organiser's Village, which is the cheap answer and the right one for
+this mechanism. The chalet only works if the trails start nearby: the Strava
+segments run from the town and come back to the door, so the stand needs to be
+where the runners already are rather than where the brand might prefer to be.
 
 ## Why this timing?
-*Not yet written.* What is known: the Village's five days, with the two dated
-sessions on the Tuesday and Wednesday.
+The Village's own week, Monday to Friday, with the two dated sessions on the
+Tuesday and Wednesday. The shoe test has no fixed hour — it runs whenever
+someone walks in — and the programmed sessions sit in the middle of the week,
+before the field's attention turns to racing.
 
 ## Why this event?
-*Not yet written.* What is known: the brand calls UTMB "the world's biggest
-trail running stage", and lists its athletes racing UTMB, CCC, OCC and ETC.
+An audience that already believes the terrain matters. Altra does not have to
+explain why foot shape is worth attention to people about to run a hundred
+miles on it, which makes UTMB the cheapest possible place to make an anatomical
+argument.
 
 ## Why this product?
-*Not yet written.*
+The test pairs, not a named model — and the record notes that no source says
+which. That is consistent with the mechanism: what is being tested is the
+brand's last, not a particular shoe, and the reward for completing the loop is
+a t-shirt rather than a discount. The product on offer is the sensation.
 
 ## What performance claim is being reinforced?
-*Not yet written.*
+That performance begins below the shoe. The toe-strength test, the mobility
+workshop and the foot-strengthening giveaway all locate the claim in the
+runner's body rather than in the equipment, which lets a brand with no carbon
+plate compete in a week dominated by them.
 
 ## What cultural meaning is being built?
-*Not yet written.* What is known: the community run was framed as running
-without metrics, and the film is about a runner's recovery.
+Correction rather than aspiration. The programme's register is remedial — test
+your feet, improve your mobility, run without metrics — and it positions Altra
+as the brand that thinks the sport has got something basic wrong. The women's
+run and panel extend the same move from anatomy to access.
 
 ## What role does the physical experience play?
-*Not yet written.* What is documented: a toe-strength test and a mobility
-workshop in the chalet, and a shoe that had to be run in and brought back.
+Load-bearing at the door, secondary beyond it. The toe test has to be physical;
+the shoe test is a loan, and the running happens on the mountain. What the
+chalet supplies is the threshold — a reason to stop, a measurement, and a
+pretext to come back.
 
 ## Experience mechanism
-*Not yet written.*
+The return trip. Take the shoes out, run a named segment, come back for the
+shirt. The reward is deliberately small and the loop deliberately closed: the
+brand buys a second visit and a Strava record of it, which a giveaway at a
+counter would not produce.
 
 ## Key strategic insight
-*Not yet written.*
+A rented stand can behave like a permanent shop if it sends people out and makes
+them come back. By tying the reward to a segment that begins and ends at the
+chalet, Altra converts five square metres of someone else's exhibition into a
+trailhead — and gets the one thing a stand normally cannot buy, which is the
+product in use on the terrain it was made for.

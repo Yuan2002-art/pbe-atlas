@@ -216,50 +216,68 @@ mechanism, and it is its own case. Keeping them apart matters — one is a
 stand in the organiser's village, the other a chalet the brand took over.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: Goldwin named a whole product line after the town and then
-released its flagship jacket inside the organiser's trade village rather than
-in a space of its own.
+Make scarcity do the work a space would otherwise do. Goldwin builds nothing at
+Chamonix; it puts a limited run of one jacket on a stand and lets the
+restriction — here, and only here — create the occasion. The release is the
+activation.
 
 ## Archive use
-*Not yet written.* What exists to work from: the jacket itself, the Voxeloft
-page, and the technology's own name. Nothing spatial was documented.
+The register's proof that a case need not be a room. Filed as the first
+product-launch-led record, it marks the lower bound of what counts as a space in
+this Atlas: a shelf inside someone else's exhibition, made singular by
+availability. Read it against the chalets to see how little physical apparatus a
+brand can use and still be present.
 
 ## Why this location?
-*Not yet written.* The facts that constrain it: the Ultra-Trail Village is the
-organiser's exhibition area on Place du Mont-Blanc, the same address as several
-other cases here. Goldwin took a stand in it rather than a building in the
-town, which is the opposite of the choice i-Run, rabbit and Columbia made.
+The organiser's Village, because the jacket needs a crowd rather than a room.
+Goldwin has no Chamonix store and builds no chalet; the manufacturer exhibition
+area supplies footfall, and the limited run supplies the reason to stop. The
+location is rented attention.
 
 ## Why this timing?
-*Not yet written.* What is known: the jacket is a 2026-27 autumn-winter piece
-shown at the end of August, so the drop is ahead of its own season.
+Release week rather than retail season. Tying a launch to the event puts the
+garment in front of ten thousand people who run in exactly these conditions, and
+makes the first owners a self-selecting group of alpine runners rather than
+whoever happened to be in a shop.
 
 ## Why this event?
-*Not yet written.* The material: Goldwin's trail line is called the Chamonix
-Collection, and its own page says it is inspired by the race that finishes
-here.
+The jacket's argument is about cold, wet, moving bodies at altitude, and UTMB is
+where that argument has an audience qualified to test it. A technical claim made
+here is heard by people who will find out whether it is true.
 
 ## Why this product?
-*Not yet written.* What is documented: Voxeloft is the brand's own structural
-insulation, and the Trail Jacket is the piece that carries it into trail
-running.
+Because Voxeloft is difficult to explain and easy to feel. The construction —
+three air layers at the front and outer sleeves, two at the back, none in the
+hood or underarms — is a specification, not a story. Handing it to runners at
+the race is the shortest route from a diagram to a judgement.
 
 ## What performance claim is being reinforced?
-*Not yet written.* Note for the record: the claim is adaptability rather than
-speed — one garment instead of a layer change, stated as "adjusting the amount
-of air inside the garment."
+That insulation can be engineered rather than added. The brand's own analogy is
+architectural — triple-pane glass — and the claim is that one garment replaces
+two: a lightweight rain jacket and a heavy insulation jacket. The published
+simulation, with its "10 times greater thermal insulation performance", is the
+brand's own measurement and is treated here as a claim rather than a finding.
 
 ## What cultural meaning is being built?
-*Not yet written.* What is known: the brand reaches for a building analogy,
-triple-pane glass, rather than a mountain one.
+Engineering seriousness, in a week saturated with athlete narrative. Goldwin
+makes no cultural argument at Chamonix at all: no film, no journal, no party.
+The meaning is carried entirely by the technology page and the scarcity, which
+positions the brand as a manufacturer among storytellers.
 
 ## What role does the physical experience play?
-*Not yet written.* What is documented: almost nothing. A stand in a shared hall
-is the least spatial case in the Atlas, and that is itself the observation.
+Minimal by design, and that is the finding. There is no room to enter, no
+programme to join and nothing to do but handle the jacket and buy it. The
+physical experience is reduced to the object itself — the limit case for this
+register, and a useful one.
 
 ## Experience mechanism
-*Not yet written.*
+Scarcity. Limited numbers, one location, one week. Nothing is earned, nothing is
+tested, and no return visit is engineered; the mechanism is simply that the
+jacket cannot be had anywhere else, which converts a stand into a destination for
+as long as stock lasts.
 
 ## Key strategic insight
-*Not yet written.*
+A product launch can substitute for a space when the restriction is geographic.
+By making the jacket available here and nowhere else, Goldwin turns a rented
+shelf into the only place in the world where a transaction can happen — which is
+the same spatial exclusivity a chalet buys, obtained without building one.

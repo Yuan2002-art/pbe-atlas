@@ -307,37 +307,67 @@ role comes from the same sponsored feature. Its own channels were not consulted,
 so the division of work between the two brands is unverified.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading, and it has not been
-drafted for this case. The facts available to work from: the space is the
-brand's own permanent store rather than a structure built for the week, and its
-announcement describes an open meeting point rather than a sales floor.
+Use a shop that already exists as the week's meeting point rather than building
+one. Arc'teryx has been in the valley for years and has a store on the main
+street; the collaboration with Distance supplies a reason to treat it as
+somewhere to go rather than somewhere to buy.
 
 ## Archive use
-*Not yet written.* The material that bears on it: a free limited-edition journal
-given away in the store, and a photographic selection shown in a public square
-rather than inside the shop.
+The register's example of permanent retail converted into event space. Nothing
+was constructed, and the case is the cleanest test of what programming alone can
+do to a room that was already there. Set it against Rossignol and Salomon, the
+other permanent stores in this register, which did not convert.
 
 ## Why this location?
-*Not yet written.* The fact that constrains any answer: Arc'teryx did not choose
-this location for UTMB. The store on Rue du Docteur Paccard already existed, and
-the brand's long presence in the valley is the reason the collaboration cites
-for siting itself there.
+Not chosen for UTMB at all. The store on Rue du Docteur Paccard predates the
+event and the brand's presence in the valley is the reason the collaboration
+gives for siting itself there. The location is inherited, and the week is what
+was added to it.
 
 ## Why this timing?
-*Not yet written.* The dates are 24–30 August 2026, the full race week, with the
-Opening Night on the 25th and the Closing Party on the 28th — the evening after
-CCC and the day UTMB itself was still running.
+The full race week, with an Opening Night on the 25th and a Closing Party on the
+28th — the evening after CCC and while UTMB itself was still running. The
+bookends turn a shop's opening hours into a programme with a beginning and an
+end.
+
+## Why this event?
+Because a permanent store's problem during race week is being one door among
+many. The collaboration and the challenges exist to give a shop that is open
+anyway a reason to be visited by people who are not shopping.
+
+## Why this product?
+The Sylan 2, in a race-week edition, and a capsule with Distance. The only
+product performance claim in the source is about the shoe — built for technical
+terrain — but the interesting half of the collection is the half that cannot be
+bought at all, which shifts the product from object to reward.
 
 ## What performance claim is being reinforced?
-*Not yet written.* The only product claim in the source is about the Sylan 2,
-described in the press release as built for trail runners pushing their limits
-on technical terrain.
+A modest one, and mostly by association. The Sylan 2 claim is standard; what
+actually does the work is the Strava challenge, which requires the buyer to run
+a vertical kilometre or a 5K before part of the collection is available. The
+performance being demonstrated is the customer's.
 
 ## What cultural meaning is being built?
-*Not yet written.* The material: a journal, a photographic exhibition, a DJ set
-and a tie-dye workshop — none of which is a performance claim.
+Membership by effort. "Some pieces are available to purchase. Others have to be
+earned" is the collaborator's own line, and it converts a shop into a club with
+an entrance exam. The journal, the photographic selection, the DJ set and the
+tie-dye workshop supply the culture around that transaction — none of them a
+performance claim.
 
 ## What role does the physical experience play?
-*Not yet written.* What is known of the room: a permanent shop used as a
-thoroughfare and meeting point for a week, with part of the collection
-unavailable to anyone who did not take part in a Strava Challenge.
+Threshold and reward point. The store is where the challenge is explained and
+where it is redeemed; the running happens on the mountain. The shop's own
+contribution is to be the fixed point the loop returns to — the same structure
+as Altra's chalet, run from permanent retail instead of a rented stand.
+
+## Experience mechanism
+Earned access. A Strava segment gates part of the collection, so the shop
+distributes some goods by payment and others by performance. It is the sharpest
+version of that mechanism in this register, because both routes are open at the
+same counter.
+
+## Key strategic insight
+A permanent store is the cheapest event space a brand can have, provided it is
+given something to withhold. Arc'teryx changes nothing physical about its
+Chamonix shop and still converts it into a week-long destination, simply by
+making part of the collection impossible to buy.

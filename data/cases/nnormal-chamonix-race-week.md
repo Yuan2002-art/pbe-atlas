@@ -325,43 +325,78 @@ products besides the Cadí were in the gear tests, and whether any venue was
 paid or branded.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: eight sessions, five borrowed rooms, no room of its own — in a
-week when the other brands in this register built chalets, stands and houses.
+Be present at the sport's biggest week without building anything. NNormal puts
+its shoe on runners' feet and its name on other people's doors, and spends the
+budget on programme rather than on structure. In a week when the brands around
+it built chalets, stands and houses, this one booked rooms.
 
 ## Archive use
-*Not yet written.* What exists to work from: eight booking pages and a
-schedule, and nothing physical at all.
+The register's counter-example, and the reason `distributed` exists as a form.
+Every other case here is a brand that made a space; this is a brand that
+declined to, at the same event, in the same week. It is what makes the chalets
+legible as a choice rather than as the only way to be present.
 
 ## Why this location?
-*Not yet written.* The facts that constrain it: a café, a brewery, a
-guinguette, a hotel and a high-altitude ecology research centre — each chosen
-for one session, none of them the brand's.
+Five rooms, none of them a retail environment, and the range is the argument. A
+guinguette, a café, a microbrewery, a hotel and a high-altitude ecology research
+centre have nothing in common except that they are places Chamonix already uses.
+The brand reaches its audience inside the town's own institutions rather than
+pulling it into a built one — and the research centre in particular buys a kind
+of seriousness no fit-out could manufacture.
 
 ## Why this timing?
-*Not yet written.* What is known: Monday to Friday of race week, one or two
-sessions a day.
+Monday to Friday, one or two sessions a day, finishing before the race starts.
+The week is timed to the runner's preparation rather than to the spectacle:
+everything happens while people still have legs and attention, and nothing
+competes with the event itself. A brand with a stand needs the crowd; a brand
+with a booking page needs the calendar.
 
 ## Why this event?
-*Not yet written.*
+The audience is already assembled and already predisposed. UTMB week brings the
+brand's exact market into one valley for seven days, which is precisely the
+condition under which not building becomes viable — the reach a chalet buys is
+already there in the street. NNormal holds no partnership with the organiser and
+needs none, because nothing it does requires the organiser's ground.
 
 ## Why this product?
-*Not yet written.* The material: the Cadí, described on the brand's page as
-"the new NNormal shoe", and a GORE-TEX version of it.
+The Cadí is new, and a new shoe has to be run in rather than looked at. Five of
+the eight sessions end with the shoe on someone's feet on Chamonix terrain,
+including a GORE-TEX version tested out of a research station. The product needs
+trials, not a plinth, and trials need a meeting point rather than a shop.
 
 ## What performance claim is being reinforced?
-*Not yet written.*
+That the shoe is tested where it will be used, by people who will use it. The
+claim rests on the trial rather than on the setting — there is no built
+environment here doing any persuading, which is itself the position: a brand
+confident enough in the product to let a borrowed café be the whole apparatus.
 
 ## What cultural meaning is being built?
-*Not yet written.* What is known: three of eight sessions carry no product at
-all — two about films, one about alpine ecosystems.
+Restraint as a signature. Three of the eight sessions carry no product at all —
+two film afternoons and a breakfast about alpine ecosystems with a research
+centre and the Kilian Jornet Foundation — and their presence says the brand is
+interested in the mountain rather than only in the market for it. The borrowed
+venues do the same work: a brand that arrives as a guest reads as part of the
+place, where a brand that builds reads as visiting it.
 
 ## What role does the physical experience play?
-*Not yet written.* What is documented: the experience is borrowed, a session
-at a time, from whoever owns the room.
+Essential and deliberately unowned. The experience cannot be removed — a shoe
+test is physical or it is nothing — but the *space* can be, and is. What the
+brand controls is the session; what it borrows is the room. That division is the
+whole spatial strategy, and it is why this record's coordinate is a town rather
+than an address.
 
 ## Experience mechanism
-*Not yet written.*
+Invitation. Every session is a booking with a finite number of places, free, most
+with a waitlist, and the audience is self-selected at the point of registering
+rather than captured by walking past. Where HOKA's week envelops a visitor who
+never chose to enter, this one only reaches people who put their name down — a
+smaller audience, more deeply engaged, and legible to the brand by name.
 
 ## Key strategic insight
-*Not yet written.*
+A brand can occupy an event without occupying any ground. By spending on
+programme instead of structure, NNormal converts other people's premises into a
+distributed venue that exists only in its own calendar — and the absence of a
+built space stops reading as a missing budget and starts reading as a position.
+The proof that it is a position rather than a constraint is that it happened
+twice: the 2024 week was the same shape, in the same town, in some of the same
+rooms.

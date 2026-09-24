@@ -251,54 +251,69 @@ stand-builder's and an awards entry's material. Every one of them attaches to th
 about 2026.
 
 ## Strategic purpose
-*Not yet written.* This layer is the author's reading and has not been drafted.
-The material: a retailer with more than 150 partner brands built the room and
-gave each day to a different one, including HOKA — the event's own title partner
-— and ASICS, which has never been a partner at this event.
+Sell the room rather than the range. i-Run carries more than a hundred and fifty
+brands and has nothing of its own to demonstrate, so it builds a space whose
+content is supplied by its suppliers — and takes, in return, the position of
+host. The retailer becomes the place where the category meets itself.
 
 ## Archive use
-*Not yet written.* What exists to work from: a Supraw × i-Run merchandise
-collection still listed on the brand's site, and the character Will as a reusable
-visual property. Nothing physical from the room itself is documented.
+The register's inversion: a case whose occupant argues for nobody's products in
+particular. Set it against Zalando's RunZone in Berlin, the only other retailer
+here, and against the brands that built single-tenant chalets in the same week —
+the contrast is between a brand defending a proposition and a retailer curating
+other people's.
 
 ## Why this location?
-*Not yet written.* The facts that constrain it: 73 Chemin du Ce is outside the
-Ultra-Trail Village on Place du Mont-Blanc, where several brands in this Atlas
-took stands. i-Run leased a building instead. The 2025 edition used the L'M
-brasserie, a different site.
+A chalet at 73 Chemin du Ce rather than a stand in the Village, because the
+format needs rooms. Four standing spaces — coffee, workshop, recovery, music —
+cannot be built on an exhibition plot, and the daily handover to a different
+brand needs somewhere that can be re-dressed overnight.
 
 ## Why this timing?
-*Not yet written.* What is known: this chalet covered race week itself, and the
-2025 predecessor had run since the start of the summer. Either the run shortened,
-or the two are differently conceived spaces.
+The full working week, with each day allocated to a different partner: ASICS on
+the Tuesday, Salomon on the Wednesday, Garmin on the Thursday, HOKA on the
+Friday. The schedule is a rota, and it is what stops six brands in one building
+becoming noise.
 
 ## Why this event?
-*Not yet written.* The material: i-Run is a French retailer, and UTMB is the one
-week when the brands it sells are all in one valley.
+Because this is the week when i-Run's suppliers are all in the same town
+already. The retailer's leverage is convening power, and convening is only cheap
+when everyone has independently decided to be there.
 
 ## Why this product?
-*Not yet written.* No single product is at the centre. The products in the room
-belonged to other brands — Salomon's S/LAB Genesis 2, Garmin's Fenix 9, HOKA's
-recovery offer, La Marzocco's machines.
+No product, by design. The named things in the room belong to partners — La
+Marzocco's espresso, Reboots' recovery boots, Shokz's listening room, Salomon's
+S/LAB Genesis 2, Garmin's Fenix 9 — and i-Run's own contribution is the artist
+Supraw's character Will, a mascot rather than a range. The retailer sells access
+to its audience.
 
 ## What performance claim is being reinforced?
-*Not yet written.* Note for the record: i-Run states its own line as "La
-performance n'est pas une fin en soi, c'est notre moteur" — performance is not an
-end in itself, it is our engine. That is unusually close to this Atlas's own
-vocabulary and should be handled as a claim, not quoted as agreement.
+Not a claim about equipment but about judgement. By putting competing brands in
+the same building on consecutive days, i-Run positions itself as the party with
+no stake in which shoe wins — which is the only performance claim a retailer can
+credibly make.
 
 ## What cultural meaning is being built?
-*Not yet written.* What is known: i-Run names the register as art, music,
-gastronomy, cinema and outdoor culture, and commissioned an artist rather than a
-photographer to carry the identity.
+Conviviality as a retail position. The stated register is "art, music,
+gastronomy, cinema and outdoor culture", and the four rooms are a café, a craft
+workshop, a recovery suite and a vinyl listening room — none of them a shop
+floor. The brand being built is a taste, not a catalogue.
 
 ## What role does the physical experience play?
-*Not yet written.* What is documented: four named spaces, three of them run by
-partners who are not running brands at all — an espresso maker, a recovery
-equipment maker, and a vinyl listening room.
+Total, because there is nothing else. Strip out the espresso, the airbrushing,
+the cold baths and the records and no argument remains. This is the case in the
+register where the experience is not evidence for a product claim; it *is* the
+offer.
 
 ## Experience mechanism
-*Not yet written.*
+Membership. The chalet is marked "ÉVÉNEMENT PRIVÉ — I-RUN CLUB INSCRIPTION
+OBLIGATOIRE", so entry runs through the retailer's own club. The week converts a
+loyalty database into a guest list, and the partners pay in programming for
+access to it.
 
 ## Key strategic insight
-*Not yet written.*
+A retailer's spatial advantage is that it can let other brands furnish the room.
+By allocating one day each to ASICS, Salomon, Garmin and HOKA, i-Run assembles a
+week no single brand could afford and keeps the only position none of them can
+occupy — the host who is not selling anything in particular, and whose door is
+opened by club membership rather than by footfall.

@@ -5,6 +5,13 @@ founded: 1966
 category: outdoor
 positioning: Mass-scale outdoor authority, built on expedition lineage.
 accent: "#c8371f"
+logo:
+  src: /images/brands/the-north-face.png
+  caption: >-
+    The North Face's wordmark. Held by Wikimedia Commons as Public domain and rasterised
+    here from the SVG; the mark remains The North Face's trademark.
+  credit: "Wikimedia Commons — Public domain"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:TheNorthFace_logo.svg
 status: partially-verified
 sources:
   - title: "The North Face Chamonix — store page, 31 Avenue Michel Croz"

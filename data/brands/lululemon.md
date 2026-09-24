@@ -4,6 +4,13 @@ country: ""
 category: lifestyle
 positioning: ""
 accent: "#be123c"
+logo:
+  src: /images/brands/lululemon.png
+  caption: >-
+    lululemon's wordmark. Held by Wikimedia Commons as Public domain and rasterised
+    here from the SVG; the mark remains lululemon's trademark.
+  credit: "Wikimedia Commons — Public domain"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Lululemon_Athletica_logo.svg
 status: partially-verified
 sources:
   - title: >-

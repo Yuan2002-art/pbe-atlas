@@ -4,6 +4,13 @@ country: United States
 founded: 1938
 category: outdoor
 positioning: ""
+logo:
+  src: /images/brands/columbia.png
+  caption: >-
+    Columbia's wordmark. Held by Wikimedia Commons as Public domain and rasterised
+    here from the SVG; the mark remains Columbia's trademark.
+  credit: "Wikimedia Commons — Public domain"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Columbia_Sportswear_Co_logo.svg
 status: partially-verified
 sources:
   - title: "Explore Our Story — \"In 1937, 13-year-old Gertrude Lamfrom and her family fled Nazi Germany, settling in Portland, Oregon… With a small loan, Gert's father Paul established the Columbia Hat Company, naming it after our renowned local river. The company that would become Columbia Sportswear was born.\" Dated 1938."

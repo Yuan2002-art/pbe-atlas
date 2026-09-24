@@ -5,6 +5,13 @@ founded: 1949
 category: road-running
 positioning: Japanese engineering heritage, pushing from road into trail.
 accent: "#1e4fd8"
+logo:
+  src: /images/brands/asics.png
+  caption: >-
+    ASICS's wordmark. Held by Wikimedia Commons as Public domain and rasterised
+    here from the SVG; the mark remains ASICS's trademark.
+  credit: "Wikimedia Commons — Public domain"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Asics_Logo.svg
 status: partially-verified
 sources:
   - title: "ASICS Trail launches first ASICS Basecamp in the Alps"

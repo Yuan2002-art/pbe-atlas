@@ -4,6 +4,13 @@ country: ""
 category: road-running
 positioning: ""
 accent: "#c2410c"
+logo:
+  src: /images/brands/saucony.png
+  caption: >-
+    Saucony's wordmark. Held by Wikimedia Commons as Public domain and rasterised
+    here from the SVG; the mark remains Saucony's trademark.
+  credit: "Wikimedia Commons — Public domain"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Logo_Saucony.svg
 status: partially-verified
 sources:
   - title: >-

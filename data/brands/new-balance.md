@@ -4,6 +4,13 @@ country: ""
 category: road-running
 positioning: ""
 accent: "#b91c1c"
+logo:
+  src: /images/brands/new-balance.png
+  caption: >-
+    New Balance's wordmark. Held by Wikimedia Commons as Public domain and rasterised
+    here from the SVG; the mark remains New Balance's trademark.
+  credit: "Wikimedia Commons — Public domain"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:New_Balance_logo.svg
 status: partially-verified
 sources:
   - title: >-

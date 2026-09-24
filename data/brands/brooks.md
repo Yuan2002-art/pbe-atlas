@@ -4,6 +4,13 @@ country: ""
 category: road-running
 positioning: ""
 accent: "#1d4ed8"
+logo:
+  src: /images/brands/brooks.png
+  caption: >-
+    Brooks's wordmark. Held by Wikimedia Commons as Public domain and rasterised
+    here from the SVG; the mark remains Brooks's trademark.
+  credit: "Wikimedia Commons — Public domain"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Brooks_Sports_logo.svg
 status: partially-verified
 sources:
   - title: >-

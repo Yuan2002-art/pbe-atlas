@@ -64,6 +64,61 @@ tags:
   - collaboration
   - community
   - event-activation
+images:
+  - src: /images/cases/nnormal-chamonix-race-week/01-womens-cadi-guinguette.jpg
+    caption: >-
+      The card for the week's first session: "Women's Cadi shoe test & talks
+      with Emelie Forsberg, Joyce Njeru & Lucille", over runners on a rocky
+      slope, printed "Monday | 24 August | 15:00-17:00 / Location: La
+      Guinguette".
+    credit: "NNormal"
+    sourceUrl: https://www.eventbrite.com/o/nnormal-118270620681
+  - src: /images/cases/nnormal-chamonix-race-week/02-julbo-arcus.jpg
+    caption: >-
+      "NNormal shoes & Julbo sunglasses test with Lucille Germain", over a
+      runner in wraparound sunglasses, printed "Tuesday | 25 August |
+      09:00-11:30 / Location: Arcus Coffee".
+    credit: "NNormal"
+    sourceUrl: https://www.eventbrite.com/o/nnormal-118270620681
+  - src: /images/cases/nnormal-chamonix-race-week/03-films-mbc.jpg
+    caption: >-
+      "NNormal Films and Conversations", built from three portraits, printed
+      "Tuesday | 25 August | 15:00-17:00 / Location: MBC Chamonix".
+    credit: "NNormal"
+    sourceUrl: https://www.eventbrite.com/o/nnormal-118270620681
+  - src: /images/cases/nnormal-chamonix-race-week/04-gear-test-heliopic.jpg
+    caption: >-
+      "NNormal gear test & apero", over blurred runners on a woodland trail,
+      printed "Wednesday | 26 August | 17:30-19:30 / Location: Heliopic Hotel".
+      Those times disagree with the booking listing; see the verification notes.
+    credit: "NNormal"
+    sourceUrl: https://www.eventbrite.com/o/nnormal-118270620681
+  - src: /images/cases/nnormal-chamonix-race-week/05-breakfast-crea.jpg
+    caption: >-
+      "A breakfast for those who want to explore trail running differently",
+      over a sunlit wood, printed "Thursday | 27 August | 10:00-12:30 /
+      Location: CREA Mont-Blanc".
+    credit: "NNormal"
+    sourceUrl: https://www.eventbrite.com/o/nnormal-118270620681
+  - src: /images/cases/nnormal-chamonix-race-week/06-trail-keepers-mbc.jpg
+    caption: >-
+      "Trail Keepers - film premiere and roundtable", over a green forest path,
+      printed "Thursday | 27 August | 15:00-17:00 / Location: MBC Chamonix".
+    credit: "NNormal"
+    sourceUrl: https://www.eventbrite.com/o/nnormal-118270620681
+  - src: /images/cases/nnormal-chamonix-race-week/07-gear-test-arcus.jpg
+    caption: >-
+      "NNormal gear test & light breakfast", over blurred runners, printed
+      "Friday | 28 August | 09:00-11:30 / Location: Arcus Coffee".
+    credit: "NNormal"
+    sourceUrl: https://www.eventbrite.com/o/nnormal-118270620681
+  - src: /images/cases/nnormal-chamonix-race-week/08-conditions-change-tour.jpg
+    caption: >-
+      "Conditions Change Tour - France", a shoe standing in running water, with
+      the line "A NNormal x GORE-TEX event, in collaboration with the Kilian
+      Jornet Foundation." No date or venue is printed on this one.
+    credit: "NNormal"
+    sourceUrl: https://www.eventbrite.com/o/nnormal-118270620681
 sources:
   - title: >-
       NNormal's organiser profile on Eventbrite, "Anteriores" (past events)
@@ -249,8 +304,21 @@ women's test and sets the Films afternoon's three titles and film-makers;
 neither is on the pages read here. The Trail Keepers film's producer is not
 recorded either — the event page does not say.
 
-**No picture is stored.** The event pages carry promotional images; none
-shows a venue, so none was taken.
+**Eight pictures, and they are the evidence for this case's own shape.** Each
+session card is a NNormal graphic with the session title, day, time and
+**venue printed on it** -- La Guinguette, Arcus Coffee, MBC Chamonix, Heliopic
+Hotel, CREA Mont-Blanc. Not one of them shows a venue; the photographs behind
+the type are runners and woodland. So they document the `distributed` reading
+in the only way available: the brand itself lists a different address under
+almost every session, and never its own.
+
+**The brand's own two sources disagree about one session's time.** The card
+for the Heliopic gear test reads "Wednesday | 26 August | 17:30-19:30". The
+booking listing, which is what the Description uses, gives 15:30-17:30 for the
+same session on the same day at the same venue. The listing was kept, because
+it is the system people actually booked through, but neither has been
+corrected against the other and the disagreement is NNormal's, not this
+record's.
 
 **What is not known:** how many runners each session took, which NNormal
 products besides the Cadí were in the gear tests, and whether any venue was

@@ -81,6 +81,51 @@ images:
       inferred.
     credit: "Long Run Labs (newsletter)"
     sourceUrl: https://longrunlabs.substack.com/p/what-justifies-the-space
+  - src: /images/cases/rabbit-clubhouse-chamonix/04-two-locations.jpg
+    caption: >-
+      rabbit's own locator graphic, naming both halves of the week side by
+      side: "Vendor Village Chalet" over a photograph of a chalet on a
+      roundabout, and "rabbit Clubhouse at the Hotel Le Faucigny" over a
+      photograph of the hotel's terrace, each with a map pin.
+    credit: "rabbit"
+    sourceUrl: https://www.runinrabbit.com/pages/rabbit-in-chamonix
+  - src: /images/cases/rabbit-clubhouse-chamonix/05-hotel-room.jpg
+    caption: >-
+      The header of the same page: a black-and-white frame of someone leaning
+      over a bed in a hotel room, laying out kit. Not identified as any
+      particular room.
+    credit: "rabbit"
+    sourceUrl: https://www.runinrabbit.com/pages/rabbit-in-chamonix
+  - src: /images/cases/rabbit-clubhouse-chamonix/06-clubhouse-series.jpg
+    caption: >-
+      The series mark — "CLUBHOUSE" in a roundel reading "Chamonix · Chicago ·
+      NYC" — over a backlit street photograph of runners. Chamonix is one stop
+      of three.
+    credit: "rabbit"
+    sourceUrl: https://www.runinrabbit.com/pages/rabbit-in-chamonix
+  - src: /images/cases/rabbit-clubhouse-chamonix/07-what-it-includes.jpg
+    caption: >-
+      The brand's own diagram of what the Clubhouse includes, in five steps:
+      Stay, Prepare, Gear Up, Connect, Celebrate — "a premium hotel room
+      experience built for runners", race-week guidance and shakeout runs,
+      curated race-specific kit and Clubhouse-only items, welcome gatherings
+      with rabbit athletes, and post-race recovery stations.
+    credit: "rabbit"
+    sourceUrl: https://www.runinrabbit.com/pages/rabbit-in-chamonix
+  - src: /images/cases/rabbit-clubhouse-chamonix/08-hotel-sign.jpg
+    caption: >-
+      The building itself: the "Le Faucigny — Hotel de Charme" sign on the
+      facade, shot through leaves. From the hotel's own site, undated — the
+      building, not the Clubhouse.
+    credit: "Hameau Le Faucigny"
+    sourceUrl: https://www.hameaufaucigny-chamonix.com/en/
+  - src: /images/cases/rabbit-clubhouse-chamonix/09-hotel-breakfast-room.jpg
+    caption: >-
+      The hotel's breakfast room and bar — a long table, a wall of open
+      shelving, red accents. The hotel's own photograph, undated, showing the
+      venue in ordinary use rather than during race week.
+    credit: "Hameau Le Faucigny"
+    sourceUrl: https://www.hameaufaucigny-chamonix.com/en/
 sources:
   - title: "rabbit Clubhouse Series — \"The rabbit Clubhouse is a home base during race week. Part hotel room, part pop-up shop, part community hub\"; \"rabbit is taking over Hotel Le Faucigny & Appart'Hotel Le Genepy, creating a home base in the heart of Chamonix\"; carries a BOOK NOW call to action"
     publisher: rabbit

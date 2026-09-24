@@ -46,7 +46,46 @@ tags:
   - community
   - collaboration
   - event-activation
-images: []
+images:
+  - src: /images/cases/columbia-hike-society-summer-residency/01-massif-group.jpg
+    caption: >-
+      A group with large packs on a path, looking across at the Aiguilles, with
+      the "Columbia Hike Society" lockup in the corner. One of the card images
+      on the residency's session listings.
+    credit: "Columbia Hike Society"
+    sourceUrl: https://www.eventbrite.co.uk/cc/chs-chamonix-summer-residency-4858620
+  - src: /images/cases/columbia-hike-society-summer-residency/02-crystal.jpg
+    caption: >-
+      A hand holding a rough crystal up against blue sky, with the same lockup.
+      The card image for the session listed as "Crystal Curious".
+    credit: "Columbia Hike Society"
+    sourceUrl: https://www.eventbrite.co.uk/cc/chs-chamonix-summer-residency-4858620
+  - src: /images/cases/columbia-hike-society-summer-residency/03-energy-balls.jpg
+    caption: >-
+      Hands reaching around a steel bowl of rolled energy balls on a wooden
+      table, empty plates beside it. A camera-size photograph carried on the
+      listing for the nutrition session.
+    credit: "Columbia Hike Society"
+    sourceUrl: https://www.eventbrite.co.uk/cc/chs-chamonix-summer-residency-4858620
+  - src: /images/cases/columbia-hike-society-summer-residency/04-resting.jpg
+    caption: >-
+      Someone lying back on the grass in sunglasses and a cap in front of a
+      stone building, shot into the sun. Also camera-size, from the listing
+      for the mobility session.
+    credit: "Columbia Hike Society"
+    sourceUrl: https://www.eventbrite.co.uk/cc/chs-chamonix-summer-residency-4858620
+  - src: /images/cases/columbia-hike-society-summer-residency/05-circle.jpg
+    caption: >-
+      A group standing in a wide circle on a sunlit slope, arms outstretched
+      towards each other.
+    credit: "Columbia Hike Society"
+    sourceUrl: https://www.eventbrite.co.uk/cc/chs-chamonix-summer-residency-4858620
+  - src: /images/cases/columbia-hike-society-summer-residency/06-dusk-pair.jpg
+    caption: >-
+      Two hooded figures seen from behind, looking out over cloud toward
+      mountains in low light.
+    credit: "Columbia Hike Society"
+    sourceUrl: https://www.eventbrite.co.uk/cc/chs-chamonix-summer-residency-4858620
 sources:
   - title: "Columbia Hike Society Summer Residency Offers a Different Pace in the Heart of Chamonix — post-event trade coverage, 2 September 2026, in the past tense; quotes Claire Neuville (Marketing Manager France) and two Hike Leaders"
     publisher: Outdoor Insight
@@ -109,6 +148,22 @@ quoted on the experience.
 demo fleet and no shop appears in any source.
 
 ## Verification notes
+**Six pictures, none of them the chalet.** All come from the residency's own
+session listings. Four carry the "Columbia Hike Society" lockup, which makes
+them programme artwork rather than reportage; two are full camera-size
+photographs. Only one can be matched to its session with any confidence -- the
+crystal, on the listing called "Crystal Curious". **The Atlas has not matched
+the others to particular sessions**, because the artwork is generic enough that
+the pairing would be a guess, and the captions describe the frame instead.
+
+**Whether any of them was taken in Chamonix in 2026 is not established.** The
+Hike Society is a continuing programme, the listings are undated as images, and
+nothing on the page says when or where any frame was made. They are used as the
+programme's own visual material, not as a record of the week.
+
+**The chalet remains unphotographed**, which matters here because its address
+was never published either.
+
 **This case has something the others at this edition do not: post-event
 coverage.** Most records here rest on announcements. Outdoor Insight's piece is
 dated 2 September 2026, after the residency closed, and is written throughout in

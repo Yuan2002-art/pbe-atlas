@@ -63,7 +63,40 @@ images:
       FLÉGÈRE at 1877m."
     credit: "©PVerticale / C. Hudry (per file name)"
     sourceUrl: https://outdoormagazine.it/2026/08/24/hoka-utmb-mont-blanc-chamonix/
+  - src: /images/cases/hoka-utmb-mont-blanc-ecosystem/04-flylab-pavilion.jpg
+    caption: >-
+      The FlyLab in the Ultra-Trail Village: a two-storey open timber pavilion
+      lettered HOKA, people moving past it on the street, the Aiguilles behind.
+      The newsletter that published it captions it "Hoka's FlyLab hub in
+      Chamonix"; the file carries a capture date of 24 August 2026.
+    credit: The Sweat Lookbook (no photographer credited)
+    sourceUrl: https://thesweatlookbook.substack.com/p/lets-talk-about-the-fashion-week
+  - src: /images/cases/hoka-utmb-mont-blanc-ecosystem/05-gondola.jpg
+    caption: >-
+      A cable-car cabin wrapped yellow and lettered "Let's fly / Chamonix
+      Mont-Blanc" with the HOKA mark, crossing above the massif. Published
+      under the line "As title sponsors, the Hoka logo was... everywhere."
+      Captured 26 August 2026.
+    credit: The Sweat Lookbook (no photographer credited)
+    sourceUrl: https://thesweatlookbook.substack.com/p/lets-talk-about-the-fashion-week
+  - src: /images/cases/hoka-utmb-mont-blanc-ecosystem/06-bandana.jpg
+    caption: >-
+      A dog on a Chamonix pavement in a yellow HOKA bandana, spectators behind.
+      From the same sequence about the mark being everywhere; captured 25
+      August 2026.
+    credit: The Sweat Lookbook (no photographer credited)
+    sourceUrl: https://thesweatlookbook.substack.com/p/lets-talk-about-the-fashion-week
 sources:
+  - title: >-
+      Let's talk about the fashion week -- a newsletter account of UTMB week
+      2026, published 31 August 2026. Captions one photograph "Hoka's FlyLab
+      hub in Chamonix" and a further pair "As title sponsors, the Hoka logo
+      was... everywhere." No photographer is credited; the files carry capture
+      dates of 24, 25 and 26 August 2026. Source of three images.
+    publisher: The Sweat Lookbook
+    url: https://thesweatlookbook.substack.com/p/lets-talk-about-the-fashion-week
+    type: editorial
+    accessed: 2026-09-23
   - title: "HOKA secures Title Partner position for the circuit's flagship events, through 2028"
     publisher: UTMB World Series
     url: https://utmb.world/news/Hoka-title-partner-announcement
@@ -134,6 +167,22 @@ from a single HOKA press release, so they are not independent of each other.
 
 **One unresolved discrepancy:** the organiser lists the shakeout run at 08:30,
 the Italian trade press at 09:00.
+
+**A photograph now supports FlyLab, which the organiser never listed.** The
+FlyLab and the Refuge rest on two trade outlets that appear to share one press
+release. A newsletter published on 31 August carries a photograph of the
+pavilion captioned "Hoka's FlyLab hub in Chamonix", shot on 24 August 2026 —
+an account by someone who was in the town, independent of the release. It does
+not confirm the 24-hour shoe trial or the radio station, only the structure.
+
+**Two of the three new pictures are not a HOKA site at all**, and that is why
+they are here: a cable car wrapped in the brand's yellow, and a dog in a HOKA
+bandana. They were published under the line "the Hoka logo was... everywhere",
+and this record is about a brand occupying a town rather than a room. They are
+captioned as what they are, not as activations.
+
+**These three carry no photographer credit.** The newsletter names none, so
+the credit is the publication's. The capture dates come from the files.
 
 **The pin is one of three sites.** Base Camp is used because it is the
 organiser-confirmed location; FlyLab (Place du Mont-Blanc) and Refuge

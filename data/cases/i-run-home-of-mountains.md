@@ -84,6 +84,20 @@ images:
       HARDER" graphic. Undated on the brand's page.
     credit: "i-Run"
     sourceUrl: https://www.i-run.fr/entreprise/evenements-partenaires/the-home-of-mountains.html
+  - src: /images/cases/i-run-home-of-mountains/04-coffee-bar.jpg
+    caption: >-
+      The coffee counter: a flat white being poured, with the espresso setup,
+      pale timber cabinetry and black bunting behind. From the same undated
+      gallery as the first three.
+    credit: "i-Run"
+    sourceUrl: https://www.i-run.fr/
+  - src: /images/cases/i-run-home-of-mountains/05-mascot-address.jpg
+    caption: >-
+      The retailer's mascot holding a board lettered "HOME of MOUNTAINS, 73
+      Chemin du Ce, 74400 Chamonix" — the brand's own statement of the address
+      this record pins. An illustration, not a photograph.
+    credit: "i-Run"
+    sourceUrl: https://www.i-run.fr/
 strategyMatrix:
   performanceToCulture: null
   productToExperience: null

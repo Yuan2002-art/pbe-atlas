@@ -51,7 +51,73 @@ images:
       A diagram, not a photograph.
     credit: "UTMB Mont-Blanc"
     sourceUrl: https://montblanc.utmb.world/get-involved/join-adventure/ultra-trail-village
+  - src: /images/cases/ultra-trail-village-chamonix/02-site-plan.jpg
+    caption: >-
+      The Village's own site plan for 2026, from the organiser's installation
+      guide: numbered plots laid out across Place du Mont-Blanc, with the Fan
+      Experience and the stage marked.
+    credit: "UTMB World Series"
+    sourceUrl: https://montblanc.utmb.world/fan-experience
+  - src: /images/cases/ultra-trail-village-chamonix/03-ambush-marketing.jpg
+    caption: >-
+      The guide's page on ambush marketing, addressed "for non partner
+      brands". It forbids using "UTMB®", "HOKA UTMB Mont-Blanc" or any
+      protected name, protected hashtags such as #UTMB2026, and any visual or
+      phrase implying sponsorship; it warns against "confusion through
+      proximity — e.g., handing out flyers or branding in athlete zones, in
+      Chamonix or just outside the venue"; and it instructs brands to "use
+      generic alpine themes" and to "clearly separate your branding from the
+      event's branding".
+    credit: "UTMB World Series"
+    sourceUrl: https://montblanc.utmb.world/fan-experience
+  - src: /images/cases/ultra-trail-village-chamonix/04-booth-decoration.jpg
+    caption: >-
+      "How to decorate your booth?" — the rules for dressing a chalet,
+      illustrated with photographs of real stands marked OK or NOT ALLOWED.
+      Branding must stay inside or on the gable; nothing may extend past the
+      chalet.
+    credit: "UTMB World Series"
+    sourceUrl: https://montblanc.utmb.world/fan-experience
+  - src: /images/cases/ultra-trail-village-chamonix/05-chalet-rules.jpg
+    caption: >-
+      The conditions of use for the chalets — state on handover, permitted
+      interior modifications, the ban on fixing signage to the exterior walls —
+      over an aerial photograph of the Village in the town.
+    credit: "UTMB World Series"
+    sourceUrl: https://montblanc.utmb.world/fan-experience
+  - src: /images/cases/ultra-trail-village-chamonix/06-technical-form.jpg
+    caption: >-
+      The exhibitor's technical form — company, brand name on the stand,
+      electricity needs — beside a photograph of a timber chalet with visitors
+      passing in front of it.
+    credit: "UTMB World Series"
+    sourceUrl: https://montblanc.utmb.world/fan-experience
+  - src: /images/cases/ultra-trail-village-chamonix/07-guide-cover.jpg
+    caption: >-
+      The cover of the document all of the above comes from: "Guide
+      d'installation / Logistic guidelines 2026".
+    credit: "UTMB World Series"
+    sourceUrl: https://montblanc.utmb.world/fan-experience
 sources:
+  - title: >-
+      Guide d'installation / Logistic Guidelines 2026 — the organiser's own
+      rulebook for exhibitors in the Ultra-Trail Village, linked from the Fan
+      Experience page and read page by page as rendered images. Carries the
+      2026 site plan, the public opening hours, the chalet conditions of use,
+      the booth-decoration rules, and a page headed "Ambush marketing: for non
+      partner brands" which instructs brands not to use "UTMB®", "HOKA UTMB
+      Mont-Blanc" or any protected name, not to use protected hashtags "like
+      #UTMB2026 or protected imagery", not to "create ads pitched to suggest
+      you're a partner or try to appear inside athlete-only zones", and to
+      "avoid confusion through proximity — e.g., handing out flyers or branding
+      in athlete zones, in Chamonix or just outside the venue that misleads
+      attendees"; and which tells them to "use generic alpine themes" and "be
+      transparent — clearly separate your branding from the event's branding".
+      Source of six images.
+    publisher: UTMB World Series
+    url: https://pdf.utmb.world/image/upload/v1785745399/montblanc/FAN%20EXPERIENCE%202026/EXHIBITOR_GUIDE_ULTRA_TRAIL_VILLAGE_MONT_BLANC_2026_b4f03ad492.pdf
+    type: event-organiser
+    accessed: 2026-09-23
   - title: >-
       Ultra-Trail® Village — the organiser's own page. "2026 ULTRA-TRAIL
       VILLAGE. Dates: from August 24 to 28"; hours given day by day — "Monday
@@ -95,7 +161,36 @@ relaxation, and connection", with live music, race broadcasts, and food and
 drink. The stands sell; the Fan Experience is what keeps people in the square
 between them.
 
+**The organiser also writes the rules the brands work inside.** Its
+installation guide for exhibitors runs to twenty pages and is not only
+logistics. One page, headed *Ambush marketing: for non partner brands*, tells
+brands that are not partners what they may not do: use "UTMB®", "HOKA UTMB
+Mont-Blanc" or any protected name; use protected hashtags "like #UTMB2026 or
+protected imagery"; "create ads pitched to suggest you're a partner"; or
+produce "confusion through proximity — e.g., handing out flyers or branding in
+athlete zones, in Chamonix or just outside the venue that misleads attendees."
+What it tells them to do instead is as revealing: "use generic alpine themes,
+focusing on the beauty or challenge of the mountain environment", and "be
+transparent — clearly separate your branding from the event's branding."
+
+**That is the constraint behind a good deal of this register.** Several of the
+brands recorded at this edition hold no partnership with UTMB. The alpine
+imagery, the unnamed "race week", the spaces sited in the town rather than in
+the athlete zones — these are, at least in part, a published rule being
+followed.
+
 ## Verification notes
+**Seven pictures, and six are pages of a document.** The Atlas's first image
+here is the organiser's Village plan. The six added are rendered pages of the
+2026 installation guide, which is a primary source about how this square is
+governed rather than a picture of it. **The guide was expected to name the
+exhibitors and does not** — it is addressed to companies that have already
+booked, so the 110 brands remain uncounted by name.
+
+**The photographs inside those pages are the organiser's**, used to illustrate
+its own rules, including stands marked OK or NOT ALLOWED. They are not
+captioned or dated by the guide.
+
 **One source, and it is the right one.** Everything above is the organiser's
 own page for its own exhibition — dates, daily hours, location, the four key
 figures and the Fan Experience description. No third party is needed for any of

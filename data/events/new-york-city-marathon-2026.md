@@ -16,9 +16,10 @@ startDate: 2026-11-01
 endDate: 2026-11-01
 officialUrl: https://www.nyrr.org/tcsnycmarathon
 notes: >-
-  An edition that has not happened yet. The date and the anniversary are
-  sourced from the organiser; nothing else is. The coordinate is the city — the
-  course crosses all five boroughs.
+  The date and the anniversary framing are from the organiser. The finisher
+  count is from EventMarketer, not from the organiser. The same EventMarketer
+  article also describes a world record; that clause is not in the body. The
+  coordinate is the city — the course crosses all five boroughs.
 hero:
   src: /images/events/new-york-city-marathon-2026/hero.jpg
   caption: >-
@@ -32,13 +33,22 @@ sources:
     url: https://www.nyrr.org/media-center/press-release/2026_0819_tcsnycmprofield
     type: event-organiser
     accessed: 2026-09-22
+  - title: >-
+      EventMarketer, 6 November 2026, on the 2026 NYC Marathon — reports
+      61,146 finishers. A marketing-trade report, not the organiser's results.
+    publisher: EventMarketer
+    url: https://www.eventmarketer.com/article/2026-nyc-marathon-experience-ideas/
+    type: editorial
+    accessed: 2026-11-10
 ---
 
-**An edition still to come**, on Sunday 1 November 2026, and the organiser
-frames it as the **50th anniversary of the five-borough course**, first run in
-1976.
+Sunday 1 November 2026. The organiser frames the edition as the **50th
+anniversary of the five-borough course**, first run in 1976.
 
-Included so the editions strip can show what is next as well as what has just
-finished. **No cases, and nothing here about how the race went** — it has not
-been run. An anniversary edition is the kind of moment brands build around, so
-it is a thing to watch rather than a thing recorded.
+**From the organiser:** the date, and that anniversary framing.
+
+**From EventMarketer, 6 November 2026:** 61,146 finishers. That figure is not
+on the organiser source listed here.
+
+The coordinate is the city. The course crosses all five boroughs, and no
+single address describes it.

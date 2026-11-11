@@ -76,3 +76,4 @@ script, and do not retry into a 429.
 | File | What it is |
 |---|---|
 | `utmb-2026-marathon-weekend-leads.md` | 149 brand activations listed for UTMB Mont-Blanc 2026, from marathon-weekend.com |
+| `2026-11-10-pbe-scout-leads.md` | Arc'teryx IFC Hong Kong and On NYC Marathon Week. Research leads only — not cases, and not `reportedActivity` |
